@@ -1,0 +1,232 @@
+// Pages
+
+// 1. Shop
+//    1.1) Shop Base
+//    1.2) Shop Element
+//         1.2.1) Shop Toolbox
+//         1.2.2) Shop Pagination
+
+// 2. Product
+//    2.1) Product Single Base
+//    2.2) Product Component
+//         2.2.1) Product Thumbnail
+//         2.2.2) Product Single Details
+//         2.2.3) Product Single Tab
+
+// 3. Responsive
+
+// 1. Shop
+// 1.1) Shop Base
+.products-group {
+    .product-default {
+        img {
+            max-width: none;
+        }
+    }
+}
+
+// 1.2) Shop Element
+// 1.2.1) Shop Toolbox
+.toolbox {
+    margin-bottom: 1.1rem;
+
+    .form-control,
+    label {
+        padding-bottom: 2px;
+        font-family: $second-font-family;
+    }
+}
+
+.sidebar-opened .custom-sidebar-toggle {
+    z-index: 1200;
+}
+
+// 1.2.2) Shop Pagination
+.toolbox-pagination {
+    margin: 1.5rem 0 4.9rem;
+}
+    
+.page-item {
+    > .page-link:not(span) {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        width: 33px;
+        height: 33px;
+        border: 1px solid #ccc;
+    }   
+}
+
+// 2. Product Page
+// 2.1) Product Base
+.products-section {
+    padding-bottom: 6.5rem;
+  
+    h2 {
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+    }
+  
+    .owl-carousel.dots-top .owl-dots {
+        margin-bottom: 2.5rem;
+
+        span {
+            color: rgba(0,61,119,.4);
+        }
+    }
+}
+
+.product-slider-container {
+    .owl-stage-outer {
+        border: 1px solid #f4f4f4;
+    }
+}
+  
+// 2.2) Product Component
+// 2.2.1) Product Thumbnail
+.prod-thumbnail { 
+    padding: 0 2px 0 0px;
+
+    .owl-stage-outer {
+        margin-right: -1px;
+    }
+    
+    .owl-dot {
+        border: 1px solid #f4f4f4;
+    }
+}
+
+// 2.2.2) Product Single Details
+.product-single-default:not(.product-quick-view) {
+    .product-single-share {
+        .social-icon {
+            margin: 2px 8px 2px 0;
+            width: 29px;
+            height: 29px;
+        }    
+    }
+    
+    .product-price {
+        font-size: 3.6rem;
+    }
+}
+
+.product-single-details {
+    .product-title {
+        margin-bottom: .9rem;
+    }
+
+    .price-box {
+        margin-bottom: 2.4rem;
+        font-family: $second-font-family;
+    }
+
+    .product-price {
+        color: #444;
+    }
+
+    .short-divider {
+        margin-bottom: 2.4rem;
+    }
+
+    .product-desc {
+        margin-bottom: 2.2rem;
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    .product-category {
+        color: $primary-color;
+        font-weight: 400;
+    }
+  
+    .ratings-container {
+        margin-bottom: 2.1rem;
+    
+        .product-ratings, 
+        .ratings {
+            letter-spacing: .07em;
+        }
+    }
+}
+  
+.single-info-list {
+    margin-bottom: 1.2rem;
+  
+    li {
+        margin-bottom: 1.2rem;
+    }
+} 
+  
+.product-filters-container {
+    .select-custom {
+      max-width: 307px;
+      width: 100%;
+    }  
+}
+  
+.product-single-filter {
+    .form-control {
+        padding-top: 5px;
+        border-color: rgba(0,0,0,0.09);
+        font-family: $second-font-family;
+    }
+  
+    label {
+      margin-right: 3.5rem;
+    }
+}
+
+// 2.2.3) Product Single Tab
+.product-single-tabs {
+    .nav.nav-tabs .nav-link {
+        font-family: $second-font-family;
+    }
+
+    .tab-pane {
+        padding-bottom: 1.4rem;
+    }
+}
+  
+.nav-tabs .nav-item .nav-link {
+    padding: 1rem 0 1.2rem;
+}
+  
+.product-desc-content {
+    ul {
+        margin-bottom: 1.6rem;
+        padding-left: 2.4rem;
+    }
+  
+    p {
+        margin-bottom: .8rem;
+    }
+  
+    li {
+        position: relative;
+        margin-bottom: 0px;
+    
+        &:before {
+            content: '';
+            padding-top: 1re;
+            margin-top: 1rem;
+            width: 5px;
+            height: 5px;
+            left: -1.7rem;
+            border-radius: 50%;
+            background-color: #7b858a;
+        }
+    }
+}
+
+// 3. Responsive
+@media (max-width: 1500px) and (min-width: 992px) {
+    .products-group {
+        .col-xl-2 {
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+}

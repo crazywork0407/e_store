@@ -1,0 +1,473 @@
+// Demo 4
+// 1. Header
+//	  1.1) Header Base
+//	  1.2) Header Element
+//	  	   1.2.1) Top Notice
+// 	 	   1.2.2) Header Dropdown
+//  	   1.2.3) Header Search
+//		   1.2.4) Header Icons
+//		   1.2.5) Header Main Nav
+
+// 2. Footer
+//	  2.1) Footer Base
+//	  2.2) Footer Element
+//	       2.2.1) Footer Widget
+//	 	   2.2.2) Footer Social Icons
+//	 	   2.2.3) Footer Contact Info
+//	 	   2.2.4) Footer Tagcloud
+//	 	   2.2.5) Footer Newsletter
+//	       2.2.6) Footer Copyright
+
+// 3. Component
+//	  3.1) Coupon Sale Text
+//	  3.2) Buttons
+
+// 4. Responsive
+
+// 1. Header
+// 1.1) Header Base
+.flag {
+    margin-top: -2px;
+}
+h2, h3, h4, h5, h6, p {
+	margin-bottom: 0;
+}
+.header {
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.header-top {
+	.container {
+		justify-content: unset;
+		justify-content: space-between;
+	}
+	.header-dropdown a {
+		font-size: 1.1rem;
+		color: inherit;
+	}
+	.header-dropdown:not(.dropdown-expanded) {
+		font-family: Poppins, sans-serif;
+	}
+	.top-message {
+		font-weight: 500;
+		font-family: Poppins, sans-serif;
+		letter-spacing: -.03em;
+	}
+	.dropdown-expanded {
+		li + li {
+			margin-left: 0;
+		}
+		a {
+			letter-spacing: .025em;
+			padding: 0 23px;
+		}
+	}
+	.social-icons {
+		font-family: Poppins, sans-serif;
+		margin-left: 1.8rem;
+	}
+	.icon-shipping {
+		color: #183f72;
+		font-size: 24px;
+		margin-right: 7px;
+	}
+}
+
+.header-middle {
+	display: flex;
+}
+.header-bottom .container {
+	display: block;
+}
+// 1.2) Header Element
+// 1.2.1) Top Notice
+
+// 1.2.2) Header Dropdown
+
+
+.cart-dropdown {
+	margin-left: -2px;
+
+	a.dropdown-toggle {
+		display: flex;
+		align-items: center;
+		min-height: 38px;
+
+		i {
+			font-size: 3rem;
+		}
+		&:hover {
+			color: inherit;
+		}
+	}	
+} 
+
+// 1.2.3) Header Search
+.header-search  {
+	margin-right: 3.5rem;
+	form {
+		padding-left: 4px;
+	}
+	.form-control {
+		min-width: 56.8rem;
+		flex: 0 0 56.8rem;
+		font-family: Poppins, sans-serif;
+		background: #fff;
+		padding: 1rem 1.5rem;
+		select {
+			border-right: 1px solid #fff;
+		}
+	}
+}
+.header-search-wrapper {
+    display: flex;
+    display: -ms-flexbox;
+    position: absolute;
+    right: -2.3rem;
+    z-index: 999;
+    margin-top: 10px;
+    color: #8d8d8d;
+    box-sizing: content-box;
+    height: 48px;
+	border-radius: 5px;
+	border: 1px solid #e1e1e1;
+	.btn {
+		min-width: 68.7px;
+		background: transparent;
+	}
+}
+.header-search-category { 
+	.form-control {
+    	border-radius: 5px 0 0 5px;
+	}
+	.btn {
+		border-radius: 0 5px 5px 0;
+	}
+}
+// 1.2.4) Header Icons
+.header-login { 
+	margin-right: 5px;
+	.login-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #282d3b;
+		background: transparent;
+		border-style: solid;
+		border-color: #e7e7e7;
+		border-width: 1px;
+		width: 43px;
+		height: 43px;
+		line-height: 43px;
+		border-radius: 500px;
+		font-size: 27px;
+		margin-right: 10px;
+	}
+	i {
+		font-size: 2.7rem;
+	}
+	span {
+		font-family: Poppins, sans-serif;
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: #777;
+	}
+	p {
+		white-space: nowrap;
+		font-size: 1.6rem;
+		font-weight: 800;
+		line-height: 20px;
+		letter-spacing: -.3px;
+		color: $primary-color-dark;
+	}
+}
+
+.header-icon { //
+	&:not(:last-child) {
+		margin-right: 3rem; //
+	}
+	i {
+		font-size: 3rem;
+	}
+}
+.badge-circle {
+	right: -7px;
+}
+// 1.2.4 ) Header Menus
+.category-menu {
+	display: flex;
+	height: 60px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	flex-wrap: nowrap;
+    overflow-x: auto;
+	background: $secondary-color;
+	margin: 1.1rem 0 1rem;
+	a {
+		font-family: Poppins, sans-serif;
+		font-weight: 600;
+		color: #fff;
+		letter-spacing: -.025em;
+		padding: 2rem 1.99rem;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+.shop-menu {
+	display: flex;
+	height: 6.8rem;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	color: $primary-color-dark;
+	background: #ececec;
+	margin-bottom: 1.9rem;
+	a {
+		display: flex;
+		align-items: center;
+		font-family: Poppins, sans-serif;
+		font-weight: 700;
+		line-height: 1;
+		padding: 1.2rem 2rem;
+		i {
+			font-size: 2.8rem;
+			margin-right: 7px;
+		}
+	}
+	li:not(:last-child) {
+		border-right: 1px solid #fff;
+	}
+}
+@include mq(lg, max) {
+	.col-lg-5-1 {
+		flex: 0 0 20%;
+    	max-width: 20%;
+	}
+}
+// 2. Footer
+// 2.1) Footer Base
+.footer-middle {
+    padding: 6.4rem 0 2.8rem;
+}
+
+.footer-bottom {
+	padding: 2.3rem 0 3.6rem;
+	border-top: 1px solid #e7e7e7;
+}
+
+.footer {
+	letter-spacing: .005em;
+
+// 2.2) Footer Element
+// 2.2.1) Footer Widget
+	.widget {
+		li {
+			font-family: Poppins, sans-serif;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 35px;
+			color: #777;
+		}
+	}
+	.widget-title {
+		font-size: 1.5rem;
+		font-weight: 800;
+		line-height: 1em;
+		letter-spacing: -.3px;
+		color: $primary-color;
+		text-transform: capitalize;
+		margin-bottom: 1.3rem;
+	}
+
+// 2.2.2) Footer Social Icons
+	.social-icons {
+		display: flex;
+		align-items: center;
+		padding-top: 1.1rem;
+	}
+
+ 	.social-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 2px;
+		width: 38px;
+		height: 38px;
+		box-shadow: none;
+		font-size: 1.5rem;
+		line-height: 3.6rem;
+		border-radius: 50%;
+		border: 1px solid #e7e7e7;
+
+		&:not(:hover):not(:active):not(:focus) {
+			background-color: transparent;
+			border-color: #e7e7e7;
+			color: #333;
+		}
+
+		&:hover {
+			border-color: transparent;
+		}
+
+		& + .social-icon {
+			margin-left: 1rem;
+		} 
+	}
+
+// 2.2.3) Footer Payment Icons
+	.payment-icons .payment-icon {
+		background-color: transparent;
+		filter: none;
+		border: 1px solid #e7e7e7;
+	}
+}
+
+// 2.2.6) Footer Copyright
+.footer-copyright {
+	color: #777;
+	font-family: Poppins, sans-serif;
+    font-size: 1.3rem;
+	line-height: 22px;
+	letter-spacing: -0.325px;
+}
+
+// 3. Components
+// 3.1) Coupon Sale Text
+.coupon-sale-text {
+	position: relative;
+	display: inline-block;
+	padding: 5px 8px;
+	transform: rotate(-2deg);
+
+	i {
+		position: absolute;
+		left: -2.25em;
+		top: 50%;
+		transform: translateY(-50%) rotate(-90deg);
+		font-size: .65em;
+		font-style: normal;
+		opacity: .6;
+		letter-spacing: 0;
+	}
+
+	b {
+		display: inline-block;
+		padding: 5px 8px;
+		font-size: 1.6em;
+		background-color: #fff;
+	}
+
+	em {
+		font-size: 2em;
+		font-style: normal;
+	}
+}
+.ls-25 {
+	letter-spacing: -.025em;
+}
+.py-6 {
+	padding: 6rem 0;
+}
+.owl-carousel.nav-top .owl-nav {
+	.owl-prev, .owl-next {
+		margin-top: -3.8rem;
+	}
+}
+.banner img {
+	width: unset;
+}
+// 3.2) Buttons
+.btn-lg {
+	padding: 1.07em 2.76em;
+}
+
+.btn-light {
+	background: #fff;
+	border-color: #fff;
+}
+
+.btn-black {
+	background: #0e0f11;
+	border-color: #0e0f11;
+}
+
+.product-default .btn-add-cart i {
+    display: none;
+}
+
+// 4. Responsive
+@media (min-width: 1256px) {
+	.container {
+		max-width: 1236px;
+	}
+	.header-search .form-control {
+		min-width: 59.8rem;
+    	flex: 0 0 59.8rem;
+	}
+}
+@media (max-width: 1219px) {
+	.header-search .form-control {
+		min-width: 51.8rem;
+    	flex: 0 0 51.8rem;
+	}
+	.category-menu {
+		padding-left: 6rem;
+	}
+}
+@include mq(xl, max) {
+	.header-top .dropdown-expanded a {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.header-login .login-icon {
+		margin-right: 0;
+	}
+	.category-menu {
+		padding-left: 24rem;
+	}
+	.shop-menu {
+		padding-left: 16.6rem;
+	}
+}
+
+@include mq(md, max) {
+	.minicart-icon {
+		width: 22px;
+		height: 18px;
+	}
+}
+
+@include mq(sm, max) {
+	.header-icon,
+	.cart-dropdown {
+		padding: 0;
+	}
+
+	.header-search {
+		display: none;
+	}
+}
+
+@include mq(xs, max) {
+	.header-icon:not(:last-child) {
+		margin-right: 1.5rem;
+		margin-bottom: 3px;
+	}
+
+	.sticky-header .cart-dropdown {
+		margin-bottom: 4px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.dropdown-expanded li:not(:first-child) {
+		margin-left: 1.3rem;
+	}
+}

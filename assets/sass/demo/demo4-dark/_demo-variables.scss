@@ -1,0 +1,96 @@
+
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+
+@include set(
+	(
+		header: (
+			link-color: #fff,
+			logo: (
+				max-width: 111px,
+				max-width-mobile: 90px
+			),
+			top-notice: (
+				link-background: #0075af
+			),
+			top: (
+				border-bottom: 1px solid #313438
+			),
+			search: (
+				height: 40px,
+				divider: 1px solid $primary-color-dark,
+				background: #151719,
+
+				border: (
+					width: 5px,
+					color: $primary-color
+				),
+				btn: (
+					min-width: 40px,
+					color: #fff
+				),
+				select: (
+					padding-left: 15px,
+					padding-right: 14px
+				)
+			),
+			separator: (
+				space: 14px
+			),
+			social-icon: (
+				space: 3px
+			),
+			dropdown: (
+				item: (
+					active-background: #292c30
+				)
+			)
+		),
+		menu: (
+			color: #a8a8a8,
+			active-background: $primary-color-dark,
+			top: (
+				color: #fff
+			),
+			main: (
+				top: (
+					space: 35px,
+					padding: 17px 0,
+					letter-spacing: -.01em,
+					font-family: $second-font-family
+				),
+				nolink: (
+					color: #fff
+				)
+			)
+		),
+		category: (
+			sidebar: (
+				border: 1px solid #272b2f
+			)
+		),
+		footer: (
+			background: #1b1e21,
+			widget: (
+				title: (
+					color: #fff
+				)
+			)
+		),
+		breadcrumb: (
+			border-bottom: 0
+		)
+	)
+);
+
+// 4. Plugin Variables

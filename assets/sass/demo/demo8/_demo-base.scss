@@ -1,0 +1,524 @@
+// 1. Heade ----------
+//    1.1) Header Base
+//    1.2) Header Element
+//         1.2.1) Header Top Notice
+//         1.2.2) Header Main Nav
+//         1.2.3) Header Cart Dropdown
+//         1.2.4) Header Icons
+
+// 2. Footer
+//    2.1) Footer Base
+//    2.2) Footer Element
+//         2.2.1) Footer Social Icon
+//         2.2.2) Footer Contact Info
+//         2.2.3) Footer Newsletter
+
+// 3. Component
+//    3.1) Breadcrumb
+//    3.2) Product Default
+//    3.3) Pagination
+
+// 4. Responsive
+
+// 1. Heade ----------
+// 1.1) Header Base
+.header {
+    .item-menu {
+        float: left;
+        
+        a {
+            display: inline-block;
+            padding: .5rem 1.2rem;
+            line-height: 26px;
+        }
+    }
+
+    .separator {
+        height: 17.59px;
+        border-color: $border-color;
+    }
+
+    .wel-msg {
+        margin-right: .8rem;
+    }
+
+    .share-links a {
+        display: inline-flex;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin: 0 1px;
+        overflow: hidden;
+        border-radius: 30px;
+        font-size: 1.38rem;
+
+        &:not(:hover) {
+            color: inherit;
+            background-color: transparent;
+        }
+    }
+
+    .icon-magnifier::before {
+        font-weight: 600;
+    }
+
+    .icon-wishlist-2::before,
+    .icon-user-2::before {
+        margin-left: .27rem;
+        margin-right: .27rem;
+    }
+
+    .icon-shopping-cart::before {
+        font-size: 2.8rem;
+        line-height: 1;
+    }
+
+    .dropdown-toggle,
+    .icon-shopping-cart {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.header-top {
+    .share-links {
+        margin-right: -8px;
+        margin-left: .8rem;
+    }
+}
+
+.header-middle {
+    .header-left,
+    .header-right {
+        flex: 1;
+    }
+
+    .header-right {
+        justify-content: flex-end;
+    }
+
+    .header-left,
+    .header-right,
+    .header-center {
+        padding: 3rem 0 2.9rem;
+    }
+
+    .header-center {
+        padding: 2.9rem 1.5rem 3rem;
+    }
+}
+
+.header-bottom.fixed {
+    height: 60px;
+
+    .main-nav .float-right {
+        display: block;
+    }
+}
+
+.menu-banner.menu-banner-2 .btn {
+    bottom: 6px;
+    padding: 9px 38px;
+}
+
+.sticky-header .cart-dropdown {
+    margin-bottom: 3px;
+}
+
+.newsletter-popup {
+    .custom-control-label {
+        &:before, 
+        &:after {
+            top: 4px;
+        }
+    }
+}
+
+// 1.2) Header Element
+// 1.2.1) Header Top Notice
+.pre-header {
+    color: #fff;
+    background-color: $secondary-color;
+    font-family: $second-font-family;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    letter-spacing: .025em;
+
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    & > div {
+        position: relative;
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+
+    small {
+        font-size: 1.09996rem;
+        font-weight: 400;
+        opacity: .5;
+    }
+
+    .mfp-close {
+        top: 50%;
+        transform: translateY(-50%) rotateZ(45deg);
+        color: inherit;
+        opacity: .7;
+    }
+}
+
+.top-links {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+// 1.2.2) Header Main Nav
+.main-nav {
+    display: flex;
+    width: 100%;
+
+    .tip.hot {
+        display: inline-block;
+        position: absolute;
+        top: -11px;
+        right: 10px;
+        padding: 2px;
+        font-size: 9px;
+        font-style: normal;
+        line-height: 1;
+        color: #fff;
+        background-color: #eb2771;
+        border-color: #eb2771;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: auto;
+            bottom: -3px;
+            left: 2px;
+            border-color: transparent;
+            border-top-color: inherit;
+            border-width: 3px 2px 0 2px;
+        }
+    }
+
+    .header-right a {
+        display: inline-block;
+        position: relative;
+        padding: 0 15px;
+        font-family: $second-font-family;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: -0.12px;
+        text-transform: uppercase;
+        color: #333;
+        line-height: 2.1rem;
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    .menu-custom-block {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 0;
+        line-height: 22px; 
+    }
+}
+
+.menu {
+    &>li>a {
+        line-height: 20px;
+    }
+
+    &>li:first-child>a {
+        padding-left: 0;
+    }
+
+    .megamenu {
+        width: 650px;
+    }
+}
+
+.megamenu {
+    ul {
+        display: block;
+        box-shadow: none;
+        a {
+            padding-left: .9rem;
+        }
+    }
+}
+
+// 1.2.3) Header Cart Dropdown
+.cart-dropdown {
+    margin-bottom: 2px;
+    max-height: 3.8rem;
+    margin-left: 1.3rem;
+    line-height: 3.8rem;
+}
+
+.dropdown-arrow {
+    .badge-circle {
+        top: .1rem;
+    }
+
+    &::after {
+        margin: 0;
+        margin-bottom: 2px;
+        margin-left: 1.5rem;
+        font-size: 1.6rem;
+    }
+}
+
+// 1.2.4) Header Icons
+.header-icon,
+.header-icon i {
+    display: inline-block;
+}
+
+.header-icon:not(:last-child) {
+    margin-top: 2px;
+}
+
+.header-icon-user {
+    margin-right: 1.2rem;
+    margin-top: 1px;
+}
+
+.header-contact {
+    i {
+        display: inline-block;
+        margin-top: 2px;
+        margin-right: 0.6rem;
+        line-height: 1;
+    }
+
+    h6 {
+        font-weight: 600;
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+
+    a {
+        margin-top: .3rem;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: .9;
+    }
+}
+
+// Header Search
+.header-search {
+    margin-left: -4px;
+}
+
+.search-toggle {
+    display: inline-block;
+    margin-top: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 2.1rem;
+    line-height: 40px;
+    text-align: center;
+}
+
+// 2. Footer
+// 2.1) Footer Base
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    background-color: $secondary-color;
+    
+// 2.2) Footer Element
+// 2.2.1) Footer Social Icon
+    .social-icons {
+        margin-top: 2rem;
+        .social-icon {
+            width: 3.6rem;
+            height: 3.6rem;
+            margin: .2rem;
+            line-height: 3.6rem;
+        }
+    }
+
+// 2.2.2) Footer Contact Info
+    .contact-info {
+        margin-bottom: 3.1rem;
+
+        .contact-info-label {
+            line-height: 2rem;
+        }
+
+        li {
+            margin-bottom: 1.1rem;
+        }
+    }
+
+// 2.2.3) Footer Newsletter
+    .widget-newsletter {
+        p {
+            margin-top: -.3rem;
+            margin-bottom: 1.3rem;
+            max-width: 290px;
+            line-height: 2.4rem;
+        }
+
+        form {
+            position: relative;
+            margin-bottom: 0;
+            max-width: 370px;
+        }
+
+        .form-control {
+            height: 4.8rem;
+            padding: 1.1rem 12.4rem 1.1rem 2rem;
+            margin-bottom: 1rem;
+            background-color: #292c30;
+            border-radius: 30px;
+            border: none;
+            &::placeholder {
+                color: #fff;
+                opacity: .4;
+            }
+        }
+
+        .btn {
+            position: absolute;
+            min-width: 63px;
+            padding: 1.65rem 1.5rem;
+            top: 0;
+            right: 0;
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 1.3rem;
+            line-height: 1;
+            color: #fff;
+            background-color: $primary-color;
+            border-radius: 0 30px 30px 0;
+            text-align: center;
+        }
+    }
+}
+
+// 3. Component
+// 3.1) Breadcrumb
+.breadcrumb {
+    padding: 1.2rem 0;
+}
+
+.breadcrumb-item a, 
+.breadcrumb-item.active {
+    color: $primary-color-dark;
+}
+
+// 3.2) Product Default
+.product-default {
+	.product-title {
+		font-family: $second-font-family;
+		letter-spacing: -.01em;
+	}
+
+	.btn-icon-wish, 
+	.btn-quickview {
+		top: auto;
+	}
+
+	.btn-add-cart, 
+	.btn-icon-wish, 
+	.btn-quickview {
+		background-color: transparent;;
+	}
+}
+
+.product-widget .product-details {
+    margin-bottom: 0px;
+}
+
+.ratings-container {
+    margin-left: 0;
+}
+
+// 3.3) Pagination
+.pagination {
+    .page-item:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 33px;
+        height: 33px;
+
+        .page-link {
+            padding: 0;
+            border: 1px solid #ccc;
+
+            i {
+                display: block;
+            }
+        }
+    }
+}
+
+// 4. Responsive
+@media (min-width: 768px) {
+    .minicart-icon:before {
+        left: 46%;
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        margin: 0 0 8px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .header .sticky-header.fixed {
+        padding: 0;
+    }
+
+    .product-price {
+        font-size: 1.6rem;
+    }
+
+    .header-middle .header-center {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-price {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .cart-dropdown {
+        margin-left: 3px;
+    }
+
+    .header-top {
+        padding: 5px 0;
+    }
+}
+
+@include mq( xs, max ) {
+    .pre-header small {
+        display: none;
+    }
+}

@@ -1,0 +1,647 @@
+// 1. Heade ----------
+//    1.1) Header Base
+//    1.2) Header Element
+//         1.2.1) Header Main Nav
+//         1.2.2) Header Search
+//         1.2.3) Header Cart Dropdown
+//         1.2.4) Header Dropdown
+//         1.2.5) Header Others
+
+// 2. Footer --------
+//    2.1) Footer Base
+//    2.2) Footer Element
+//         2.2.1) Footer Widget
+//         2.2.2) Footer Social Icons
+//         2.2.3) Footer Contact Info
+//         2.2.4) Footer Feature Box
+//         2.2.5) Footer Newsletter
+
+// 3. Component --------
+//    3.1) Breadcrumb
+//    3.2) Product Details
+
+// 4. Responsive
+
+// 1. Heade ----------
+// 1.1) Header Base
+header {
+    position: fixed;
+    width: 30rem;
+    min-height: 100vh;
+    padding: 1.7rem 2.6rem 14.7rem 2rem;
+    background-color: #222529;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    z-index: 999;
+
+    .main-nav a:focus {
+        color: #777;
+    }
+
+    .form-control {
+        padding: 0 2.8rem 0 1.6rem;
+        font-family: "Open Sans", sans-serif;
+        line-height: 0;
+        transition: none;
+    }
+}
+
+.header-top {
+    .header-center, .header-right {
+        margin-right: -2px;
+    }
+
+    .header-right {
+        a:hover,
+        a:focus {
+            color: #fff;
+        }
+    }
+}
+
+.header-middle .logo {
+    margin: 3.1rem 0 2rem .7rem;
+}
+
+// 1.2.1) Header Main Nav
+.main-nav .menu>li {
+    &:first-child a {
+        padding-left: .5rem;
+    }
+
+    >a {
+        font-weight: 600;
+    }
+}
+
+// 1.2.2) Header Search
+.header-search {
+    &:not(.header-search-category) {
+        .form-control {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .btn {
+            padding: 1px .9rem 0 1.3rem;
+            height: 4rem;
+            font-size: 1.6rem;
+            border-radius: 0 2rem 2rem 0;
+            color: #777;
+            background: #181b1f;
+        }
+
+        i:before {
+            font-weight: 800;
+        }
+    } 
+
+    .form-control::placeholder {
+        color: #595a5b;
+    }
+}
+
+.search-toggle {
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+
+    &:after {
+        border-bottom-color: #181b1f;
+    }
+}
+
+// 1.2.3) Header Cart Dropdown
+.minicart-icon {
+    width: 19px;
+    height: 16px;
+    border-color: #fff;
+
+    &:before {
+        width: 12px;
+        height: 9px;
+        left: 57%;
+        top: -7px;
+        border-color: #fff;
+    }
+}
+
+.dropdown-arrow {
+    .badge-circle {
+        top: -4px;
+        left: 14px;
+    }
+
+    &:after {
+        display: none;
+    }
+}
+
+// 1.2.4) Header Dropdown
+.header-dropdown>a {
+    color: #fff;
+}
+
+.dropdown-toggle i {
+    font-size: 2rem;
+}
+
+// 1.2.5) Header Others
+.badge-circle {
+    top: -1px;
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.mobile-menu-container {
+    padding: 3px 3px 0;
+    font-size: 1.4rem;
+    font-family: "Open Sans", sans-serif;
+
+    .mobile-menu {
+        padding-top: .3rem;
+        padding-left: .3rem;
+    }
+
+    li.active {
+        background: #282e36;
+    }
+}
+
+// 2. Footer
+// 2.1) Footer Base
+// 2.2) Footer Element
+.footer-bottom {
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer {
+    font-family: $second-font-family;
+
+    .col-lg-9 > .row {
+		padding-top: 4rem;
+    }
+
+    // 2.2.1) Footer Widget
+    .widget {
+        margin-bottom: 1.3rem;
+    }
+
+    .widget-title {
+        margin-bottom: 1.4rem;
+        font-size: 1.5rem;
+    }
+
+// 2.2.2) Footer Social Icons
+	.social-icon {
+        margin: 2px;
+        width: 3.6rem;
+        height: 3.6rem;
+
+		+ .social-icon {
+			margin-left: 2px;
+		}
+    }
+    
+// 2.2.3) Footer Contact Info
+	.contact-info {
+	    margin-bottom: 3.3rem;
+
+		li {
+			margin-bottom: 1.1rem;
+		}
+	}
+
+	.contact-info-label {
+		margin-bottom: 0
+    }
+
+}
+// 2.2.4) Footer Feature Box
+.feature-boxes-container {
+    margin-top: 3.6rem;
+    border-bottom: 1px solid #eee;
+
+    .container {
+        >.row {
+            position: relative;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -3.3rem;
+        width: 100%;
+        height: 1px;
+        background: #eee;
+    }
+
+    .feature-box {
+        display: flex;
+        margin-bottom: 2.5rem;
+
+        i:before {
+            margin-bottom: 2px;
+        }
+        
+        h3 {
+            margin-top: 4px;
+            margin-bottom: 1px;
+        }
+
+        h5 {
+            margin-bottom: .5rem;
+            color: #777777;
+            font-weight: 600;
+            font-family: $font-family;
+        }
+
+        p {
+            font-family: $font-family;
+        }
+
+        i {
+            display: flex;
+            margin-right: 1rem;
+            min-width: 80px;
+            justify-content: center;
+            align-items: center;
+            background: #f4f4f4;
+        }
+    }
+}
+
+// 2.2.5) Footer Newsletter
+.widget-newsletter {
+    padding-bottom: 2.2rem;
+    border-bottom: 1px solid #e7e7e7;
+    
+    form {
+        margin-top: -2.5rem;
+        padding-right: 1rem;
+        max-width: 56rem;
+    }
+
+	p {
+		line-height: 1.6;
+	}
+
+	p {
+		line-height: 1.85;
+	}
+
+	input[type="submit"] {
+		font-size: 1.3rem;
+	}
+
+	.widget-title {
+		margin-bottom: .8rem;
+		line-height: 1;
+	}
+
+	.form-control {
+		height: 44px;
+		padding: 8px 1rem 8px 2rem;
+		border: 0;
+		border-radius: 2.2rem 0 0 2.2rem;
+		background: #f4f4f4;
+		font-family: Poppins, sans-serif;
+		font-size: 1.3rem;
+		color: #777;
+		box-shadow: none;
+		outline: none;
+
+		@include only_for_ie() {
+			flex: 1;
+		}
+
+		&::placeholder {
+			color: #999;
+		}
+	}
+
+	.btn {
+		padding: 1rem 2.2rem;
+		border-radius: 0 5rem 5rem 0;
+		font-size: 1.2rem;
+	}
+}
+
+// 3. Component
+// 3.1) Types
+main, 
+footer {
+    max-width: 100%;
+    margin-left: auto;
+
+    .container {
+        max-width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.page-wrapper {
+    left: 0;
+    transition: left .25s;
+
+    .mmenu-active & {
+        transform: none;
+        left: 250px;
+    }
+}
+
+// 3.21) Breadcrumb
+.breadcrumb-nav {
+    position: relative;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+}
+
+.sticky-wrapper {
+	.breadcrumb-nav.fixed {
+		margin-left: auto;
+		left: auto;
+		right: auto;
+		box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+	}
+}
+
+.main .breadcrumb-nav.sticky-header:not(.fixed)>.container {
+    padding-left: 4rem;
+}
+
+.no-boxShadow:not(.fixed) {
+    box-shadow: none;
+}
+
+// 3.3) Product Details
+.product-default {
+	.product-title {
+        margin-bottom: 4px;
+		font-family: $font-family;
+		letter-spacing: -.01em;
+	}
+
+	.btn-icon-wish, 
+	.btn-quickview {
+		top: auto;
+	}
+
+	.btn-add-cart, 
+	.btn-icon-wish, 
+	.btn-quickview {
+		background-color: transparent;;
+    }
+    
+    .category-wrap .btn-icon-wish {
+        font-size: 1.6rem;
+    }
+}
+
+.product-details {
+    position: relative;
+}
+
+.product-widget .product-details {
+    margin-bottom: 0px;
+}
+
+// 4. Responsive
+@include mq( lg ) {
+    main, footer {
+        max-width: calc( 100% - 256px );
+    }
+
+    .sort-menu-trigger {
+        padding-left: 1rem;
+        min-width: 150px;
+    }
+
+    .header-search-wrapper {
+        width: calc( 100% + 8px );
+        left: 0;
+        margin-bottom: 1.8rem;
+        color: #777;
+    }
+
+    .main-nav .menu {
+        .megamenu, 
+        > li > ul {
+            top: 0;
+            left: 26rem;
+        }
+    }
+
+    .menu-vertical.sf-arrows:not(.no-arrows) > li {
+        > .sf-with-ul:before, 
+        &.show > .sf-with-ul:before {
+            left: calc( 100% + 14px );
+            transition: none;
+        }
+
+        > .sf-with-ul:after {
+            width: 3rem;
+            top: 13px;
+            right: -26px;
+        }
+    }
+    
+    .header-icon.header-icon-user {
+        margin-right: 2rem;
+    }
+    
+    .main-nav .menu > li {
+        margin: 0;
+        padding: 0;
+    
+        > a {
+            font-family: Poppins, sans-serif;
+        }
+    }
+    
+    .header-bottom {
+        width: 100%;
+        bottom: 3.9rem;
+        left: 0;
+    
+        .header-left {
+            h6 {
+                font-size: 11px;
+                font-weight: 600;
+                color: #777;
+                line-height: 1;
+            }
+        }
+    
+        > .container {
+            margin-bottom: 2.2rem;
+        }
+    }
+    
+    .menu-title a {
+        color: #777;
+        font-weight: 700;
+    
+        &:hover {
+            color: #777;
+        }
+    }
+    
+    .menu .megamenu .row > div {
+        padding-top: .8rem;
+    }
+
+    @include mq( 1400px, max ) {
+        header {
+            max-width: 25.6rem;
+        }
+
+        .header-search-wrapper {
+            width: calc( 100% );
+        }
+
+        .main-nav .menu .megamenu {
+            left: 24.5rem;
+        }
+    }
+}
+
+@include mq( 1400px ) {
+    main, footer {
+        max-width: calc( 100% - 300px );
+
+        .container {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+}
+
+@media(max-width: 1400px) {
+    .main .breadcrumb-nav.sticky-header:not(.fixed)>.container {
+        padding-left: 2rem;
+    }
+
+    .header {
+        padding-left: 5px;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    .feature-boxes-container {
+        .feature-box {
+            flex-direction: column;
+            align-items: center;
+        }    
+
+        .feature-box-content {
+            padding: 0;
+            text-align: center;
+        }
+    }
+}
+
+@include mq( lg, max ) {
+    .home-slider {
+        .banner-layer {
+            img {
+                max-width: 400px;
+            }
+        }
+    }
+
+    .header-search .form-control {
+        min-width: 21rem;
+    }
+
+    .header {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        padding: 0;
+
+        .sticky-header.fixed {
+            background-color: $primary-color-dark;
+
+            .logo {
+                width: 8.5rem;
+            }
+        }
+
+        .logo {
+            width: 8rem;
+            margin: 2rem auto;
+            transform: none;
+        }
+
+        .dropdown-toggle i {
+            font-size: 2.2rem;
+        }
+
+        .container {
+            padding: 0 3rem 0 2rem;
+        }
+    }
+
+    .widget-newsletter form {
+        margin-top: 0;
+    }
+
+    .mobile-menu-toggler {
+        i {
+            font-size: 2.1rem;
+        }
+    }
+
+    .header-search i {
+        display: block;
+        font-size: 1.7rem;
+        margin-top: 2px;
+        margin-right: 4px;
+    }
+
+    .header-search-wrapper {
+        border-radius: 0;
+        border-color: #181b1f;
+
+        form {
+            width: 100%;
+        }
+
+        i {
+            margin: 0;
+        }
+    }
+
+    .header-search:not(.header-search-category) {
+        .btn,
+        .form-control {
+            border-radius: 0;
+        }
+    }
+
+    .header-icon {
+        i {
+            font-size: 2.2rem;
+        }
+
+        &:not(:last-child) {
+            margin-right: 1.6rem;
+        }
+    }
+}
+
+@include mq( md, max ) {
+    .feature-boxes-container .feature-box {
+        align-items: center;
+    }
+
+    .feature-box i {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,154 @@
+
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$primary-color: #7aa93c;
+$border-color: #eee;
+
+// 2. Theme Settings
+
+// 3. Theme Variables
+
+@include set(
+	(
+		header: (
+			link-color: inherit,
+
+			top: (
+				padding-top: 8px,
+				padding-bottom: 8px,
+				border-bottom: 1px solid #e7e7e7,
+				font-size: 1.1rem,
+				font-weight: 600,
+				letter-spacing: .025em
+			),
+
+			middle: (
+				padding-top: 2.8rem,
+				padding-bottom: 2.8rem,
+				color: $primary-color-dark,
+			),
+
+			bottom: (
+				color: $primary-color-dark
+			),
+
+			dropdown: (
+				shadow: 0 6px 25px rgba(0,0,0,.2),
+				item: (
+					space: 2.4rem,
+					padding: .5em 1em
+				)
+			),
+
+			social-icon: (
+				color: inherit
+			),
+
+			separator: (
+				color: #e7e7e7
+			),
+
+			search: (
+				height: 40px,
+				background: #eee,
+				divider: 1px solid #fff,
+
+				btn: (
+					color: #777,
+					width: 46px
+				),
+
+				border: (
+					width: 5px
+				)
+			),
+			
+			logo: (
+				max-width: 100px,
+
+				sticky: (
+					transform: scale(.8),
+					transform-origin: left center
+				)
+			)
+		),
+
+		menu: (
+			main: (
+				font-size: 13px,
+
+				nolink: (
+					font-weight: 700
+				),
+
+				top: (
+					space: 3.6rem,
+					color: $primary-color-dark,
+					active-color: $primary-color,
+					padding: 21px 0
+				)
+			)
+		),
+
+		breadcrumb: (
+			color: #000,
+			border-bottom: false,
+			letter-spacing: 0
+		),
+
+		footer: (
+			color: #a8a8a8,
+			background: $primary-color-dark,
+			link-active-color: #fff,
+			line-height: 24px,
+
+			middle: (
+				padding-top: 6.6rem,
+				padding-bottom: 3.2rem
+			),
+
+			bottom: (
+				font-size: 12px,
+				color: #777,
+				border-top-inner: 1px solid #313438,
+				padding-top: 1.5rem,
+				padding-bottom: 1.5rem,
+			),
+
+			widget: (
+				title: (
+					size: 1.5rem,
+					color: #fff,
+					weight: 700,
+					margin: 0 0 1.3rem
+				)
+			),
+
+			social-icon: (
+				border: 1px solid #313438,
+				font-size: 12px
+			)
+		),
+
+		info-box: (
+			icon: (
+				space: 1.5rem,
+				size: 4rem
+			),
+		),
+
+		btn: (
+			font: (
+				family: false
+			)
+		)
+	)
+);

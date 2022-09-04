@@ -1,0 +1,653 @@
+// Pages
+
+// # Content
+// 1. Product Single Page ---------
+//    1.1) Product Single Base
+//    1.2) Product Single Component
+//         1.2.1) Details
+//         1.2.2) Info Box
+//         1.2.3) Info List
+//         1.2.4) Filter
+//         1.2.5) Qty
+//         1.2.6) Share
+//         1.2.7) Thumbnail
+//         1.2.8) Product Widget
+
+//    1.3) Product Single Tabs
+//         1.3.1) Tab Base
+//         1.3.2) Desc Tab
+//         1.3.3) Info Tab
+//         1.3.4) Review Tab
+
+// 2. Shop Page --------
+//    2.1) Shop Base
+//    2.2) Shop Component
+//         2.2.1) Widget Base
+//         2.2.2) Widget Size
+//         2.2.3) Widget Featured
+//         2.2.4) Widget Price
+//         2.2.5) Widget Color
+
+//    2.3) Shop Category Banner
+//    2.4) Toolbox and Pagination
+
+// 3. Responsive ----------
+
+// 1. Product Page
+// 1.1) Product Base
+// Product Section
+.products-section {
+    padding-bottom: 1.3rem;
+
+    h2 {
+        margin-bottom: 2.4rem;
+        border-color: $border-color;
+        font-size: 1.6rem;
+        font-family: $font-family
+    }
+
+    .owl-carousel.dots-top {
+        .owl-dots {
+            margin-bottom: 2.5rem;
+        }
+
+        .owl-dot.active span {
+            border-color: #fff;
+        }
+    
+        .owl-dots span {
+            border-color: #fff;
+        }
+    }
+}
+
+.product-widgets-container {
+    .section-sub-title {
+        padding-top: 1px;
+        margin-bottom: 1.5rem;
+        font-size: 1.4rem;
+        font-family: $font-family;
+    }
+
+    .product-default {
+        margin-bottom: 1.6rem;
+    }
+
+    .product-details {
+        margin-bottom: 6px;
+    }
+
+    .product-widget .product-title {
+        margin-bottom: 6px;
+        font-size: 1.3rem;
+    }
+}
+
+// 1.2) Product Component
+// 1.2.1) Product Single Details
+.product-single-details {
+    .product-nav .product-link {
+        color: #fff;
+    }
+
+    .product-nav .product-popup {
+        background-color: $bg-color;
+
+        img {
+            height: 90px;
+            object-fit: cover;
+        }
+
+        &:before {
+            border-bottom-color: $bg-color;
+        }
+    }
+
+    .product-title {
+        font-size: 3.2rem;
+        line-height: 1.2;
+        color: #fff;
+    }
+
+    .ratings-container {
+        margin-bottom: 2.3rem;
+    }
+
+    .product-price {
+        color: $secondary-color;
+    }
+
+    .product-desc {
+        margin-bottom: 2.4rem;
+    }
+
+    .product-category {
+        color: #fff;
+    }
+
+    .clear-btn {
+        letter-spacing: 0.02em;
+        background-color: $bg-color;
+    }
+
+    .product-action {
+        border-color: $border-color;
+    }
+
+    .product-single-qty .form-control {
+        background-color: $primary-color-dark;
+        color: #fff;
+    }
+
+    .add-cart,
+    .add-cart.disabled {
+        border-color: $bg-color;
+        background-color: $bg-color;
+    }
+}
+
+// 1.2.2) Product Info Box
+.product-info-box {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  
+    >div {
+      display: flex;
+      margin-bottom: .7rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    span {
+      font-size: 1.4rem;
+      letter-spacing: 0.005em;
+      color: #fff;
+      margin-right: 4px;
+    }
+  
+    .product-info-name {
+      color: #777;
+    }
+  
+    .product-info-category {
+      padding: 2rem 0;
+  
+      .product-info-name {
+        margin-right: 2rem;
+      }
+  
+      .product-info {
+        background-color: #2c2f33;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+    }
+  
+    .product-info-rate {
+        margin-bottom: 1.7rem;
+        margin-top: 1.2rem;
+    
+      .product-info {
+        margin-top: 2px;
+        letter-spacing: 0.017em;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+    }
+  
+    .product-info-ratenum {
+        display: flex;
+        margin-right: 4px;
+        margin-bottom: 3px;
+        align-items: center;
+        justify-content: center;
+        background-color: #16181b;
+        height: 30px;
+        width: 35px;
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+}
+
+// 1.2.3) Product Info List
+.single-info-list {
+    margin-bottom: 1.9rem;
+
+    li {
+        margin-bottom: 1.2rem;
+    
+        strong {
+            color: #fff;
+        }
+    } 
+} 
+
+// 1.2.4) Product Filter
+.product-single-filter {
+    label {
+        min-width: 10rem;
+        margin-right: 4.9rem;
+    }
+
+    .config-size-list li a {
+        border-color: $primary-color-dark;
+    }
+    
+} 
+
+.filter-with-img {
+    .config-size-list li {
+        a {
+            height: 100%;
+        }
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+// 1.2.5) Product Single Qty
+.product-single-qty {
+    .btn.btn-down-icon:after, 
+    .btn.btn-up-icon:before, 
+    .btn.btn-up-icon:after {
+        background: #ffff;
+    }
+
+    .bootstrap-touchspin .form-control, 
+    .bootstrap-touchspin .form-control:not(:focus), 
+    .btn-outline:not(:disabled):not(.disabled):active {
+        border-color: $border-color;
+    }
+
+    .btn.btn-outline {
+        border-color: $border-color;
+        background: #222529;
+        color: #ffff;
+    }
+}
+
+// 1.2.6) Product Single Share
+.product-single-share:not(.icon-with-color) {
+    margin-top: 6px;
+
+    .social-icon {
+        margin: 0.2857em 3px 0.2857em -1px;
+
+        &:not(:hover):not(:active):not(:focus) {
+            color: #fff;
+        }
+    }
+}
+
+// 1.2.7) Product Thumbnail
+.prod-thumbnail {
+    .owl-dot.active img, 
+    img:hover {
+        border-color: #fff;
+    }
+}
+
+// 1.2.8) Product Widget
+.product-widget {
+    .product-title {
+        font-family: $second-font-family;
+        color: #444;
+    }
+
+    .product-price {
+        color: #fff;
+    }
+}
+
+// 1.3) Product Single Tabs
+// 1.3.1) Product Tab Base
+.product-single-tabs {
+    .tab-pane {
+        color: #777;
+    }
+
+    .nav.nav-tabs {
+        .nav-link {
+            font-family: $second-font-family;
+            background-color: $primary-color-dark;
+
+            &.active {
+                color: #fff;
+            }
+
+            &:hover, 
+            &.active {
+                border-bottom-color: #fff;
+            }
+        }
+    }
+}
+
+.nav-tabs {
+    border-color: $border-color;
+
+    .nav-item .nav-link {
+        padding: 1.2rem 0 1.4rem;
+        letter-spacing: 0.005em;
+    }
+}
+
+// 1.3.2) Product Desc Tab
+.product-desc-content li:before {
+    color: #fff;
+}
+
+// 1.3.3) Product Info Tab
+.table.table-striped td, 
+.table.table-striped th {
+    padding: 1.1rem 1.2rem;
+    background-color: $bg-color;
+    border-top-color: $bg-color;
+}
+
+// 1.3.4) Product Review Tab
+.add-product-review {
+    label {
+        color: #fff;
+        font-family: $second-font-family;
+    }
+
+    h3 {
+        color: #fff;
+    }
+    
+    form {
+        background-color: #272b2f;
+    }
+}
+
+.product-reviews-content {
+    .comments {
+        .comment-block {
+            background-color: $bg-color;
+        }
+
+        .comment-arrow {
+            border-right: 15px solid $bg-color;
+        }
+    }
+
+    .required {
+        color: #fff;
+    }
+
+    .divider {
+        border-color: $border-color;
+    }
+}
+
+// 2. Shop Page
+//    2.1) Shop Base
+.products-group {
+    .product-default {
+        margin-bottom: 2.2rem;
+    }
+}
+
+.main .sticky-header.toolbox.fixed {
+    background-color: #272b2f;
+}
+
+.sidebar-toggle {
+    border-color: $bg-color;
+    background: $bg-color;
+    color: #fff;
+}
+
+// 2.2) Shop Component
+// 2.2.1) Shop Widget Base
+.widget .owl-carousel .owl-nav button {
+    &.owl-next, 
+    &.owl-prev {
+        color: #fff;
+    }
+}
+
+.sidebar-shop {
+    .main & .widget {
+        border: 0;
+    }
+
+    .widget {
+        padding: 0;
+        margin-bottom: 3rem;
+        font-family: $second-font-family;
+
+        &:last-child {
+            margin-bottom: 1.2rem;
+        }
+    
+        .owl-nav {
+            right: -2rem;
+            top: -3.9rem;
+        }
+    }
+    
+    .widget-title {
+        padding-bottom: .6rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.05em;
+        border-bottom: 1px solid #303438;
+        color: #fff;
+    
+        a:before, 
+        a:after {
+            top: 66%;
+            right: 3px;
+            background: #fff;
+        }
+    }
+    
+    .widget-body {
+        padding: 1.6rem 1.5rem .8rem;
+    }
+
+    .cat-list {
+        li {
+            font-size: 12px;
+            line-height: 1.6;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .products-count {
+            font-size: 12px;
+        }
+            
+        a {
+            font-weight: 400;
+        }
+    }
+    
+// 2.2.2) Shop Widget Size
+    .widget-size {
+        .cat-list {
+        li {
+            margin-bottom: 1.4rem;
+            font-size: 13px;
+        }
+    
+        a {
+            font-weight: 400;
+        }
+        }
+    
+        .widget-body {
+            padding-bottom: .7rem;
+            padding-top: 1.4rem;
+        }
+    }
+
+// 2.2.1.3) Shop Widget Featured
+    .product-widget {
+        .product-title {
+            margin-bottom: .5rem;
+        }
+    
+        .product-details {
+            margin-bottom: 4px;
+        }
+    }
+    
+// 2.2.1.4) Shop Widget Price
+    .widget-price {
+        .widget-body {
+            padding-top: 1.5rem;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.filter-price-action .btn {
+    padding: 4px 1.5rem 6px 1.5rem;
+}
+
+.noUi-base, 
+.noUi-connects {
+    background-color: $primary-color-dark;
+}
+
+.noUi-handle:focus {
+    outline: none;
+}
+
+// 2.2.1.3) Shop Widget Color
+.widget.widget-color {
+    .widget-body {
+        padding-bottom: 0;
+        margin-bottom: -0.3rem;
+    }
+
+    .config-swatch-list li {
+        margin-bottom: .9rem;
+        font-size: 1.2rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            margin-right: 1.7rem;
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+}
+
+.widget-featured-products {
+    figure {
+        height: 84px;
+    }
+}
+
+// 2.2.3) Toolbox and Pagination
+.toolbox {
+    .form-control,
+    label {
+        padding-bottom: 2px;
+        font-family: $second-font-family;
+    }
+
+    .form-control {
+        color: #999;
+    }
+
+    .select-custom {
+        .form-control {
+            background-color: #2e3237;
+        }
+        &::after {
+            font-size: 1.4rem;
+            color: #fff;
+            z-index: 1;
+        }   
+    }
+    
+}
+
+.toolbox-item.layout-modes {
+    margin-top: -3px;
+}
+
+.select-custom {
+    background: $bg-color;
+
+    .form-control {
+        border-color: $bg-color;
+    }
+}
+
+.layout-btn {
+    color: #fff;
+}
+
+.toolbox-pagination {
+    padding-bottom: 2.9rem;
+    margin-top: 1.4rem;
+    border-top: 1px solid #303438;
+}
+
+.page-item {
+    > .page-link {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        width: 33px;
+        height: 33px;
+    }    
+
+    &.active .page-link,
+    .page-link {
+        color: #fff;
+        background-color: $bg-color;
+    }
+
+    &:not(:hover):not(.active) .page-link {
+        border-color: $bg-color;
+    }
+}
+
+// 4. Responsive
+@media (max-width: 991px) {
+    .toolbox:not(.toolbox-pagination) {
+        background-color: #272b2f;
+    }
+
+    .toolbox label,
+    .select-custom .form-control,
+    .sidebar-toggle svg {
+        stroke: #fff;
+        color: #777;
+    }
+
+    .toolbox {
+        .select-custom .form-control,
+        label {
+            color: #777;
+        }
+    }
+
+    .mobile-sidebar {
+        background-color: #222529;
+    }
+
+    .toolbox .select-custom,
+    .sidebar-toggle span {
+        color: #fff;
+    }
+}

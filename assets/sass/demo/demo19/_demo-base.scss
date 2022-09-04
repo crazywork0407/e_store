@@ -1,0 +1,529 @@
+// Demo 19
+
+// Layout
+.container-fluid {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    max-width: none;
+}
+
+@include mq(md) {
+    body:not(.mmenu-active):not(.sidebar-opened) .page-wrapper {
+        margin-left: 80px;
+    }
+}
+
+// Header
+
+// Top Notice
+.top-notice {
+    padding: 1.6rem 0;
+    
+    h5 {
+        line-height: 18px;
+    }
+
+    a:hover,
+    a:focus {
+        text-decoration: underline;
+    }
+}
+
+// Header Elements
+// Main Nav
+.main-nav {
+    padding: 0 1.6rem;
+
+    .menu > li > a {
+        line-height: 20px;
+    }
+}
+
+// Header Icon
+.header-icon {
+    position: relative;
+
+    .badge-circle {
+        top: 0;
+        right: -7px;
+    }
+}
+
+.minicart-icon {
+    width: 22px;
+    height: 19px;
+
+    &:before {
+        top: -7px;
+        margin-left: -6.5px;
+        width: 13px;
+        height: 10px;
+    }
+}
+
+.badge-circle {
+    font-family: $second-font-family;
+    font-size: 1rem;
+}
+
+// Header Dropdown
+.dropdown-arrow {
+    &:after {
+        position: relative;
+        top: 6px;
+        margin-right: 0;
+        margin-left: 10px;
+        font-size: 17px;
+    }
+
+    .badge-circle {
+        top: -4px;
+    }
+}
+
+// Header Search
+.header-search {
+    margin-left: .6rem;
+}
+
+.search-toggle {
+    line-height: 26px;
+}
+
+// Responsive
+@include mq(sm, max) {
+    .header-search .form-control {
+        min-width: auto;
+    }
+}
+
+// Category List
+.main-container .container-fluid > .category-list {
+    background: $primary-color-dark;
+}
+
+.category-list-nav {
+    display: flex;
+
+    .nav-link {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+        transition: all 0.3s;
+        padding: 0;
+
+        &:after {
+            content: "";
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            display: none;
+            right: -15px;
+            top: 50%;
+            margin-top: -8px;
+            border: 8px solid transparent;
+            transition: all 0.3s;
+        }
+    }
+
+    li {
+        margin-right: 1rem;
+
+        &.green .nav-link {
+            &:hover, &.active {
+                background-color: #00d59d;
+
+                &:after {
+                    border-left-color: #00d59d;
+                }
+            }
+        }
+
+        &.orange .nav-link {
+            &:hover, &.active {
+                background-color: #f69a33;
+
+                &:after {
+                    border-left-color: #f69a33;
+                }
+            }
+        }
+
+        &.yellow .nav-link {
+            &:hover, &.active {
+                background-color: #cdd41b;
+
+                &:after {
+                    border-left-color: #cdd41b;
+                }
+            }
+        }
+
+        &.gray .nav-link {
+            &:hover, &.active {
+                background-color: #434444;
+
+                &:after {
+                    border-left-color: #434444;
+                }
+            }
+        }
+
+        &.lightblue .nav-link {
+            &:hover, &.active {
+                background-color: #2eacb3;
+
+                &:after {
+                    border-left-color: #2eacb3;
+                }
+            }
+        }
+    }
+}
+
+.cat-list-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    font-size: 27px;
+    line-height: 60px;
+}
+
+.cat-list-text {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    visibility: hidden;
+}
+
+// Responsive
+@include mq(md) {
+    .category-list-nav {
+        flex-direction: column;
+
+        li {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .nav-link{
+            &:after {
+                display: block;
+            }
+
+            &:hover .cat-list-text {
+                opacity: 1;
+                visibility: visible;
+                width: auto;
+                padding-right: 50px;
+            }
+        }
+    }
+
+    .main-container .container-fluid > .category-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 34px;
+        z-index: 1041;
+        width: 80px;
+
+        li {
+            margin-bottom: 1.6rem;
+            margin-right: 0;
+        }
+    }
+
+    .cat-list-icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .sticky-header.fixed {
+        left: 80px;
+        right: 0;
+        width: auto;
+    }
+}
+
+// Product Default
+.product-default.inner-icon {
+    position: relative;
+    margin-bottom: 2.4rem;
+    
+    figure .btn-icon-group {
+        z-index: 2;
+    }
+
+    .product-title {
+        letter-spacing: -.01em;
+    }
+	
+	.product-details {
+		padding: 0;
+	}
+
+	.category-list {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		width: calc( 100% - 20px );
+	}
+
+	.btn-icon-wish, 
+	.btn-quickview {
+		top: auto;
+	}
+
+	.btn-icon-wish {
+        background: transparent;
+		left: auto;
+        right: 0;
+        margin-top: -4px;
+        font-size: 1.6rem;
+	}
+
+	&:not(.product-widget):hover {
+		box-shadow: none;
+
+		figure {
+			box-shadow: 0 25px 35px -5px rgba(0, 0, 0, 0.1);
+		}
+
+		.img-effect a:first-child::after {
+			opacity: 1;
+		}
+
+		figure .btn-quickview {
+			padding-top: 1.2rem;
+			padding-bottom: 1.3rem;
+		}		
+    }
+}
+
+.ratings-container {
+    margin-left: 0;
+}
+
+.product-price {
+    color: #444;
+}
+
+.old-price {
+    color: #a7a7a7;
+}
+
+.price-box {
+    margin-bottom: 1.6rem;
+}
+
+.product-countdown-container .product-countdown-amount {
+    font-weight: 500;
+}
+
+// inner-quickview
+.inner-quickview {
+	figure {
+		.btn-quickview {
+			padding: .8rem 1.4rem;
+			transition: padding-top .2s, padding-bottom .2s;
+			line-height: 1.82;
+			z-index: 2;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	.category-wrap .btn-icon-wish {
+		font-size: 1.6rem;
+		padding-top: 1px;
+	}
+}
+
+// Top Border
+.top-border:before {
+	content: '';
+	display: block;
+	flex: 0 0 100%;
+	border-top: 1px solid #e7e7e7;
+}
+
+// Breadcrumb
+.breadcrumb-item a {
+    &:hover,
+    &:focus {
+        color: inherit;
+        text-decoration: underline;
+    }
+}
+
+// Footer
+
+// 1. Footer Top
+.footer {
+	line-height: 1.4;
+
+	.social-icons {
+		margin-right: 2px;
+	}
+}
+
+.footer-top {
+	.container-fluid {
+		&:after {
+			content: '';
+			display: block;
+			flex: 0 0 100%;
+			border-top: 1px solid #e7e7e7;
+			margin-top: 5.2rem;
+		}
+
+		&:not(.top-border),
+		&.top-border:before {
+			padding-top: 5.2rem;
+		}
+	}
+
+	form {
+		margin: 0;
+	}
+
+	button {
+	    padding: .7em 2.5em .6em;
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+	.form-control {
+        padding: 1.25em 1em;
+        min-width: 1px;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		border: none;
+		color: $body-text;
+		background-color: #f4f4f4;
+		font-family: $font-family;
+		font-size: 1.2rem;
+
+		&::placeholder {
+			color: #999;
+		}
+
+		&:focus,
+		&:active {
+			background-color: #f4f4f4;
+		}
+	}
+}
+
+.widget-newsletter-info {
+	margin-right: 4.8rem;
+}
+
+.widget-newsletter-title {
+    font-size: 1.6rem;
+}
+
+p.widget-newsletter-content {
+    font-size: 1.4rem;
+    line-height: 24px;
+}
+
+// 2. Footer Middle
+
+.footer-middle {
+	.logo {
+		margin-bottom: 4rem;
+		margin-right: 0;
+	}
+
+	.links {
+		line-height: 2.4rem;
+	}
+}
+
+footer {
+	.widget-title {
+	    line-height: 1.4;
+	}
+}
+
+.widget-account {
+	padding: 0 7rem;
+}
+
+footer .payment-icons .payment-icon {
+	border-radius: 0;
+}
+
+footer .contact-widget {
+	margin: 0 0 .8rem;
+
+	.widget-title {
+        font-family: $font-family;
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: 0;
+	}
+
+	a {
+		display: block;
+	}
+}
+
+// 3. Footer Bottom
+.footer-bottom {
+	.container-fluid {
+		&:not(.top-border),
+		&.top-border:before {
+			padding-top: 1.2rem;
+		}
+	}
+}
+
+// Responsive
+
+@include mq(lg, max) {
+	footer .widget-newsletter {
+		margin-bottom: 2rem;
+	}
+
+	footer .widget {
+		margin-bottom: 3rem;
+	}
+}
+
+@include mq(md, max) {
+	.widget-newsletter-info {
+		margin-bottom: 1.5rem;
+	}
+
+	.widget-newsletter .form-control {
+		max-width: 70%;
+	}
+
+	.footer-top {
+		.form-control,
+		button {
+			height: 40px;
+		}
+	}
+}

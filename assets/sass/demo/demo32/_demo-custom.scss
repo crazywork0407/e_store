@@ -1,0 +1,551 @@
+// Pages
+
+// # Content
+// # Variables
+// 1. Product Page
+//    1.1) Product Base
+//    1.2) Product Component
+//         1.2.1) Product Single Details
+//         1.2.2) Product Sidebar
+//                1.2.2.1) Widget
+//                1.2.2.2) Widget Banner
+//         1.2.3) Product Single Tabs
+
+// 2. Shop Page
+//    2.1) Shop Base
+//    2.2) Shop Component
+//         2.2.1) Shop Sidebar
+//                2.2.1.1) Widget Base
+//                2.2.1.2) Widget Size
+//                2.2.1.3) Widget Price
+//                2.2.1.4) Widget Brand
+//                2.2.1.5) Widget Color
+//         2.2.2) Shop Category Banner
+//         2.2.3) Toolbox and Pagination
+
+// 3. Responsive
+
+// # Variables
+@include set-default(
+	(
+		category: (
+			sidebar: (
+				padding: 2.1rem 2rem 2rem
+			)
+		)
+	)
+);
+
+// 1. Product Page
+// 1.1) Product Base
+.products-section {
+  margin-top: 2.8rem;
+  padding-bottom: 1.5rem;
+
+  h2 {
+      margin-bottom: 2.4rem;
+      font-size: 1.5rem;
+  }
+
+  .owl-carousel.dots-top .owl-dots {
+      margin-bottom: 2.5rem;
+
+    span {
+        border-color: rgba(98,88,66,.4);
+    }
+  }
+}
+
+.products-group {
+  .product-default {
+    margin-bottom: 2.3rem;
+  }
+}
+
+//1.2.1) Product Single Details
+.product-single-filter {
+	label {
+	  margin-right: 1.7rem;
+  }
+  
+  .config-size-list li a {
+    font-weight: 400;
+  }
+}
+
+// 1.2.2) Product Sidebar
+.sidebar-product {
+// 1.2.2.1) Product Widget
+  .widget:not(:last-child):not(.widget-info) {
+      margin-bottom: 4.8rem;
+      border-bottom: 1px solid rgba(34,37,41,0.07);
+  }
+
+  .product-category img {
+    max-height: 260px;
+    object-fit: cover;
+  }
+
+  .widget-subtitle {
+    margin-bottom: 1.5rem;
+    color: $primary-color-dark;
+  }
+
+  .widget-title {
+      padding: .5rem 0 .8rem;
+      font-size: 1.2rem;
+      line-height: 1.3;
+      border-bottom: 1px solid rgba(34,37,41,0.07);
+      text-transform: uppercase;
+      
+      a {
+          color: $primary-color-dark;
+
+          &::after {
+            display: none;
+          }
+      }
+  }
+
+  .widget-body {
+      padding-top: 1.6rem;
+
+      p {   
+        line-height: 24px;
+        font-weight: 400;
+      }
+  }
+  
+// 1.2.2.2) Product Widget Banner
+  .product-category {
+    h3 {
+      font-size: 2.8rem;
+    }
+
+    .category-content {
+      left: 62%;
+      right: 0;
+      width: auto;
+    }
+  }
+}
+
+// 1.2.3) Product Single Tabs
+.product-single-tabs {
+  .nav.nav-tabs .nav-link {
+      font-family: $second-font-family;
+  }
+}
+
+.nav-tabs .nav-item .nav-link {
+  padding: 1.1rem 0 1.3rem;
+}
+
+// 2. Shop Page
+// 2.1) Shop Base
+.sidebar-shop {  
+  .main & .widget {
+        border: 0;
+    }
+
+    .header-bottom {
+        padding-top: 1.3rem;
+        padding-bottom: 3.1rem;
+    }
+
+// 2.2) Shop Component
+// 2.2.1) Shop Sidebar
+// 2.2.1.1) Shop Widget Base
+    .widget {
+        padding-top: 2.1rem;
+        padding-bottom: 2.3rem;
+        font-family: $second-font-family;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #e7e7e7;
+        }
+
+        &:last-child {
+            margin-bottom: 1.2rem;
+        }
+    
+        .owl-nav {
+        top: -3.9rem;
+        }
+    }
+    
+    .widget-title {
+        padding-bottom: .7rem;
+        font-size: 1.2rem;
+        border-bottom: 1px solid rgba(34,37,41,.07);
+    
+        a:before, 
+        a:after {
+          top: 55%;
+          right: 0px;
+        }
+    }
+    
+    .widget-body {
+      padding: 2.3rem 1.6rem 0px;
+    }
+
+    .cat-list {
+        li {
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .products-count {
+            font-size: 12px;
+        }
+            
+        a {
+            font-weight: 400;
+        }
+    }
+
+  // 2.2.1.2) Shop Widget Size
+    .widget-size {
+      li {
+        font-size: 13px;
+
+        &:not(:last-child) {
+          margin-bottom: 1.4rem;
+        }
+      }
+
+      a {
+        font-weight: 400;
+      }
+    
+      .widget-body {
+          padding-top: 2.3rem;
+      }
+    }
+
+    .widget-size,
+    .widget-brand li {
+      font-size: 13px;
+    }
+    
+// 2.2.1.3) Shop Widget Price
+    .widget-price {
+        .widget-body {
+            padding: 2.3rem 0 0 1.6rem;
+        }
+    }
+}
+
+.filter-price-action .btn {
+    padding: 5px 1.5rem 6px 1.5rem;
+}
+
+// 2.2.1.4) Shop Widget Brand
+.widget-size,
+.widget-brand {
+  .cat-list li:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+}
+
+// 2.2.1.5) Shop Widget Color
+.widget.widget-color {
+    .widget-body {
+      padding-top: 1.5rem;
+      padding-bottom: .4rem;
+    }
+
+    .config-swatch-list li {
+        margin-bottom: .9rem;
+        font-size: 1.2rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            margin-right: 1.7rem;
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+}
+
+// 2.2.2) Shop Category Banner
+.banner-cat {
+  position: relative;
+  height: 289px;
+
+  .slide-content {
+    position: static;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: none;
+    margin-left: auto;
+    width: auto;
+
+    .content-left,
+    .image-info-group {
+      margin: 1rem 4.8rem 1rem 3.6rem;
+    }
+
+    .divide-txt {
+      margin-bottom: 1.4rem;
+
+      span {
+        font-size: 1.7rem;
+      }
+
+      .divide-line:last-child {
+        margin-left: 8px;
+      }
+    } 
+
+    h2 {
+      margin-bottom: 4px;
+      font-size: 3.8em;
+      letter-spacing: .015em;
+    }
+
+    h3 {
+      font-size: 9.433rem;
+    }
+
+    .btn {
+      padding: .83em 2.93em;
+      margin: 0;
+      letter-spacing: 0;
+      font-size: 1.23em;
+      font-weight: 700;
+      border-width: 4px;
+      &:not(:hover):not(.active):not(:focus) {
+        color: $primary-color-dark;
+      }
+    }
+  }
+}
+
+// 2.2.3) Toolbox and Pagination
+.toolbox {
+  .form-control,
+  label {
+      padding-bottom: 2px;
+      font-family: $second-font-family;
+  }
+
+  .select-custom:after {
+    right: 1.4rem;
+  }
+}
+
+.toolbox-pagination {
+  padding-bottom: 1.1rem;
+  margin-top: 1.4rem;
+}
+
+.page-item {
+  > .page-link:not(span) {
+      display: flex;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      width: 33px;
+      height: 33px;
+      border: 1px solid #ccc;
+  }    
+}
+
+// 3. Responsive
+@media (min-width: 992px) {
+  .container-fluid {
+      max-width: 100%;
+      padding: 0px 3.15%;
+  }
+
+  .sidebar-shop {
+    .category-widget {
+      background-color: #ededea;
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .main:not(.home) {
+      .container {
+          max-width: 1121px;
+      }
+  }
+}
+
+@media (min-width: 1200px){
+  .main:not(.home) {
+    .col-xl-2cols {
+      -ms-flex: 0 0 21%;
+      flex: 0 0 21%;
+      max-width: 21%;
+    }
+
+    .col-xl-8cols {
+      -ms-flex: 0 0 58%;
+      flex: 0 0 58%;
+      max-width: 58%;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .main:not(.home) {
+    .col-xl-2cols {
+      -ms-flex: 0 0 16.18%;
+      flex: 0 0 16.18%;
+      max-width: 16.18%;
+    }
+
+    .col-xl-8cols {
+      -ms-flex: 0 0 67.64%;
+      flex: 0 0 67.64%;
+      max-width: 67.64%;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .banner-cat {
+    background-position: left;
+
+    .slide-content {
+      justify-content: center;
+  
+      h2 {
+        font-size: 3rem;
+      }
+  
+      h3 {
+        font-size: 5rem;
+      }
+    } 
+  }
+}
+
+@media (max-width: 1400px) {
+  .filter-price-action .filter-price-text {
+    margin: .5rem 0;
+  }
+
+  .product-single-container:not(.product-quick-view) {
+    .col-md-6 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .toolbox .select-custom .form-control {
+    max-width: 140px;
+  }
+
+  .sidebar-shop {
+    .sidebar-wrapper {
+      position: static !important;
+    }
+  }
+
+  .sidebar-opened {
+    .sticky-navbar.fixed,
+    .page-wrapper {
+      left: 0;
+    }
+  
+    .sticky-header {
+      &.fixed {
+        left: 0;
+
+        &:not(.sticky-header) {
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .mmenu-active {
+    .page-wrapper,
+    .sticky-header.fixed,
+    .sticky-navbar.fixed  {
+      left: 0;
+    }
+  }
+
+  .sidebar-product {
+    padding-top: 1.9rem;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .sidebar-shop, 
+  .sidebar-product {
+    padding-bottom: 0;
+  }
+
+  .sidebar-shop {
+    order: 1;
+  }
+
+  .main:not(.home) {
+    flex-direction: column;
+
+    .container {
+      max-width: 100%;
+    }
+  }
+
+  .sidebar-product {
+    .product-category {
+      h3 {
+        font-size: 7rem;
+      }
+
+      .category-content {
+        left: 55%;
+      }
+    }
+
+    .widget:last-child {
+      padding-bottom: 4.3rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-cat {
+    padding: 4rem 0rem;
+    background-position: left;
+
+    .slide-content {
+      justify-content: center;
+    }
+  }
+
+  .toolbox .select-custom .form-control {
+    max-width: 125px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-product {
+    .product-category {
+      h3 {
+        font-size: 4rem;
+      }
+
+      .category-content {
+        left: 60%;
+      }
+    }
+  }
+}

@@ -1,0 +1,474 @@
+// Demo 32
+
+// Home
+// # Content
+// 1. Home Base
+// 2. Home Sections
+//    2.1) Top Slider
+//    2.2) Info Section
+//    2.3) Category Section
+//    2.4) Best Seller Section
+//    2.5) Partners
+// 3 Responsive
+
+// Home
+// 1. Home Base
+.section-title {
+  strong {
+    font-weight: 600;
+  }
+}
+
+.divide-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+
+  .divide-line {
+    flex: 1;
+    height: .8rem;
+    background-image: url('../images/demoes/demo32/banners/divider_line.png');
+    background-size: contain;
+
+    &:first-child {
+      margin-right: 1.6rem;
+    }
+
+    &:last-child {
+      margin-left: 1.6rem;
+    }
+  }
+
+  &.no-txt .divide-line {
+    margin: 0;
+  }
+}
+
+main.home {
+  padding-top: 48px;
+
+  section {
+    padding-bottom: 2.6rem;
+    margin-bottom: 5.1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+
+    &.no-border {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  .best-product-section {
+    padding-bottom: 1.9rem;
+    margin-bottom: 4.8rem;
+  }
+  
+  .category-section {
+    padding-bottom: 4.6rem;
+  }
+
+  .info-section {
+    margin-bottom: 4.7rem;
+  }
+
+  .section-title {
+    margin: 0 20% 3.1rem;
+
+    span {
+      font-size: 2.6rem;
+      color: $primary-color-dark;
+      font-weight: 300;
+      line-height: 1.15;
+    }
+  }
+
+  .section-subtitle {
+    margin-top: 2px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #777;
+    text-align: center;
+    text-transform: none;
+  }
+}
+
+// 2. Home Sections
+// 2.1) Top Slider
+// 2.1.1) Owl Nav
+.top-slider .owl-nav {
+  position: absolute;
+  right: 3.95%;
+  bottom: 6.5%;
+  font-size: 2.4rem;
+
+  button.owl-prev,
+  button.owl-next {
+    top: auto;
+    transform: none;
+    left: auto;
+    position: relative;
+  }
+
+  button.owl-prev {
+    margin-right: 3rem;
+  }
+
+  button.owl-next {
+    right: 1rem;
+  }
+}
+
+// 2.1.2) Home Slide
+.home-slide {
+  background-size: cover;
+  height: calc(100vh - 48px);
+  min-height: 556px;
+  background-position: center;
+
+  &:before,
+  &:after {
+    display: none;
+  }
+
+  .content-right {
+    h3 {
+      margin-bottom: 1.6rem;
+      font-size: 6.6em;
+    }
+
+    h2 {
+      margin-bottom: 2px;
+      font-size: 5.4em;
+    }
+
+    h5 {
+      margin-right: 2.3rem;
+    }
+
+    .btn {
+      margin-top: .6rem;
+      padding: .89em 2.92em .83em;
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.slide-content {
+  width: fit-content;
+  position: absolute;
+  font-family: $font-family;
+  color: $primary-color-dark;
+
+  .divide-txt {
+    margin-bottom: 2.7rem;
+  }
+
+  .image-info-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .divide-txt span {
+    font-size: 2.2rem;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    color: #777;
+  }
+
+  h2 {
+    margin-bottom: 1px;
+    margin-top: 12px;
+    font-size: 4.9em;
+    font-family: "Segoe Script";
+    font-weight: 700;
+    align-self: center;
+    text-transform: capitalize;
+    line-height: 1;
+    letter-spacing: 0.005em;
+  }
+
+  h3 {
+    margin-bottom: 3px;
+    font-size: 8.6em;
+    font-weight: 700;
+    align-self: center;
+    line-height: 1;
+    letter-spacing: .005em;
+  }
+
+  h5 {
+    margin-right: 4.6rem;
+    font-size: 1.7rem;
+
+    span {
+      margin-left: 12px;
+      color: #9d8d6c;
+      font-size: 3.8rem;
+      vertical-align: -webkit-baseline-middle;
+
+      sup {
+        font-size: 1.8rem;
+        top: -0.8em;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 1.3rem;
+    padding: .95em 2.99em .9em;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    background-color: transparent;
+    border: 4px solid #222529;
+    color: $primary-color-dark;
+
+    &:hover {
+      background-color: $primary-color-dark;
+      color: #fff;
+    }
+  }
+
+  &.content-left {
+    padding-bottom: 5px;
+    left: calc(10% + 239px);
+  }
+
+  &.content-right {
+    left: 54.15%;
+    top: 52.1%;
+  }
+}
+
+// 2.2) Info Section
+.info-section {
+  >div {
+    background-color: #ededea;
+
+    &:not(:last-child) {
+      border-right: 1px solid #fff;
+    }
+  }
+}
+
+.info-box {
+  padding: 3.2rem 2.4rem;
+
+  i {
+    margin-right: 1.5rem;
+    font-size: 3.7rem;
+  }
+
+  .icon-shipping {
+    margin-top: -2px;
+    font-size: 3.5rem;
+  }
+
+  h4 {
+    margin-bottom: 1px;
+  }
+
+  p {
+    color: #666;
+  }
+}
+
+// 2.3) Category Section
+.product-category { 
+  figure {
+    overflow: hidden;
+  }
+
+  img {
+    border-radius: 0;
+    transition: all .25s;
+    width: 100%;
+  }
+
+  figure:after {
+    display: none;
+  }
+
+  &:hover {
+    figure img {
+      transform: scale(1.2); 
+    }
+  }
+
+  .category-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    h3 {
+      width: 100%;
+      font: 700 6rem/1.2 "Segoe Script";
+      text-transform: none;
+      margin-bottom: 0;
+      letter-spacing: normal;
+    }
+
+    &.content-right {
+      left: 58%;
+      width: 40%;
+    }
+
+    &.content-white {
+      h3 {
+        color: #fff;
+        font-size: 3.2rem;
+      }
+    }
+  }
+}
+
+// 2.4) Best Seller Section
+.product-panel.owl-theme .owl-nav {
+  button.owl-prev {
+    top: 40%;
+    left: -3%;
+    font-size: 2.6rem;
+  }
+
+  button.owl-next {
+    top: 40%;
+    right: -3%;
+    font-size: 2.6rem;
+  }
+}
+
+// 2.5) Partners
+.partners-carousel.owl-carousel {
+  margin-bottom: 4.8rem;
+
+  img {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+// 3 Responsive
+@media (max-width: 1400px) {
+  .info-section {
+    .info-box {
+      padding: 3rem 1rem 2.9rem;
+
+      p {
+          font-size: 1.2rem;
+      }
+
+      i {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .home-slide {
+    font-size: 1.2rem;
+  }
+  
+  .product-panel.owl-theme {
+    .owl-nav {
+      display: none;
+    }
+
+    .owl-dots {
+      display: block;
+    }
+  }
+
+  .info-section {
+    >div:nth-child(2n) {
+      border: 0;
+    }
+
+    .info-box {
+      border-bottom: 1px solid #fff;
+      justify-content: flex-start;
+    }
+  }
+
+  .slide-content.content-right {
+    right: 5%;
+    left: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  main.home {
+    padding-top: 0;
+  }
+
+  .home-slide {
+    height: 100vh;
+  }
+
+  .slide-content.content-left {
+    left: 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  main.home .section-title {
+    margin: 0 0 3rem;
+  }
+
+  .slide-content .btn {
+    padding: .6em 1.9em .6em;
+  }
+
+  .home-slide2 {
+    font-size: .9rem;
+
+    .slide-content.content-right {
+      right: 10%;
+    }
+  }
+
+  .info-section {
+    >div:not(:last-child) {
+      border-right: 0;
+    }
+  }
+
+  .slide-content {
+    &.content-right,
+    &.content-left {
+      max-width: 90%;
+    }
+
+    .image-info-group {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-size: 6rem;
+    }
+
+    h5 {
+      margin: 1rem 0; 
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .product-category .category-content h3 {
+    font-size: 4rem;
+  }
+
+  main.home .section-subtitle {
+    font-size: 1.2rem;
+  }
+}

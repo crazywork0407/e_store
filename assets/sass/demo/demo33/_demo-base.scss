@@ -1,0 +1,528 @@
+// Header
+
+// # Contents
+// 1. Header Base
+.header-middle {
+	padding-top: 3.6rem;
+	padding-bottom: 3.7rem;
+	border-bottom: 1px solid #e7e7e7;
+
+	.icons-group {
+		align-items: center;
+	}
+
+	.header-icon i, 
+	.dropdown-toggle i {
+		font-size: 2rem;
+	}
+
+	.header-icon i {
+		&.icon-wishlist-2 {
+			margin-top: 4px;
+		}
+
+		&.icon-magnifier {
+			margin-top: 5px;
+			font-size: 1.7rem;
+		}
+	}
+}
+
+.header-align-center {
+	.header-left,
+	.header-right {
+		flex: 1;
+		-ms-flex: 1;
+	}
+
+	.header-right{ 
+		justify-content: flex-end;
+		-ms-flex-pack: end;
+	}
+}
+
+.header-top {
+	padding-top: 1rem;
+	padding-bottom: .9rem;
+	border-bottom: 1px solid #eee;
+	color: #fff;
+	background-color: $primary-color-dark;
+	font-size: 1.1rem;
+	font-weight: 400;
+	letter-spacing: .025em;
+	line-height: 1.5;
+
+	a {
+		color: inherit;
+	}
+
+	h6 {
+		font-size: 1.4rem;
+		letter-spacing: 0;
+	}
+}
+
+header {
+	.social-icons {
+		margin-right: 2px;
+	}
+	
+	.social-icon+.social-icon {
+		margin-left: 6px;
+	}
+
+	.separator {
+		margin-right: 1.7rem;
+		margin-left: 1.9rem;
+	}
+}
+
+.header-dropdown+.header-dropdown {
+    margin-left: 1.4rem;
+}
+
+//custom header
+.top-notice {
+	padding: 0;
+	letter-spacing: 0;
+}
+
+.header-bottom:not(.fixed) .header-left, 
+.header-bottom:not(.fixed) .header-right {
+	display: flex;
+	align-items: center; 
+	padding-right: 0;
+}
+
+.sticky-header .cart-dropdown {
+	margin-top: -8px;
+}
+
+.dropdown-arrow {
+	.badge-circle {
+		top: 1rem;
+		left: 1.6rem;
+		color: #333;
+		background-color: transparent;
+	}
+	
+	&::after {
+		display: none;
+	}
+}
+
+.logo {
+	max-width: 101px;
+}
+
+.main-nav .menu>li>a {
+	padding: 2rem 0;
+}
+
+.footer .logo {
+	display: inline-block;
+	max-width: 115px;
+
+	img {
+		height: 46px;
+	}
+}
+
+.header-search-wrapper {
+	height: auto;
+
+	.btn::before {
+		margin-top: 0;
+		margin-right: 5px;
+	}
+}
+
+.header-search-inline .form-control {
+    min-width: 23rem;
+    padding: 1.2rem 2rem;
+}
+
+// 2. Header Elements
+
+// 2.1) Telephone
+
+.telephone {
+	color: inherit;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+// 2.4) Header Dropdown - Switcher
+.header-dropdown.switcher {
+	padding: 1.2rem 0;
+
+	ul:before {
+		content: normal;
+	}
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	> a {
+		padding: 1.2rem 2.4rem;
+		color: $primary-color-dark;
+		background-color: #f4f4f4;
+		border-radius: 5rem;
+	}
+
+	.header-menu {
+		font-size: 1.2rem;
+
+		&::before {
+			display: none;
+		}
+	}
+}
+
+// 2.6) Wishlist Icon & Cart Dropdown
+.header-icon,
+.cart-count {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.header-icon,
+.dropdown-toggle {
+	i {
+		font-size: 2rem;
+
+		&:before {
+			vertical-align: bottom;
+		}
+	}
+}
+
+.header-icon {
+	&:not(:last-child) {
+		margin-right: 2.3rem;
+	}
+
+	i {
+		display: inline-block;
+		transform: translate(1px, -2px);
+	
+		&.icon-wishlist-2 {
+			margin-top: -3px;
+			font-size: 1.8rem;
+		}
+	}
+}
+
+.dropdown-cart-header a {
+	color: #000;
+}
+
+.header-bottom .header-right {
+	margin-right: 1.35rem;
+}
+
+.header-bottom.sticky-header .header-right {
+	margin-right: 0;
+	padding-right: 1.3rem;
+}
+
+//custom breadcrumb
+.breadcrumb-item a {
+	letter-spacing: 0;
+	color: #777;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: 1.4rem;
+}
+
+// Responsive
+@include mq(lg, max) {
+	.header-mobile-merge {
+		display: flex;
+		display: -ms-flexbox;
+		align-items: center;
+		-ms-flex-align: center;
+
+		.header-middle {
+			flex: 1;
+			-ms-flex: 1;
+			border: 0;
+
+			.container {
+				padding-right: 0;
+			}
+		}
+	}
+
+	.header-middle {
+		border-bottom-color: transparent;
+	}
+
+	.header-search i {
+		display: inline-block;
+		margin-top: .7rem;
+		margin-right: 2rem;
+		font-size: 1.9rem;
+	}
+
+	.header-icon i.icon-wishlist-2,
+	.header-middle .dropdown-toggle i {
+		font-size: 2.4rem;
+	}
+}
+
+@include mq(sm, max) {
+	.header-middle .header-search {
+		display: none;
+	}
+}
+
+// Footer
+// # Contents
+// 1. Footer Base
+// 2. Footer Elements
+// 2.1) Social Icon
+// 2.2) Scroll Top Button
+// 3. Footer Widget
+// 3.1) Footer Widget Title
+// 3.2) Footer Widget Link
+
+// # Variables
+@include set-default(
+	(
+		footer: (
+			color: false,
+			background: false,
+			link-color: false,
+			link-active-color: false,
+			line-height: 24px,
+			letter-spacing: false,
+
+			top: (
+				color: false,
+				background: false,
+				border-top: false,
+				padding-top: false,
+				padding-bottom: false
+			),
+			middle: (
+				color: false,
+				background: false,
+				border-top: false,
+				padding-top: false,
+				padding-bottom: false
+			),
+			bottom: (
+				font-size: false,
+				color: false,
+				background: false,
+				border-top: false,
+				padding-top: false,
+				padding-bottom: false
+			),
+
+			widget: (
+				title: (
+					color: false,
+					size: 1.6rem,
+					weight: 600,
+					family: false,
+					transform: uppercase,
+					margin: 0 0 1.7rem
+				),
+
+				link: (
+					space: false
+				)
+			),
+
+			social-icon: (
+				color: false,
+				background: transparent,
+				font-size: 1.8rem,
+				size: 4rem,
+				space: false,
+				border: false
+			),
+
+		)
+	)
+);
+
+// 1. Footer Base
+
+footer {
+	// Footer's color, font-size
+	font-size: $footer-font-size;
+	@include css( color, footer, color );
+	@include css( background, footer, background );
+	@include css( line-height, footer, line-height );
+	@include css( letter-spacing, footer, letter-spacing );
+
+	.container {
+		position: relative;
+	}
+
+	p {
+		color: inherit;
+	}
+}
+
+// Link Color
+@if ( get( footer, link-color ) ) {
+	.footer a {
+		color: get( footer, link-color );
+	}
+} @else {
+	footer a {
+		color: inherit;
+	}
+}
+
+footer {
+	a:hover,
+	a:focus {
+		@include css( color, footer, link-active-color);
+	}
+}
+
+.footer {
+	&-top {
+		@include css( color, footer, top, color );
+		@include css( background, footer, top, background );
+		@include css( border-top, footer, top, border-top );
+		@include css( padding-top, footer, top, padding-top );
+		@include css( padding-bottom, footer, top, padding-bottom );
+
+	}
+
+	&-middle {
+		@include css( color, footer, middle, color );
+		@include css( background, footer, middle, background );
+		@include css( border-top, footer, middle, border-top );
+		@include css( padding-top, footer, middle, padding-top );
+		@include css( padding-bottom, footer, middle, padding-bottom );
+	}
+
+	&-bottom {
+		@include css( font-size, footer, bottom, font-size );
+		@include css( color, footer, bottom, color );
+		@include css( background, footer, bottom, background );
+		@include css( border-top, footer, bottom, border-top );
+		@include css( padding-bottom, footer, bottom, padding-bottom );
+
+		@if ( get( footer, bottom, border-top-inner ) ) {
+			.container:before {
+				content: '';
+				display: block;
+				flex: 0 0 100%;
+				-ms-flex: 0 0 100%;
+				border-top: get( footer, bottom, border-top-inner );
+				@include css( padding-top, footer, bottom, padding-top );
+			}
+		} @else {
+			@include css( padding-top, footer, bottom, padding-top );
+		}
+	}
+}
+
+footer {
+// 2. Footer Elements
+// 2.2) Footer Widget
+	.widget {
+		margin-bottom: 3rem;
+	}
+
+	.widget-title {
+		@include css(color, footer, widget, title, color);
+		@include css(font-size, footer, widget, title, size);
+		@include css(font-weight, footer, widget, title, weight);
+		@include css(font-family, footer, widget, title, family);
+		@include css(text-transform, footer, widget, title, transform);
+		@include css(margin, footer, widget, title, margin);
+	}
+
+	.links li {
+		@include css(margin-bottom, footer, widget, link, space);
+	}
+
+// 2.3) Tag Cloud
+	.tagcloud a {
+		padding: .6em;
+		margin: 0 .8rem .8rem 0;
+		border: 1px solid #313438;
+		color: inherit;
+		font-size: 11px;
+		background: transparent;
+
+		&:hover {
+			border-color: #fff;
+			background: transparent;
+		}
+	}
+
+// 2.4) Contact Info
+	.contact-info {
+		margin: 0;
+		padding: 0;
+
+		li {
+			position: relative;
+			margin-bottom: 1rem;
+			line-height: 1.4;
+		}
+	}
+
+	.contact-info-label {
+		display: block;
+		@include css( color, footer, widget, title, color );
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 1px;
+	}
+}
+
+.footer-bottom {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	.social-icons {
+		margin-right: 2px;
+	}
+
+	.social-icon {
+		font-size: 1.4rem;
+		width: 3rem;
+		height: 3rem;
+	}
+
+	.social-icon+.social-icon {
+		margin-left: 4px;
+	}
+}
+
+.footer-middle {
+	margin-bottom: -1px;
+
+	.logo {
+		margin-bottom: 1.3rem;
+	}
+
+	p {
+		margin-bottom: 2.4rem;
+	}
+
+	h6 {
+		font-size: 1.4rem;
+	}
+
+	.widget {
+		margin-top: 1px;
+	}
+}

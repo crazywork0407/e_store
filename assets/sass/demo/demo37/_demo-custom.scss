@@ -1,0 +1,83 @@
+// Pages
+
+// 1. Shop
+//    1.1) Shop Base
+//    1.1) Shop Element
+//         1.1.1) Widget
+//         1.1.2) Toolbox and Pagination
+
+// 2. Product
+//    2.1) Product Single Base
+//    2.2) Product Single Tab
+
+// 3. Responsive
+
+// 1. Shop
+// 1.1) Shop Base
+.products-group {
+    .product-default {
+        margin-bottom: 2.3rem;
+    }
+}
+
+// 1.1) Shop Element
+.sidebar-shop {
+
+// 1.1.1) Widget
+    .widget {
+        .owl-carousel .owl-nav {
+            right: -7px;
+        }
+    }
+
+    .widget-body {
+        padding: 1.6rem 0 .6rem;
+    }
+}
+
+// 1.1.2) Toolbox and Pagination
+.toolbox {
+    .form-control,
+    label {
+        padding-bottom: 2px;
+        font-family: $second-font-family;
+    }
+}
+
+.page-item {
+    > .page-link:not(span) {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        width: 33px;
+        height: 33px;
+        border: 1px solid #ccc;
+    }   
+}
+
+// 2. Product
+// 2.1) Product Single Base
+.products-section {
+    h2 {
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    .owl-carousel.dots-top .owl-dots {
+        margin-bottom: 2.5rem;
+    }
+}
+
+// 2.2) Product Single Tab
+.product-single-tabs .nav.nav-tabs {
+    margin-bottom: 1px;
+
+    .nav-link {
+        padding: 1.1rem 0 1.3rem;
+        margin-right: 0;
+        font-size: 1.3rem;
+        font-family: $second-font-family;
+    }
+}

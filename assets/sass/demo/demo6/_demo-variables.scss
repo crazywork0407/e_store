@@ -1,0 +1,215 @@
+
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$primary-color: #ff7272;
+$secondary-color: #222529;
+// Skin / Font Family
+$font-family: Poppins, sans-serif;
+$second-font-family: Poppins, sans-serif;
+
+// Skin / Shop Page Font Family
+$shop-font-family: Poppins, sans-serif;
+$shop-second-font-family: Poppins, sans-serif;
+
+// 2. Theme Settings
+$dot-border: #222529;
+$dot-border-active: #222529;
+$dot-width: 18px;
+$dot-height: 18px;
+// 3. Theme Variables
+$border-color: #e7e7e7;
+
+@include set(
+	(
+		body: (
+			background: #fff
+		),
+		layout: (
+			container: (
+				max-width-desktop: 1160px
+			)
+		),
+		header: (
+			link-color: inherit,
+
+			top: (
+				color: #777777,
+				font-size: 1.1rem,
+				font-weight: 600,
+				letter-spacing: .025em,
+			),
+
+			middle: (
+				padding-top: 2.5rem,
+				padding-bottom: 2.5rem,
+				color: $secondary-color,
+				sticky: (
+					height: 60px
+				)
+			),
+
+			bottom: (
+				color: $secondary-color
+			),
+
+			dropdown: (
+				space: 1.6rem,
+				font: (
+					size: 1.2rem,
+					weight: 700,
+				),
+				item: (
+					space: 1rem
+				),
+
+				expanded: (
+					active-color: $primary-color
+				)
+			),
+
+			social-icon: (
+				color: inherit
+			),
+
+			separator: (
+				space: 10px
+			),
+
+			search: (
+				height: 40px,
+				background: #fff,
+				divider: 1px solid #f6f7f9,
+				toggle: (
+					size: 2rem,
+				),
+				btn: (
+					color: #606669,
+					background: #fff,
+					min-width: 40px
+				),
+
+				select: (
+					padding-left: 1rem,
+					padding-right: 1rem
+				),
+
+				border: (
+					width: 5px,
+					color: #ccc,
+					radius: 0,
+				)
+			),
+
+			icon: (
+				size: 2.6rem,
+				space: 2.6rem
+			),
+			
+			logo: (
+				max-width: 111px,
+				max-width-mobile: 100px,
+				sticky: (
+					transform: scale(.8),
+					transform-origin: center center
+				)
+			)
+		),
+
+		menu: (
+			color: $secondary-color,
+			top: (
+				color: $secondary-color
+			),
+			main: (
+				top: (
+					padding: 9px 15px 9px 15px,
+					space: 1px,
+				)
+			)
+		),
+
+		breadcrumb: (
+			padding: 1.8rem,
+			color: #8e8e8e,
+			border-bottom: false,
+			letter-spacing: 0,
+
+			divider: (
+				space: 1.4rem
+			)
+		),
+
+		footer: (
+			color: #a8a8a8,
+			background: $secondary-color,
+			link-active-color: #fff,
+			font-size: 1.3rem,
+			line-height: 2.4rem,
+
+			top: (
+				padding-top: 8.5rem,
+			),
+			middle: (
+				padding-top: 1.8rem,
+				padding-bottom: 4.6rem,
+			),
+
+			bottom: (
+				padding-bottom: 2.1rem,
+    			padding-top: 2rem,
+				border-top: 1px solid #313438,
+			),
+
+			widget: (
+				title: (
+					size: 1.5rem,
+					color: #fff,
+					weight: 700,
+					margin: 0 0 1rem
+				)
+			),
+
+			social-icon: (
+				color: #fff,
+				background: transparent,
+				font-size: 14px,
+				border: 1px solid #313438,
+				space: 1.2rem,
+			)
+		),
+
+		info-box: (
+			icon: (
+				space: 1.5rem,
+				size: 3.7rem,
+			),
+
+			title: (
+				margin-bottom: 2px
+			),
+		),
+
+		feature-box: (
+			title: (
+				color: $secondary-color,
+				font-size: 2rem,
+			)
+		),
+
+		owl-carousel: (
+			nav: (
+				image-center: 33.6%
+			)
+		)
+	)
+);
+
+// 4. Plugin Variables

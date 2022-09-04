@@ -1,0 +1,125 @@
+
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$primary-color: #0071dc;
+$secondary-color: #ff7272;
+$border-color: #e7e7e7;
+// 2. Theme Settings
+// 3. Theme Variables
+
+
+@include set(
+	(
+		header: (
+			top: (
+				padding-top: 12px,
+				padding-bottom: 12px,
+				font-size: 1.1rem,
+				font-weight: 400,
+				border-bottom: 1px solid $border-color,
+			    background: linear-gradient(0deg, #f8f8f8, #fff 40%, #fff)
+			),
+			dropdown: (
+				space: .8rem
+			),
+			middle: (
+				padding-top: 0,
+				padding-bottom: 0,
+				color: $primary-color-dark
+			),
+			logo: (
+				max-width: 130px
+			),
+			top-notice: (
+				font-size: 1.4rem
+			),
+			icon: (
+				size: 3.3rem,
+				space: -3px
+			),
+			search: (
+				height: 40px,
+				divider: 1px solid #fff,
+
+				border: (
+					width: 5px,
+					color: $primary-color
+				),
+				btn: (
+					min-width: 40px
+				),
+				select: (
+					padding-left: 15px,
+					padding-right: 14px
+				)
+			),
+			separator: (
+				space: 14px
+			)
+		),
+		menu: (
+			main: (
+				top: (
+					space: 35px
+				)
+			)
+		),
+		footer: (
+			color: #777,
+
+			widget: (
+				title: (
+					margin: 0 0 1.7rem,
+					size: 1.5rem,
+					weight: 800,
+					color: $primary-color-dark,
+					transform: capitalize
+				),
+
+				link: (
+					space: 1rem
+				)
+			),
+
+			top: (
+				padding-top: 5.1rem,
+				padding-bottom: 5rem
+			),
+
+			middle: (
+				padding-top: 6.3rem,
+				padding-bottom: 3.3rem,
+				border-top: 1px solid #e7e7e7
+			),
+
+			bottom: (
+				padding-top: 2.6rem,
+				padding-bottom: 4.4rem,
+				color: #777,
+				background: #fff,
+				border-top: 1px solid #e7e7e7
+			),
+
+			social-icon: (
+				font-size: 1.4rem,
+				color: $primary-color-dark,
+				border: 1px solid #e7e7e7,
+				space: 7px,
+				size: 38px
+			)
+		),
+		breadcrumb: (
+			border-bottom: 0
+		)
+	)
+);
+
+// 4. Plugin Variables

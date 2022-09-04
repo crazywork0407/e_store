@@ -1,0 +1,580 @@
+// Home
+
+// 1. Home Base --------
+// 2. Home Sections -------
+// 	  2.1) Home Slider 
+//	  2.2) Info Box Section
+//	  2.3) Banner Grid Section
+//	   	   2.3.1) Banner Base
+//		   2.3.2) Banners( 1 ~ 9 )
+//    2.4) Brands Section
+
+// 3. Category Menu --------
+// 4. Responsive -----------
+
+// 1. Home Base
+.coupon-sale-text {
+	position: relative;
+	display: inline-block;
+	padding: .544em .667em;
+	font-family: $font-family;
+	transform: rotate(-2deg);
+	i {
+		position: absolute;
+		left: -2.25em;
+		top: 50%;
+		transform: translateY(-50%) rotate(-90deg);
+		font-size: .65em;
+		font-style: normal;
+		opacity: .6;
+		letter-spacing: 0;
+	}
+	b {
+		display: inline-block;
+		padding: 5px 8px;
+		font-size: 1.6em;
+	}
+}
+.heading-border {
+	display: flex;
+	display: -ms-flexbox;
+	align-items: center;
+	-ms-flex-align: center;
+	margin: 0 -8px;
+	&:before,
+	&:after {
+		content: '';
+		margin: 0 8px;
+		flex: 1;
+		-ms-flex: 1;
+		height: 0;
+		border-top: 1px solid #e0e2e4;
+	}
+}
+.home .products-section {
+	padding-bottom: 3.2rem;
+	padding-top: 5rem;
+	background-color: #1b1e21;
+}
+.product-price {
+	color: #fff;
+}
+.products-slider>.owl-stage-outer {
+    padding-bottom: 12px;
+}
+
+// 2. Home Sections
+// 2.1) Home Slider
+.home-slider {
+	img {
+		height: 415px;
+	}
+	.banner-layer {
+		left: 7.25%;
+	}
+	h4 {
+		margin-bottom: 1.4rem;
+		color: #777;
+		font-size: 1em;
+		font-weight:500;
+		letter-spacing: .08em;
+		opacity: .7;
+	}
+	h5 {
+		font-size: .875em;
+		margin-top: -4px;
+		b {
+			font-size: 0.93em;
+		}
+	}
+	em {
+		margin-top: -2px;
+		display: inline-block;
+		font-size: 2em;
+		font-style: normal;
+		vertical-align: middle;
+	}
+	.btn {
+		margin-top: .8rem;
+		padding: 1.07em 2.6em 1.07em;
+		font-weight: 600;
+		font-size: .875em;
+	}
+	.owl-dots {
+		position: absolute;
+		bottom: 30px;
+		left: 7.25%;
+		.owl-dot {
+			span {
+				width: 14px;
+				height: 14px;
+				border-color: #fff;
+				&::before {
+					background-color: $primary-color-dark;
+				}
+			}
+			&:hover span,
+			&.active span {
+				border-color: #222529;
+				&:before {
+					width: 4px;
+					height: 4px;
+					background: #222529;
+				}
+			}
+		}
+	}
+}
+.home-slide1 {
+	h2 {
+		font-size: 2.875em;
+		letter-spacing: .005em;
+		font-family: 'Segoe Script','Savoye LET';
+	}
+	h3 {
+	    margin-bottom: .8rem;
+		font-size: 5em;
+	}
+	h5 {
+		font-size: .75em;
+		font-weight: 500;
+		vertical-align: super;
+	}
+	.coupon-sale-text {
+		padding: .54em .65em .3em .6em;
+		margin: -6px .3em 0 1.3em;
+		font-size: 1.06em;
+		font-family: inherit;
+		transform: rotate(-2deg);
+	}
+}
+.home-slide2 h2 {
+	font-size: 3.4375em;
+}
+.home-slide2,
+.home-slide3 {
+	h2 {
+		margin-bottom: 1.9rem;
+		color: $primary-color-dark;
+	}
+	h4 {
+	    margin-bottom: .8rem;
+	}
+	h5 {
+		margin-top: -6px;
+		color: $primary-color-dark;
+		b {
+			font-size: 0.93em;
+			margin-left: 5px;
+		}
+	} 
+	.btn {
+		margin-top: -3px;
+	}
+	em {
+		margin-top: 3px;
+	}
+}
+.home-slide3 h2 {
+	font-size: 3em;
+}
+
+// 2.2) Info Box Container
+.info-boxes-container {
+	border: 1px solid #313438;
+	.info-box {
+		margin: 1.2rem 0;
+		padding: 1.2rem;
+	}
+	i {
+		line-height: 0;
+	}
+	.icon-shipping {
+		font-size: 3.5rem;
+	}
+}
+
+// 2.3) Banner Section
+// 2.3.1) Banner Base
+.banners-grid {
+	margin-left: -10px;
+	margin-right: -10px;
+	.banner {
+		border: 10px solid transparent;
+	}
+	h2,
+	h3,
+	h4,
+	h5 {
+		color: $primary-color-dark;
+	}
+}
+.banner-layer-circle-item {
+	display: flex;
+	display: -ms-flexbox;
+	align-items:center;
+	-ms-flex-align: center;
+	justify-content: center;
+	-ms-flex-pack: center;
+    width: 2.4em;
+    height: 2.4em;
+	border-radius: 50%;
+	background: $primary-color-dark;
+	letter-spacing: -.08em;
+	sup {
+		line-height: 1;
+		top: 0;
+		letter-spacing: 0;
+		font-size: 55%;
+	}
+	small {
+		display: block;
+		font-size: .4329em;
+		letter-spacing: -.025em;
+		opacity: .5;
+	}
+}
+
+// 2.3.2) Banners( 1 ~ 9 )
+.banner1 {
+	h5 {
+		font-size: 1.875em;;
+		del {
+			font-size: .467em;
+			font-weight:500;
+		}
+	}
+	h4 {
+		font-size: .875em;
+		font-weight: 500;
+	}
+	h3 {
+		font-size: 1.1875em;
+		font-weight: 500;
+	}
+	.banner-layer {
+		margin-top: -1px;
+		margin-right: -2px;
+		right: 10%;
+	}
+	.banner-layer-circle-item {
+		font-size: 2.5em;
+		font-weight: 700;
+		color: #fff;
+	}
+}
+.banner2 {
+	h3 {
+		margin-bottom: 2px;
+		font-size: 1.75em;
+	}
+	h2 {
+		padding-bottom: 2px;
+	    font-size: 1.72em;
+	}
+	h4 {
+		font-size: .9375em;
+		font-weight:600;
+	}
+	.btn {
+		padding: .7em 1.3em .73em 1.2em;
+		font-size: .75em;
+	}
+	.banner-layer {
+		top: 8.2%;
+		right: 9.5%;
+		margin-top: -1px;
+	}
+}
+.banner3 {
+	h2 {
+		font-size: 1.625em;
+		letter-spacing: .15em;
+	}
+	h3 {
+		font-size: 1.375em;
+		letter-spacing: .15em;
+	}
+	h4 {
+		padding-top: 3px;
+		font-size: .625em;
+		font-weight: 500;
+		letter-spacing: .2em;
+	}
+	.btn {
+		font-size: .7em;
+		padding: 1em 2em;
+		border-color: #ff7272 #ff7272 #ff3f3f;
+	}
+	.banner-layer-top {
+	    top: 10.5%;
+	}
+	.banner-layer-bottom {
+		bottom: 10%;
+	}
+}
+.banner4 {
+	h2 {
+		font-size: 1.0625em;
+	}
+	h3 {
+		font-size: .9375em;
+		color: #a2a2a2;
+		line-height: 1.25;
+		font-weight:500;
+	}
+	h4 {
+		margin-bottom: 1.6rem;
+		font-size: 1.5em;
+		line-height: 1.1;
+	}
+	.btn {
+		font-size: .7em;
+		padding: .97em 2.02em 1em;
+		font-weight: 600;
+	}
+	.banner-layer {
+	    right: 7.5%;
+	}
+}
+.banner5 {
+	h4 {
+		font-size: .75em;
+		font-weight: 600;
+		letter-spacing: .2em;
+		margin-bottom: 1px;	
+	}
+	h3 {
+		font-size: 1.6875em;
+	}
+	h5 {
+		margin-top: -1px;
+		font-size: .75em;
+		opacity: .7;
+		font-weight:500;
+		letter-spacing: .2em;
+	}
+	.btn {
+		font-size: .7em;
+		padding: 1em 2em;
+		letter-spacing: .005em;
+	}
+	hr {
+		border-color: #e0e2e4;
+	}
+	.banner-layer {
+		margin-top: -3px;
+		left: 8.3%;
+		right: 8.3%;
+		bottom: 10.2%;
+	}
+}
+.banner6 {
+	.banner-layer {
+		padding-bottom: 2px;
+	}
+	h3 {
+		font-size: 1.375em;
+		line-height: 1.2;
+	}
+	h4 {
+		
+		padding-bottom: 1px;
+		font-size: .9375em;
+		font-weight: 600;
+	}
+	.btn {
+    	padding: 1em 2em;	
+	    font-size: .7em;
+	}
+}
+.banner7 {
+	h3 {
+		font-size: 2.25em;
+	}
+	h4 {
+	    padding: .5em .68em .53em;
+		font-size: 1.125em;
+	}
+	h5 {
+		margin-bottom: 2.3rem;
+		font-size: 1em;
+
+		b {
+			padding: .2em .32em;
+		}
+	}
+	.btn {
+	    padding: .92em 0;
+		font-size: 0.82em;
+		width: 187.84px;
+		font-weight: 600;
+		letter-spacing: .012em;
+	}
+	.banner-layer {
+	    right: 7%;
+	}
+}
+.banner8 {
+	h3 {
+		font-size: 1.8125em;
+		font-family: 'Segoe Script','Savoye LET';
+		letter-spacing: .001em;
+	}
+	h4 {
+		font-size: 2.5em;
+	}
+	.btn {
+	    padding: .73em 1.27em .67em;
+		font-size: .75em;
+	}
+	.banner-layer {
+		padding-bottom: 1px;
+		left: 6.4%;
+	}
+}
+.banner9 {
+	h4 {
+		padding-bottom: 2px;
+		font-size: .75em;
+		font-weight: 500;
+		letter-spacing: .2em;
+	}
+	h3 {
+		line-height: .9;
+		font-size: 1.625em;
+		letter-spacing: .16em;
+		span {
+			font-size: 1.0769em;
+		}
+	}
+	h5 {
+	    margin-left: 3rem;
+   		margin-top: 2px;
+		font-size: 1em;
+	}
+	hr {
+		border-top-color: #e0e2e4;
+	}
+	.btn {
+	    padding: .92em 2.01em;
+		font-size: .82em;
+		letter-spacing: -.005em;
+	}
+	.banner-layer-left {
+		right: 58.4%;
+		left: 4.5%;
+		top: 47.5%;
+	}
+	.banner-layer-right {
+		left: 60%;
+		right: 8.7%;
+	}
+}
+
+// 2.4) Brands Section
+.brands-section {
+	padding-bottom: 1px;
+}
+
+// 3. Cagtegory Menu
+.side-menu-wrapper {
+	background-color: #1b1e21;
+}
+.side-menu-title {
+	padding-top: 1.4rem;
+	padding-bottom: 1.4rem;
+}
+.side-menu-body {
+	.btn-lg {
+		padding-bottom: 1.1em;
+	}
+}
+.side-menu {
+	margin-bottom: .8rem;
+	li {
+		i {
+			display: inline-block;
+			margin-top: 1px;
+			margin-right: 1.4rem;
+		}
+		> a {
+			display: flex;
+			padding: 0 0 1px 2px;
+			align-items: center;
+			height: 47px;
+			letter-spacing: 0.01em;
+			transition: .35s;
+			border-bottom-color: #313438;
+		}
+		&:hover {
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+	&::after {
+		right: 0;
+		height: 3px;
+		margin-top: -2px;
+		background: #1b1e21;
+	}
+}
+
+// 4. Responsive
+@include mq(lg, max) {
+	.info-boxes-container .info-box {
+		justify-content: flex-start;
+		-ms-flex-pack: start;
+		margin: 0;
+		padding: 2.4rem 3rem;
+		&:not(:last-child) {
+			border-right: 0;
+		}
+	}
+	.banners-grid .banner {
+		font-size: 1.4vw;
+		border-width: 8px;
+	}
+}
+@include mq(md, max) {
+	.banners-grid .banner {
+		font-size: 1.8rem;
+		&:not(.banner5) img {
+			max-height: 300px;
+		}
+		&.banner5 {
+			figure {
+				background-color: #f6f7f9;
+			}
+			img {
+				max-height: 500px;
+				object-fit: contain;
+			}
+		}
+		&.banner9 {
+			font-size: 1rem;
+			.banner-layer-right {
+				left: 50%;
+				right: 4.7%;
+			}
+		}
+		img {
+			min-height: 220px;
+			object-fit: cover;
+		}
+	}
+}
+@media (max-width: 575px) {
+	.home-slide1 {
+		font-size: 1.2rem;
+	}
+}
+@include mq(480px, max) {
+	.banners-grid .banner.w-25 {
+		font-size: 4vw;
+	}
+	.banners-grid .banner {
+		font-size: 1.4rem;
+	}
+}

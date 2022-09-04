@@ -1,0 +1,618 @@
+// Demo 30
+
+// # Content
+// 1. Header ---------
+//    1.1) Header Base
+//    1.2) Header Element
+//         1.2.1) Header Main Nav
+//         1.2.2) Header Contact Icon
+//         1.2.3) Header User Icon
+//         1.2.4) Header Cart Dropdown
+//         1.2.5) Header Toggle Menu
+//         1.2.6) Header Search
+
+// 2. Footer ---------
+//    2.1) Footer Base
+//    2.2) Footer Elements
+//         2.2.1) Footer Widget
+//         2.2.2) Footer Social Icons
+//         2.2.3) Footer Newsletter
+//         2.2.4) Footer Copyright
+
+// 3. Component ------
+//    3.1) Breadcrumb
+//    3.2) Product Default
+
+// 4. Responsive
+
+// 1. Header
+// 1.1) Header Base
+.header {
+    font-family: $second-font-family;
+}
+
+.header-middle {
+    background-color: #f6f7f9;
+
+    .header-right {
+        padding-right: 2.6rem;
+    }
+
+    .header-center {
+        margin-right: 6.9rem;
+    }
+}
+
+.dropdown-arrow:after {
+    margin: -5px 2px 0 0;
+    padding-left: 2.5rem;
+}
+
+.header-bottom {
+    border-top: 1px solid #f0f0f0;
+
+    &:not(.fixed) {
+        height: 54px;
+        border-bottom: 1px solid #e7e7e7;
+
+        .header-left, 
+        .header-right {
+            display: flex;
+        }
+    }
+
+    &.fixed {
+        .menu>li>a {
+            padding-bottom: 1.3rem;
+        }
+    }
+    
+    .header-right,
+    form {
+        height: 100%;
+    }
+}
+
+.header-icon:not(:last-child) {
+    margin-bottom: 2px;
+}
+
+// 1.2) Header Element
+// 1.2.1) Header Main Nav
+.main-nav .menu {
+    text-transform: capitalize;
+
+    .menu-item {
+        cursor: pointer;
+  
+        >a {
+
+            i {
+                margin-right: 1.2rem;
+                font-size: 1.6rem;
+            }
+
+            &:hover {
+                background-color: $primary-color;
+                color: #fff;
+            }
+        }
+        
+        a::before {
+            display: none !important;
+        }
+    }
+
+    >li {
+        margin-right: 0;
+
+        &:not(:last-child) {
+            border-right: 1px solid #e7e7e7;
+        }
+
+        &:first-child {
+            > a {
+                padding: 1.5rem 2rem 1.4rem;
+                font-weight: 700;
+                font-size: 1.5rem;
+                letter-spacing: 0;
+                color: $primary-color-dark;
+            }
+
+            .sf-with-ul:after {
+                margin-left: .9rem;
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            span {
+                margin-bottom: 2px;
+                display: inline-block;
+            }
+        }
+    
+        >a {
+            padding: 1.6rem 2rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            color: #777;
+
+            &:hover {
+                color: $primary-color-dark;
+            }
+        }
+
+        .sf-with-ul:before {
+            display: none;
+        }
+    }
+
+    .megamenu,
+    &.sf-arrows ul:not(.submenu) {
+        border-top: 3px solid $primary-color;
+    }
+
+    .megamenu,
+    > li > ul {
+        left: -2px !important;
+    }
+}
+
+// 1.2.2) Header Contact Icon
+.header-contact {
+    margin-right: 2rem;
+    color: #777;
+    letter-spacing: 0.01em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  
+    span {
+        display: block;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+
+    a {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+  
+    &.phone {
+        margin-left: 1.4rem;
+        margin-right: 4.4rem;
+        letter-spacing: 0;
+  
+      a {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 1.8rem;
+  
+        &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// 1.2.3) Header User Icon
+.header-user {
+    display: flex;
+    margin-right: 2.6rem;
+    align-items: center;
+    cursor: pointer;
+
+    i {
+        display: flex;
+        margin-right: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        font-size: 25px;
+        color: black;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+
+        &:before {
+            margin-bottom: 2px;
+        }
+    }
+  
+    &:hover i {
+        color: $primary-color;
+    }
+}
+  
+.header-userinfo { 
+    margin-bottom: 4px;
+
+    span {
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        color: #777;
+    }
+  
+    h4 {
+        line-height: 1;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: $primary-color;
+    }
+}
+
+// 1.2.4) Header Cart Dropdown
+.dropdown-arrow {
+	.badge-circle {
+		top: -5px;
+        left: 24px;
+		z-index: 1;
+	}
+
+	&:after {
+		position: absolute;
+		right: -2.8rem;
+        font-size: 17px;
+        top: 6px;
+        color: #777;
+	}
+}
+
+.badge-circle {
+    background: #d66a79;
+}
+
+.minicart-icon {
+    margin: 6px 2px 0 4px;
+
+    &:before {
+        left: 46%;
+    }
+}
+
+// 1.2.4) Header Toggle Menu
+.custom-icon-toggle-menu {
+    display: inline-block;
+    position: relative;
+    border-top: 2px solid;
+    width: 18px;
+    vertical-align: middle;
+    margin-right: .75rem;
+    top: -1px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -7px;
+        border-top: 2px solid;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        border-top: 2px solid;
+    }
+}
+
+.menu-depart-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all .4s;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.mmenu-depart-active {
+    .menu-depart-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .main-nav .menu>li:first-child>a {
+        position: relative;
+        background-color: $primary-color;
+        color: #fff;
+        z-index: 1001;
+    }
+}
+
+.menu-depart {
+    position: absolute;
+    left: 0;
+    top: 97%;
+    border: 1px solid #f0f0f0;
+    border-top: 3px solid $primary-color;
+    display: none;
+    visibility: hidden;
+    flex-direction: column;
+    z-index: 1000;
+    background: #fff;
+    width: 250px;
+    box-shadow: 0 29px 29px rgba(0, 0, 0, 0.1);
+    transition: all .5s;
+    height: 0;
+    opacity: 0;
+  
+    a {
+        display: flex;
+        align-items: center;
+        padding: 1.1rem 1.6rem 1rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-transform: none;
+        color: #777;
+        letter-spacing: .01em;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(0,0,0,.125);
+        }
+  
+      i {
+          margin-bottom: 1px;
+          margin-right: 0.9rem;
+          font-size: 1.8rem;
+      }
+  
+      &:hover {
+         color: $primary-color-dark;
+      }
+    }
+  
+    &.opened {
+      display:  flex;
+      visibility: visible;
+      height: auto;
+      opacity: 1;
+    }
+}
+
+// 1.2.6) Header Search
+.submit-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid $primary-color-dark;
+    height: 100%;
+    margin-bottom: -1px;
+  
+    .form-control {
+        border: none;
+        height: 49px;
+        width: 366px;
+        margin-bottom: 0;
+        padding: 1.6rem 0;
+        font-size: 1.4rem;
+        font-style: italic;
+        letter-spacing: 0.003em;
+
+        &::placeholder {
+            color: #8a8a8a;
+        }
+    }
+  
+    .btn {
+        margin-right: 1.2rem;
+        border: none;
+        background-color:  #fff;
+        height: 100%;
+        min-width: auto;
+        padding: 0;
+        font-size: 16px;
+        color: #333;
+
+        i:before {
+            font-weight: 700;
+        }
+    }
+}
+
+// 2. Footer
+// 2.1) Footer Base
+.footer-top {
+    background-color: $primary-color;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e7e7e7;
+
+    img {
+        max-width: 200px;
+    }
+}
+
+footer {
+// 2.2) Footer Elements
+// 2.2.1) Footer Widget
+    .widget {
+        letter-spacing: -.02em;
+    }
+
+    .widget-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: .01em;
+    }
+
+// 2.2.2) Footer Social Icons
+    .social-icon {
+        border: 1px solid #d0d0d0;
+        color: $primary-color-dark;
+    }
+}
+
+// 2.2.3) Footer Newsletter
+.newsletter-widget {
+    h3 {
+        margin-top: 1px;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.2;
+    }
+  
+    p {
+        font-size: 1.3rem;
+        color: #999;
+        margin-bottom: 0;
+    }
+  
+    form {
+        background: transparent;
+    }
+  
+    .submit-wrapper {
+        border-bottom-color: #fff;
+  
+      .form-control {
+            background-color: transparent;
+            color: #999;
+            flex: 1;
+            max-width: 100%;
+            font-family: $second-font-family;
+            letter-spacing: -.015em;
+            font-weight: 300;
+    
+            &::placeholder {
+                color: #999;
+            }
+        }
+  
+        .btn {
+            margin: 2px 0 0;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            background-color: transparent;
+            color: #fff;
+    
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+// 2.2.4) Footer Copyright
+.footer-copyright {
+    font-size: 1.2rem;
+    color: #999999;
+}
+
+// 3. Component
+// 3.1) Breadcrumb
+.breadcrumb-nav {
+    margin-bottom: 3.5rem;
+    border-top: 1px solid #dfdfdf;
+}
+
+.breadcrumb {
+    padding: 1.7rem 0;
+    color: $primary-color-dark;
+}
+
+.breadcrumb-item {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .05em;
+
+    &+.breadcrumb-item {
+        padding-left: 1.3rem;
+
+        &:before {
+            padding-right: 1rem;
+            margin-top: -2px;
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+}
+
+// 3.2) Product Default
+.product-default {
+    &:hover {
+        box-shadow: none;
+    }
+
+    .price-box {
+        font-family: $second-font-family;
+    }
+}
+
+// 4. Responsive
+@media (min-width: 1200px) {
+    footer {
+        .social-icon,
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons {
+            margin-top: 1.9rem;
+            margin-left: 2px;
+        }
+
+        .social-icon {
+            font-size: 24px;
+            width: 2.25em;
+            height: 2.25em;
+
+            &+.social-icon {
+                margin-left: .7rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-nav .menu>li>a {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .submit-wrapper .form-control {
+        width: 240px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-search {
+        i {
+            font-size: 2.3rem;
+
+            &:before {
+                font-weight: 800;
+            }
+        }
+    }
+
+    .header-search-wrapper {
+        height: 40px;
+    }
+
+    .header-middle {
+        padding-top: 2.2rem;
+        padding-bottom: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sticky-header .cart-dropdown {
+        margin-bottom: 4px;
+    }
+
+    .minicart-icon {
+        width: 24px;
+    }
+}

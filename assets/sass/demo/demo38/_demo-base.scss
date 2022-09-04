@@ -1,0 +1,341 @@
+// Demo 32
+
+// # Content
+// 1. Header
+//    1.1) Header Base
+//    1.2) Header Element
+//    	   1.2.1) Main Nav
+//    	   1.2.2) DropDown and Cart DropDown
+//    	   1.2.3) Search
+
+// 2. Footer
+//    2.1) Footer Base
+//    2.2) Footer Elements
+// 		   2.2.1) Payment
+//    	   2.2.2) Social Icons
+// 		   2.2.3) Newsletter
+
+// 3. Component
+//    3.1) Breadcrumb
+//    3.2) Product Default
+
+body {
+	font-family: $second-font-family;
+}
+
+// 1. Header
+// 1.1) Header Base
+.header {
+	.separator {
+		margin: 0 1.8rem 0 2.1rem;
+		height: 25px;
+		border-color: #e7e7e7;
+	}
+
+	a:hover {
+		color: $primary-color;
+	}
+}
+
+.header-top {
+	.header-left {
+		font-size: 1.6rem;
+
+		i {
+			margin: 3px 5px 0px 2px;
+			font-size: 2.4rem;
+		}
+
+		p {
+			font-size: 1.4rem;
+    		letter-spacing: -.025em;
+		}
+
+		.separator {
+			margin: 0 2.4rem 0 2.2rem;
+		}
+	}
+
+	.header-right {
+		margin-right: -5px;
+	}
+}
+
+.header-middle {
+	.header-right {
+		padding-right: 1.4rem;
+	}
+}
+
+.header-menu {
+	letter-spacing: -.025em;
+    margin-right: .9rem;
+}
+
+.dropdown-expanded li+li {
+    margin-left: 2.5rem;
+}
+
+.menu {
+	li>a {
+		color: #777777;
+	}
+
+	.megamenu .submenu {
+	    font-size: 12px;
+    	font-weight: 500;
+	}
+}
+
+.mobile-menu-toggler {
+    color: $primary-color;
+}
+
+// 1.2) Header Element
+// 1.2.1) Header DropDown and Cart DropDwon
+.header-dropdown {
+	padding-bottom: 6px;
+	margin-left: .7rem;
+
+	&+.header-dropdown {
+		margin-left: .7rem;
+	}
+
+	>a:after {
+		font-size: 13px;
+	}
+}
+
+.sticky-header .cart-dropdown {
+	margin: 0 1rem -1px 2px;
+}
+
+.wishlist-count {
+    right: -9px;
+    top: 0;
+}
+
+.dropdown-arrow {
+	.badge-circle {
+		top: 0px;
+		left: 20px;	
+		z-index: 1;
+	}
+
+	&:after {
+		position: absolute;
+		right: -2.6rem;
+		font-size: 17px;
+		top: 12px;
+		color: #777777;
+	}
+}
+
+// 1.2.2) Header Main Nav
+.main-nav {
+	margin-right: 5.6rem;
+
+	.menu>li {
+		margin-right: 4.9rem;
+
+		>a {
+			padding: 20px 0 18px;
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: -.025em;
+			color: $primary-color-dark;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+
+		&.active a {
+			color: $primary-color;
+		}
+	}
+}
+
+.header-icon {
+	&.header-icon-user {
+		margin-right: 2.5rem;
+	}
+
+	&:not(:last-child) {
+		margin-top: 2px;
+	}
+
+// 1.2.3) Header Search
+	&.header-search {
+		margin-right: 3rem;
+		margin-top: 4px;
+	}
+}
+
+.search-toggle {
+	i {
+		font-size: 2.2rem;
+
+		&:before {
+			font-weight: 800;
+		}
+	}
+}
+
+.header-search-wrapper {
+    height: 40px;
+	border: 5px solid #ccc;
+	
+	.btn {
+		border: 0;
+	}
+}
+
+// 2. Footer
+// 2.1) Footer Base
+.logo-footer {
+	margin-bottom: 5.2rem;
+	max-width: 123px;
+}
+
+.footer-bottom {
+	font-weight: 500;
+}
+
+footer {
+	.widget-title {
+		letter-spacing: -.025em;
+	}
+
+// 2.2) Footer Element
+// 2.2.1) Footer Payment
+	.payment-icons .payment-icon {
+		background-color: transparent;
+	}
+
+// 2.2.2) Footer Contact Info
+	.contact-info-label {
+		margin-bottom: -1px;
+	    font-weight: 600;
+		color: #888888;
+		font-size: 14px;
+		letter-spacing: -.025em;
+	}
+
+	.contact-info li {
+		margin-bottom: 1.1rem;
+		font-size: 14px;
+		letter-spacing: -.03em;
+		color: #ffffff;
+	}
+
+// 2.2.3) Footer Social Icons
+	.social-icons {
+		padding-top: 8px;
+	}
+}
+
+// 2.2.4) Footer Newsletter
+.widget-newsletter {
+	.form-control,
+	.form-control:focus {
+		background-color: #292c30;
+		border-color: #292c30;
+	}
+
+	.form-control {
+		padding-left: 1.9rem;
+	    height: 49px;
+		font-size: 13px;
+		font-weight: 600;
+		letter-spacing: -.025em;
+
+		&::placeholder {
+			color: #999;
+		}
+	}
+
+	p {
+		margin-bottom: 1.2rem;
+		letter-spacing: 0.008em;
+	}
+
+	.btn-outline-primary {
+		font-size: 13px;
+		letter-spacing: -.025em;
+		padding: 1.25em 4.2em 1.2em;
+		border: 2px solid rgba(52,103,239,0.5);
+		color: #fff;
+	}
+}
+
+.footer-copyright {
+	span {
+		margin: 0px 4px 0 3px;
+	}
+}
+
+// 3. Component
+// 3.1) Breadcrumb
+.breadcrumb {
+    padding: 1.3rem 0;
+}
+
+
+// 3.2) Product Default
+.product-default {
+	&:hover {
+		&:not(.product-widget) {
+			figure {
+				box-shadow: 0 25px 35px -5px rgba(0,0,0,0.1);
+			}
+		}
+	}
+	
+	figure {
+		margin-bottom: 1.1rem;
+	}
+
+	.category-wrap {
+		margin-bottom: 2px;
+	}
+
+	.product-title {
+		margin-bottom: 5px;
+		font-weight: 500;
+	}
+
+	.price-box {
+		font-family: $second-font-family;
+	}
+
+	.ratings-container {
+		margin-bottom: 14px;
+	}
+
+	.old-price {
+		font-weight: 400;
+	}
+}
+
+.ratings-container .product-ratings, 
+.ratings-container .ratings {
+    font-size: 12px;
+    letter-spacing: .03em;
+}
+
+@media (max-width: 767px) {
+    .sticky-header .cart-dropdown {
+        margin: 0 1rem 0px 3px;
+    }
+
+    .dropdown-toggle i {
+        font-size: 2.9rem;
+    }
+
+    .dropdown-arrow .badge-circle {
+		top: 2px;
+        left: 19px;
+        z-index: 2;
+    }
+}

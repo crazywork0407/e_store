@@ -1,0 +1,458 @@
+// Pages
+
+// # Content
+// 1. Product Page
+// 1.1) Product Base
+// 1.2) Product Component
+// 1.2.1) Product Single Details
+// 1.2.2) Product Sidebar
+// 1.2.2.1) Product Widget
+// 1.2.2.2) Product Widget Block
+// 1.2.2.3) Product Widget Featured
+// 1.2.3) Product Single Tabs
+
+// 2. Shop Page
+// 2.1) Shop Base
+// 2.2) Shop Component
+// 2.2.1) Shop Sidebar
+// 2.2.1.1) Shop Widget Base
+// 2.2.1.2) Shop Widget Size
+// 2.2.1.3) Shop Widget Featured
+// 2.2.1.4) Shop Widget Price
+// 2.2.1.5) Shop Widget Color
+// 2.2.2) Shop Category Banner
+// 2.2.3) Toolbox
+
+// 1. Product Page
+// 1.1) Product Base
+.products-section {
+    h2 {
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+    }
+
+    .owl-carousel.dots-top .owl-dots {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.product-widgets-container {
+    .section-sub-title {
+        font-size: 1.4rem;
+        letter-spacing: .023em;
+    }
+
+    .product-title {
+        font-family: $second-font-family;
+    }
+
+    .product-widget {
+        .ratings-container {
+            margin-bottom: 1rem;
+        }
+
+        .product-details {
+            margin-bottom: 4px;
+        }
+    }
+}
+
+// 1.2) Product Component
+// 1.2.1) Product Single Details
+.product-single-details {
+    font-family: $second-font-family;
+
+    .product-title {
+        margin-bottom: 1rem;
+        font-size: 3.2rem;
+        line-height: 1.2;
+    }
+
+    .ratings-container {
+        margin-bottom: 2.2rem;
+        margin-left: 1px;
+    }
+
+    .product-price {
+        color: #b35827;
+    }
+
+    label {
+        margin-right: 5.9rem;
+    }
+
+    .clear-btn {
+        margin-left: -4px;
+    }
+}
+
+.filter-with-img {
+    .config-size-list li {
+        a {
+            height: 100%;
+        }
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+// 1.2.2) Product Sidebar
+.sidebar-product {
+    padding-bottom: 6.5rem;
+ // 1.2.2.1) Product Widget
+    .widget:not(:last-child):not(.widget-info) {
+        margin-bottom: 3rem;
+    }
+
+    .widget-title {
+        padding-bottom: .7rem;
+        font-size: 1.2rem;
+        line-height: 1.3;
+        letter-spacing: 0.05em;
+        border-bottom: 1px solid #e7e7e7 ;
+        
+        a {
+            color: $primary-color-dark;
+        }
+    }
+
+    .widget-body {
+        padding-top: 1.5rem;
+    }
+
+ // 1.2.2.2) Product Widget Block
+    .widget-subtitle {
+        margin-top: .4rem;
+        margin-bottom: 2.3rem;
+        font-size: 1.4rem;
+    }
+
+    .widget.widget-block {
+        padding-bottom: 2.2rem;
+        border-bottom: 1px solid #e7e7e7 ;
+
+        p {
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    .widget.widget-block:not(:last-child):not(.widget-info) {
+        margin-bottom: 4.4rem;
+    }
+}
+
+// 1.2.2.3) Product Widget Featured
+.product-widget {
+    figure {
+        margin-right: .7rem;
+        max-width: 75px;
+    }
+
+    .product-title {
+        margin-bottom: .6rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .product-price {
+        font-size: 1.4rem;
+    }
+
+    .ratings-container {
+        margin-bottom: 1.1rem;
+    }
+
+    .product-details {
+        margin-bottom: 5px;
+    }
+}
+
+// 1.2.2.4) Product Widget Banner
+.widget-banner {
+    img {
+        width: 100%;
+    }
+
+    .home-banner h4 {
+        margin-top: 1px;
+        font-size: 2em;
+    }
+}
+
+// 1.2.3) Product Single Tabs
+.product-single-tabs {
+    .nav.nav-tabs .nav-link {
+        font-family: $second-font-family;
+    }
+}
+
+.nav-tabs .nav-item .nav-link {
+    padding: 1.3rem 0;
+}
+
+.product-desc-content ul {
+    padding-top: 1px;
+    margin-bottom: 2.5rem;
+}
+
+// 2. Shop Page
+// 2.1) Shop Base
+.shop {
+    .breadcrumb-nav {
+        margin-top: -1px;
+    }
+}
+
+.products-group {
+    .inner-quickview {
+        margin-bottom: 2.3rem;
+    }
+}
+
+span.toggle {
+    color: #777;
+}
+
+// 2.2) Shop Component
+// 2.2.1) Shop Sidebar
+.sidebar-shop {
+// 2.2.1.1) Shop Widget Base
+    .main & .widget {
+		border: 0;
+	}
+    
+    .widget {
+      padding: 0;
+      margin-bottom: 3rem;
+      font-family: $second-font-family;
+
+      &:last-child {
+          margin-bottom: 1.2rem;
+      }
+  
+      .owl-nav {
+        top: -3.9rem;
+      }
+    }
+  
+    .widget-title {
+        padding-bottom: .6rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.05em;
+        border-bottom: 1px solid #e7e7e7;
+  
+      a:before, 
+      a:after {
+        top: 55%;
+      }
+    }
+  
+    .widget-body {
+        padding: 1.5rem 0rem .7rem 1.5rem;
+    }
+
+    .cat-list {
+        li {
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .products-count {
+            font-size: 12px;
+        }
+            
+        a {
+            font-weight: 400;
+        }
+    }
+  
+// 2.2.1.2) Shop Widget Size
+    .widget-size {
+      .cat-list {
+        li {
+          margin-bottom: 1.4rem;
+          font-size: 13px;
+        }
+  
+        a {
+          font-weight: 400;
+        }
+      }
+  
+      .widget-body {
+        padding-bottom: .7rem;
+        padding-top: 1.5rem;
+      }
+    }
+
+// 2.2.1.3) Shop Widget Featured
+    .product-widget {
+      .product-title {
+        margin-bottom: .5rem;
+        font-family: $second-font-family;
+      }
+  
+      .product-details {
+        margin-bottom: 4px;
+      }
+    }
+    
+// 2.2.1.4) Shop Widget Price
+    .widget-price {
+        .widget-body {
+            padding-top: 1.5rem;
+            padding-bottom: 6px;
+            margin-bottom: -5px;
+        }
+    }
+}
+
+.filter-price-action .btn {
+    padding: 4px 1.5rem 6px 1.5rem;
+}
+
+// 2.2.1.3) Shop Widget Color
+.widget.widget-color {
+    .widget-body {
+        padding-top: .6rem;
+        margin-bottom: -1.9rem;
+    }
+
+    .config-swatch-list li {
+        margin-bottom: .9rem;
+        font-size: 1.2rem;
+
+        a {
+            margin-right: 1.7rem;
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+}
+
+// 2.2.2) Shop Category Banner
+.category-banner-container {
+    .banner-content {
+        h4 {
+            font-size: 2em;
+        }
+
+        span {
+            display: block;
+            margin-bottom: 1px;
+            letter-spacing: 0.045em;
+        }
+
+        &.content-right {
+            bottom: 3rem;
+            right: calc(3.68% - -43px);
+        }
+    }
+
+    .content-bottom {
+        bottom: 1.8rem;
+    }
+}
+
+// 2.2.3) Toolbox Pagination
+.toolbox {
+    .form-control,
+    label {
+        padding-bottom: 2px;
+        font-family: $second-font-family;
+    }
+}
+
+.toolbox-item.layout-modes {
+    margin-top: -3px;
+}
+
+.toolbox-pagination {
+    padding-bottom: 2.2rem;
+}
+
+.page-item {
+    .page-link {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border: 1px solid #ccc;
+    }
+}
+
+@media (min-width: 1400px) {
+    .category-banner-container.grid {
+        .col-lg-5 {
+            -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+    
+        .col-lg-7 {
+            -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+            max-width: 60%;
+        }
+    }
+
+    .main-content-wrapper {
+        .col-lg-3 {
+            -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+    
+        .col-lg-9 {
+            -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+    
+        .product-single-container {
+            .col-lg-5 {
+                -ms-flex: 0 0 40%;
+                flex: 0 0 40%;
+                max-width: 40%;
+            }
+    
+            .col-lg-7 {
+                -ms-flex: 0 0 56%;
+                flex: 0 0 56%;
+                max-width: 56%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .category-banner-container {
+        .height-x1 {
+            height: 315px;
+        }
+    }
+
+    .product-single-default {
+        .col-xl-7 {
+            flex: 0 0 56%;
+            max-width: 56%;
+        }
+
+        .col-xl-5 {
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar-opened .mobile-sidebar {
+        padding-bottom: 1rem;
+    }
+}

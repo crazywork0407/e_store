@@ -1,0 +1,455 @@
+// Pages
+
+// 1. Shop Page ------------
+//    1.1) Shop Base
+//    1.2) Shop Element
+//         1.2.1) Widget Size
+//         1.2.2) Widget Price
+//         1.2.3) Widget Featured
+//         1.2.4) Widget Color
+//    1.3) Category Banner
+//    1.4) Toolbox
+
+// 2. Product Page ------------
+//    2.1) Product Base
+//    2.2) Product Element
+//         2.2.1) Product Single Filter
+//         2.2.2) Product Single Tab
+
+// 3. About Page ------------
+//    3.1) About Base 
+//    3.2) About Component 
+//         3.2.1) About Section 
+//         3.2.2) About featured Box
+//         3.2.3) About History Section
+
+// 4. Contact Page ------------
+// 5. Resposive ------------
+
+// 1. Shop Page ------------
+// 1.1) Shop Base
+.main-content {
+  margin-bottom: 2.2rem;
+}
+
+.products-group {
+  margin-bottom: 1.8rem;
+}
+
+.sidebar-shop {
+  .main & .widget {
+		border: 0;
+	}
+  
+  .widget {
+    padding: 0;
+    margin-bottom: 2.8rem;
+
+    .owl-nav {
+      top: -4.1rem;
+    }
+  }
+
+  .widget-title {
+    padding-bottom: .8rem;
+		border-bottom: 1px solid #e7e7e7;
+		letter-spacing: .05em;
+    font-size: 1.2rem;
+
+    a:before, 
+    a:after {
+      top: 75%;
+      right: 0;
+    }
+  }
+
+  .widget-body {
+    padding: 1.6rem 0 .6rem;
+  }
+
+// 1.2) Shop Element
+// 1.2.1) Widget Size
+  .widget-size {
+    .cat-list {
+      li {
+        margin-bottom: 1.4rem;
+        font-size: 13px;
+      }
+
+      a {
+        font-weight: 400;
+      }
+    }
+
+    .widget-body {
+      padding-bottom: .7rem;
+      padding-top: .8rem;
+    }
+  }
+
+// 1.2.2) Widget Price
+  .widget-price {
+    .widget-body {
+      padding-top: 1.5rem;
+      padding-bottom: 0;
+      margin-bottom: -5px;
+    }
+  }
+
+// 1.2.3) Widget Featured
+  .product-widget {
+    .product-title {
+      margin-bottom: .5rem;
+    }
+
+    .product-details {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+// 1.2.4) Widget Color
+.widget-color {
+  .config-swatch-list li {
+    margin-bottom: .4rem;
+
+    a {
+      margin-right: .8rem;
+    }
+
+    span {
+      margin-bottom: 2px;
+    }
+  }
+
+  .widget-body {
+    margin-bottom: -1.3rem;
+  }
+}
+
+// 1.3) Category Banner
+.category-banner {
+	padding-top: 8.8rem;
+  padding-bottom: 8.8rem;
+  padding-right: 1.8rem;
+	background-color: #24252A;
+	
+	.parallax-background {
+		top: 13%;
+	}
+}
+
+// 1.4) Toolbox
+.toolbox {
+	.select-custom {
+		.form-control {
+			padding-bottom: 2px;
+		}
+
+		&:after {
+			right: 1.4rem;
+			font-size: 1.6rem;
+			color: #222529;
+		}
+	}
+
+	label {
+		margin-bottom: 2px;
+		color: $primary-color-dark;
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
+}
+
+// 2. Product Page ------------
+// 2.1) Product Base
+.products-section {
+  padding-bottom: 1.5rem;
+
+  h2 {
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+    border: none;
+  }
+
+  .owl-carousel.dots-top .owl-dots {
+    margin-bottom: 2.5rem;
+
+    span {
+      border-color: rgba(191,183,127,.4);
+    }
+  }
+}
+
+.product-filters-container {
+  .select-custom {
+    width: 297px;
+  }
+}
+
+.product-widgets-container {
+  .product-widget {
+    figure {
+      margin-right: .7rem;
+      height: 75px;
+    }
+  }
+}
+
+// 2.2) Product Element
+// 2.2.1) Product Single Filter
+.product-single-filter {
+  label {
+    margin-right: 3.4rem;
+    font-family: $second-font-family;
+  }
+
+  .form-control {
+    padding-bottom: 1px;
+    border-color: rgba(0,0,0,0.09);
+  }
+}
+
+.add-wishlist i {
+  color: $primary-color;
+}
+
+// 2.2.2) Product Single Tab
+.product-single-tabs .nav.nav-tabs .nav-link {
+  padding-bottom: 1.3rem;
+  font-family: $second-font-family;
+}
+
+// 3. About Page ------------
+// 3.1) About Base 
+.alternative-font {
+  display: inline-block;
+  margin-top: -15px;
+  position: relative;
+  top: 3px;
+  font-weight: 400;
+  font-size: 2.2rem;
+  color: #e1ddc3;
+  font-family: sans-serif;
+}
+
+.about-section-title {
+  margin-top: 4px;
+  margin-bottom: 3.3rem;
+  font-size: 2.2rem;
+}
+
+.wort-rotator .wort-rotator-items span {
+	font-family: $third-font-family;
+}
+
+.about {
+// 3.2) About Component 
+// 3.2.1) About Section 
+  .intro-section {
+    padding-top: .9rem;
+    padding-bottom: .7rem;
+    
+    p {
+      line-height: 28px;
+      letter-spacing: -0.05em;
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  
+    h4 {
+      margin-bottom: 3rem;
+      font-size: 1.9rem;
+    }
+  
+    .alternative-font {
+      font-size: 3.2rem;
+    }
+  
+    .btn {
+      margin-top: 3.5rem;
+      padding: .8rem 1.5rem .9rem;
+      color: #222529;
+      text-transform: capitalize;
+    }
+  }
+  
+  p {
+    line-height: 24px;
+  }
+
+// 3.2.2) About featured Box
+  .featured-box {
+    box-shadow: 0 2px 4px 0px rgba(0,0,0,0.05);
+    margin: 24px auto;
+    min-height: 100px;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid #dfdfdf;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    z-index: 1;
+
+    h5 {
+      margin-bottom: 1.3rem;
+      font-size: 1.8rem;
+      font-weight: 400;
+      letter-spacing: -.03em;
+    }
+  }
+
+  .box-content {
+    border-top: 4px solid #e1ddc3;
+    position: relative;
+    top: -1px;
+  }
+}
+
+// 3.2.3) About History Section
+.history-section {
+  margin-top: 4.4rem;
+  margin-bottom: 9rem;
+
+  strong {
+    font-size: 1.8rem;
+    letter-spacing: -.035em;
+    color: $primary-color;
+  }
+
+  .box-content {
+    padding: 27px 20px 15px 20px;
+  }
+}
+
+.history {
+  margin: 25px 0;
+  padding: 0;
+  clear: both;
+
+  .thumb {
+    width: 227px;
+    height: 160px;
+    margin: 0 0 30px;
+    padding: 0;
+    float: left;
+    background: transparent url(../images/demoes/demo11/about/history-thumb.png) no-repeat 0 0;
+
+    img {
+      border-radius: 150px;
+      margin: 7px 8px;
+      width: 145px;
+      height: 145px;
+    }
+  }
+
+  .featured-box {
+    text-align: left;
+    margin-left: 225px;
+    margin-bottom: 50px;
+    min-height: 115px;
+  }
+
+  h4 {
+    margin: 0 0 -29px 0;
+    padding: 0;
+  }
+
+  p {
+    margin-left: 53px;
+  }
+}
+
+.section-2 {
+  padding-bottom: 2px;
+
+  .featured-box {
+    p {
+      font-size: 1.2rem;
+      letter-spacing: -.03em;
+    }
+  }
+
+  .box-content {
+    padding: 43px 20px 10px 20px;
+  }
+}
+
+// 4. Contact Page ------------
+.contact-two {
+  #map {
+    margin-bottom: 1.4rem;
+    height: 300px;
+  }
+
+  > .container {
+    margin-bottom: 7.2rem;
+  }
+
+  .contact-title {
+    margin-bottom: 1.4rem;
+    font-weight: 300;
+    color: rgb(119, 119, 119);
+  }
+
+  label {
+    margin-bottom: 1rem;
+    font-family: $second-font-family;
+  }
+
+  .form-control {
+    height: 38px;
+    border-radius: 6px;
+  }
+
+  textarea.form-control {
+    min-height: 140px;
+  }
+
+  .form-group {
+    margin-bottom: 1.9rem;
+  }
+
+  .btn {
+    margin-top: 5px;
+    padding: .9rem 1.5rem .9rem 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $primary-color-dark;
+    border-radius: 6px;
+  }
+
+  .contact-info {
+    padding-top: 1.4rem;
+
+    >div {
+      margin-bottom: .5rem;
+    }
+
+    i {
+      display: inline-block;
+      margin-right: 2rem;
+      border-style: solid;
+      border-width: 1px;
+      width: 42px;
+      height: 42px;
+      line-height: 40px;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #ffffff;
+      border-color: #3f4658;
+      background: #3f4658;
+    }
+  }
+}
+
+.porto-sicon-description {
+  line-height: 1.75;
+}
+
+// 5. Resposive ------------
+@media(max-width: 576px) {
+  .history .featured-box {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,137 @@
+
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$primary-color: #9a2948;
+$third-font-family: 'Spectral SC';
+// 2. Theme Settings
+// 3. Theme Variables
+
+
+@include set(
+	(
+		header: (
+			top: (
+				padding-top: 11px,
+				padding-bottom: 11px,
+				font-size: 1.1rem,
+				font-weight: 400,
+				background: $primary-color,
+				color: #fff
+			),
+			dropdown: (
+				space: 1rem
+			),
+			middle: (
+				padding-top: 3.4rem,
+				padding-bottom: 3.3rem,
+				color: $primary-color-dark,
+
+				sticky: (
+					height: 70px
+				)
+			),
+			bottom: (
+				padding-top: 2.7rem,
+				padding-bottom: .9rem
+			),
+			logo: (
+				max-width: 110px,
+				
+				sticky: (
+					max-width: 100px
+				)
+			),
+			icon: (
+				size: 2.8rem,
+				space: 3.3rem
+			),
+			search: (
+				height: 40px,
+				divider: 1px solid #fff,
+
+				border: (
+					width: 5px,
+					color: $primary-color
+				),
+				btn: (
+					min-width: 40px
+				),
+				select: (
+					padding-left: 15px,
+					padding-right: 14px
+				)
+			),
+			separator: (
+				space: 14px
+			),
+			social-icon: (
+				font-size: 17px,
+				space: 4px,
+				size: 2rem
+			)
+		),
+		menu: (
+			main: (
+				top: (
+					space: 35px
+				)
+			)
+		),
+		footer: (
+			color: #777,
+
+			widget: (
+				title: (
+					margin: 0 0 1.6rem,
+					size: 1.5rem,
+					weight: 800,
+					color: $primary-color-dark
+				),
+
+				link: (
+					space: 1rem
+				)
+			),
+
+			top: (
+				padding-top: 0rem,
+				padding-bottom: 4rem
+			),
+
+			middle: (
+				padding-top: 4rem,
+    			padding-bottom: .7rem,
+				border-top: 1px solid #e7e7e7,
+			),
+
+			bottom: (
+				padding-top: 3.4rem,
+				padding-bottom: 3.3rem,
+				border-top: 1px solid #e7e7e7,
+				color: #777,
+				background: #fff
+			),
+
+			social-icon: (
+				font-size: 1.4rem,
+				color: $primary-color-dark,
+				border: 1px solid #e7e7e7,
+				space: .7rem,
+				size: 38px
+			)
+		),
+		breadcrumb: (
+			border-bottom: 0
+		)
+	)
+);
+
+// 4. Plugin Variables

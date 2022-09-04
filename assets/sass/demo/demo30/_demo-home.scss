@@ -1,0 +1,570 @@
+// Demo 30
+
+// Home
+// # Content
+// 1. Home Base ---------
+// 2. Home Sections --------
+//    2.1) Product Panel
+//    2.2) Home Banner ( 1 ~ 5 )
+//    2.3) Info Section
+
+// 3 Responsive -------
+
+
+// 1. Home Base ---------
+
+// 2. Home Sections --------
+// 2.1) Product Panel
+.product-panel {
+  margin-bottom: 3.9rem;
+
+  .section-title h2 {
+    margin-bottom: 1px;
+    text-transform: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: $second-font-family;
+    color: #313131;
+  }
+
+  .section-title {
+    margin-bottom: 2.4rem;
+  }
+}
+
+// 2.2) Home Banner
+.home-banner {
+  margin-bottom: 2rem;
+  position: relative;
+  background-color: #f6f7f9;
+
+  .product-default figure::before {
+    padding-top: 75.1%;
+  }
+
+  .banner-content {
+    padding: 12.2rem 3px 12.4rem 0;
+    font-family: $second-font-family;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    line-height: 1;
+    z-index: 2;
+
+    .btn {
+      padding: 1.3rem 2.4rem;
+      color: $primary-color;
+      letter-spacing: 0.01em;
+      background: transparent;
+      border: 2px solid $primary-color;
+      font-weight: 700;
+      font-size: 1.4rem;
+
+      &:hover {
+        background-color: $primary-color;
+        border-color: $primary-color;
+        color: #fff;
+      }
+    }
+
+    span {
+      color: #777;
+      font-size: .93em;
+      letter-spacing: 0;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      margin-bottom: 0;
+      margin-top: .6rem;
+      font-size: 3em;
+      color: $primary-color;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      margin-top: -1px;
+      margin-bottom: 2.4rem;
+      line-height: 1;
+      color: $secondary-color;
+      font-size: 2.29em;
+      letter-spacing: 0.022em;
+    }
+  }
+}
+
+// Home Banner2
+.home-banner,
+.home-banner2 {
+  .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: -4px;
+  }
+
+  .product-default {
+    margin-top: 1.7rem;
+
+    figure {
+      &:after {
+        display: none;
+      }
+    }
+
+    .product-title {
+      margin-bottom: .9rem;
+      font-size: 1.5rem;
+      letter-spacing: -.01em;
+    }
+
+    &:hover { 
+      figure {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .price-box {
+    font-family: $second-font-family;
+  }
+}
+
+.home-banner2 {
+  background-color: #d66a79;
+  width: 100%;
+  margin-bottom: 2rem;
+  height: calc(100% - 2rem);
+
+  .product-default {
+    margin-bottom: 0;
+
+    figure {
+      margin-bottom: 0;
+    }
+
+    .product-title {
+      font-size: 1.5rem;
+      margin-bottom: .9rem;
+    }
+
+    .price-box {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  h3 {
+    padding: 1.8rem 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.02em;
+    background-color: #f86c86;
+  }
+
+  .banner-content {
+    padding: 2rem;
+    background-color: #d66a79;
+
+    .product-panel {
+      padding: 0 4.3rem;
+      background-color: #f6f7f9;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 1.4rem 0 1.3rem;
+      width: 100%;
+      background-color: #e78594;
+      border: none;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.home-banner3 {
+  padding: 4.3rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  height: calc(100% - 2rem);
+  background-size: cover;
+
+  h3 {
+    position: relative;
+    padding-bottom: .8rem;
+    margin-bottom: 4.6rem;
+    width: fit-content;
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 24px;
+
+    &:after {
+      content: '';
+      background-image: url('../images/demoes/demo30/banners/highlighted-word.png');
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1rem;
+      width: 100%;
+
+    }
+  }
+
+  span {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.022em;
+    color: #999;
+    text-transform: none;
+  }
+
+  .select-box {
+    margin-bottom: 1.6rem;
+    width: 100%;
+  }
+
+  .select-custom {
+    margin-bottom: 0.8rem;
+    background: #fff;
+
+    &:after {
+      right: 1.7rem;
+      color: $primary-color-dark;
+    }
+  }
+
+  select.form-control:not([size]):not([multiple]) {
+    padding: .9rem 1rem 1rem 1.3rem;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: none;
+    height: 4.6rem;
+    -webkit-appearance: none;
+    font-family: $second-font-family;
+  }
+
+  .btn-filter {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+    background-color: $primary-color;
+    padding: 1.2rem;
+    border: none;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .btn {
+    padding: 1.3rem 0 1.2rem;
+    font-size: 1.3rem;
+    width: 100%;
+  }
+}
+
+.home-banner4 {
+  padding: 1.7rem 2rem 1.8rem;
+  background-repeat: no-repeat;
+  background-color: #f6f7f9;
+  width: 100%;
+  background-position: 90%;
+  transition: box-shadow .35s;
+
+  &:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      margin-bottom: -3px;
+      letter-spacing: 0.012em;
+      font-size: 2.4rem;
+      color: $primary-color-dark;
+    }
+
+    span {
+      font-size: 2rem;
+      font-weight: 400;
+      color: #777;
+      margin-bottom: 5rem;
+    }
+
+    a {
+      font-size: 1.2rem;
+      font-family: $second-font-family;
+      color: $primary-color;
+      font-weight: 700;
+      letter-spacing: 0.012em;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.home-banner5 {
+  position: relative;
+  height: 100%;
+
+  &:hover {
+    &:before {
+      right: 210px;
+      background: #fcfcfc;
+    }
+
+    .banner-background {
+      &:before,
+      &:after {
+        border-right-width: 215px;
+        border-bottom-color: #fcfcfc;
+        border-top-color: #fcfcfc;
+      }
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 188px;
+    left: 0;
+    height: 100%;
+    background: #fff;
+    transition: right .25s, background .25s;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-right: 215px solid;
+    opacity: .7;
+    border-top: 180px solid transparent;
+    border-bottom: 180px solid transparent;
+  }
+
+  .banner-background {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: #fff;
+    min-height: 360px;
+    height: 100%;
+    padding: 3rem 0 3rem 3rem;
+
+    &:before {
+      content: '';
+      border-top: 180px solid #fff;
+      border-right: 191px solid transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: border-right .25s,border-top-color .25s;
+    }
+
+    &:after {
+      content: '';
+      border-bottom: 180px solid #fff;
+      border-right: 191px solid transparent;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transition: border-right .25s,border-bottom-color .25s;
+    }
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+
+    span {
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 1.2;
+      color: #777;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 3.4rem;
+      color: $primary-color-dark;
+      text-transform: uppercase;
+      line-height: 1.4;
+      flex: 1;
+      letter-spacing: 0.01em;
+    }
+
+    .btn {
+      padding: 1.3rem 2.4rem 1.2rem;
+      font: 700 1.4rem $second-font-family;
+      letter-spacing: 0.01em;
+      color: $primary-color;
+      border: 2px solid $primary-color;
+      background-color: #fff;
+      width: fit-content;
+
+      &:hover {
+        background-color: $primary-color;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// 2.2) Info Section
+.info-section {
+  border: 1px solid #e7e7e7;
+  display: flex;
+
+  >div {
+    padding: 1.5rem 10px;
+
+    .info-box {
+      border-right: 1px solid #e7e7e7;
+    }
+
+    &:last-child {
+      .info-box {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.info-box {
+  padding: .7rem 2.4rem .8rem;
+  font-family: $font-family;
+  font-weight: 600;
+
+  h4 {
+    margin-bottom: 1px;
+    letter-spacing: 0.014em;
+    font-weight: 600;
+    font-family: $font-family;
+  }
+
+  p {
+    font-weight: 300;
+    color: #839199;
+  }
+}
+
+.info-box-icon-left i {
+  margin-right: 1.5rem;
+  font-size: 3.5rem;
+  color: $secondary-color;
+}
+
+// 3. Responsive
+@include mq(xl, max) {
+  .home-banner .banner-content {
+    font-size: 1.3rem;
+  }
+
+  .home-banner2 .banner-content .product-panel {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 576px) {
+  .info-box-icon-left i {
+    margin: 0 0 1rem;
+  }
+
+  .info-box {
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+
+    .info-box-content {
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@include mq(sm, max) {
+  .product-intro.owl-carousel.owl-theme .owl-dots {
+    top: -55px;
+  }  
+
+  .info-section>div .info-box {
+    border-right: 0;
+  }
+
+  .home-banner {
+    padding: 2rem 0;
+
+    .banner-content {
+      padding: 3.5rem 0 0rem;
+      font-size: 1.6rem;
+    }
+
+    .product-default {
+      margin: 0 10rem 2rem;
+    }
+  }
+
+  .info-section >div {
+    border-right: none;
+    
+    &:not(:last-child) {
+      border-bottom: 1px solid #e7e7e7;
+    }
+  }
+
+  .info-box {
+    padding: 1.9rem 1.4rem 2.1rem;
+    justify-content: flex-start;
+  }
+}
+
+@include mq(xs, max) {
+  .home-banner4 .banner-content {
+    h3 {
+      font-size: 1.6rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+    }
+  } 
+
+  .home-banner {
+    .product-default {
+      margin: 0 5rem 2rem;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+// 1. Theme Skin
+
+// 2. Theme Settings
+
+// 3. Theme Variables
+
+@include set(
+	(
+		header: (
+			link-color: rgba(255, 255, 255, .7),
+			top-notice: (
+				padding: .9rem 2rem 1rem,
+				background-color: $primary-color-dark
+			),
+			top: (
+				padding-top: 7px,
+				padding-bottom: 7px,
+				font-size: 1.1rem,
+				font-weight: 700,
+				letter-spacing: .017em,
+				color: rgba(255, 255, 255, .7)
+			),
+			middle: (
+				padding-top: 2.7rem,
+				padding-bottom: 2.7rem
+			),
+			bottom: (
+				background: #1d2024
+			),
+			separator: (
+				color: rgba(255, 255, 255, .18),
+				space: 1rem 0 1.5rem
+			),
+			logo: (
+				max-width: 111px,
+
+				sticky: (
+					max-width: 100px
+				)
+			),
+			search: (
+				height: 40px,
+				background: #151719,
+				divider: 1px solid $primary-color-dark,
+
+				select: (
+					padding-right: 1.5rem,
+					max-width: 12.9rem
+				),
+
+				border: (
+					width: 5px
+				),
+				btn: (
+					min-width: 48px,
+					color: #fff
+				)
+			),
+			icon: (
+				space: 2.4rem
+			),
+			dropdown: (
+				item: (
+					active-background: $primary-color-dark
+				),
+			)
+		),
+
+		menu: (
+			color: #a8a8a8,
+			active-background: $primary-color-dark,
+			top: (
+				color: #fff
+			),
+			vertical: (
+				background: #1b1e21
+			),
+			mega: (
+				background: #1b1e21
+			),
+			nolink: (
+				color: #fff
+			)
+		),
+
+		breadcrumb: (
+			border-bottom: false,
+			padding: 1.2rem 0 1.2rem
+		),
+
+		category: (
+			sidebar: (
+				border: 1px solid #272b2f,
+				title: (
+					color: #fff
+				)
+			)
+		),
+
+		footer: (
+			letter-spacing: .005em,
+			color: #a8a8a8,
+			background: #1d2024,
+			widget: (
+				title: (
+					margin: 0 0 1.3rem,
+					size: 1.5rem,
+					family: $second-font-family,
+					color: #fff
+				)
+			),
+			social-icon: (
+				font-size: 1.6rem,
+				space: .4rem,
+				size: 3.8rem
+			),
+			middle: (
+				padding-top: 6.6rem,
+				padding-bottom: 1.5rem
+			),
+			bottom: (
+				padding-top: 2.7rem,
+				padding-bottom: 2.7rem,
+				border-top: 1px solid #313438
+			)
+		)
+	)
+);
+
+// 4. Plugin Variables

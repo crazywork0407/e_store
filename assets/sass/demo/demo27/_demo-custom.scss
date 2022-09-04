@@ -1,0 +1,277 @@
+// Demo27 Shop page
+
+.category-banner {
+    img {
+        width: auto;
+    }
+
+    h3 {
+        font-size: 1.8125em;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 3.625em;
+    }
+
+    h4 {
+        font-size: 2.0625em;
+        letter-spacing: .005em;
+    }
+
+    .btn {
+        padding: 1.125em 4em;
+        font-size: .875em;
+        font-weight: 600;
+        letter-spacing: .15em;
+        line-height: 1.3333;
+    }
+
+    .col-lg-4 {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+// Sidebar
+.sidebar-shop {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+
+    .widget-title {
+        letter-spacing: .05em;
+
+        a:before, a:after {
+            margin-top: 2px;
+        }
+    }
+
+    .widget-body {
+        padding: 1.8rem 0 .8rem 1.5rem;
+    }
+
+    .widget-price .widget-body {
+        padding-left: 1.4rem;
+        padding-top: 1.5rem;
+    }
+    
+    .config-swatch-list {
+        display: block;
+        font-family: $second-font-family;
+
+        li {
+            a {
+                margin-bottom: 0;
+                width: 18px;
+                height: 18px;
+                color: $body-text;
+                font-size: 12px;
+                line-height: 18px;
+                text-indent: 35px;
+                white-space: nowrap;
+
+                &:before {
+                    text-indent: 0;
+                }
+    
+                &:hover, &.active {
+                    color: $primary-color;
+                }
+            }
+
+            &:not(:last-child) a {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    .product-widget {
+        .product-details {
+            margin-bottom: 4px;
+        }
+
+        .product-title {
+            margin-bottom: 7px;
+            font-family: $second-font-family;
+        }
+
+        .ratings-container {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+span.toggle {
+    top: -5px;
+    font-size: 1.3rem;
+}
+
+.cat-list {
+    li {
+        margin-bottom: 1.7rem;
+        font-family: $second-font-family;
+        font-size: 1.2rem;
+
+        a {
+            font-weight: 400;
+        }
+    }
+
+    .products-count {
+        margin-left: 4px;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+.cat-sublist {
+    margin-top: 1.7rem;
+    margin-left: 1.3rem;
+}
+
+.filter-price-action  {
+    .filter-price-text {
+        font-family: $second-font-family;
+    }
+
+    .btn {
+        font-family: $second-font-family;
+    }
+}
+
+// Main Content
+.main-content > .col-lg-9 {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+}
+
+.toolbox label {
+    font-family: $second-font-family;
+}
+
+// Responsive
+@include mq(lg) {
+    .category-banner {
+        font-size: .833333vw;
+
+        .col-lg-4 {
+            flex: 0 0 36%;
+            max-width: 36%;
+            padding: 2.5rem 2.4rem;
+        }
+    }
+}
+
+@include mq(xl) {
+    .category-banner .col-lg-4 {
+        padding-left: 4.8rem;
+        padding-right: 4.8rem;
+    }
+}
+
+@include mq(1440px) {
+    .main-content {
+        > .col-lg-3 {
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+
+        > .col-lg-9 {
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+    }
+}
+
+@include mq(lg, max) {
+    .category-banner .col-lg-4 {
+        background: none !important;
+    }
+
+    .sidebar-shop .widget:not(:last-child) {
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
+}
+
+// Product page
+
+.product-single-container {
+    padding-top: 3.5rem;
+}
+
+.product-single-details {   
+    .ratings-container {
+        margin-bottom: 2.2rem;
+    }
+
+    .old-price {
+        margin-right: 2px;
+    }
+
+    .product-desc {
+        margin-bottom: 1.9rem;
+        font-family: $second-font-family;
+        line-height: 1.6872;
+    }
+
+    .single-info-list {
+        font-family: $second-font-family;
+    }
+}
+
+.product-single-filter {
+    label {
+        margin-right: 9.2rem;
+        font-family: $second-font-family;
+        letter-spacing: 0;
+    }
+
+    .config-size-list li a {
+        height: 3.2rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.product-single-gallery {
+    margin-bottom: 3.2rem;
+}
+
+.product-single-tabs .nav.nav-tabs .nav-item .nav-link {
+    padding: 7px 0;
+    font-family: $second-font-family;
+    line-height: 25px;
+}
+
+.product-desc-content {
+    p {
+        margin-bottom: 2.2rem;
+    }
+
+    ul {
+        margin-bottom: 2.5rem;
+    }
+
+    li:before {
+        margin-top: -1px;
+    }
+    
+    ul, li {
+        letter-spacing: inherit;
+    }
+}
+
+.products-section {
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid #e7e7e7;
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .product-default .product-title {
+        margin-bottom: .4rem;
+    }
+}

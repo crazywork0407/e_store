@@ -1,0 +1,689 @@
+// Demo 31
+
+// # Content
+// 1. Home Base ---------
+//    1.1) Skin
+//    1.2) Plugin
+//    2.3) Extra
+
+// 2. Home Sections --------
+//    2.1) Home Banner
+//    2.2) Info Section
+//    2.3) Product Panel
+//    2.4) Product Slider
+//    2.5) Banner Container
+//    2.6) Popular Product Section
+
+// 3 Responsive -------
+
+// 1. Home Base ---------
+// 1.1) Skin
+.bg-parallax {
+  background: #1c1e21;
+}
+
+.mobile-cart > div,
+.mobile-sidebar,
+.custom-srcollbar {
+
+	&::-webkit-scrollbar-thumb {
+		background: #1c1e21;
+	} 
+	
+	&::-webkit-scrollbar-track {
+		background: $primary-color-dark;
+	}
+}
+
+.page-wrapper {
+  background-color: $primary-color-dark;
+}
+
+.product-quick-view {
+  background-color: #1c1e21;
+}
+
+// 1.2) Plugin
+.owl-theme .owl-dots .owl-dot {
+  &.active span, 
+  &:hover span {
+    border-color: #fff;
+  }
+  
+  &:hover {
+    span::before {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  span {
+    border-color: #fff;
+
+    &:before {
+      background-color: #fff;
+    }
+  }
+}
+
+// 1.3) Extra
+main.home {
+  padding-top: 2rem;
+}
+
+.height-x1 {
+  height: 460px;
+}
+
+.height-x2 {
+  height: 230px;
+}
+
+.bar-bottom {
+  padding-bottom: 1.7rem;
+  padding-top: 6px;
+  border-bottom: 1px solid #2c2f33; 
+}
+
+.center-details {
+  .product-details {
+    align-items: center;
+  }
+
+  .category-wrap {
+    width: auto;
+  }
+}
+
+// 2. Home Sections --------
+// 2.1) Home Banner
+.home-banner {
+  padding-bottom: 2rem;
+  position: relative;
+  height: 100%;
+
+  figure {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #191a1c;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+
+      .home & {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, .1);
+      opacity: 0;
+      transition: all 0.25s;
+      z-index: 1;
+      content: '';
+    }
+  }
+
+  &:hover {
+    figure:after {
+      opacity: 1;
+    }
+  }
+
+  .banner-content {
+    position: absolute;
+    font-family: $second-font-family;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    span {
+      font-size: 1.8rem;
+      margin-right: 2rem;
+
+      .height-x2 & {
+        opacity: 0.4;
+        font-size: 1.3rem;
+        letter-spacing: 0.025em;
+        margin-right: 0;
+      }
+    }
+
+    .span-box {
+      padding: 1rem 1.18rem;
+      font-family: $font-family;
+    }
+
+    .span-primary {
+      background-color: $primary-color;
+    }
+
+    .span-secondary {
+      background-color: $secondary-color;
+    }
+
+    h3 {
+      margin: 1.4rem 2rem 1.3rem;
+      font-size: 4rem;
+      letter-spacing: 0.01em;
+      color: #fff;
+      font-family: $font-family;
+
+      .height-x2 & {
+        margin: 3px 0 4.3rem;
+        font-size: 2.8rem;
+      }
+    }
+    
+    .sale-off {
+      position: relative;
+      margin: 1rem 0 3.7rem .8rem;
+      font-size: 1.6rem;
+
+      &:before {
+        content: 'UP TO';
+        font-size: 1rem;
+        letter-spacing: 0;
+        opacity: 0.6;
+        position: absolute;
+        left: 2px;
+        top: 50%;
+        transform: translate(-80%, -50%) rotate(-90deg);
+      }
+
+      span {
+        font-size: 2.6rem;
+        opacity: 1;
+      }
+
+      .span-box {
+        display: inline-block;
+        padding: .3rem .7rem .4rem .8rem;
+        margin-right: .9rem;
+        line-height: 1;
+      }
+    }
+
+    .skew-box {
+      transform: skew(2deg, -3deg);
+    }
+
+    .price-box {
+      margin-top: -0.5rem;
+      margin-bottom: 8rem;
+    }
+
+    .old-price {
+      margin-right: 0.7rem;
+    }
+
+    .product-price {
+      font-size: 2.8rem;
+      color: #fff;
+      letter-spacing: 0.005em;
+      font-weight: 600;
+    }
+
+    .btn {
+      padding: 1.6rem 3.5rem 1.6rem 3.4rem;
+      background-color: black;
+      letter-spacing: 0.01em;
+      color: #fff;
+      font-weight:  700;
+      min-width: auto;
+      font-family: $font-family;
+
+      .height-x2 & {
+        padding: 1.2rem 2.7rem 1.3rem;
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+
+    &.content-right-bottom {
+      right: 2rem;
+      bottom: 4rem;
+    }
+
+    &.content-stretch {
+      bottom: 4rem;
+      right: 2rem;
+      left: 2.5rem;
+      top: 2rem;
+
+     span,
+     h3,
+     .sale-off {
+      align-self: flex-start;
+     } 
+
+      .btn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      h3 {
+        margin-top: 1px;
+        margin-bottom: 3px;
+        font-size: 2.3rem;
+      }
+    }
+
+    &.content-black,
+    &.content-white {
+      span {
+        margin-bottom: -1px;
+        letter-spacing: 0.005em;
+        font-size: 1.3rem;
+        color: #777;
+        margin-right: 0;
+        font-family: $font-family;
+      }
+
+      h3 {
+        margin: 0;
+        margin-bottom: .7rem;
+        font-size: 3.6rem;
+        letter-spacing: -0.025em;
+        color: black;
+        font-style: italic;
+        font-weight: 800;
+      }
+
+      .product-price {
+        font-size: 2.8rem;
+        color: black;
+        margin-right: 0;
+      }
+
+      .old-price {
+        font-size: 1.8rem;
+      }
+
+      .price-box {
+        margin-bottom: 9.5rem;
+      }
+
+      .btn {
+        font-size: 1.2rem;
+        padding: 1.2rem 2.7rem 1.3rem;
+
+        &:hover {
+          background-color: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+
+    &.content-white {
+      .old-price {
+        color: #a7a7a7;
+      }
+
+      .span-box {
+        font-size: 1.8rem;
+        color: #fff;
+      }
+
+      h3 {
+        color: #fff;
+        font-style: normal;
+      }
+
+      .product-price {
+        color: #fff;
+      }
+
+      .btn {
+        background-color: #fff;
+        color: black;
+      }
+    }
+
+    &.content-left-stretch {
+      left: 2rem;
+      top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      bottom: 4rem;
+
+      .span-box {
+        margin-bottom: auto;
+      }
+
+      .price-box {
+        margin-bottom: 0;
+      }
+
+      .btn {
+        margin-top: auto;
+      }
+    }
+  }
+}
+
+.home-banner2 {
+  margin: 2rem 0;
+  font-family: $second-font-family;
+  text-transform: uppercase;
+  background-color: #f4f4f4;
+  display: flex;
+
+  > div {
+    padding: 4rem 10px 3.5rem;
+  }
+
+  h3 {
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: #181a1c;
+    letter-spacing: 0.01em;
+    line-height: 1.05;
+  }
+
+  p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #777;
+    margin-bottom: 0;
+  }
+
+  .btn {
+    margin-left: 8.3rem;
+    padding: 1.6rem 3.2rem 1.5rem 3.2rem;
+    background-color: black;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+    min-width: auto;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.banner-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 140px;
+}
+
+// 2.2) Info Section
+.info-section {
+  margin-bottom: 3.1rem;
+
+  >div {
+    border-right: 1px solid #2c2f33;
+    padding: 0 10px;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.info-box {
+  padding: 1.4rem 2.4rem;
+  font-family: $font-family;
+  font-weight: 600;
+
+  h4 {
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  p {
+    letter-spacing: 0.005em;
+    color: #839199;
+    font-weight: 300;
+  }
+}
+
+.info-box-icon-left i {
+  margin-right: 1.5rem;
+  font-size: 3.5rem;
+  color: $primary-color;
+}
+
+// 2.3) Product Panel
+.product-panel {
+  .section-title {
+    display: flex;
+    margin-bottom: 1.9rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 0;
+    border-bottom: none;
+
+    h2 {
+      font: 600 2.4rem $second-font-family;
+      color: #fff;
+      text-transform: none;
+    }
+
+    a {
+      margin-top: 5px;
+      color: $primary-color;
+      text-transform: uppercase;
+      font: 600 1.2rem $second-font-family;
+      letter-spacing: 0.01em;
+
+      i {
+        margin-left: 4px;
+      }
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }    
+}
+
+// 2.4) Product Slider
+.product-slider {
+  padding: 2rem;
+  background-color: #1c1e21;
+  height: calc(100% - 2rem);
+
+  &.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 2.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .product-default {
+    .product-title a {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+// 2.5) Banner Container
+.banner-container {
+  margin-bottom: .5rem;
+
+  img {
+    max-height: 400px;
+  }
+}
+
+// 2.6) Popular Product Section
+.popular-product-section {
+  margin-bottom: 1.7rem;
+}
+
+// 3. Responsive
+@include mq(lg) {
+  .flex-lg-1 {
+    flex: 1;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .info-box-icon-left i {
+    margin: 0 0 1rem;
+  }
+
+  .info-box {
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+
+    .info-box-content {
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-banner2 h3 {
+    font-size: 3.5rem;
+  }
+
+  .home-banner2 .btn {
+    margin-left: 4.3rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-banner2 .btn {
+    margin-left: 0; 
+  }
+
+  .home-banner2 {
+    position: relative;
+    justify-content: center;
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    .banner-background {
+      min-height: 203px;
+      background-position: -209px 9%;
+    }
+
+    .content-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .content-center,
+    .content-right {
+      position: absolute;
+    }
+
+    .content-right {
+      justify-content: center;
+      bottom: 0rem;
+    }
+  }
+}
+
+@include mq(md, max) {
+  .info-section {
+    border: 1px solid #2c2f33;
+  }
+
+  .home-banner2 h3 {
+    margin-bottom: 1rem;
+  }
+
+  .info-section >div:not(:last-child) {
+    border-bottom: 1px solid #2c2f33;
+  }
+
+  .info-box {
+    padding: 2rem 2.4rem;
+    justify-content: flex-start;
+  }
+}
+
+@include mq(sm, max) {
+  .header-icon.header-icon-user {
+    margin-right: 1.4rem;
+  }
+
+  .home-banner2 {
+    background-size: cover;
+
+    >div {
+      padding: 5rem 10px 4rem;
+    }
+
+    h3 {
+      margin-bottom: 4px;
+      font-size: 2.8rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .banner-background {
+      min-height: 192px;
+    }
+
+    .btn {
+      padding: 1.2rem 2rem;
+    }
+  }
+}
+
+@include mq(xs, max) {
+  .home-banner .banner-content h3 {
+    font-size: 3.4rem;
+  }
+
+  .product-panel .section-title h2 {
+    font-size: 1.9rem;
+  }
+
+  .home-banner2>div {
+    padding: 4.7rem 5px;  
+  }
+
+  .home-banner .banner-content {
+    &.content-black .price-box {
+      margin-bottom: 5rem;
+    }
+
+    &.content-white h3 {
+      font-size: 3rem;
+    }
+  }
+}

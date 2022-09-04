@@ -1,0 +1,800 @@
+// Base
+
+// # Content
+// 1. Header -------
+// 1.1) Header Base
+// 1.2) Header Elements
+
+// 2. Footer ----------
+// 3. Component ---------
+// 4. Responsive ----------
+
+// 1. Header
+// 1.1) Header Base
+.header {
+    border-bottom: 1px solid #f1f1f1;
+}
+.header-top {
+    .info-box {
+        i {
+            margin-right: .25rem;
+            font-size: 24px;
+            color: $primary-color-dark;
+        }
+        h4 {
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: -.025em;
+            text-transform: none;
+            color: $primary-color-dark;
+        }
+    }
+    .separator {
+        height: 2.8rem;
+        border-left-color: #dadcdd;
+        margin-right: 1.225rem;
+    }
+    .top-links {
+        a {
+            font-weight: 500;
+            letter-spacing: .025em;
+            line-height: 26px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            color: $primary-color-dark;
+        }
+        i {
+            font-size: 1.8rem;
+            vertical-align: middle;
+            margin-right: .8rem;
+        }
+    }
+    .social-icon {
+        position: relative;
+        font-size: 1.7rem;
+        margin: 0 1.5rem 0 1.6rem;
+    }
+    .social-icon + .social-icon {
+        margin: 0 1.4rem;
+        &:after {
+            content: '';
+            position: absolute;
+            border-left: 1px solid #dadcdd;
+            height: 2.8rem;
+            left: -1.5rem;
+            margin-left: -2px;
+        }
+    }
+}
+.header-middle {
+    .header-icon {
+        margin: 0 1.2rem 0 .8rem;
+    }
+    .separator {
+        height: 2.5rem;
+        border-left-color: #dadcdd;
+        margin: 0 1.8rem;
+    }
+    .sicon-default {
+        font-size: 3rem;
+        color: $primary-color-dark;
+        margin: 0 .7rem 0 .4rem;
+    }
+    .sicon-title {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 1;
+        color: #777;
+        margin-bottom: 3px;
+    }
+    .sicon-header > p {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 1;
+        color: $primary-color-dark;
+        white-space: nowrap;
+    }
+}
+.header-bottom.fixed {
+    padding-top: 4px;
+    height: 66px;
+    .main-nav .float-right {
+        display: block;
+    }
+}
+
+// 1.2) Header Elements
+// 1.2.1) Header Top Notice
+.top-notice {
+    h4, h6 {
+        color: #fff;
+        font-size: 1.3rem;
+        line-height: 1.4;
+        font-weight: 500;
+        letter-spacing: -.025em;
+        margin-bottom: 0;
+    }
+
+    a {
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 1.4;
+        letter-spacing: -.025em;
+        border-bottom: 1px solid #fff;
+        &:hover {
+            opacity: .85;;
+        }
+    }
+}
+
+// 1.2.2) Header Dropdown
+.header-dropdown {
+    letter-spacing: 0.02em;
+
+    &:not(.dropdown-expanded) {
+        padding-top: 6px;
+    }
+
+    &.dropdown-expanded {
+        margin-left: 3.4rem;
+    
+        li+li {
+            margin-left: 4rem;
+        }
+    } 
+}
+.header-dropdown+.header-dropdown {
+    margin-left: .5rem;
+}
+// 1.2.4) Header Cart Dropdown 
+.dropdown-arrow {
+    .badge-circle {
+        top: 0px;
+    }
+
+    &:after {
+        display: none;
+    }
+}
+
+.cart-toggle i {
+    font-size: 2.7rem;
+}
+
+
+.sticky-header .cart-dropdown {
+    margin: 4px 3px 2px 0;
+}
+
+// 1.2.5) Header User Icon
+.header-user {
+    display: flex;
+    align-items: center;
+    padding: 0 .4rem;
+    cursor: pointer;
+
+    i {
+        display: flex;
+        margin-right: .625rem;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        font-size: 28px;
+        color: $primary-color-dark;
+        margin-top: 3px;
+
+        &:before {
+            margin-bottom: 2px;
+            margin-left: 1px;
+        }
+    }
+  
+    &:hover span {
+        text-decoration: underline;
+    }
+}
+
+.header-userinfo { 
+    margin-bottom: 5px;
+
+    span {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 11px;
+        letter-spacing: -.025em;
+        color: #777777;
+    }
+  
+    h4 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        color: #282d3b;
+        white-space: nowrap;
+    }
+}
+
+// 1.2.6) Header Wishlist Icon
+.wishlist-count {
+    right: -9px;
+    top: 0;
+}
+
+// Header Menu
+.main-nav > .menu {
+    text-transform: capitalize;
+
+    .submenu {
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .menu-item {
+        margin-right: 3.6rem;;
+        cursor: pointer;
+  
+        > a {
+            color: $primary-color-dark;
+            border-radius: 4px;
+            padding-right: 0;
+            i {
+                margin-right: .9rem;
+                font-size: 1.6rem;
+            }
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        &::after {
+            content: "\f078";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 10px;
+            margin-left: .8rem;
+            transition: color .3s;
+        }
+        &:hover {
+            &:after {
+                color: $primary-color;
+            }
+        }
+        a::before {
+            display: none !important;
+        }
+    }
+    &.sf-arrows .sf-with-ul:after {
+       display: none;
+    }
+    > li {
+        &.active a {
+            font-weight: 700;
+        }
+        &:last-child {
+            margin-right: 1.6rem;
+        }
+        &:first-child {
+            > a {
+                font-weight: 600;
+                font-size: 1.4rem;
+                letter-spacing: -.025em;
+            }
+
+            .sf-with-ul:after {
+                margin-left: .9rem;
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            span {
+                margin-bottom: 2px;
+                display: inline-block;
+            }
+        }
+        &:hover > a,
+        &.active > a {
+            color: $primary-color;
+        }
+    }
+    > li.float-right {
+        i {
+            font-size: 2.1rem;
+            margin-right: 8px;
+        }
+
+        a {
+            font-weight: 700;
+            color: $primary-color;
+        }
+
+        &.phone a {
+            padding-top: 10px;
+            font-size: 1.4rem;
+        }
+        &:hover a {
+            opacity: .85;
+        }
+    }
+}
+
+// 1.2.4) Header Toggle Menu
+.custom-icon-toggle-menu {
+    display: inline-block;
+    position: relative;
+    border-top: 3px solid;
+    width: 18px;
+    vertical-align: middle;
+    margin-right: .75rem;
+    margin-bottom: 3px;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -9px;
+        border-top: 3px solid;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -6px;
+        border-top: 3px solid;
+    }
+}
+
+.menu-depart {
+    position: absolute;
+    left: 0;
+    top: 97%;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    z-index: 1000;
+    background: #fff;
+    width: 250px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    transition: all 0.5s;
+    height: 0;
+    color: $primary-color-dark;
+    padding: 0 1rem;
+    overflow: hidden;
+    a:not(:last-child) {
+        border-bottom: 1px solid rgba(0,0,0,0.125);
+    }
+    a {
+        display: flex;
+        align-items: center;
+        padding: 1.1rem 1.6rem 1rem .7rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: none;
+        letter-spacing: -0.025em;
+    }
+    i {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+}
+.menu-depart.opened {
+    visibility: visible;
+    height: 22rem;
+}
+
+.menu-banner.menu-banner-2 {
+	max-height: 349px;
+
+	.btn {
+		bottom: 18px;
+		padding: 7px 32px;
+	}
+}
+
+// 1.2.3) Header Search and Category Box
+.header-search-wrapper {
+    .btn:before {
+        margin-top: 2px;
+    }
+}
+
+// 2. Footer
+// 2.1) Footer Base
+.footer {
+    .widget-content {
+        li {
+            margin-bottom: 1rem;
+        }
+    }
+    .widget-title {
+        font-size: 1.8rem;
+        letter-spacing: -.025em;
+        text-transform: capitalize;
+        color: #fff;
+        margin-bottom: 1.4rem;
+    }
+    .contact-info-label {
+        font-size: 1.4rem;
+        letter-spacing: -.025em;
+        font-weight: 600;
+        color: #888;
+        margin-bottom: 0;
+    }
+    .contact-info li {
+        font-size: 1.4rem;
+        letter-spacing: -.025em;
+        color: #fff;
+        padding-top: 2px;
+        a:hover {
+            color: #fff;
+        }
+    }
+    .links li {
+        margin-bottom: 1px;
+    }
+    a:focus, a:hover {
+        color: #fff;
+    }
+
+// 2.2) Footer Element
+// 2.2.1) Footer Soical icon
+    .social-icons {
+        margin: 1.5rem 0 2.7rem;
+    }
+    .social-icon:not(:hover):not(:active):not(:focus) {
+        background: #fff;
+    }
+    
+    .widget-payment {
+        .widget-title {
+            margin-top: -1px;
+            margin-bottom: 1.3rem;
+        }
+    }
+// 2.2.2) Footer Payment
+    .payment-icons {
+        .payment-icon {
+            margin: 1px;
+            filter: invert(1);
+            color: #fff;
+            background-color: transparent;
+        }
+    } 
+// 2.2.3) Footer Logo
+    .logo-footer {
+        max-width: 128px;
+    }
+}
+.footer-copyright {
+    font-size: 1.2rem;
+    color: #999;
+}
+// 2.2.3) Footer Newsletter
+.widget-newsletter { 
+    .form-control {
+        height: 4.4rem;
+        padding: 0.9rem 2.5rem 0.8rem 0;
+        border: 0;
+        box-shadow: none;
+        outline: none;
+        background: #2d3034;
+        color: #777;
+        font-family: Poppins, sans-serif;
+        font-size: 1.2rem;
+    }
+    form {
+        padding-right: 2px;
+        background: #2d3034;
+        border-radius: 5rem;
+        padding-left: 2.5rem;
+    }
+    .btn {
+        height: 44px;
+        font-size: 1.2rem;
+        padding: 1.2rem 2.4rem;
+        border-radius: 0 30px 30px 0;
+        color: #fff;
+        background: #2d3034;
+    }
+}
+
+// 3. Component
+// 3.1) Base
+body {
+    font-family: $second-font-family;
+}
+h2, h3, h4, h6, p {
+    letter-spacing: -.025em;
+    margin-bottom: 0;
+}
+.ls-25 {
+    letter-spacing: -.025em;
+}
+.owl-carousel.nav-inside .owl-nav .owl-prev {
+    left: 15.8vw;
+}
+.owl-carousel.nav-inside .owl-nav .owl-next {
+    right: 15.8vw;
+}
+.owl-carousel.nav-outer .owl-nav .owl-prev {
+    left: -1.6vw;
+}
+.owl-carousel.nav-outer .owl-nav .owl-next {
+    right: -1.6vw;
+}
+.owl-carousel.dots-simple .owl-dots .owl-dot span {
+    margin-right: 4px;
+    &:hover {
+        &:before {
+            background-color: $primary-color-dark;
+        }
+    }
+    &:before {
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        border: 1px solid $primary-color-dark;    
+    }
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 3.1rem;
+}
+.btn-rounded {
+    border-radius: 7px;
+}
+.btn-outline-primary {
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    &:hover {
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+}
+.btn-outline-white {
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent;
+    &:hover {
+        color: $primary-color-dark;
+        background-color: #fff;
+        border-color: #fff;
+    }
+}
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -.025em;
+    color: $primary-color-dark;
+}
+.title-underline {
+    position: relative;
+    margin-bottom: 4rem;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 4.6rem;
+        left: 0;
+        padding: 0 2.8rem;
+        border: 2px solid $primary-color;
+    }
+}
+.sicon-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -.025em;
+    color: $primary-color;
+    margin-bottom: 4rem;
+    i {
+        margin-left: 1.5rem;
+        color: $primary-color-dark;
+    }
+}
+.divider {
+    margin-right: 2.4rem;
+    padding-right: 2.4rem;
+    border-right: 1px solid #e7e7e7;
+}
+svg {
+    .appear-animate {
+        animation-fill-mode: both;
+    }
+}
+// Product Default
+.product-default {
+    margin: 0;
+    height: 100%;
+    background-color: #fff;
+    
+    figure {
+        margin: 0;
+    }
+
+    .product-countdown-container {
+        padding: 1rem 1rem 1.1rem;
+    }
+
+    .product-label {
+        border-radius: 0;
+    }
+    .category-list {
+        font-family: Poppins, sans-serif;
+    }
+    .product-details {
+        position: relative;
+        margin: 1.5rem 0;
+    }
+    .btn-icon-wish {
+        border: 1px solid transparent;
+        background: transparent;
+        color: #6f6e6b;
+        line-height: 34px;
+    }
+}
+
+.product-price {
+    color: #444;
+}
+
+.product-widget figure {
+    max-width: 84px;
+    height: 84px;
+}
+.product-widget .price-box,
+.inner-icon .price-box {
+    font-family: Poppins, sans-serif;
+}
+
+// Responsive
+
+@media (min-width: 992px) {
+    .header-search-category {
+        .btn,
+        .form-control {
+            border-radius: 0;
+        }
+
+        .header-search-wrapper {
+            border: 2px solid #e7e7e7;
+            border-radius: 4px;
+            height: 40px;
+        }
+
+        .form-control,
+        .select-custom {
+            background: #fff;
+            font-family: $second-font-family;
+        }
+
+        select {
+            font-size: 13px;
+            padding-left: 1rem;
+            letter-spacing: 0;
+            color: #555;
+        }
+
+        .form-control {
+            padding-left: 2rem;
+            border-radius: 5px;
+        }
+
+        .btn {
+            min-width: 57px;
+            background-color: #fff;
+        }
+        
+        .select-custom:after {
+            right: 11px;
+            top: 49%;
+        }
+
+        &.header-search .header-search-wrapper {
+            border-width: 2px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1236px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .main-nav>.menu:not(.menu-vertical) {
+        .menu-item {
+            margin-right: 1.2rem;
+        }
+
+        >li {
+            margin-right: 1rem;
+
+            &.float-right {
+                margin-right: 0;
+            }
+    
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-nav > .menu>li>a {
+        padding: 1.6rem .6rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-search-wrapper {
+        height: 34px;
+        border-color: #ccc;
+
+        .btn {
+            background-color: #fff;
+        }
+    }
+
+    .search-toggle:after {
+        border-bottom-color: #ccc;
+    }
+
+    .header-search {
+        .form-control, 
+        .select-custom {
+            background: #fff;
+        }
+
+        .select-custom {
+            width: 14rem;
+            flex: 0 0 14rem;
+
+            &:after {
+                margin-top: 3px;
+            }
+        }
+    }
+
+    .logo {
+        max-width: 101px;
+    }
+
+    @media (min-width: 480px) {
+        .header-search {
+            .form-control, 
+            .select-custom {
+                border-right: 1px solid #ccc;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sticky-header .cart-dropdown {
+        margin-bottom: 4px;
+    }
+
+    .top-notice {
+        .container {
+            padding: 0;
+        }
+
+        h5 {
+            margin: 0;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-search-wrapper .select-custom {
+        display: none;
+    }
+}

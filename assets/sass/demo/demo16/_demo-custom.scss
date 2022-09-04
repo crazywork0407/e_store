@@ -1,0 +1,337 @@
+// About
+.about-us {
+	section {
+		font-size: 1rem;
+	}
+	
+	p {
+		font-size: 1.4em;
+		line-height: 1.93;
+	}
+	
+	.section-subtitle {
+		margin-bottom: 6px;
+		font-size: 2.6em;
+		line-height: 1;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+	
+	.section-title {
+		font-family: $third-font-family;
+		font-size: 4.4em;
+		font-weight: 400;
+		line-height: 1;
+		letter-spacing: .025em;
+	}
+
+	.owl-theme .owl-nav [class*='owl-']:not(.disabled):hover {
+		color: #0088cc;
+	}
+}
+
+.page-header {
+	min-height: 319px;
+
+	h1 {
+		margin-top: 3.5rem;
+		margin-left: 4.7rem;
+		font-size: 3.8rem;
+		font-weight: 700;
+		line-height: 1;
+		color: #161616;
+		letter-spacing: 1px;
+		
+		span {
+			margin-bottom: -2px;
+			font-family: $third-font-family;
+			font-size: 2.4rem;
+			font-weight: 400;
+		}
+	}
+}
+
+.info-section,
+.team-section {
+	background-color: #f4f4f2;
+}
+
+.info-section {
+	padding: 9rem 1rem 8rem;
+
+	.section-title,
+	.section-subtitle {
+		text-align: center;
+	}
+
+	.section-content {
+		max-width: 780px;
+	}
+
+	.section-title {
+		margin-bottom: 3.5rem;
+	}
+}
+
+.service-section {
+	padding-top: 8rem;
+	padding-bottom: 4.6rem;
+
+	.section-title {
+		margin-bottom: 4.9rem;
+	}
+
+	.section-content {
+		max-width: 680px;
+	}
+}
+
+.info-box {
+	padding: 0;
+	margin-bottom: 2.4rem;
+	align-items: flex-start;
+
+	i {
+		margin-top: -3px;
+		margin-right: 2rem;
+		font-size: 4em;
+		color: #777;
+
+		&::before {
+			margin: 0;
+		}
+	}
+
+	h4 {
+		margin-bottom: 1.2rem;
+		font-size: 1.8em;
+		font-weight: 500;
+		text-transform: unset;
+	}
+
+	p {
+		color: #646a70;
+	}
+}
+
+.team-section {
+	padding-top: 8rem;
+	padding-bottom: 7.1rem;
+
+	.section-subtitle {
+		margin-top: 2rem;
+	}
+
+	.section-title {
+		margin-bottom: 2.5rem;
+	}
+
+	.owl-carousel {
+		padding-right: 4rem;
+		padding-left: 4rem;
+	}
+
+	p {
+		color: #282d3b;
+	}
+
+	.member-title {
+		padding-top: 2.3rem;
+		text-align: center;
+		font-family: $third-font-family;
+		font-size: 1.6em;
+		letter-spacing: .05em;
+	}
+
+	.owl-carousel .owl-nav button.owl-prev,
+	.owl-carousel .owl-nav button.owl-next {
+		top: 88%;
+		font-size: 2rem;
+		color: #0088cc;
+	}
+
+	.owl-carousel .owl-nav button.owl-prev {
+		left: -32%;
+	}
+
+	.owl-carousel .owl-nav button.owl-next {
+		right: auto;
+		left: -29.5%;
+	}
+}
+
+//product
+.breadcrumb {
+	padding: 1.2rem 0;
+}
+
+.sub-page {
+	.main {
+		margin-bottom: 5rem;
+	}
+
+	.product-default figure,
+	.product-single-gallery .product-item,
+	.prod-thumbnail img {
+		border: 1px solid #f4f4f4;
+	}
+
+	.products-slider .product-default figure:hover {
+		border-color: #fff;
+		box-shadow: 0 0 7px 1px rgba(121, 121, 121, 0.2);
+	}
+
+	.products-group {
+		padding-bottom: 2rem;
+	}
+
+	.prod-thumbnail img:hover {
+		border-width: 2px; 
+		border-color: #21293c;
+	}
+
+	.banner {
+		padding: 0;
+
+		img {
+			min-height: 320px;
+			object-fit: cover;
+		}
+
+		h2 {
+			margin-bottom: 4px;
+		}
+
+		h3 {
+			letter-spacing: .02em;
+		}
+
+		.text-right,
+		.text-left {
+			font-size: 1rem;			
+		}
+	}
+
+	.sticky-wrapper {
+		background: transparent;
+	}
+
+	.text-left {
+		h2 {
+			margin-left: 5px;
+			font-family: 'Segoe Script','Savoye LET';
+			font-size: 3.8em;
+			font-weight: 400;
+		}
+
+		h3 {
+			font-size: 14em;
+		}
+	}
+
+	.text-right {
+		h2 {
+			margin-right: 16%;
+			margin-bottom: 0;
+			font-size: 2em;
+			font-weight: 300;
+			letter-spacing: .18em;
+		}
+
+		h3 {
+			font-size: 15.2em;
+		}
+
+		small {
+			font-size: 4rem;
+			display: inline-block;
+			word-break: break-all;
+			width: 1em;
+			text-align: center;
+			font-weight: inherit;
+			white-space: normal;
+		}
+	}
+
+	.banner-layer-middle {
+		top: 51%;
+		right: 10px;
+		left: 5px;
+		transform: translateY(-50%);
+	}
+}
+
+.cat-list li {
+	margin-bottom: 8px;
+}
+
+.sidebar-shop {
+	.widget-body {
+		padding-top: 1.3rem;
+		padding-bottom: 1.3rem;
+	}
+
+	.widget-title a::before {
+		margin-top: 0;
+		height: 1px;
+	}
+}
+
+span.toggle {
+	top: 0;
+}
+
+.tab-pane {
+	font-size: 1.4rem;
+}
+
+.product-single-details .product-nav .product-link {
+	line-height: 24px;
+}
+
+
+@include mq('lg', max) {
+	.team-section {
+		.owl-carousel {
+			padding: 0;
+		}
+	}
+
+	.about-us section {
+		padding-top: 3rem !important;
+		padding-bottom: 3rem !important;
+		font-size: .9rem;
+	}
+
+	.sub-page {
+		.banner {
+			.text-right,
+			.text-left {
+				font-size: .8rem;			
+			}
+		}
+	
+		.text-right {
+			small {
+				font-size: 3rem;
+			}
+		}
+	}
+}
+
+@include mq('sm', max) {
+	.sub-page {
+		.banner {
+			.text-right,
+			.text-left {
+				font-size: .4rem;			
+			}
+		}
+	
+		.text-right {
+			small {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}

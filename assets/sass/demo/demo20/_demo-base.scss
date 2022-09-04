@@ -1,0 +1,237 @@
+// Demo 20 Base
+
+// Layout
+.container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+// Header
+.badge-circle {
+    background-color: $primary-color;
+    font-size: 1rem;
+}
+
+// Header Elements
+
+// Main Nav
+.main-nav .menu > li > a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: -0.35px;
+}
+
+// Header Search
+.header-search .form-control{
+    flex: 1;
+    width: 28rem;
+    padding-left: 2.1rem;
+    padding-right: 2.1rem;
+    color: #555;
+}
+
+// Header Dropdown
+.header-dropdowns {
+    margin-right: 3.2rem;
+}
+
+.header-dropdown {
+    letter-spacing: .025em;
+
+    &.dropdown-expanded {
+        margin-left: 2.8rem;
+    
+        li + li {
+            margin-left: 2.8rem;
+        }
+    }
+}
+
+// Header Icon
+.icon-wishlist-2 + .badge-circle {
+    top: -2px;
+    right: -8px;
+}
+
+.cart-dropdown {
+    margin-right: 4px;
+}
+
+.minicart-icon {
+    width: 20px;
+    height: 17px;
+
+    &:before {
+        top: -7px;
+        margin-left: -6px;
+        width: 13px;
+        height: 9px;
+    }
+    
+    & + .badge-circle {
+        top: -5px;
+        right: -7px;
+        z-index: 1;
+    }
+}
+
+// Header Sticky
+.header .sticky-header.fixed {
+    background-image: linear-gradient(to bottom,rgba(246,246,246,1),rgba(255,255,255,1));
+}
+
+// Responsive
+@include mq(lg) {
+    .header-middle {
+        .header-center {
+            padding: 0 1.5rem;
+        }
+
+        .header-left, .header-right {
+            flex: 1;
+        }
+    }
+}
+
+// Prouct Default
+.product-default.inner-icon {
+    position: relative;
+    margin-bottom: 2rem;
+
+    .product-title {
+        letter-spacing: -.01em;
+    }
+	
+	.product-details {
+		padding: 0;
+	}
+
+	.category-list {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		width: calc( 100% - 20px );
+    }
+    
+    .product-price {
+        color: #444;
+    }
+
+	.btn-icon-wish, 
+	.btn-quickview {
+		top: auto;
+	}
+
+	.btn-icon-wish {
+        background: transparent;
+		left: auto;
+		right: 0;
+	}
+
+	&:not(.product-widget):hover {
+		box-shadow: none;
+
+		figure {
+			box-shadow: 0 25px 35px -5px rgba(0, 0, 0, 0.1);
+		}
+
+		.img-effect a:first-child::after {
+			opacity: 1;
+		}
+
+		figure .btn-quickview {
+			padding-top: 1.2rem;
+            padding-bottom: 1.3rem;
+            letter-spacing: 0;
+		}
+    }
+}
+
+// inner-quickview
+.inner-quickview {
+	figure {
+		.btn-quickview {
+            padding: .8rem 1.4rem;
+            transition-property: padding-top, padding-bottom, opacity;
+            transition-duration: .25s;
+			line-height: 1.82;
+			z-index: 2;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	.category-wrap .btn-icon-wish {
+		font-size: 1.6rem;
+		padding-top: 1px;
+	}
+}
+
+// Breadcrumb
+.breadcrumb-item a {
+    &:hover, &.active {
+        color: inherit;
+        text-decoration: underline;
+    }
+}
+
+// Footer
+
+// Top Border
+.top-border:before {
+	content: '';
+	display: block;
+	flex: 0 0 100%;
+	border-top: 1px solid rgba(255, 255, 255, .05);
+}
+
+.footer {
+    background-color: #222529;
+
+    .links li {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    .social-icon {
+        margin-bottom: 2px;
+    }
+}
+
+.footer-question {
+    margin-right: 2.4rem;
+
+    h3 {
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+}
+
+.footer-copyright {
+    font-size: .9em;
+}
+
+// Instagram
+.instagram-section {
+    h6 {
+        line-height: 1.2;
+    }
+}
+
+.instagram {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        color: #fff;
+        font-family: "porto";
+        font-size: 2.5rem;
+        bottom: 2.1rem;
+        right: 2rem;
+    }
+}

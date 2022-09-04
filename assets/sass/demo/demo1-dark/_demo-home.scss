@@ -1,0 +1,687 @@
+// Home
+
+// # Content
+// 1. Home Base ---------
+// 2. Home Sections --------
+//    2.1) Info Box Container
+// 	  2.2) Home Slider
+// 	  2.3) Banners Container
+//	  2.4) Products Slider
+// 	  2.5) Brands Slider
+// 	  2.6) Feature Boxes Container
+
+// 3. Home Sidebar --------
+// 	  3.1) Sidebar Base
+// 	  3.2) Sidebar Components
+//		   3.2.1) Sidebar Banners
+//		   3.2.2) Sidebar Newsletter
+//		   3.2.3) Sidebar Testimonials
+//		   3.2.4) Sidebar Post
+
+// 1. Home Base
+.section-title {
+	padding-bottom: 1rem;
+	margin-top: -1px;
+	border-bottom: 1px solid #313438 ;
+	font-size: 1.6rem;
+}
+
+.owl-carousel.dots-small .owl-dots {
+    margin: 0 -2px 2.5rem;
+}
+
+.products-slider {
+	&>.owl-stage-outer {
+		padding-bottom: 12px;
+	}
+	.owl-dots .owl-dot span {
+		border-color: #fff;
+	}
+}
+
+// 2. Home Sections
+// 2.1) Info Box Container
+.info-boxes-container {
+	border: 1px solid #313438;
+	.info-box {
+		margin: 1.4rem 0 1.2rem;
+		padding: 1.2rem;
+		padding-right: 1.5rem;
+	}
+	p {
+		font-weight: 300;
+		letter-spacing: 0.01em;
+	}
+	i {
+		margin-top: -2px;
+		margin-right: 4px;
+		padding: 0 .1em;
+		line-height: 0;
+	}
+	.icon-shipping {
+		font-size: 3.5rem;
+	}
+}
+
+// 2.2) Home Slider
+.home-slider {
+	img {
+		height: 428px;
+		object-position: center center;
+	}
+	.banner-layer {
+		padding-bottom: 3px;
+		left: 5.5%;
+	}
+	h4 {
+		color: #777;
+		font-size: 1em;
+		font-weight:500;
+		letter-spacing: .08em;
+		opacity: .7;
+	}
+	h5 {
+		font-size: .875em;
+		margin-top: -4px;
+		b {
+			font-size: 0.93em;
+		}
+	}
+	em {
+		font-size: 2em;
+		font-style: normal;
+		vertical-align: middle;
+	}
+	.btn {
+	    padding: 1em 2.8em;
+	}
+	.owl-dots {
+		position: absolute;
+		bottom: 37px;
+		left: 5.5%;
+		.owl-dot {
+			span {
+				width: 14px;
+				height: 14px;
+				border-color: $primary-color-dark;
+				&::before {
+					background-color: $primary-color-dark;
+				}
+			}
+			&:hover span,
+			&.active span {
+				border-color: $primary-color-dark;
+				&:before {
+					width: 4px;
+					height: 4px;
+					background: $primary-color-dark;
+				}
+			}
+		}
+	}
+}
+.home-slide1 {
+	h4 {
+		padding-bottom: 1.4rem;
+		font-size: .9625em;
+	}
+	h2 {
+		font-size: 2.7344em;
+		letter-spacing: .002em;
+		font-family: 'Segoe Script','Savoye LET';
+	}
+	h3 {
+		font-size: 4.75em;
+	}
+	h5 {
+		margin-right: -2px;
+		font-size: .6875em;
+	}
+	.coupon-sale-text {
+		padding: 4px 8px;
+		margin: 0 .5em 0 1em;
+		font-size: 1.09em;
+	}
+}
+.home-slide2 h2 {
+	font-size: 3.4375em;
+}
+.home-slide3 h2 {
+	font-size: 3em;
+}
+
+// 2.3) Banners Container
+.banner-hover-shadow {
+	img {
+		height: 170px;
+		object-fit: cover;
+	}
+	&:hover {
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, .1);
+	}
+}
+.banners-container {
+	.banner {
+		transition: box-shadow .35s;
+	}
+	.banner3 .banner-layer {
+		right: 5.6%;
+	}
+	h3 {
+		font-size: 1.5em;
+		color: $primary-color-dark;
+	}
+	h4 {
+		margin-bottom: 2.5rem;
+		font-size: .875em;
+		font-weight: 600;
+	}
+	.banner-layer {
+		left: 7.143%;
+		right: 7.143%;
+	}
+	a {
+		font-size: .75em;
+		font-weight: 700;
+		font-family: $second-font-family;
+	}
+}
+.banner1 {
+	h4 {
+		padding-bottom: 1px;
+		font-size: 1.8125em;
+		font-weight: 800;
+	}
+	.banner-layer {
+		padding-bottom: 1px;
+	}
+	del {
+		margin-right: 2px;
+	}
+	sup {
+		top: -.3em;
+		font-size: 70%;
+		font-weight: 700;
+	}
+}
+.banner2 {
+	img {
+		border: 12px solid #e7e7e7;
+	}
+	h3 {
+		font-size: 1.25em;
+	}
+	.banner-layer {
+		padding-top: 10px;
+		left: 0;
+		right: 0;
+	}
+}
+.banner3 {
+	h4 {
+		padding-bottom: 3px;
+		font-size: .9375em;
+		line-height: 1.4;
+	}
+	.banner-layer {
+		padding-bottom: 1px;
+	}
+	img {
+		object-position: left;
+	}
+}
+
+// 2.5) Brands Slider
+.brands-slider {
+	padding: 3.2rem 0;
+	margin-bottom: 3.3rem;
+	border-top: 1px solid #313438 ;
+	border-bottom: 1px solid #313438 ;
+}
+
+// 2.6) Feature Boxes Container
+.feature-boxes-container {
+	padding-top: 3px;
+	h5 {
+		color: #a8a8a8;
+		font-weight: 400;
+	}
+	p {
+		font-size: 1.3rem;
+	}
+	i {
+		margin-bottom: 1.6rem;
+		width: 84px;
+		height: 84px;
+		border: 2px solid #0188cc;
+		border-radius: 50%;
+		font-size: 35px;
+		line-height: 80px;
+	}
+}
+.feature-box {
+	background-color: $primary-color-dark;
+}
+// Products Widgets
+.products-widgets {
+	padding-bottom: 1.3rem;
+}
+.product-column	.section-sub-title {
+	margin-bottom: 1.6rem
+}
+
+// 3. Home Sidebar
+// 3.1) Sidebar Base
+.side-menu-title {
+	padding: 1.2rem 2.8rem 1.1rem;
+	font-size: 1.5rem;
+}
+.menu-vertical {
+	> li:not(:first-child) > a {
+		border-top-color: #313438;
+	}
+	&.sf-arrows > li > .sf-with-ul::before {
+		border-right-color: $primary-color-dark;
+	}
+}
+.sidebar-home {
+	padding-bottom: .6rem;
+	font-size: $sidebar-font-size;
+	.widget {
+		margin-bottom: 2.4rem;
+	}
+	.owl-carousel .banner img {
+		width: auto;
+		margin: auto;
+	}
+	.owl-dots .owl-dot span {
+		border-color: #e7e7e7;
+	}
+	p {
+		line-height: 24px;
+		letter-spacing: 0.01em;
+	}
+	.tip:before {
+		content: '';
+		position: absolute;
+		left: -8px;
+		right: 100%;
+		top: 50%;
+		margin-top: -2px;
+		border: 3px solid transparent;
+		border-width: 3px 2px 0 2px;
+		border-right: 3px solid #eb2771;
+		border-top: 2px solid transparent;
+		border-bottom: 2px solid transparent;
+	}
+}
+.custom-sidebar-toggle {
+	background-color: #1b1e21;
+	border-color: #313438;
+}
+.sidebar-toggle {
+	color: #fff;
+}
+// 3.2) Sidebar Components
+// 3.2.1) Sidebar Banners
+.widget-banners {
+	background-color: #1b1e21;
+	small {
+		display: block;
+		position: absolute;
+		margin: 2px 0 4px;
+		left: -22px;
+		bottom: 32px;
+		font-size: 10px;
+		font-family: "Open Sans";
+		font-weight: 700;
+		opacity: .6;
+		transform: rotateZ(-90deg);
+		letter-spacing: normal;
+	}
+	.sale-text {
+		position: relative;
+		margin-right: 3px;
+		margin-bottom: 1.5rem;
+		font-size: 7rem;
+		letter-spacing: -.05em;
+		sup {
+			font-size: 60%;
+			font-weight: 700;
+		}
+		sub {
+			font-size: 1.6rem;
+			font-weight: 400;
+			position: absolute;
+			right: -3px;
+			bottom: 7px;
+			font-weight: 700;
+			line-height: 1.4em;
+			letter-spacing: 0;
+		}
+	}
+	p {
+		margin-bottom: 1.6rem;
+		font-size: .875em;
+		max-width: 100%; // for only ie
+		letter-spacing: -.025em;
+	}
+	.owl-carousel .disabled + .owl-dots {
+		margin: 1.8rem 0 2.3rem;
+	}
+	.btn.btn-md {
+		padding: .9em 2.2em;
+	}
+}
+.badge-sale {
+	width: 11.3rem;
+	height: 11.3rem;
+	margin-top: 2.5rem;
+	margin-bottom: 1.7rem;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: rgba(255,255,255,.8);
+	border-radius: 50%;
+    letter-spacing: .06em;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 1px;
+		height: 2.5rem;
+		background: #e7e7e7;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 3.3rem;
+		left: 50%;
+		transform: translateX(-50%);
+		border-radius: 50%;
+		width: 9px;
+		height: 9px;
+		background: #fff;
+	}
+	em {
+		display: block;
+		padding-top: .8rem;
+		margin-bottom: -1px;
+		color: #fff;
+		font-size: 2.9rem;
+		font-style: normal;
+		font-weight: 800;
+		letter-spacing: .015em;
+	}
+}
+.banner4,
+.banner5 {
+	margin-top: 2.5rem;
+	h3 {
+		font-size: 2.25em;
+	}
+	h4 {
+		margin-bottom: 1.5rem;
+		font-size: 2rem;
+		margin-top: 3.2rem;
+	}
+	h5 {
+	    margin-bottom: 1.5rem;
+		font-size: 1em;
+		margin-right: 3px;
+		b {
+			padding: .2em .3em;
+			margin-left: 3px;
+		}
+	}
+	.btn {
+		padding: .88em 2.16em .89em;
+		margin-top: .8rem;
+		font-size: 1.3rem;
+	}
+	.coupon-sale-text i {
+		font-size: .6em;
+		letter-spacing: 0.05em;
+		margin-bottom: 1px;
+	}
+}
+
+.banner5 {
+	h4 {
+		margin: -3px 0 2.5rem 4px;
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 1;
+		letter-spacing: 0.5em;
+	}
+	h5 {
+		margin-left: 1.5rem;
+		b {
+			margin-right: .7rem;
+		}
+	}
+	.btn {
+		margin-top: .6rem;
+	}
+}
+
+// 3.2.2) Sidebar Newsletter
+.widget-newsletters {
+	background-color: #1b1e21;
+	padding: 2.7rem 2.4rem 3.6rem;
+	.widget-title {
+		font-size: 1.5rem;
+		color: #fff;
+	}
+	.form-group {
+		margin-bottom: 1.6rem;
+		&:before {
+			position: absolute;
+			left: 1.6rem;
+			top: 1.6rem;
+			color: #fff;
+			font-size: 1.5rem;
+		}
+	}
+	.btn-md {
+		padding: .8em 2em;
+		letter-spacing: 0.01em;
+		border-color: #0088cc #0088cc #006699;
+	}
+	.form-control {
+		border-radius: 5rem;
+		padding: 1.2rem;
+		padding-left: 4rem;
+		font-size: inherit;
+		color: inherit;
+		background-color: #151719;
+		line-height: inherit;
+		border: 0;
+		height: 48px;
+		font-family: $second-font-family;
+		&:focus + label {
+			opacity: 0;
+		}
+		&:not(:focus) {
+			border-color: #e4e4e4;
+		}
+		&::placeholder {
+			color: #a8a8a8;
+		}
+	}
+}
+
+// 3.2.2) Sidebar Testimonials
+.widget-testimonials {
+	border: 3px solid $primary-color;
+	.testimonial {
+		padding: 2.3rem 2.3rem 0;
+		p {
+			font-size: 1.3rem;
+			color: #a8a8a8;
+			letter-spacing: 0;
+		}
+		blockquote {
+			margin-bottom: .5rem;
+			padding: 1rem 0 1rem 2.1rem;
+		}
+	}
+	.testimonial-owner span {
+		text-transform: none;
+		font-weight: 400;
+		font-size: 1.3rem;
+		color: #777;
+		letter-spacing: 0;
+	}
+	img {
+		border-radius: 50%;
+	}
+
+	figure {
+		margin-bottom: 1.3rem;
+		max-width: 55px;
+		margin-right: 1.2rem;
+	}
+	.testimonial-title {
+		margin: 0;
+		font-size: 1.6rem;
+		text-transform: capitalize;
+		padding-top: .9rem;
+		margin-bottom: 1px;
+		letter-spacing: 0.01em;
+		color: #fff;
+	}
+	blockquote:before {
+		left: -.3em;
+		color: #fff;
+		font-size: 4.8rem;
+	}
+	&.widget .owl-carousel .owl-dots {
+		margin: 1.2rem 0 3.5rem 5.7rem;
+	}
+}
+
+// 3.2.3) Sidebar Post
+.widget-posts {
+	.post,
+	p {
+		margin: 0;
+	}
+	.read-more {
+		display: flex;
+		align-items: center;
+		float: none;
+		color: #fff;
+		font-size: 12px;
+		font-weight: 600;
+		i {
+			margin-left: 2px;
+			font-size: 9px;
+		}
+	}
+	.prod-full-screen {
+		right: .5rem;
+		bottom: .5rem;
+	}
+	.post-media .post-date {
+		top: 1.3rem;
+	}
+}
+
+// 3. Category Page
+// Coupon Sale Text
+.coupon-sale-text {
+	position: relative;
+	display: inline-block;
+	padding: 5px 8px;
+	transform: rotate(-2deg);
+	i {
+		position: absolute;
+		left: -2.25em;
+		top: 50%;
+		transform: translateY(-50%) rotate(-90deg);
+		font-size: .65em;
+		font-style: normal;
+		opacity: .6;
+		letter-spacing: 0;
+	}
+	b {
+		display: inline-block;
+		padding: 5px 8px;
+		font-size: 1.6em;
+		background-color: #fff;
+	}
+	em {
+		font-size: 2em;
+		font-style: normal;
+	}
+}
+.category-banner {
+	padding: 6.8rem 0;
+	.coupon-sale-text {
+		font-family: $font-family;
+	}
+
+	h3 {
+		font-size: 3.125em;
+	}
+
+	h4 {
+		font-size: 1.125em;
+		line-height: 1.7;
+	}
+
+	h5 {
+		font-size: 1em;
+	}
+
+	.btn {
+		font-size: .82em;
+		padding: 1.03em 2.81em;
+	}
+}
+
+// 4. Responsive
+@media (min-width: 991px) {
+	.home .sidebar-toggle {
+		display: none;
+	}
+}
+@media (max-width: 1219px) and (min-width: 992px) {
+	.products-widgets figure {
+		max-width: 70px;
+		margin-right: 15px;
+	}
+}
+@include mq(lg, max) {
+	.info-boxes-container .info-box {
+		justify-content: flex-start;
+		-ms-flex-pack: start;
+
+		&:not(:last-child) {
+			padding-bottom: 2.3rem;
+			margin-bottom: 0;
+			border-right: 0;
+		}
+	}
+	.sidebar-home .owl-carousel .banner img {
+		max-width: 140px;
+	}
+	.mobile-sidebar.sidebar-home {
+		padding: 2rem 1.5rem;
+	}
+}
+@media (max-width: 575px) {
+	.banner-sm-vw {
+		font-size: 1.2rem;
+	}
+}
+@include mq(xs, max) {
+	.banners-container .banner {
+		font-size: 3.5vw;
+	}
+	.home-slider .banner-layer {
+		left: 3.5%;
+		right: auto;
+	}
+}

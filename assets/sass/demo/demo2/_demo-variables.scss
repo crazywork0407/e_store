@@ -1,0 +1,136 @@
+
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+
+
+// 2. Theme Settings
+
+// 3. Theme Variables
+
+@include set(
+	(
+		layout: (
+			container: (
+				max-width-desktop: 1140px
+			)
+		),
+
+		header: (
+			link-color: #fff,
+
+			top: (
+				padding-top: 7px,
+				padding-bottom: 7px,
+				font-size: 1.1rem,
+				font-weight: 600,
+				letter-spacing: .025em,
+				color: #bde1f5,
+				border-bottom: 1px solid #0e95d8
+			),
+
+			middle: (
+				padding-top: 2.7rem,
+				padding-bottom: 2.7rem,
+				color: #fff
+			),
+
+			bottom: (
+				background: #fff,
+				border-bottom: 1px solid #e7e7e7
+			),
+
+			logo: (
+				max-width: 111px,
+				max-width-mobile: 90px
+			),
+
+			dropdown: (
+				font: (
+					size: 11px,
+					weight: 600
+				),
+			),
+
+			separator: (
+				color: #0e95d8,
+				space: 15px
+			),
+
+			search: (
+				height: 42px,
+				background: #f4f4f4,
+
+				border: (
+					width: 5px,
+					color: $primary-color
+				),
+
+				select: (
+					padding-left: 1.5rem,
+					max-width: 12.8rem
+				),
+
+				btn: (
+					min-width: 42px,
+					color: #606669
+				)
+			),
+
+			social-icon: (
+				space: 2px
+			),
+
+			icon: (
+				space: 2.1rem,
+			)
+		),
+
+		menu: (
+			main: (
+				top: (
+					color: $primary-color-dark,
+					active-color: $primary-color,
+					padding: 2.1rem 0
+				)
+			)
+		),
+
+		breadcrumb: (
+			padding: 1.2rem,
+			border-bottom: 0
+		),
+
+		footer: (
+			color: #a8a8a8,
+			
+			middle: (
+				padding-top: 6.6rem,
+				padding-bottom: 1rem
+			),
+
+			bottom: (
+				padding-top: 2.4rem,
+				padding-bottom: 2.3rem,
+				border-top: 1px solid #313438
+			),
+
+			widget: (
+				title: (
+					size: 1.5rem,
+					color: #fff,
+					margin: 0 0 1.3rem
+				)
+			)
+		)
+	)
+);
+
+// 4. Plugin Variables

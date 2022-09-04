@@ -1,0 +1,307 @@
+// Demo25 Shop page
+
+.category-banner {
+    h3 {
+        font-size: 1.375em;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 2.1875em;
+        line-height: 1.1;
+    }
+
+    h4 {
+        color: #222529;
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+    
+    small {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 50%;
+        font-weight: inherit;
+        line-height: 1.6;
+    }
+
+    .btn {
+        padding: 1.15em 2.25em;
+        font-size: .875em;
+    }
+
+    .brand img {
+        width: auto;
+    }
+
+    .col-lg-3 {
+        padding: 2.4rem 0 2.4rem .8rem;
+    }
+
+    .col-md-4:nth-child(2) {
+        padding: 140px 0;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .col-md-4:last-child {
+        padding: 2.4rem;
+    }
+}
+
+// Sidebar
+.sidebar-shop {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+
+    .widget-title {
+        letter-spacing: .05em;
+
+        a:before, a:after {
+            right: 3px;
+            margin-top: 2px;
+        }
+    }
+
+    .widget-body {
+        padding: 1.8rem 0 .8rem 1.5rem;
+    }
+
+    .widget-price .widget-body {
+        padding-right: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    
+    .config-swatch-list {
+        display: block;
+        font-family: $second-font-family;
+
+        li {
+            a {
+                margin-bottom: 0;
+                width: 18px;
+                height: 18px;
+                color: $body-text;
+                font-size: 12px;
+                line-height: 18px;
+                text-indent: 35px;
+                white-space: nowrap;
+
+                &:before {
+                    text-indent: 0;
+                }
+    
+                &:hover, &.active {
+                    color: $primary-color;
+                }
+            }
+
+            &:not(:last-child) a {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    .product-widget {
+        .product-details {
+            margin-bottom: 4px;
+        }
+
+        .product-title {
+            margin-bottom: 7px;
+            font-family: $second-font-family;
+        }
+
+        .ratings-container {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+span.toggle {
+    top: -6px;
+    font-size: 1.5rem;
+}
+
+.cat-list {
+    li {
+        margin-bottom: 1.7rem;
+        font-family: $second-font-family;
+        font-size: 1.2rem;
+
+        a {
+            font-weight: 400;
+        }
+    }
+
+    .products-count {
+        margin-left: 4px;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+.cat-sublist {
+    margin-top: 1.8rem;
+    margin-left: 1.3rem;
+}
+
+.filter-price-action  {
+    .filter-price-text {
+        font-family: $second-font-family;
+    }
+
+    .btn {
+        font-family: $second-font-family;
+    }
+}
+
+// Main Content
+.main-content > .col-lg-9 {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+}
+
+.toolbox label {
+    font-family: $second-font-family;
+}
+
+// Responsive
+@include mq(lg) {
+    .category-banner {
+        font-size: 1.6rem;
+
+        .col-md-4:last-child {
+            padding-left: 4.8rem;
+            padding-right: 4.8rem;
+        }
+    }
+}
+
+@include mq(lg, max) {
+    .sidebar-toggle span, .layout-btn i:before {
+        font-weight: 700;
+    }
+}
+
+// Product page
+
+.product-single-container {
+    padding-top: 3.5rem;
+}
+
+.product-single-details {   
+    .ratings-container {
+        margin-bottom: 2.2rem;
+    }
+
+    .old-price {
+        margin-right: 2px;
+    }
+
+    .product-desc {
+        margin-bottom: 1.9rem;
+        font-family: $second-font-family;
+        line-height: 1.6872;
+    }
+
+    .single-info-list {
+        font-family: $second-font-family;
+    }
+}
+
+.single-info-list li {
+    letter-spacing: .2px;
+
+    strong {
+        letter-spacing: inherit;
+    }
+}
+
+.product-single-gallery {
+    margin-bottom: 3.2rem;
+}
+
+.product-single-tabs .nav.nav-tabs .nav-item .nav-link {
+    padding: 7px 0;
+    font-family: $second-font-family;
+    line-height: 25px;
+}
+
+.product-desc-content {
+    p {
+        margin-bottom: 2.2rem;
+    }
+
+    ul {
+        margin-bottom: 2.5rem;
+    }
+
+    li:before {
+        margin-top: -1px;
+    }
+    
+    ul, li {
+        letter-spacing: inherit;
+    }
+}
+
+.products-section {
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid #e7e7e7;
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .product-default .product-title {
+        margin-bottom: .4rem;
+    }
+
+    .owl-carousel.dots-top .owl-dots span {
+        border-color: rgba(135,65,0,.4);
+    }
+}
+
+.product-widgets-container {
+    padding-top: 4.8rem;
+    margin-bottom: 5.4rem;
+
+    .section-sub-title {
+        font-size: 1.4rem;
+        letter-spacing: -.5px;
+        line-height: 1.4;
+    }
+
+    figure {
+        margin-right: 1.5rem;
+    }
+
+    .product-details {
+        margin-bottom: 4px;
+    }
+
+    .product-title {
+        margin-bottom: .6rem;
+        font-family: $second-font-family;
+        font-size: 1.3rem;
+    }
+
+    .ratings-container {
+        margin-bottom: 1.1rem;
+    }
+
+    .old-price {
+        color: #444;
+        font-size: 1.1rem;
+    }
+
+    .product-price {
+        font-size: 1.4rem;
+    }
+}

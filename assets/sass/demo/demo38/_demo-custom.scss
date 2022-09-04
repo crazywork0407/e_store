@@ -1,0 +1,201 @@
+// Pages
+
+// 1. Shop Page ---------
+//    1.1) Shop Base
+//    1.1) Shop Element
+//         1.1.1) Widget Category
+//         1.1.2) Widget Brand
+//         1.1.3) Toolbox and Pagination
+
+// 2. Product Page --------
+//    2.1) Product Single Base
+//    2.2) Product Component
+//         2.2.1) Product Single Details
+//         2.2.2) Product Single Tab
+
+// 3. Responsive --------
+
+// 1. Shop
+// 1.1) Shop Base
+.products-group {
+  .product-default {
+      margin-bottom: 2.3rem;
+  }
+}
+
+.sidebar-shop {
+  .widget-body {
+    padding-top: 1.7rem;
+  }
+
+  .widget-price {
+    .widget-body {
+      padding-top: 1.5rem;
+    }
+  }
+
+  .widget-brand {
+    .widget-body {
+      padding-bottom: .8rem;
+    }
+  }
+
+  .widget-featured {
+    padding-bottom: 2px;
+  }
+}
+
+// 1.1) Shop Element
+// 1.1.2) Widget Category
+.widget-category {
+  .cat-list li:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+// 1.1.2) Widget Brand
+.widget-brand {
+  .cat-list li {
+    font-size: 13px;
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+    
+    a {
+      font-weight: 400;
+    }
+  }
+}
+
+// 1.1.3) Toolbox and Pagination
+.toolbox {
+  .form-control,
+  label {
+      padding-bottom: 2px;
+      font-family: $second-font-family;
+  }
+}
+
+.page-item {
+  > .page-link:not(span) {
+      display: flex;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      width: 33px;
+      height: 33px;
+      border: 1px solid #ccc;
+  }   
+}
+
+// 2. Product Page
+// 2.1) Product Base
+.products-section {
+  padding-bottom: 1.5rem;
+
+  h2 {
+      margin-bottom: 2.4rem;
+      font-size: 1.6rem;
+  }
+
+  .owl-carousel.dots-top .owl-dots {
+      margin-bottom: 2.5rem;
+  }
+
+  .owl-carousel.dots-top {
+    .owl-dot.active span {
+      border-color: $primary-color-dark;
+    }
+
+    .owl-dots span {
+      border-color: rgba(0,0,0,0.4);
+    }
+  }
+}
+
+// 2.2) Product Component
+// 2.2.1) Product Single Details
+.product-single-details {
+  .price-box {
+    font-family: $font-family
+  }
+
+  .ratings-container {
+    margin-bottom: 2.3rem;
+
+    .product-ratings, 
+    .ratings {
+      letter-spacing: .07em;
+    }
+  }
+
+  .product-desc {
+    margin-bottom: 1.9rem;
+  }
+}
+
+.single-info-list {
+  margin-bottom: 1.8rem;
+
+  li {
+    margin-bottom: 1.2rem;
+  }
+} 
+
+.product-filters-container {
+  .select-custom {
+    max-width: 307px;
+    width: 100%;
+  }  
+}
+
+.product-single-filter {
+  .form-control {
+    padding-top: 5px;
+    border-color: rgba(0,0,0,0.09);
+    font-family: $second-font-family;
+  }
+
+  label {
+    margin-right: 3.5rem;
+  }
+}
+
+// 2.2.2) Product Single Tab
+.product-single-tabs {
+  .nav.nav-tabs .nav-link {
+      font-family: $second-font-family;
+  }
+}
+
+.nav-tabs .nav-item .nav-link {
+  padding: 1.2rem 0 1.4rem;
+}
+
+.product-desc-content {
+  ul {
+    margin-bottom: 1.6rem;
+    padding-left: 2.4rem;
+  }
+
+  p {
+    margin-bottom: .8rem;
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 0px;
+
+    &:before {
+      content: '';
+      padding-top: 1re;
+      margin-top: 1rem;
+      width: 5px;
+      height: 5px;
+      left: -1.7rem;
+      border-radius: 50%;
+      background-color: #7b858a;
+    }
+  }
+}

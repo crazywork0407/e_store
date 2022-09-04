@@ -1,0 +1,533 @@
+// Home
+
+// # Content
+// 1. Home Base ------
+// 2. Home Sections -------
+// 	  2.1) Home Slider
+//	  2.2) Info Boxes Slider
+//	  2.3) Home Products 
+//	  2.4) Banner Slider
+//	  2.5) Brands Section
+//	  2.6) Products Container
+//	  2.7) Big Sale Banner
+//	  2.8) Category Banner
+//	  2.9) Feature Boxes Container
+
+// 3. Resposive -------
+
+// 1. Home Base
+.font-script {
+	font-family: 'Segoe Script','Savoye LET';
+}
+
+.section-sub-title {
+	font-size: 1.6rem;
+}
+
+.coupon-sale-text {
+	display: inline-block;
+	position: relative;
+    padding: 4px 8px 4px 7px;
+	transform: rotate(-2deg);
+
+	i {
+		position: absolute;
+		left: -2.25em;
+		top: 50%;
+		transform: translateY(-50%) rotate(-90deg);
+		font-size: .65em;
+		font-style: normal;
+		opacity: .6;
+		letter-spacing: 0;
+	}
+
+	b {
+		display: inline-block;
+		padding: 5px 8px;
+		font-size: 1.6em;
+	}
+
+	em {
+		font-size: 2em;
+		font-style: normal;
+		vertical-align: middle;
+	}
+}
+
+main > .container:not(.container-not-boxed) {
+	position: relative;
+	padding: 2rem 3rem 1.4rem;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 1rem;
+		right: 1rem;
+		top: 0;
+		bottom: 0;
+		background: #fff;
+		z-index: -10;
+	}
+
+	.outer-container {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+}
+
+// 2. Home Sections
+// 2.1) Home Slider
+.home-slider {
+	&.nav-large .owl-nav {
+		font-size: 28px;
+
+		i:before {
+			font-weight: 800;
+		}
+	}
+
+	.banner-layer {
+		padding-bottom: 2px;
+		left: 7%;
+	}
+
+	.slide-bg {
+		min-height: 510px;
+	}
+
+	.btn {
+		margin-top: .6rem;
+		font-size: .9em;
+		padding: 1em 2.75em 1.2em;
+	}
+
+	.upto-text {
+	    margin-bottom: 2px;
+		line-height: 1.2;
+		letter-spacing: .03em;
+
+		em {
+			display: inline-block;
+			font-size: 45%;
+			font-weight: inherit;
+			font-style: normal;
+			line-height: 1.1;
+			margin-right: .2em;
+			text-align: center;
+		}
+	}
+}
+
+.home-slide1 {
+	h4 {
+		font-size: 1.1875em;
+		font-weight: 500;
+		letter-spacing: .08em;
+		opacity: .7;
+	}
+
+	h2 {
+		font-size: 3.875em;
+		letter-spacing: .05em;
+	}
+
+	h3 {
+		font-size: 4.625em;
+	}
+
+	h5 {
+		font-size: .875em;
+		vertical-align: super;
+
+		b {
+			font-size: 0.93em;
+		}
+	}
+
+	.coupon-sale-text {
+		margin: 0 .6em 0 .9em;
+		font-size: 1.03em;
+	}
+}
+
+.home-slide2 {
+	background: #D7D6DC;
+
+	.slide-bg {
+		object-position: 75%;
+	}
+
+	h2 {
+		font-size: 2.4375em;
+		font-weight: 500;
+	}
+
+	h3 {
+		font-size: 6.125em;
+	}
+
+	h5 {
+		font-size: 1em;
+
+		span {
+			font-size: 1.25em;
+			vertical-align: sub;
+		}
+
+		em {
+			font-size: 2em;
+			font-style: normal;
+			vertical-align: middle;
+			position: relative;
+			top: 1px;
+		}
+	}
+
+	.upto-text {
+		margin-bottom: 8px;
+	}
+
+	.btn {
+		margin-left: -2px;
+		font-size: 1em;
+		padding: 1.21em 4.25em 1.25em;
+	}
+}
+
+// 2.2) Info Boxes Slider
+.info-boxes-slider {
+	.info-box {
+		padding: 2.4rem 0 2.5rem;
+	}
+
+	.font-35 {
+		font-size: 3.5rem;
+	}
+
+	p {
+		color: #777;
+		line-height: 1.2;
+		letter-spacing: 0;
+	}
+}
+
+.info-box-icon-left i {
+    margin-right: 1.5rem;
+    font-size: 3.7rem;
+}
+
+// 2.3) Home Products 
+.home-products-container {
+	.owl-nav {
+		.owl-prev {
+			left: 5px;
+		}
+
+		.owl-next {
+			right: 5px;
+		}
+		
+		i:before {
+			font-size: 17px;
+			padding: .3em;
+			font-weight: 600;
+		}
+	}
+
+	.product-default {
+		figure {
+			box-shadow: none;
+		}
+
+		.category-list {
+			text-align: center;
+		}
+
+		&:hover {
+			box-shadow: none;
+		}
+	}
+
+	img {
+		filter: brightness(1.1);
+	}
+}
+
+.banner-layer-circle {
+	display: flex;
+	display: -ms-flexbox;
+	align-items:center;
+	-ms-flex-align: center;
+	justify-content: center;
+	-ms-flex-pack: center;
+	position: absolute;
+	width: 2.25em;
+	height: 2.25em;
+	border-radius: 50%;
+	color: #fff;
+	background: $primary-color-dark;
+	letter-spacing: -.08em;
+
+	sup {
+		margin-top: 2px;
+		margin-left: .2em;
+		line-height: 1.1;
+		top: -.1em;
+		letter-spacing: 0;
+		font-size: .525em;
+	}
+
+	span {
+		margin-top: 1px;
+	}
+
+	small {
+		display: block;
+		font-size: 4px;
+		letter-spacing: -.025em;
+		margin-left: .1em;
+	}
+}
+
+// 2.4) Banner Slider
+.banners-slider {
+	h3 {
+		font-size: 1.5em;
+	}
+
+	h4 {
+		font-size: .9375em;
+		font-weight: 600;
+	}
+
+	figure img {
+		min-height: 175px;
+		object-fit: cover;
+	}
+
+	.banner-layer {
+		left: 6.85%;
+		right: 6.85%
+	}
+
+	.btn {
+		font-size: .7em;
+	    padding: .93em 2em 1.1em;
+	}
+
+	.banner-layer-brand {
+		left: 5%;
+		bottom: 3%;
+		width: 30%;
+	}
+}
+
+.banner1 {
+	h4 {
+		font-size: 1.75em;
+		font-weight: 800;
+	}
+
+	sup {
+		font-size: 70%;
+		top: -.275em;
+		font-weight: 700;
+
+	}
+}
+
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.banner1 sup {
+		top: -.5em;
+	}
+}
+
+.banner2 {
+	img {
+		border: .875em solid $primary-color;
+	}
+
+	h3 {
+		font-size: 1.375em;
+	}
+
+	.banner-layer {
+		left: 0;
+		right: 0;
+	}
+
+	.banner-layer-circle1 {
+		left: 6.5%;
+		top: 11.8%;
+		font-size: 1em;
+		font-weight: 700;
+	}
+
+	.banner-layer-circle2 {
+		right: 6.5%;
+		top: 12.5%;
+		font-size: .75em;
+	}
+
+	.banner-layer-circle3 {
+		bottom: 16%;
+		right: 45%;
+		font-size: .625em;
+	}
+}
+
+.banner3 {
+	img {
+		object-position: left;
+	}
+
+	.banner-layer-circle {
+		left: 31%;
+		top: 24%;
+		font-size: 1.75em;
+		font-weight: 700;
+
+		small {
+			font-size: 7px;
+		}
+	}
+}
+
+// 2.5) Brands Section
+.brands-slider {
+	padding-bottom: .8rem;
+}
+
+// 2.6) Products Container
+.products-container {
+	padding-bottom: 3px;
+
+	.product-default {
+		margin-bottom: 3.4rem;
+	}
+
+	.loadmore {
+		padding: 1.25em 3.9em 1.35em;
+	}
+}
+
+// 2.7) Big Sale Banner
+.banner-big-sale {
+	background-color: #3D79AF;
+
+	h2 {
+		font-size: 1.25em;
+		line-height: 1.2;
+
+		small {
+			font-size: 70%;
+			font-weight: 500;
+			opacity: .7;
+			margin-left: .8em;
+		}
+	}
+
+	b {
+		position: relative;
+		padding: .38em .64em;
+		font-size: 1.04em;
+		z-index: 1;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #000;
+			transform: rotateZ(-2deg) skew(1deg);
+			z-index: -1;
+		}
+	}
+
+	.btn {
+		margin-bottom: -3px;
+		font-size: .875em;
+		padding: 1.5rem 3.58rem;
+	}
+}
+
+// 2.8) Category Banner
+.category-banner {
+	padding: 11.2rem 0 11.5rem;
+	margin-top: -1px;
+    padding-left: .7rem;
+
+	b:before {
+		background: $secondary-color;
+	}
+}
+
+// 2.9) Feature Boxes Container
+.feature-boxes-container {
+	h5 {
+		margin-top: -1px;
+		font-weight: 600;
+		font-family: $font-family;
+		color: #777;
+	}
+
+	p {
+		margin-top: -2px;
+		font-size: 1.3rem;
+		color: #687176;
+	}
+
+	i {
+	    margin-bottom: 1.6rem;
+		width: 8rem;
+		height: 8rem;
+		border-radius: 50%;
+		font-size: 3.5rem;
+		line-height: 8rem;
+		color: #fff;
+		background: #0E0F11;
+
+		&:before {
+			display: inline-block;
+			margin-top: 2.2rem;
+		}
+	}
+}
+
+// 3. Responsive
+@include mq(lg) {
+	.banner-big-sale {
+		.banner-content {
+			height: 92px;
+		}
+	}
+}
+
+@include mq(lg, max) {
+	main > .container {
+		&:not(.container-not-boxed) {
+			padding-left: 15px;
+			padding-right: 15px;
+
+			&:before {
+				left: 0;
+				right: 0;
+			}
+		}
+
+		.outer-container {
+			margin: 0 -15px;
+		}
+	}
+}
+
+
+@include mq(sm, max) {
+	.product-widgets figure {
+		max-width: 40%;
+		flex: 0 0 40%;
+		-ms-flex: 0 0 40%;
+	}
+}

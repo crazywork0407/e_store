@@ -1,0 +1,323 @@
+// Demo 37
+// 1. Header
+// 	  1.1) Header Base
+// 	  1.2) Header Element
+//         1.2.1) Top Notice
+//         1.2.2) Header Dropdown and Cart Drop Down
+//         1.2.3) Header Search
+//         1.2.4) Header Icons
+//         1.2.5) Header Category Nav
+
+// 2. Footer
+//    2.1) Footer Base
+//    2.2) Footer Element
+//         2.2.1) Footer Widget
+//         2.2.2) Footer Social Icons
+//         2.2.3) Footer Payment
+
+// 3. Component
+//    3.1) Base
+//    3.2) Breadcrumb
+//    3.3) Product Default
+
+// 4. Responsive
+
+// 1. Header
+// 1.1) Header Base
+body {
+	font-family: $second-font-family;
+}
+
+.header {
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.header-top {
+	line-height: 24px;
+
+	.dropdown-expanded {
+		li + li {
+			margin-left: 0;
+		}
+		a {
+			padding-left: 2.1rem;
+			padding-right: 1.1rem;
+		}
+	}
+
+	.info-box {
+		i {
+			margin-right: 8px;
+			font-size: 2.4rem;
+		}
+
+		h4 {
+			margin-bottom: 1px;
+			font-size: 1.3rem;
+			font-weight: 600;
+			letter-spacing: -.05em;
+			text-transform: capitalize;
+			color: #666666;
+		}
+	}
+}
+
+.header-icon:not(:last-child) {
+    margin-top: 1px;
+}
+
+// 1.2) Header Element
+// 1.2.1) Top Notice
+.top-notice {
+	padding: .9rem 2rem 1.1rem;
+
+	h5 {
+		margin-bottom: 1px;
+		margin-right: 4px;
+		b {
+			letter-spacing: .04em;
+		}
+	}
+
+	.category {
+		background: #151719;
+	}
+}
+
+// 1.2.2) Header Dropdown and Cart Drop Down
+.header-dropdown>a:after {
+    font-size: 1.2rem;
+}
+
+.sticky-header .cart-dropdown {
+	margin-bottom: -2px;
+	margin-right: 2px;
+}
+
+.dropdown-arrow {
+	.badge-circle {
+		top: 0px;
+		left: 20px;
+	}
+
+	&:after {
+		display: none;
+	}
+}
+
+.wishlist-count {
+	top: 0px;
+    right: -9px;	
+}
+
+// 1.2.3) Header Search
+// Header Search
+.newsletter-section,
+.header-search-inline.header-search {
+	margin-right: 0;
+
+	.submit-wrapper {
+		padding-top: 1px;
+		align-items: center;
+		height: 100%;
+		border-radius: 0;
+		border-bottom: 1px solid #d8dce1;	
+	}
+
+	.form-control {
+		padding: 0;
+		border: none;
+		height: 34px;
+		margin-bottom: 0;
+		font-size: 1.3rem;
+		font-style: italic;
+		letter-spacing: 0.003em;
+		background-color: transparent;
+
+		&::placeholder {
+			color: #8a8a8a;
+		}
+	}
+
+	.btn { 
+	    margin-right: 1.4rem;
+		padding: 0;
+		top: 1px;
+		height: 100%;
+		border: none;
+		min-width: auto;
+
+		i {
+			font-size: 16px;
+		}
+	}
+}
+
+.header-search-inline.header-search {
+	.btn { 
+		color: #606669;
+		background-color: transparent;
+	}
+}
+
+.search-toggle:after {
+    border-bottom-color: #ccc;
+}
+
+// 1.2.4) Header Icons
+.header-contact {
+	margin: 1px 2rem 0 2.4rem;
+	
+	i {
+		margin-right: 1.3rem;
+	}
+	
+	h6 {
+		font-weight: 400;
+
+		a {
+			font-size: 1.6rem;
+		}
+	}
+
+	a {
+		color: $primary-color;
+	}
+}
+
+// 1.2.5) Header Category Nav
+.thumb-item {
+	text-align: center;
+
+	a {
+		font-size: 13px;
+		font-family: 'Lato',sans-serif;
+		letter-spacing: -0.35px;
+		color: #666;
+
+		&:hover {
+			color: $secondary-color
+		}
+	}
+
+	i:before {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		line-height: 1;
+		font-size: 28px;
+		color: #fff;
+		margin-top: -14px;
+		text-align: center;
+	}
+}
+
+.thumb-item i,
+.thumb-info-image {
+    display: block;
+    position: relative;
+    margin-bottom: .9rem;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+// 2. Footer
+// 2.1) Footer Base
+footer {
+// 2.2) Footer Elements
+// 2.2.1) Footer Widget
+    .widget {	
+		li:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+    }
+
+// 2.2.2) Footer Social Icons
+    .social-icons {
+		padding: 2px 0 0 2px;
+	}
+
+// 2.2.3) Footer Payment
+	.payment-icons .payment-icon {
+		filter: none;
+		background-color: #d8dce5;
+		border-radius: 0;
+	}
+}
+
+// 3. Component
+// 3.1) Base
+.form-control {
+    font-family: $second-font-family;
+}
+
+// 3.2) Breadcrumb
+.breadcrumb {
+    padding: 1.3rem 0 1.2rem;
+}
+
+// 3.3) Product Default
+.product-default {
+	.price-box {
+		font-family: $second-font-family;
+	}
+}
+
+.old-price {
+	letter-spacing: 0.015em;
+	margin-right: 4px;
+}
+
+// 4. Responsive
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1260px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.thumb-item a {
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 991px) {
+	.header-contact {
+		margin-right: 0;
+		margin-left: 1rem;
+	}
+
+	.header-middle {
+		padding-bottom: 2rem;
+	}
+
+	.header-search-inline.header-search  {
+		i {
+		    font-size: 2.5rem;
+		}
+
+		.submit-wrapper {
+			border: 5px solid #ccc;
+			background-color: #fff;
+		}
+
+		.form-control {
+			padding: 0 1rem;
+		}
+	}
+
+	.header-search-inline .form-control {
+		min-width: 32rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.header-icon:not(:last-child) {
+		margin-right: 2.2rem;
+		margin-left: -.8rem;
+	}
+}

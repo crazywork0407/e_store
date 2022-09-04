@@ -1,0 +1,160 @@
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$primary-color: #ec7200;
+$primary-color-dark: #323232;
+$headings-text: #2b2b2b;
+// 2. Theme Settings
+// 3. Theme Variables
+
+@include set(
+    (
+		layout: (
+			container: (
+				max-width-desktop: 1260px
+			)
+		),
+        header: (
+			top: (
+				padding-top: 1.2rem,
+				padding-bottom: .4rem,
+				background: #f4f4f4
+			),
+			middle: (
+				color: $primary-color-dark,
+				padding-top: 2.8rem,
+				padding-bottom: 2.9rem,
+				background: #fff
+			),
+
+			icon: (
+				size: 2.8rem,
+				space: 1.7rem
+			),
+
+			logo: (
+				max-width: 11.1rem,
+
+				sticky: (
+					max-width: 100px,
+					transform: scale(.8)
+				)
+			),
+
+			search: (
+				height: 48px,
+				background: #fff,
+				divider: false,
+
+				border: (
+					width: 5px,
+					color: #e7e7e7,
+					inline-width: 1px
+				),
+
+				btn: (
+					size: 1.6rem,
+					min-width: 48px
+				),
+
+				toggle: (
+					size: 1.9rem
+				)
+			),
+
+			separator: (
+				color: rgba(0,0,0,.06),
+				space: 14px
+			)
+		),
+
+		info-box: (
+			icon: (
+				size: 3.2rem
+			),
+
+			title: (
+				size: 1.5rem,
+				weight: 600,
+				transform: none,
+				margin-bottom: 3px
+			)
+		),
+
+		breadcrumb: (
+			color: #000,
+			letter-spacing: .05em,
+			border-bottom: 1px solid #e7e7e7,
+			padding: 1.5rem,
+
+			font: (
+				size: 10px,
+				weight: 600,
+				family: $second-font-family
+			),
+
+			divider: (
+				space: 1.3rem,
+				weight: 400
+			)
+		),
+
+		category: (
+			sidebar: (
+				space: 3rem,
+				padding: false,
+				border: false,
+
+				title: (
+					color: #000,
+					size: 1.2rem,
+					padding-bottom: 6px,
+					border-bottom: 1px solid rgba(0,0,0,0.1)
+				)
+			)
+		),
+
+		footer: (
+			color: #999,
+			background: #403f3f,
+
+            social-icon: (
+                color: #fff,
+				size: 3rem,
+				space: 2px,
+				font-size: 1.4rem
+            ),
+
+            widget: (
+                title: (
+					color: #fff,
+					transform: capitalize,
+					margin: 0 0 1.5rem
+                )
+            ),
+
+            middle: (
+				padding-top: 6.4rem,
+				padding-bottom: 2.3rem
+            ),
+
+            bottom: (
+				border-top: 1px solid #4e4e4e,
+                padding-top: 1.5rem,
+                padding-bottom: 1.5rem
+            )
+		)
+    )
+);
+
+// 4. Plugin Variables
+$nav-font-size: 2.4rem;
+$nav-color: #fff;
+$nav-color-hover: #fff;

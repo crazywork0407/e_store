@@ -1,0 +1,126 @@
+//Pages
+
+// # Contents
+// 1. Product Page ------
+// 	  1.1) Product Single Details
+// 	  1.2) Product Single Tab
+// 	  1.3) Product Widget Conainer
+// 	  1.4) Others
+
+// 2. Shop Page --------
+
+// 1. Product Page ------
+// 1.1) Product Single Details
+.product-single-details .product-desc {
+    margin-bottom: 0.8rem;
+}
+
+.product-single-filter label {
+    margin-right: 3rem;
+}
+
+// 1.2) Product Single Tab
+.product-single-tabs .tab-pane {
+    padding-bottom: 2.5rem;
+}
+
+.product-desc-content {
+	.feature-box {
+		margin-top: 2rem;
+		margin-bottom: 5rem;
+
+		h3 {
+			margin-bottom: 1.9rem;
+		}
+	}
+
+	li:before {
+		left: 0;
+	}
+
+	ul,
+	ol {
+		padding-left: 3.4rem;
+	}
+	
+
+	p {
+		margin-bottom: 3.8rem;
+	}
+}
+
+// 1.3) Product Widget Conainer
+.product-widgets-container {
+	margin-bottom: 3.9rem;
+	
+	.section-sub-title {
+		margin-bottom: 1.5rem;
+		font-size: 1.4rem;
+	}
+
+	figure {
+		margin-right: 1.5rem;
+	}
+
+	.product-widget {
+		margin-bottom: 1.3rem;
+	}
+}
+
+// 1.4) Others
+.products-section {
+	padding-bottom: 1.2rem;
+
+	.section-title {
+		margin-bottom: 2.4rem;
+		padding-bottom: 1.1rem;
+		font-size: 1.6rem;
+		color: #313131;
+	}
+
+	.owl-dots .owl-dot span {
+		border-color: #e7e7e7;
+	}
+
+	.owl-carousel.dots-top {
+		.owl-dots {
+			margin-bottom: 2.5rem;
+		}
+	}
+}
+
+// 2. Shop Page ------
+.category-banner {
+    padding: 6.8rem 0;
+	
+	.coupon-sale-text {
+		padding: .5rem .75rem;
+		letter-spacing: -.01em;
+
+		b {
+			padding: 4px 8px;
+		}
+	}
+
+	.coupon-sale-content {
+		padding-top: 2px;
+	}
+
+	h3 {
+		font-size: 3em;
+	}
+
+	h4 {
+		font-size: 1.125em;
+	}
+
+	h5 {
+		font-size: 1em;
+	}
+
+	.btn {
+		font-size: .75em;
+		padding: 1em 2em;
+		font-weight: 600;
+	}
+}

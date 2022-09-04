@@ -1,0 +1,710 @@
+// Custom CSS
+
+// # Contents
+// 1. Home Page
+// 1.1) Info Boxes Slider
+// 1.2) Home Slider
+// 1.3) Home Slide - 1
+// 1.4) Home Slide - 2
+// 1.5) Brands Slider
+// 1.6) Banners Section
+// 1.7) Shop Section
+// 1.8) Product Widgets Section
+// 2. Category Page
+// 3. Footer
+// 4. Responsive
+
+// 1. Global
+
+.breadcrumb-item + .breadcrumb-item:before {
+	font-family: inherit;
+	vertical-align: baseline;
+	margin-top: 0;
+}
+
+// 1.1) Info Boxes Slider
+.info-boxes-slider {
+	.info-box {
+		color: #fff;
+		line-height: 34px;
+		padding-top: 1.2rem;
+		padding-bottom: 1.1rem;
+	}
+
+	i {
+		margin-top: 1px;
+		margin-right: 8px;
+	}
+
+	.owl-item:not(:first-child):not(:last-child) {
+		background-color: #b94725;
+	}
+}
+
+.owl-carousel.nav-large .owl-nav i {
+	font-size: 2.5rem;
+}
+
+// 1.2) Home Slider
+.home-slider {
+	img {
+		min-height: 400px;
+	}
+
+	.banner-layer {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	h2 {
+		margin-bottom: 8px;
+	}
+
+	&.owl-carousel.nav-outer.nav-large {
+		.owl-prev {
+			left: -2.4rem;
+		}
+
+		.owl-next {
+			right: -2.4rem;
+		}
+	}
+}
+
+// 1.3) Home Slide - 1
+.home-slide1 {
+	.banner-layer {
+		left: 8%;
+	}
+
+	img {
+		object-position: 55%;
+	}
+
+	h2 {
+		font-size: 4rem;
+		color: #777;
+		font-weight:500;
+	}
+
+	h3 {
+		margin-bottom: 1.3rem;
+		font-size: 9.8rem;
+		letter-spacing: .03em;
+
+		em {
+			display: inline-block;
+			margin-right: .8rem;
+			font-style: normal;
+			font-size: .469em;
+			line-height: 1.01;
+		}
+	}
+
+	h4 {
+		margin-right: 2.9em;
+		font-size: 1.125em;
+		font-weight: 700;
+		letter-spacing: -.02em;
+
+		span {
+			font-size: 1.1111em;
+		}
+
+		em {
+			font-size: 2em;
+			font-style: normal;
+			margin-left: -4px;
+			display: inline-block;
+			letter-spacing: .01em;
+			vertical-align: text-top;
+		}
+	}
+
+	a {
+		border-width: 4px;
+		padding: 1em 3.6em;
+		background-color: transparent;
+		color: $primary-color-dark;
+		letter-spacing: .01em;
+	}
+
+	span {
+		margin-top: 2px;
+		margin-left: 1.2rem;
+	}
+}
+
+// 1.4) Home Slide - 2
+.home-slide2 {
+	.banner-layer {
+		right: 7.9%;
+	}
+
+	h2 {
+		color: #777;
+		font-size: 2.125em;
+		font-weight: 500;
+	}
+
+	h3 {
+		font-size: 4.3125em;
+	}
+
+	.off-category {
+		font-size: 2.125em;
+		letter-spacing: .15em;
+		margin-right: -1rem;
+	}
+
+	a {
+		padding: 1.25em 4.5em;
+		font-size: 1em;
+		letter-spacing: .15em;
+		font-weight: 600;
+	}
+}
+
+// 1.5) Brands Slider
+.brands-slider {
+	padding: 2.4rem 1rem;
+
+	.lack-gap {
+		margin-top: -6px !important
+	}
+}
+
+// 1.6) Banners Section
+.banners-section {
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+
+	h3 {
+		margin-bottom: 6px;
+		font-size: 1.375em;
+	}
+
+	h4 {
+		display: flex;
+		font-size: 1em;
+	}
+
+	del {
+		display: block;
+		margin-top: 1px;
+		font-size: 1.3125em;
+		vertical-align: super;
+	}
+
+	strong {
+		font-size: 1.75em;
+		font-weight: 800;
+	}
+
+	.banner {
+		transition: box-shadow .3s;
+
+		&:hover {
+			box-shadow: 0 0 4rem rgba(0, 0, 0, .1);
+		}
+	}
+
+	.right-text {
+		justify-content: flex-end;
+	}
+
+	.banner-layer-top {
+		top: 7.5%;
+	}
+
+	.banner-layer-bottom {
+		right: 5%;
+		left: 5%;
+
+	}
+	
+	.banner-layer-left {
+		right: auto;
+
+		img {
+			margin-bottom: 3px;
+			margin-left: 5px;
+		}
+	}
+
+	.banner-layer-right img {
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+
+	.btn-lg {
+		padding-top: .95em;
+		padding-bottom: .95em;
+	}
+}
+
+.banner-layer-circle {
+	top: 50%;
+	left: 45%;
+	right: auto;
+	transform: translate(50%, -50%);
+
+	h4 {
+		font-size: 2.625em;
+	}
+}
+
+.product-category img, 
+.product-category figure:after {
+	border-radius: 0;
+}
+
+.banner-layer-vertical-item {
+	transform-origin: bottom left;
+	transform: rotate(270deg) translateY(100%);
+
+	.banner-layer-right & {
+		margin-left: 100%;
+		transform: rotate(270deg);
+		width: auto; // only for Firefox
+	}
+}
+
+.banner-layer-circle-item {
+	display: flex;
+	display: -ms-flexbox;
+	align-items:center;
+	-ms-flex-align: center;
+	justify-content: center;
+	-ms-flex-pack: center;
+	margin-bottom: 12px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	color: #fff;
+	background: $primary-color-dark;
+	letter-spacing: -.08em;
+
+	sup {
+		margin-top: -12px;
+		margin-left: .0866em;
+		line-height: 1;
+		top: 0;
+		letter-spacing: 0;
+		font-size: 55%;
+	}
+
+	small {
+		display: block;
+		font-size: .4329em;
+		letter-spacing: -.025em;
+	}
+}
+
+// 1.7) Shop Section
+
+.shop-section {
+	padding-top: 4.9rem;
+
+	.inner-icon:not(.product-widget) .product-details {
+		padding-left: 1rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+}
+
+.section-title {
+	padding-bottom: .9rem;
+	margin-bottom: 2.5rem;
+	color: #222529;
+	border-bottom: 1px solid #e1e1e1;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+// 1.8) Product Widgets Section
+.product-widgets-section {
+	padding: 5rem 0;
+	margin-bottom: 7rem;
+
+	.product-widget {
+		margin-bottom: 1.8rem;
+
+		figure {
+			max-width: 82px;
+			margin-right: 1.4rem;
+		}
+
+		.ratings-container {
+			margin-bottom: 1.2rem;
+		}
+
+		.product-title {
+			font-family: $font-family;
+		}
+
+		.product-price {
+			font-size: 1.5rem;
+		}
+
+		.old-price {
+			font-size: 1.2rem;
+			color: #444;
+		}
+	}
+
+	.section-sub-title {
+		margin-bottom: 1.7rem;
+	}
+}
+
+.instagram-feed-list {
+	padding-top: 6px;
+	padding-left: 1rem;
+	margin-bottom: 3px;
+
+	li:not(:last-child) {
+		margin-bottom: 2.9rem;
+	}
+}
+
+.instagram-feed {
+	position: relative;
+	margin-bottom: 2.4rem;
+
+	p {
+		line-height: 1.75;
+	}
+
+	.instagram-feed-content {
+		position: absolute;
+		top: 18%;
+		left: 38.5%;
+		padding: 3rem 4.5rem;
+		text-align: center;
+		background-color: #0e0e0e;
+
+		* {
+			color: #fff;
+		}
+	}
+
+	.icon-instagram {
+		font-size: 2.9rem;
+	}
+
+	h3 {
+		margin-top: .8rem;
+		margin-bottom: 0;
+		font-size: 3rem;
+		line-height: 1;
+	}
+
+	.btn-outline {
+		padding: 1.2rem 2.8rem;
+		margin-bottom: 1rem;
+		font-family: $font-family;
+		font-size: 1.3rem;
+		font-weight: 600;
+		letter-spacing: .05em;
+		border: 2px solid #fff;
+
+		&:hover {
+			color: $primary-color;
+			border-color: $primary-color;
+			transition: all .3s;
+		}
+	}
+
+	.insta-item {
+		margin-bottom: 2rem;
+
+		figure {
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				visibility: hidden;
+				opacity: 0;
+				background-color: rgba(27,27,23,0.3);
+			}
+		}
+
+		img {
+			width: 100%;
+		}
+
+		a {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			visibility: hidden;
+			opacity: 0;
+			color: #fff;
+		}
+
+		&:hover {
+			a,
+			figure::after {
+				visibility: visible;
+				opacity: 1;
+				transition: all .3s;
+			}
+		}
+	}
+}
+
+.section-sub-title {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+.top-shoes-banner {
+	h3 {
+		color: #fff;
+		font-size: 2em;
+	}
+
+	h4 {
+		font-size: 1.375em;
+		font-weight: 600;
+		letter-spacing: -.04em;
+	}
+
+	.btn {
+		padding: .75em 2em;
+		color: #fff;
+		border: 2px solid #fff;
+		font-size: .75em;
+
+		&:hover {
+			background-color: #fff;
+			color: $primary-color-dark;
+		}
+	}
+}
+
+// 1.9) Newsletter Section
+
+.newsletter-section {
+	.info-box {
+		padding-bottom: 1.8rem;
+		flex-direction: column;
+
+		i {
+			font-size: 3rem;
+			margin-bottom: 1.6rem;
+		}
+	}
+
+	h2 {
+		margin-bottom: 2px;
+		font-size: 2.4rem;
+		font-weight: 600;
+		line-height: 1;
+	}
+
+	p {
+		color: $body-text;
+		letter-spacing: .005em;
+	}
+}
+
+// 1. Newsletter Form
+.newsletter-form {
+    margin: 0;
+	padding-left: 2rem;
+	border-radius: 5rem;
+	background-color: #f4f4f4;
+
+// 2. Newsletter Form Input
+    .form-control {
+        border: 0;
+        margin: 0;
+        padding: 1rem 2rem 1rem 0;
+        color: #8d8d8d;
+        background-color: #f4f4f4;
+        font-size: 1.2rem;
+        font-style: italic;
+		height: 48px;
+		outline: none;
+		box-shadow: none;
+    
+        &::placeholder {
+            font: inherit;
+            color: #8d8d8d;
+            text-transform: none;
+        }
+    }
+
+// 3. Newsletter Form Button
+    .btn {
+        padding: 0 2.5em;
+        height: 48px;
+        border-radius: 0 5rem 5rem 0;
+        border: 0;
+        font-size: 1.2rem;
+        line-height: 48px;
+        letter-spacing: .005em;
+        box-shadow: none;
+    }
+}
+
+// 2. Category Page
+.main-content {
+	.product-default {
+		figure {
+			border: 1px solid #f4f4f4;
+		}
+
+		.product-title {
+			font-family: $second-font-family;
+		}
+	}
+}
+
+.toolbox-item label {
+	color: $body-text;
+	font-family: $font-family;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.category-banner-container {
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.category-banner {
+	padding-top: 4.8rem;
+	padding-bottom: 4.8rem;
+	font-size: 1.339rem;
+
+	.btn {
+		font-size: 1.0757em;
+	}
+}
+
+// 3. Footer
+footer {
+	line-height: 24px;
+
+	.widget-title {
+		letter-spacing: 0;
+	}
+
+	h3 {
+		font-size: 2.2rem;
+	}
+}
+
+.footer-middle {
+	border-top: 1px solid #e7e7e7;
+}
+
+.footer-bottom {
+	border-top: 1px solid #e7e7e7;
+}
+
+// 4. Responsive
+@include mq('xl', max) {
+	.instagram-feed .instagram-feed-content {
+		top: 10%;
+		left: 35.5%;
+	}
+}
+
+@include mq('lg', max) {
+	.instagram-feed .instagram-feed-content {
+		top: 31%;
+	}
+
+	.home-slider.owl-carousel.nav-outer.nav-large {
+		.owl-next {
+			right: 1rem;
+		}
+
+		.owl-prev {
+			left: 1rem;
+		}
+	}
+}
+
+@include mq('md', max) {
+	.home-slide1 {
+		h2 {
+			font-size: 2rem;
+		}
+
+		h3 {
+			font-size: 6rem;
+		}
+
+		h4 {
+			margin-right: 1rem;
+		}
+
+		a {
+			padding: 7px 13px;
+			border-width: 2px;
+			font-size: 1.3rem;
+			font-weight: 400;
+		}
+	}
+
+	.instagram-feed .instagram-feed-content {
+		left: 30.5%;
+	}
+
+	.inner-quickview figure .btn-icon-wish {
+		margin-right: 5rem;
+	}
+}
+
+@include mq(sm, max) {
+	.category-banner {
+		font-size: 2.3vw;
+	}
+
+	.grid-height-1-2 {
+		height: 200px;
+	}
+	
+	.grid-height-1 {
+		height: 400px;
+	}
+
+	.home-slide1 {
+		h2 {
+			font-size: 1.7rem;
+		}
+
+		h3 {
+			font-size: 5rem;
+		}
+	}
+
+	.instagram-feed .instagram-feed-content {
+		left: 26%;
+	}
+}
+
+@include mq('xs', max) {
+	.instagram-feed .instagram-feed-content {
+		right: 17%;
+		left: 17%;
+
+		h3 {
+			font-size: 2.4rem;
+		}
+	}
+}

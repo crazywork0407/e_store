@@ -1,0 +1,547 @@
+// Demo11
+
+// # Contents
+// 1. Home Base --------
+// 2. Home Sections --------
+//	  2.1) Home Slider
+//	  2.2) Banner Container
+//	  2.3) Info Box Container
+//	  2.4) Promotion Banner
+//	  2.5) Blog Section
+//	  2.6) Brands Section
+//	  2.7) Product Categories Slider
+
+// 3. Responsive --------
+
+// 1. Home Base --------
+.heading {
+	color: $primary-color-dark;
+}
+
+.section-title {
+	margin-bottom: -1px;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+}
+
+.section-description {
+	margin-bottom: 2.6rem;
+	font-size: 1.4rem;
+}
+
+.section-sub-title {
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.banner-layer-right {
+	right: 13.4%;
+    top: 37.9%;
+}
+
+.banner-layer-left {
+    top: 37.9%;
+	left: 9.9%;
+}
+
+.rotated-upto-text {
+	position: relative;
+	padding-left: .265em;
+
+	small {
+		display: inline-block;
+		position: absolute;
+		margin-top: -2px;
+		left: -1em;
+		top: 50%;
+		transform: translateY(-50%) rotate(-90deg);
+		font-size: .2641em;
+		font-weight: 500;
+	}
+}
+
+.divider-short-thick {
+	margin: 2.2rem auto .4rem -3px;
+    width: 67px;
+	border-top: 5px solid $primary-color-dark;
+}
+
+.products-slider .owl-dots .owl-dot span {
+	border-color: $primary-color;
+}
+
+// 2. Home Sections --------
+// 2.1) Home Slider
+.home-slider.owl-theme .owl-nav {
+	font-size: 2.4rem;
+}
+
+.home-slide {
+	height: 100vh;
+	max-height: 804px;
+	background: #9C9895;
+
+	.owl-carousel .owl-item & div.slide-bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		max-height: none;
+	}
+
+	.banner-layer {
+		position: relative;
+	}
+
+	h2 {
+		margin-bottom: 0.8rem;
+		margin-left: -3px;
+		font-family: 'Segoe Script', 'Savoye LET';
+		font-size: 3em;
+		line-height: 1;
+	}
+
+	h3 {
+		padding-bottom: 2px;
+		margin-left: -3px;
+		font-size: 7.0625em;
+		line-height: 1;
+	}
+
+	h5 {
+		margin-left: -3px;
+		margin-right: 1em;
+		font-size: 1.25em;
+		font-weight: 700;
+		line-height: 1;
+		vertical-align: middle;
+	}
+
+	em {
+		display: inline-block;
+		margin-top: 0px;
+		vertical-align: text-top;
+		font-size: 2em;
+		font-style: normal;
+	}
+	
+	.btn-xl {
+		padding: 1.12em 2.755em 1.23em;
+		margin-top: -4px;
+		font-size: 1.23em;
+		letter-spacing: -.025em;
+	}
+}
+
+.home-slide1 .slide-bg {
+	background-position: 34%;
+}
+
+.home-slide2 {
+	.slide-bg {
+		background-position: 65%;
+	}
+}
+
+// 2.2) Banner Container
+.banners-container {
+	background-color: #efefef;
+
+	p {
+		margin-top: 3px;
+	}
+
+	.banner {
+		overflow: hidden;
+		margin-bottom: 0;
+		background-color: transparent;
+	}
+
+	img {
+		min-height: 200px;
+		max-height: 210px;
+		object-fit: cover;
+	}
+
+	.banner-content {		
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 2rem 2rem 2rem 2.4rem;
+		font-size: 1.3rem;
+		line-height: 1.154;
+		letter-spacing: -.025em;
+	}
+
+	.banner-title {
+		font-size: 2.2rem;
+		letter-spacing: -.02em;
+	}
+
+	hr {
+		width: 35px;
+		border-top-width: 4px;
+		margin: 1.9rem 0 1.8rem;
+	}
+
+	.btn {
+		margin-left: -1px;
+		margin-top: 5px;
+		padding: 0;
+		color: $primary-color-dark;
+		letter-spacing: 0.01em;
+
+		i {
+			margin-left: .7rem;
+		}
+
+		&:hover {
+			color: #4d4f53;
+		}
+	}
+}
+
+// 2.3) Info Box Container
+.banners-container .banner,
+.info-boxes-container .info-box {
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+}
+
+.info-boxes-container .info-box {
+	padding: 2.6rem 1rem 2.1rem;
+	border-bottom: 1px solid #dedede;
+}
+
+.info-box {
+	h4 {
+		margin-bottom: 1px;
+	}
+
+	p {
+		color: #777;
+	}
+
+	i {
+	    margin-right: 1.5rem;
+		margin-top: -5px;
+		font-size: 3.7rem;
+	}
+
+	.info-box-content {
+		margin-bottom: 2px;
+	}
+}
+
+// 2.4) Promotion Banner
+.promo-section {
+	margin-top: -2px;
+	padding-top: 12rem;
+	padding-bottom: 12rem;
+	background-color: #24252A;
+}
+
+.promo-content {
+	position: relative;
+	text-align: center;
+
+	h2 {
+		color: #fff;
+		font-size: 4rem;
+		font-family: 'Segoe Script', 'Savoye LET';
+		line-height: 1;
+	}
+
+	h3 {
+		color: #fff;
+		font-size: 8.8rem;
+		line-height: 1;
+	}
+
+	hr { 
+		border-top-color: #fff;
+	}
+
+	.btn {
+		padding: .95em 2.5em .9em;
+		font-size: 1.5rem;
+	}
+	
+	.divider-short-thick {
+		margin: 1.5rem auto 3.4rem;
+		width: 50px;
+		border-top-width: 4.44px;
+	}
+}
+
+// 2.5) Blog Section
+.blog-section {
+	margin-top: -1px;
+	padding-top: 5.5rem;
+	padding-bottom: 6rem;
+	background-color: #f4f4f2;
+
+	.post {
+		display: -ms-flexbox;
+		display: flex;
+		align-items: center;
+		-ms-flex-align: center;
+		margin-bottom: 0;
+	}
+
+	.btn-lg {
+		margin-top: .9rem;
+		font-size: 1.5rem;
+		padding: .9em 1.6em .95em;
+		min-width: 15.3rem;
+	}
+
+	.post-media {
+		margin: 0;
+	}
+
+	.post-body {
+		flex: 1;
+		-ms-flex: 1;
+		z-index: 1;
+		position: relative; // for only ie 10
+		margin: 0px 0 0 -32px;
+		padding: 3.6rem 3.6rem 3.3rem;
+		border: 0;
+		background-color: #fff;
+
+		.post-date {
+			display: inline-block;
+			float: none;
+			width: auto;
+			margin: 0 0 1rem;
+			padding: .2rem .8rem;
+			color: #fff;
+			background-color: $primary-color-dark;
+			font-size: 1.1rem;
+			font-weight: 700;
+			letter-spacing: .1em;
+			text-transform: uppercase;
+			box-shadow: none;
+		}
+	}
+
+	.post-title {
+		margin-bottom: .8rem;
+		font-size: 1.8rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	.post-content {
+		font-size: 1.3rem;
+		letter-spacing: .03em;
+		line-height: 1.9;
+
+		p {
+			max-width: 250px;
+			margin-bottom: 1.3rem;
+			line-height: 1.7;
+		}
+	}
+
+	.read-more {
+		float: left;
+		color: $primary-color-dark;
+		font-size: 1.4rem;
+		font-weight: 700;
+		letter-spacing: -.025em;
+		text-transform: uppercase;
+
+		i {
+			display: inline-block;
+			margin-top: -0.2rem;
+			line-height: 1;
+			vertical-align: middle;
+		}
+	}
+}
+
+// 2.6) Brands Section
+.brands-section {
+	padding-top: 3.2rem;
+	padding-bottom: 3.3rem;
+}
+
+// 2.7) Product Categories Slider
+.categories-slider {
+	.category-content {
+	    padding: 2rem 3.3rem;
+	}
+
+	h3 {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		padding: 1.35em 2em;
+		color: #000;
+		font-size: 12px;
+		font-weight: 600;
+		letter-spacing: 0;
+		text-transform: none;
+		text-align: center;
+
+		&:before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			transform: skew(-20deg);
+			background: #fff;
+		}
+
+		&:after {
+			content: '\e81f';
+			margin-left: 6px;
+			font-family: 'porto';
+		}
+	}
+}
+
+// 3. Responsive
+@include mq(lg) {
+	.info-boxes-container .info-box:not(:last-child) {
+		border-right: 0;
+	}
+}
+
+@include mq(lg, max) {
+	.home-slide {
+		font-size: 1.3rem;
+	}
+	
+	.owl-carousel.owl-theme .owl-nav {
+		.owl-prev {
+			left: 1.7vw;
+		}
+
+		.owl-next {
+			right: 1.7vw;
+		}
+	}
+
+	.info-boxes-container .info-box {
+		justify-content: flex-start;
+		-ms-flex-pack: start;
+	}
+
+	.blog-section {
+		.blog-section .post-title {
+			font-size: 1.6rem;
+		}
+
+		.post-body {
+			margin: 0px 0 0 -60px;
+			padding: 2.6rem 2rem 2.3rem;
+		}
+	}
+}
+
+@include mq(md) {
+	.banners-container .banner:not(:last-child) {
+		border-right: 0;
+	}
+}
+
+@include mq(md, max) {
+	.banners-container .banner:not(:last-child) {
+		border-bottom: 1px solid #e7e7e7;
+	}
+
+	.blog-section .post-body {
+		margin: 0px 0 0 -100px;
+		padding: 1.6rem 1.6rem 1.3rem;
+	}
+
+	.promo-content {
+		h2 {
+			font-size: 5vw;
+		}
+
+		h3 {
+			font-size: 10vw;
+		}
+	}
+}
+
+@include mq(sm) {
+	.category-banner .divider-short-thick {
+		width: 4px;
+		border-top: 50px solid #fff;
+		margin: 0 1.4rem 0 3.2rem;
+	}
+}
+
+@include mq(sm, max) {
+	.home-slide {
+		font-size: 2.3vw;
+	}
+
+	.promo-content {
+		h2 {
+			font-size: 9vw;
+		}
+
+		h3 {
+		    font-size: 16vw;
+		}
+	}
+
+	.category-banner {
+		padding-right: 0;
+	}
+
+	.home-slider h5 {
+		margin-right: 1rem;
+	}
+
+	.blog-section .post-body {
+		margin: 0px 0 0 -20px;
+	}
+
+	.search-toggle, 
+	.header-icon,
+	.cart-dropdown {
+		padding-left: .7rem;
+	}
+}
+
+@include mq(xs, max) {
+	.blog-section {
+		.post {
+			flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+		}
+
+		.post-media {
+			width: 100%;
+		}
+
+		.post-body {
+			margin: 0;
+			flex: 1 1 100%;
+			-ms-flex: 1 1 100%;
+		}
+	}
+
+	.home-slide {
+		.banner-layer {
+			left: 0%;
+    		font-size: 1.24em;
+		}
+
+		.banner-layer-left {
+			left: 3%;
+		}
+	}
+}

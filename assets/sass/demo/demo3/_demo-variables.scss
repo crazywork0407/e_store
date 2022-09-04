@@ -1,0 +1,160 @@
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$sidebar-font-size: 1.2rem;
+$primary-color: #000;
+$secondary-color: #454545;
+$secondary-color-dark: #302e2a !default;
+
+// 3. Theme Variables
+
+@include set(
+	(
+		header: (
+			middle: (
+				padding-top: 2.5rem,
+				padding-bottom: 2.5rem,
+				color: $primary-color
+			),
+
+			top-notice: (
+				padding: 1.5rem,
+				font-size: 1.4rem
+			),
+
+			logo: (
+				max-width: 111px
+			),
+
+			search: (
+				height: 40px,
+				divider: 1px solid #ccc,
+
+				toggle: (
+					size: 21px,
+					weight: 600
+				),
+
+				border: (
+					width: 5px,
+					color: #ccc
+				),
+
+				btn: (
+					font-size: 2.4rem,
+					min-width: 40px
+				),
+				
+				select: (
+					padding-left: 15px,
+					padding-right: 14px
+				)
+			),
+
+			icon: (
+				size: 2.6rem,
+				space: 2.3rem
+			)
+		),
+
+		menu: (
+			color: false,
+
+			top: (
+				color: false,
+			),
+
+			mega: (
+				width-3col: 580px,
+			),
+
+			main: (
+				active-color: #fff,
+				active-background: $primary-color,
+
+				mega: (
+					active-color: $primary-color,
+					active-background: transparent,
+				),
+
+				top: (
+					color: $primary-color,
+					active-color: $primary-color,
+					active-background: transparent,
+				)
+			)
+		),
+
+		breadcrumb: (
+			margin-bottom: 3rem,
+			color: $primary-color,
+
+			font: (
+				size: 10px,
+				weight: 700,
+				family: $second-font-family,
+			),
+
+			divider: (
+				size: 1.4rem,
+				space: 1.6rem,
+			)
+		),
+		
+		banner: (
+			layer: (
+				top: 20%,
+				left: 4%,
+				right: 4%,
+				bottom: 8.67%
+			)
+		),
+
+		footer: (
+			color: #90969a,
+			link-active-color: $primary-color,
+
+			widget: (
+				title: (
+					weight: false,
+				)
+			),
+
+			top: (
+				padding-top: 4rem,
+				padding-bottom: 4rem,
+				border-top: 1px solid #e7e7e7
+			),
+
+			middle: (
+				padding-top: 6.4rem,
+				padding-bottom: 2.4rem,
+				border-top: 1px solid #e7e7e7
+			),
+
+			bottom: (
+				padding-top: 3.3rem,
+				padding-bottom: 4.1rem,
+				border-top: 1px solid #e7e7e7
+			)
+		),
+
+		category: (
+			sidebar: (
+				title: (
+					font-size: 1.4rem,
+					font-weight: 700
+				)
+			)
+		)
+	)
+);
+
+// 4. Plugin Variables

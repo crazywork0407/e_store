@@ -1,0 +1,348 @@
+// Demo10
+
+// # Content
+// 1. Home Base ---------
+// 2. Home Sections --------
+//    2.1) Home Slider
+//    2.2) Products-grid
+//    2.3) Newsletter-section
+//    2.4) Featured Collection
+
+// 3. Responsive ------ 
+
+// 1. Home Base ---------
+.section-title {
+    margin-bottom: 2.4rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    font-size: 1.6rem;
+    letter-spacing: -0.01em;
+}
+
+.section-1 {
+    .owl-theme .owl-nav {
+        font-size: 2.4rem;
+    }
+
+    .owl-theme .owl-nav [class*='owl-'] i:before {
+        font-weight: 800;
+    }
+
+    .owl-carousel .owl-nav button:not(.desabled) {
+        color: $primary-color-dark;
+    }
+}
+
+.section-3 .section-title {
+    margin-top: 3.3rem;
+}
+
+.section-5 .section-title {
+    margin-top: 4.7rem;
+}
+
+.load-more {
+    margin-top: 2.4rem;
+    padding-bottom: 4.6rem;
+
+    .btn {
+        background: #000;
+        color: #fff;
+        padding: 1.3rem 3.9rem;
+        font-size: 1.3rem;
+        line-height: 1.333;
+    }
+}
+
+// 2. Home Sections --------
+// 2.1) Home Slider
+.home-slider {
+    a {
+        font-size: 1.125em;
+    }
+
+    h3 {
+        margin: .8rem 0 1.5rem;
+        font-size: 6.5em;
+        font-weight: 700;
+        letter-spacing: 0.13em;
+    }
+
+    h6 {
+        margin-bottom: 1.7rem;
+        font-size: 1.25em;
+        letter-spacing: .05em;
+        font-weight: 500;
+        color: rgba(34, 37, 41, 0.7);
+    }
+
+    .banner {
+        > img {
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
+
+    .banner-layer:not(.content-right) {
+        left: 10%;
+    }
+
+    .banner-layer.content-right {
+        right: 10%;
+        left: 10%;
+
+        h3 {
+            margin-right: -1rem;
+            letter-spacing: .118em;
+        }
+
+        .btn {
+            margin: 1px -1px 0 0;
+            padding: 0 0 1px;
+        }
+    }
+
+    .btn {
+        margin-left: -1px;
+        padding: 0 0 2px;
+
+        i {
+            padding-left: 11px;
+        }
+    }
+}
+
+// 2.2) Products-grid
+.product-default.grid-item {
+    position: absolute;
+}
+
+.overlay-dark {
+    .product-details {
+       left: 3rem;
+       bottom: 2rem;
+       opacity: 1;
+       transform: none;
+       width: auto;
+   }
+
+   figure .btn-quickview {
+       padding: 0 2.3rem;
+       transition: none;
+   }
+}
+
+.products-grid {
+    margin: 0 -1rem;
+    
+    .btn-icon-wish {
+        left: -4.5rem;
+    }
+
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    figure {
+        height: 100%;
+    }
+
+    .product-default {
+        .btn-quickview {
+            padding: .7rem 2.4rem;
+            left: auto;
+            right: auto;
+            top: 46%;
+            bottom: auto;
+            letter-spacing: 0;
+            transform: none;
+        }
+
+        .product-title {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            letter-spacing: -.01em;
+        }
+
+        &:hover {
+            figure {
+                .btn-quickview {
+                    padding: .7rem 2.4rem;
+                }
+            }
+        }
+    }
+}
+
+.grid-height-1 {
+    height: 150px;
+}
+
+.grid-height-2 {
+    height: 320px;
+}
+
+// 2.3) Newsletter-section
+.newsletter-section {
+    margin-top: 1.8rem;
+
+    h4 {
+        margin-bottom: .8rem;
+        font-family: 'Segoe Script','Savoye LET';
+        font-size: 1.375em;
+        color: $secondary-color;
+    }
+
+    h3 {
+        margin-bottom: 8px;
+        font-size: 1.85em;
+        line-height: 1.5;
+        letter-spacing: -.02em;
+    }
+
+    b {
+        margin-right: 1em;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: -.5em;
+            top: -.15em;
+            right: -.5em;
+            bottom: -.15em;
+            z-index: -1;
+            background: #222529;
+            transform: rotate(-1.5deg) skew(1.5deg)
+        }
+    }
+
+    img {
+        min-height: 21.3rem;
+        object-fit: cover;
+    }
+
+    .btn {
+        margin-right: -1px;
+        padding: 0 0 2px;
+
+        i {
+            padding-left: 11px;
+        }
+
+        &:hover {
+            color: #4d4f53;
+        }
+    }
+
+    .banner-layer {
+        right: 18%;
+        margin-top: 1px;
+    }
+}
+
+.newsletter-section.shop-banner {
+    margin: 0;
+    padding-top: 3.9rem;
+
+    img {
+        min-height: 20rem;
+    }
+}
+
+// 2.4) Featured Collection
+.featured-collection {
+    padding-bottom: 1px;
+
+    .product-default {
+        margin-bottom: 2rem;
+
+        .btn-add-cart.product-type-simple i {
+            margin-bottom: 2px;
+        }
+    }
+}
+
+.feature-box p {
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+// 3. Responsive
+@include mq( md ) {
+    .grid-height-1 {
+        height: 235px;
+    }
+    
+    .grid-height-2 {
+        height: 490px;
+    }    
+}
+
+@media (max-width: 1500px) and (min-width: 1200px) {
+    .col-xl-2 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@include mq( lg, max ) {
+    .newsletter-section {
+        &.shop-banner {
+            padding-top: 2rem;
+        }
+
+        .banner-layer {
+            right: 6%;
+        }
+    }
+}
+
+@include mq( sm, max ) {
+    .newsletter-section {
+        .banner {
+            font-size: 1.1rem;
+        }
+    }
+
+    .hom-slider .banner-layer h3 {
+        font-size: 4.5em;
+    }
+
+    .home-slider h3 {
+        font-size: 5.5em;
+    }
+
+    .grid-height-1 {
+        height: 250px;
+    }
+
+    .grid-height-2 {
+        height: 400px;
+    }
+}
+
+@include mq( xs, max ) {
+    .home-slider {
+        .banner-layer {
+            &:not(.content-right) {
+                left: 5%;
+            }
+
+            &.content-right {
+                right: 7%;
+                left: 4%;
+            }
+
+            img {
+                max-width: 281px;
+            }
+        }
+
+        .banner {
+            font-size: .78em;
+        }
+    }
+}

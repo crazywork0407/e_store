@@ -1,0 +1,432 @@
+// 1. Demo 19 Shop
+
+// Category Banner
+.category-banner {
+    img {
+        min-height: 250px;
+    }
+
+    h3 {
+        font-size: 1.975em;
+        line-height: 1.2;
+    }
+
+    h4 {
+        padding: .175em .3em;
+        font-size: 1em;
+        line-height: 1.8;
+    }
+
+    h5 {
+        font-size: 1.4em;
+    }
+    
+    .btn {
+        padding: 1em 2.75em;
+        font-size: .84375em;
+        line-height: 1.3333;
+    }
+
+    .container {
+        max-width: 1180px;
+    }
+
+    .banner-layer {
+        left: 0;
+        right: 0;
+    }
+}
+
+span.toggle {
+    top: -2px;
+}
+
+// Sidebar
+.sidebar-shop .product-widget .product-details {
+    padding: 0;
+    max-width: calc(100% - 85px);
+}
+
+// Product
+.product-ajax-grid {
+    margin-bottom: 1.4rem;
+
+    .product-default {
+        margin-bottom: 2rem;
+    }
+}
+
+// loadmore
+.btn.loadmore {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 1.0833em 2.5em;
+    font-family: $font-family;
+    font-size: 12px;
+    line-height: 1.3333;
+    border-width: 1px;
+    width: 100%;
+    border-color: #e7e7e7;
+    text-transform: uppercase;
+    color: #555;
+}
+
+// Responsive
+@media (min-width: 1500px) {
+    .sidebar-shop, .sidebar-product {
+        &.col-lg-3 {
+            flex-basis: 20%;
+            max-width: 20%;
+        }
+    }
+
+    .main-content.col-lg-9 {
+        flex-basis: 80%;
+        max-width: 80%;
+    }
+}
+
+// 2. Product Page
+
+// Layout
+.product-sidebar-right {
+    .product-single-gallery,
+    .product-single-details {
+        margin-bottom: 3.3rem;
+    }
+
+    .product-desc-content {
+        p {
+            margin-bottom: 2.3rem;
+        }
+
+        ul {
+            padding-left: 7.4rem;
+            margin-bottom: 2.4rem;
+        }
+
+        li:before {
+            left: 4rem;
+        }
+    }
+}
+
+// Product detail
+.product-single-details {
+    .ratings-container {
+        text-indent: 1px;
+    }
+
+    .product-desc {
+        margin-bottom: 1.5rem;
+
+        p {
+            line-height: 1.68725;
+        }
+    }
+
+    .single-info-list{
+        margin-bottom: 1.4rem;
+
+        li {
+            margin-bottom: .4rem;   
+            line-height: 24px;
+        }
+    }
+}
+
+// Sidebar
+.custom-sidebar-toggle {
+    z-index: 1041;
+}
+
+.custom-maga-sale-container {
+    font-size: 1.6rem;
+
+    .mega-image img {
+        min-height: 270px;
+    }
+
+    .mega-price-box {
+        margin-right: .7rem;
+        margin-bottom: 4rem;
+
+        &:before,
+        &:after {
+            width: 132px;
+            border-width: 70px 0;
+            border-top-color: #000;
+        }
+
+        &:before {
+            top: -28%;
+        }
+
+        &:after {
+            top: -35.1%;
+        }
+
+        .price-big {
+            margin-right: 7px;
+            margin-top: 3px;
+            font-size: 5.6rem;
+            letter-spacing: -.01em;
+        }
+
+        .price-desc {
+            font-size: 1.9rem;
+            letter-spacing: .5px;
+        }
+
+        em {
+            margin-top: 6px;
+            margin-bottom: 0;
+            font-size: 2.5rem;
+            line-height: 1;
+            text-indent: -3px;
+        }
+    }
+
+    .mega-title {
+        margin-right: 0;
+        padding-top: 1px;
+        color: #000;
+        font-family: $third-font-family;
+        text-indent: 4px;
+        transform: none;
+    }
+
+    .mega-subtitle {
+        color: #000;
+        letter-spacing: .15em;
+        margin-left: 9px;
+    }
+}
+
+.sidebar-product {
+    .widget-featured {
+        padding-bottom: 2.4rem;
+    }
+
+    .product-widget figure {
+        max-width: 75px;
+    }
+}
+// Products Section
+.products-section {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .category-wrap {
+        display: none;
+    }
+    
+    .owl-carousel.dots-top .owl-dots {
+        margin-bottom: 2.5rem;
+    }
+}
+
+
+
+// Responsive
+@include mq(lg) {
+    .custom-maga-sale-container {
+        font-size: 0.83333vw;
+
+        .mega-title {
+            font-size: 2.75em;
+        }
+
+        .mega-subtitle {
+            font-size: 1.375em;
+        }
+    }
+}
+
+@include mq(md, max) {
+    .maga-sale-container .mega-price-box {
+        margin-bottom: 5rem;
+        padding-top: 0.5em;
+    }
+}
+
+// 3. About Us Page
+.main.about {
+    .banner {
+        margin-bottom: 3.5rem;
+        padding-top: 5rem;
+
+        img {
+            width: auto;
+        }
+    }
+
+    .subtitle {
+        margin-bottom: 1.7rem;
+        color: #000;
+        font-family: $third-font-family;
+        font-size: 2.6rem;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
+
+.about-section {
+    padding-top: 3rem;
+
+    p {
+        line-height: 2;
+    }
+
+    & + hr {
+        margin: 6rem 0 2.2rem;
+    }
+}
+
+.team-info {
+    position: relative;
+
+    figure {
+        margin-bottom: 2rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    .prod-full-screen {
+        background-color: $primary-color;
+        color: #fff;
+    }
+}
+
+.team-section {
+    padding-top: 4rem;
+    padding-bottom: 3.5rem;
+}
+
+.testimonial {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    img {
+        display: inline-block !important;
+        max-width: 60px;
+    }
+
+    blockquote {
+        margin-left: 0;
+        padding: 0;
+
+        &:before {
+            float: left;
+            position: relative;
+            left: 0;
+            content: '"';
+            color: #21293c;
+            font-family: inherit;
+            font-size: 23px;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        p {
+            font-family: $second-font-family;
+            line-height: 2;
+        }
+
+        a {
+            display: inline-block;
+            color: #7b858a;
+            font-size: 1.5rem;
+            line-height: 1.2;
+
+            &:hover {
+                text-decoration: underline $primary-color;
+            }
+        }
+    }
+
+    .testimonial-title {
+        margin-bottom: 0;
+        color: #282d3b;
+        font-weight: 400;
+        text-transform: none;
+    }
+}
+
+.testimonials-section {
+    padding: 7rem 2vw 1rem;
+    background: #ededed;
+}
+
+.brands-section {
+    padding: 7rem 0 4rem;
+}
+
+.brands-slider {
+    .owl-nav {
+        button.owl-prev,
+        button.owl-next {
+            width: 30px;
+            height: 30px;
+            background: $primary-color;
+            border-radius: 0;
+            font-size: 1.4rem;
+            line-height: 1;
+            color: #fff;
+
+            &:hover,
+            &:focus {
+                background: #0077b3;
+                color: #fff;
+            }
+        }
+
+        .owl-prev {
+            left: 0;
+        }
+
+        .owl-next {
+            right: 0;
+        }
+    }
+
+    img {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.6;
+        transition: opacity .25s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+@include mq(md) {
+    .testimonial blockquote {
+        margin-right: 4rem;
+    }
+}
+
+// Contact Us Page
+.contact-two {
+    .contact-title {
+        color: $primary-color;
+    }
+
+    p {
+        line-height: 24px;
+    }
+
+    .btn {
+        font-weight: 900;
+    }
+    
+    .required-field>label:after {
+        
+    }
+}

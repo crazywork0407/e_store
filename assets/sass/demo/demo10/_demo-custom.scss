@@ -1,0 +1,264 @@
+// Pages
+
+// 1. Shop Page ------------
+//	  1.1) Shop Base
+//	  1.2) Shop Sticky toolBox and Pagination 
+
+// 2. Product Page ------------
+//	  2.1) Product Base
+//	  2.2) Product Element
+//		   2.2.1) Product Single Filter
+//		   2.2.2) Product Action
+
+// 3. About Page ------------
+//	  3.1) About Base
+//	  3.2) About Page Header
+//	  3.3) About History
+//	  3.4) About Team
+//	  3.5) About Brand
+
+// 4. Contact Page ------------
+// 5. Responsive
+
+// 1. Shop Page ------------
+// 1.1) Shop Base
+.products-group {
+	margin-bottom: 6.2rem;
+
+	.product-default {
+		margin-bottom: 2.2rem;
+	}
+}
+
+// 1.2) Shop Sticky toolBox and Pagination 
+.toolbox {
+    .select-custom:after {
+        right: 1.3rem;
+    }
+
+    .toolbox-show .select-custom:after {
+        right: .8rem;
+    }
+}
+
+.toolbox-pagination {
+    margin-bottom: 2rem;
+    margin-top: 1.4rem;
+}
+
+.page-item > a {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #ccc;
+}
+
+// 2. Product Page ------------
+.product-widgets-container {
+    margin-bottom: 7.1rem;
+	
+	.section-sub-title {
+		font-size: 1.4rem;
+	}
+
+	.product-default {
+		margin-bottom: 1.6rem;
+
+		.product-title {
+			margin-bottom: 5px;
+		}
+
+		.product-details {
+			margin-bottom: 2px;
+		}
+	}
+}
+
+.products-section {
+	padding-bottom: 1.4rem;
+
+	h2 {
+		margin-bottom: 2.4rem;
+		font-size: 1.6rem;
+	}
+
+	.owl-carousel.dots-top .owl-dots {
+		margin-bottom: 2.5rem;
+
+		span {
+			border-color: rgba(0,0,0,.4);
+		}
+	}
+}
+
+// 3. About Page ------------
+// 3.1) About Base
+.about {
+	.subtitle {
+		font-size: 30px;
+    	line-height: 40px;
+	}
+
+	.breadcrumb-nav {
+		box-shadow: none;;
+	}
+}
+
+.about-section {
+	padding: 2rem 0 3rem;
+}
+
+// 3.2) About Page Header
+.page-header-bg {
+	padding: 19.9rem 12rem 19rem;
+
+	h1 {
+		padding-left: 14px;
+		padding-right: 14px;
+		margin: 0 -14px;
+		font-weight: 400;
+		display: inline-block;
+		height: 0;
+		font-size: 64px;
+		line-height: 85px;
+		color: #fff;
+		border-bottom: 85px solid #292525;
+		border-right: 15px solid transparent;
+	}
+}
+
+// 3.3) About History
+.history-section {
+	padding-bottom: 5.4rem;
+
+	> .subtitle {
+		margin-top: 2px;
+	}
+}
+
+.history-info {
+	background: #eee;
+	padding: 3.4rem 3rem 1.5rem;
+	
+	.subtitle {
+		color: #141a1f;
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	p {
+	    color: #646a70;
+		font-size: 15px;
+		line-height: 29px;
+	}
+}
+
+// 3.4) About Team
+.team-section {
+	padding-bottom: 3.9rem;
+}
+
+.team-info {
+	figure {
+		margin-bottom: 2.3rem;
+	}
+
+	h5 {
+		font-size: 1.6rem;
+		color: #111;
+		letter-spacing: .05em;
+		text-transform: uppercase;	
+	}
+}
+
+// 3.5) About Brand
+.brands-slider {
+	padding-top: 4rem;
+    padding-bottom: 3.8rem;
+
+	&.owl-carousel.images-center img {
+		opacity: 0.6;
+	}
+}
+
+.brands-section.container {
+	padding-left: 8.1rem;
+	padding-right: 8.1rem;
+	
+	.owl-theme .owl-nav {
+		font-size: 2.4rem;
+		color: $primary-color-dark;
+	}
+
+	.owl-theme .owl-nav [class*='owl-'] i:before {
+		font-weight: 600;
+	}
+}
+
+// 4. Contact Page ------------
+.contact-two {
+	p {
+		line-height: 24px;
+	}
+
+	.form-group {
+		margin-bottom: 1.6rem;
+	}
+
+	.btn {
+		font-weight: 700;
+	}
+}
+
+// 5. Responsive
+@media(min-width: 1600px) {
+	.brands-slider {
+		&.owl-carousel.images-center img {
+			max-width: 244px;
+		}
+	}
+}
+
+@include mq( 1400px, max ) {
+    .toolbox-item.toolbox-show {
+        span {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .toolbox .select-custom .form-control {
+        max-width: 151px;
+    }
+
+    .sort-menu-trigger {
+        min-width: 111px;
+    }
+}
+
+@media (max-width: 767px) {
+	.wort-rotator {
+		margin-bottom: -8px;
+	}	
+}
+
+@media(max-width: 576px) {
+	.brands-section.container {
+		padding-left: 2.1rem;
+		padding-right: 2.1rem;
+	}
+}
+
+@media(max-width: 479px) {
+	.toolbox .select-custom .form-control {
+		max-width: 120px;
+	}
+
+	.sidebar-toggle {
+		margin-right: 6px;
+	}
+}

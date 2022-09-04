@@ -1,0 +1,147 @@
+// Pages
+
+// # Content
+// 1. Shop Page
+// 2. Product Single Page
+
+// 1. Shop Page
+.sidebar-shop {
+    .widget-body {
+        padding-top: 1.7rem;
+    }
+
+    .cat-list li {
+        padding-bottom: 1.5rem;
+        margin-bottom: 0;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    
+    .widget-price {
+        .widget-body {
+            padding-top: 1.5rem;
+        }
+    }
+
+    .widget-brand {
+        .widget-body {
+            padding-top: 1.6rem;
+        }
+    }
+}
+
+.widget-brand {
+    .cat-list {
+        a {
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        li:last-child {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+span.toggle {
+    top: -4px;
+    font-size: 13px;
+}
+
+// Toolbox and Pagination
+.toolbox {
+    .form-control,
+    label {
+        padding-bottom: 2px;
+        font-family: $second-font-family;
+    }
+}
+    
+.page-item {
+    > .page-link:not(span) {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        width: 33px;
+        height: 33px;
+        border: 1px solid #ccc;
+    }   
+}
+
+.product-slider-container {
+    .owl-stage-outer {
+        border: 1px solid #f4f4f4;
+    }
+}
+  
+// 2. Product Single Page
+// 2.1) Base
+.products-section {
+    h2 {
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    .product-default:hover figure {
+        box-shadow: 0 25px 35px -5px rgba(0,0,0,0.1);
+    }
+
+    .products-slider {
+        padding-bottom: 2.5rem;
+    }
+}
+
+// 2.2) Product Component
+// 2.2.1) Product Thumbnail
+.prod-thumbnail { 
+    padding: 0 2px 0 0px;
+
+    .owl-stage-outer {
+        margin-right: -1px;
+    }
+    
+    .owl-dot {
+        border: 1px solid #f4f4f4;
+    }
+}
+
+// 2.2.2) Product Thumbnail
+.product-single-details {
+    .ratings-container {
+        margin-bottom: 2.3rem;
+    }
+}
+
+// 2.2.3) Product Thumbnail
+.product-single-tabs {
+    .tab-pane {
+        padding-top: 2.9rem;
+    }
+
+    .nav.nav-tabs {
+        margin-bottom: 1px;
+    
+        .nav-link {
+            padding: 1.1rem 0 1.4rem;
+            margin-right: 0;
+            font-size: 1.3rem;
+            font-family: $second-font-family;
+        }
+    }
+} 
+
+.add-wishlist i {
+    font-size: 1.8rem;
+}
+
+// 3. Component
+.inner-icon {
+    .price-box {
+        font-family: $second-font-family
+    }
+}

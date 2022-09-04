@@ -1,0 +1,373 @@
+// Demo 6
+
+// 1. Home Types
+// 2. Home Sections
+//    2.1) Home Slider
+//    2.2) Banner Section
+//    2.3) Feature Box Container 
+//    2.4) Products Bottom
+
+// 3. Responsive
+
+// 1. Home Base
+.half-content {
+    padding-top: 5vw;
+    padding-right: 6%;
+    padding-bottom: 5vw;
+    padding-left: 6%;
+}
+
+.text-sale {
+    small {
+        display: inline-block;
+        width: 1em;
+        font-size: 27%;
+        word-break: break-all;
+        text-align: center;
+        font-weight: inherit;
+        white-space: normal;
+    }
+}
+
+.btn-borders.btn-lg {
+    padding: 1em 3em .95em;
+    border-width: 3px;
+}
+
+.btn-modern {
+    &.btn-xl {
+        padding: 1.15em 5.5em;
+    }
+    &.btn-md {
+        padding: .75em 2.25em;
+        font-size: 1.2rem;
+        letter-spacing: 0.01em;
+    }
+}
+
+// 2.1) Home Slider
+.home-slider {
+    &.owl-carousel {
+        .owl-dots {
+            bottom: 4.1rem;
+
+            .owl-dot {
+                span:before {
+                    top: 49%;
+                    width: 8px;
+                    height: 8px;
+                }   
+
+                span {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+
+    .owl-item {
+        overflow: hidden;
+    }
+} 
+
+.home-slide-1 {
+    h2 {
+        font-size: 2.375em;
+        letter-spacing: .005em;
+    }
+
+    h3:not(.text-sale) {
+        font-size: 4.1875em;
+    }
+
+    .text-sale {
+        font-size: 10.625em;
+    }
+
+    h5:not(.text-light) {
+        margin-right: 1.2rem;
+        font-size: 1.125em;
+    }
+    
+    .coupon-sale-text {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 3.2rem;
+        padding: 6px 10px 4px;
+        font-size: 1.125em;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            background: #ff7272;
+            transform: rotate(-2deg);
+        }
+        b {
+            font-size: 200%;
+            vertical-align: text-top;
+        }
+    }
+
+    .btn {
+        padding: 1em 3.5em;
+        border-width: 3px;
+    }
+}
+
+.home-slide-2 {
+    video {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .banner-layer-left {
+        left: 11.4%;
+
+        h2 {
+            font-size: 2.375em;
+            letter-spacing: .005em;
+        }
+
+        h3 {
+            font-size: 8.75em;
+        }
+    }
+
+    .banner-layer-right {
+        right: 11.4%;
+        h4 {
+            margin-bottom: -7px;
+            font-size: 1.25em;
+            letter-spacing: .18em;
+        }
+        h3 {
+            font-size: 9.375em;
+            white-space: nowrap;
+        }
+    }
+}
+
+// 2.2) Banner Section
+.banner-1,
+.banner-2 {
+    .banner-layer {
+        right: 5%;
+    }
+}
+
+.banner-1,
+.banner-2,
+.banner-3,
+.banner-4 {    
+    img {
+        height: 200px;
+        object-fit: cover;
+        background-color: #f4f4f4;
+    }
+
+}
+
+.banner-1 {
+    h2  {
+        font-size: 1.75em;
+    }
+    h3 {
+        font-size: 1.875em; 
+    }
+    h4 {
+        font-size: 0.9375em;
+    }
+}
+
+.banner-2 {
+    h2 {
+        font-size: 1.0625em;
+    }
+    h3 {
+        font-size: 0.9375em;
+        color: #a2a2a2;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+    h4 {
+        font-size: 1.5em;
+    }
+}
+
+.banner-3 {
+    .banner-layer {
+        left: 6%;
+    }
+    h2 {
+        font-size: 1.875em;
+    }
+    h3 {
+        font-size: 2.5em;
+    }
+}
+
+.banner-4 {
+    img {
+        border: 10px solid $primary-color;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        letter-spacing: .08em;
+    }
+    h4 {
+        font-size: 0.9375em;
+        color: #777777;
+        font-weight: 600;
+    }
+    .banner-layer {
+        left: 0;
+        right: 0;
+    }
+}
+
+.banner-5 {
+    padding-top: 10vw;
+    padding-right: 5%;
+    padding-bottom: 10vw;
+    padding-left: 5%;
+    background-color: #f4f4f4;
+    max-height: 660px;
+
+    h3 {
+        font-size: 3.125em;
+        line-height: 1.2;
+    }
+    p {
+        font-size: 1.125em;
+    }
+    .btn {
+        font-size: 1.6rem;
+    }
+}
+
+.category-banner {
+    padding: 8.6rem 0;
+    max-height: 350px;
+    
+    .banner-layer-left {
+        padding-top: 0.6rem;
+        left: 16.25%;
+    }
+
+    .banner-layer-right {
+        padding-top: 1px;
+        right: 15.45%;
+    }
+}
+
+// 2.3) Feature Box Container 
+.feature-boxes-container {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $border-color;
+}
+
+.feature-box-content {
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    h5 {
+        color: #555555;
+    }
+}
+
+// 2.4) Products Bottom
+.products-bottom {
+    padding-top: 1.9rem;
+    padding-bottom: 1.7rem;
+
+    .owl-carousel.nav-outer {
+        .owl-nav {
+            font-size: 2.4rem;
+        }
+
+        .owl-next,
+        .owl-prev {
+            top: 35.6%;
+        }
+    }
+}
+
+.sticky-navbar .sticky-info i span {
+    top: -2px;
+}
+
+// 3. Responsive
+@include mq('1368px',max) {
+    .banner-4 .btn {
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+    }
+}
+
+@include mq('800px',max) {
+    .home-slide-2 {
+        .banner-layer-left {
+            left: 9%;
+        }
+        .banner-layer-right {
+            right: 9%;
+        }
+    }
+}
+
+@include mq(md,max) {
+    .banner-5 {
+        .btn {
+            padding: .8em 1.5em;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .home-slide-2 {
+        &.banner {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .home-slide-2 {
+        &.banner {
+            font-size: .8rem;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-md-vw-small:not(.home-slide) {
+        font-size: 1.4rem;
+    }
+
+    .banner-5 h3 {
+        font-size: 2.125em;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-slide-2 .banner-layer-left {
+        left: 3%;
+    }
+    
+    .home-slide-2 .banner-layer-right {
+        right: 3%;
+    }
+
+    .home-slide-2 {
+        &.banner {
+            font-size: .7rem;
+        }
+    }
+}

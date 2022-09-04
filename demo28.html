@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Porto - Bootstrap eCommerce Template</title>
+
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Porto - Bootstrap eCommerce Template">
+    <meta name="author" content="SW-THEMES">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.png">
+
+
+    <script>
+        WebFontConfig = {
+            google: {
+                families: ['Open+Sans:300,400,600,700,800', 'Oswald:200,300,400,500,600,700,800']
+            }
+        };
+        (function(d) {
+            var wf = d.createElement('script'),
+                s = d.scripts[0];
+            wf.src = 'assets/js/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore(wf, s);
+        })(document);
+    </script>
+
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/demo28.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
+</head>
+
+<body data-spy="scroll" data-target="#caty-list" data-offset="70">
+    <div class="page-wrapper">
+        <header class="header" id="top">
+            <div class="header-middle sticky-header">
+                <div class="container">
+                    <div class="header-left">
+                        <a href="demo28.html" class="logo">
+                            <img src="assets/images/logo-black.png" class="black-logo" alt="Porto Logo" width="202" height="80">
+                        </a>
+                        <ul class="header-links scrolling-box" id="caty-list">
+                            <li>
+                                <a href="#intro" class="nav-link active">intro</a>
+                            </li>
+                            <li>
+                                <a href="#feature" class="nav-link">features</a>
+                            </li>
+                            <li>
+                                <a href="#tour" class="nav-link">tour</a>
+                            </li>
+                            <li>
+                                <a href="#specific" class="nav-link">specifications</a>
+                            </li>
+                            <li>
+                                <a href="#testimonial" class="nav-link">testimonials</a>
+                            </li>
+                            <li>
+                                <a href="https://www.portotheme.com/buynow/portowp" class="nav-link">buy now</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End .header-left -->
+                    <div class="header-right header-dropdowns">
+                        <div class="header-dropdown">
+                            <a href="#">USD</a>
+                            <div class="header-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">EUR</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">USD</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End .header-menu -->
+                        </div>
+                        <!-- End .header-dropown -->
+
+                        <div class="header-dropdown lang-menu">
+                            <a href="#">
+                                <i class="flag-us flag"></i>ENG</a>
+                            <div class="header-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="flag-us flag mr-2"></i>ENG</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="flag-fr flag mr-2"></i>FRA</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End .header-menu -->
+                        </div>
+                        <!-- End .header-dropown -->
+
+                        <div class="dropdown cart-dropdown">
+                            <a href="#" title="Cart" class="dropdown-toggle dropdown-arrow cart-toggle d-flex align-items-center" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                                <i class="minicart-icon"></i>
+                                <span class="cart-count badge-circle">3</span>
+                            </a>
+
+                            <div class="cart-overlay"></div>
+
+                            <div class="dropdown-menu mobile-cart">
+                                <a href="#" title="Close (Esc)" class="btn-close">×</a>
+
+                                <div class="dropdownmenu-wrapper custom-scrollbar">
+                                    <div class="dropdown-cart-header">Shopping Cart</div>
+                                    <!-- End .dropdown-cart-header -->
+
+                                    <div class="dropdown-cart-products">
+                                        <div class="product">
+                                            <div class="product-details">
+                                                <h4 class="product-title">
+                                                    <a href="demo13-product.html">Ultimate 3D Bluetooth Speaker</a>
+                                                </h4>
+
+                                                <span class="cart-product-info">
+                                                    <span class="cart-product-qty">1</span> × $99.00
+                                                </span>
+                                            </div>
+                                            <!-- End .product-details -->
+
+                                            <figure class="product-image-container">
+                                                <a href="demo13-product.html" class="product-image">
+                                                    <img src="assets/images/products/product-1.jpg" alt="product" width="80" height="80">
+                                                </a>
+
+                                                <a href="#" class="btn-remove" title="Remove Product">
+                                                    <span>×</span>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <!-- End .product -->
+
+                                        <div class="product">
+                                            <div class="product-details">
+                                                <h4 class="product-title">
+                                                    <a href="demo13-product.html">Brown Women Casual HandBag</a>
+                                                </h4>
+
+                                                <span class="cart-product-info">
+                                                    <span class="cart-product-qty">1</span> × $35.00
+                                                </span>
+                                            </div>
+                                            <!-- End .product-details -->
+
+                                            <figure class="product-image-container">
+                                                <a href="demo13-product.html" class="product-image">
+                                                    <img src="assets/images/products/product-2.jpg" alt="product" width="80" height="80">
+                                                </a>
+
+                                                <a href="#" class="btn-remove" title="Remove Product">
+                                                    <span>×</span>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <!-- End .product -->
+
+                                        <div class="product">
+                                            <div class="product-details">
+                                                <h4 class="product-title">
+                                                    <a href="demo13-product.html">Circled Ultimate 3D Speaker</a>
+                                                </h4>
+
+                                                <span class="cart-product-info">
+                                                    <span class="cart-product-qty">1</span> × $35.00
+                                                </span>
+                                            </div>
+                                            <!-- End .product-details -->
+
+                                            <figure class="product-image-container">
+                                                <a href="demo13-product.html" class="product-image">
+                                                    <img src="assets/images/products/product-3.jpg" alt="product" width="80" height="80">
+                                                </a>
+                                                <a href="#" class="btn-remove" title="Remove Product">
+                                                    <span>×</span>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <!-- End .product -->
+                                    </div>
+                                    <!-- End .cart-product -->
+
+                                    <div class="dropdown-cart-total">
+                                        <span>SUBTOTAL:</span>
+
+                                        <span class="cart-total-price float-right">$134.00</span>
+                                    </div>
+                                    <!-- End .dropdown-cart-total -->
+
+                                    <div class="dropdown-cart-action">
+                                        <a href="cart.html" class="btn btn-gray btn-block view-cart">View Cart
+                                        </a>
+                                        <a href="checkout.html" class="btn btn-dark btn-block">Checkout</a>
+                                    </div>
+                                    <!-- End .dropdown-cart-total -->
+                                </div>
+                                <!-- End .dropdownmenu-wrapper -->
+                            </div>
+                            <!-- End .dropdown-menu -->
+                        </div>
+                        <!-- End .dropdown -->
+                        <a href="#widget-mobile" class="mobile-btn text-white" data-toggle="collapse">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="mobile-slide d-lg-none">
+                            <ul class="mobile-body scrolling-box bg-white collapse" id="widget-mobile">
+                                <li>
+                                    <a href="#intro" class="active">intro</a>
+                                </li>
+                                <li>
+                                    <a href="#feature">features</a>
+                                </li>
+                                <li>
+                                    <a href="#tour">tour</a>
+                                </li>
+                                <li>
+                                    <a href="#specific">specifications</a>
+                                </li>
+                                <li>
+                                    <a href="#testimonial">testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="#widget-link-1" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="widget-link-1">Links
+                                        <span class="toggle"></span>
+                                    </a>
+                                    <div class="collapse" id="widget-link-1">
+                                        <ul class="sub-link">
+                                            <li>
+                                                <a href="#">Buy Porto!</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Help Center</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#widget-link-2" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="widget-link-2">USD
+                                        <span class="toggle"></span>
+                                    </a>
+                                    <div class="collapse" id="widget-link-2">
+                                        <ul class="sub-link">
+                                            <li>
+                                                <a href="#">EUR</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">USD</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#widget-link-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="widget-link-3">
+                                        <i class="flag-us flag"></i>ENG
+                                        <span class="toggle"></span>
+                                    </a>
+                                    <div class="collapse" id="widget-link-3">
+                                        <ul class="sub-link">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="flag-us flag mr-2"></i>ENG</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="flag-fr flag mr-2"></i>ENG</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End .header-left -->
+                </div>
+                <!-- End .container -->
+            </div>
+        </header>
+        <main class="main">
+            <!-- banner-section-1 -->
+            <section class="section-1" id="intro">
+                <div class="container">
+                    <div class="row align-items-center product-row">
+                        <div class="col-lg-7 appear-animate" data-animation-name="fadeInLeftShorter" data-appear-animation-delay="200">
+                            <figure class="large-img">
+                                <img src="assets/images/demoes/demo28/banner/1.png" alt="banner" width="939" height="1120">
+                            </figure>
+                        </div>
+                        <div class="col-lg-5 order-lg-first appear-animate" data-animation-name="fadeIn" data-appear-animation-delay="100">
+                            <div class="section-body">
+                                <h3 class="banner-subtitle mb-0 line-height-1e appear-animate" data-animation-name="fadeInLeftShorter" data-appear-animation-delay="1170">
+                                    INTRODUCING</h3>
+                                <h3 class="product-title appear-animate line-height-1" data-animation-name="fadeInLeftShorter" data-appear-animation-delay="1320">PORTO HEADPHONE
+                                </h3>
+                                <div class="price-box appear-animate" data-animation-name="fadeInLeftShorter" data-appear-animation-delay="1500">
+                                    <span class="product-price text-primary">
+                                        <b>$350.00</b>
+                                    </span>
+                                    <a href="#" class="btn btn-rounded with-bg btn-add-cart product-type-simple">add to
+                                        cart
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner-section-2 -->
+            <section class="section-2 with-bg" id="feature">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 appear-animate" data-animation-name="fadeInRightShorter" data-appear-animation-delay="400">
+                            <figure>
+                                <img src="assets/images/demoes/demo28/banner/2.jpg" alt="banner" width="629" height="455">
+                            </figure>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="section-body">
+                                <h3 class="product-title mb-2 appear-animate" data-animation-name="fadeInUpShorter" data-appear-animation-delay="500">PORTO HEADPHONE</h3>
+                                <p class="section-text appear-animate" data-animation-name="fadeInUpShorter" data-appear-animation-delay="700">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book. It has survived not only five centurie
+                                </p>
+                                <div class="mb-2 appear-animate scrolling-box" data-animation-name="fadeInUpShorter" data-appear-animation-delay="900">
+                                    <a href="#specific" class="btn btn-rounded with-border">specifications</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner-section-3 -->
+            <section class="section-3">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 img-wrapper appear-animate" data-animation-name="fadeInRightShorter" data-appear-animation-delay="200">
+                            <figure>
+                                <img src="assets/images/demoes/demo28/banner/3.jpg" alt="banner" width="463" height="473">
+                            </figure>
+                        </div>
+                        <div class="col-lg-6 order-lg-first">
+                            <div class="section-body">
+                                <h3 class="product-title mb-2 appear-aniamte" data-animation-name="fadeInUpShorter" data-appear-animation-delay="300">BLUETOOTH CONNECTION</h3>
+                                <p class="section-text appear-animate" data-animation-name="fadeInUpShorter" data-appear-animation-delay="500">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                    survived not only five centuries, but also the leap into electronic typesetting.
+                                </p>
+                                <div class="mb-2 appear-animate scrolling-box" data-animation-name="fadeInUpShorter" data-appear-animation-delay="700">
+                                    <a href="#testimonial" class="btn btn-rounded with-border">testimonials</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner-section-4 -->
+            <section class="section-4 with-bg">
+                <div class="container">
+                    <div class="row align-items-center product-row">
+                        <div class="col-lg-6 appear-animate" data-animation-name="fadeInRightShorter" data-appear-animation-delay="400">
+                            <figure>
+                                <img src="assets/images/demoes/demo28/banner/4.jpg" alt="banner" width="870" height="587">
+                            </figure>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="section-body">
+                                <h3 class="product-title mb-2 appear-animate" data-animation-name="fadeInUpShorter" data-animation-delay="500">EXTRA QUALITY SOUND</h3>
+                                <p class="section-text appear-animate" data-animation-name="fadeInUpShorter" data-animation-delay="700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac metus at elit malesuada tristique ut at est. Donec ut iaculis nunc. Nullam egestas nec erat a tincidunt. Mauris metus metus, bibendum id convallis non,
+                                    commodo in lacus. Maecenas maximus consequat varius. Praesent ullamcorper non lectus ac ultrices.
+                                </p>
+                                <div class="appear-animate" data-animation-name="fadeInUpShorter" data-animation-delay="700">
+                                    <a href="#" class="btn btn-rounded with-border btn-add-cart product-type-simple">add
+                                        to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner-section-5 -->
+            <section class="rotating-section" id="tour">
+                <div class="heading-wrapper text-center">
+                    <h3 class="product-title appear-animate" data-animation-name="fadeInUpShorter" data-animation-delay="200">TOUR</h3>
+                    <h4 class="section-subtitle line-height-1 appear-animate" data-animation-name="fadeInUpShoretr" data-animation-delay="400">
+                        <i class="left-angle"></i>360º VIRTUAL TOUR
+                        <i class="right-angle"></i>
+                    </h4>
+                </div>
+                <svg class="position-absolute w-100 h-100 z-index-2 p-events-none" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" style="bottom: -80px; left: 0;">
+                    <circle cx="60" cy="120" r="100" stroke="#edeeee" stroke-width="0.3" fill="transparent"
+                        data-animation-name="customSVGLineAnimTwo" data-animation-delay="200">
+                    </circle>
+                </svg>
+                <div class="cd-product-viewer-wrapper loaded" data-frame="16" data-friction="0.33">
+                    <div>
+                        <figure class="product-viewer appear-animate fadeInUp" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+                            <img src="./assets/images/demoes/demo28/rotate.jpg" width="1133" height="560" alt="rotating-image">
+                            <div class="product-sprite" style="background-image: url(./assets/images/demoes/demo28/product-360-sprite.jpg);" data-image="./assets/images/demoes/demo28/product-360-sprite.jpg">
+                            </div>
+                        </figure>
+                        <div class="cd-product-viewer-handle">
+                            <span class="fill"></span>
+                            <span class="handle" style="left: 66.7%;">Handle
+                                <span class="bars">
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- specify section -->
+            <section class="specification" id="specific">
+                <div class="container">
+                    <div class="product-row row">
+                        <div class="heading col-lg-8">
+                            <h3 class="product-title text-white">PORTO HEADPHONE SPECIFICATIONS</h3>
+                            <p class="section-text text-white ls-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae scelerisque elit. Vestibulum vulputate felis dolor. Nulla facilisi. Mauris mattis, sem non egestas euismod.
+                            </p>
+                        </div>
+                        <div class="price-box col-lg-4 mb-3">
+                            <span class="product-price text-white">
+                                <b>$350.00</b>
+                            </span>
+                            <a href="#" class="btn btn-rounded with-bg btn-add-cart product-type-simple">add to cart</a>
+                        </div>
+                    </div>
+                    <h3 class="widget-heading text-white text-uppercase">General</h3>
+                    <div class="row">
+                        <div class="widget col-md-4">
+                            <ul>
+                                <li>
+                                    <span class="dark">Designed For</span>
+                                    <span class="text-white">Smartphones</span>
+                                </li>
+                                <li>
+                                    <span class="dark">Circumaural</span>
+                                    <span class="text-white">Supra-aural</span>
+                                </li>
+                                <li>
+                                    <span class="dark">Magnet Type</span>
+                                    <span class="text-white">Neodymium</span>
+                                </li>
+                                <li>
+                                    <span class="dark">With Microphone</span>
+                                    <span class="text-white">Yes</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="widget col-md-4 with-bar">
+                            <ul>
+                                <li>
+                                    <span class="dark">Glass Type</span>
+                                    <span class="text-white">Monocle</span>
+                                </li>
+                                <li>
+                                    <span class="dark">Lens Type</span>
+                                    <span class="text-white">Bi Convex</span>
+                                </li>
+                                <li>
+                                    <span class="dark">Suitable For</span>
+                                    <span class="text-white">Entertainment</span>
+                                </li>
+                                <li>
+                                    <span class="dark">Functions</span>
+                                    <span class="text-white">Graphical Display</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="widget col-md-4 with-bar">
+                            <ul>
+                                <li>
+                                    <span class="dark">Compatible OS</span>
+                                    <span class="text-white">Android</span>
+                                </li>
+                                <li>
+                                    <span class="dark">Compatible Eye</span>
+                                    <span class="text-white">Both</span>
+                                </li>
+                                <li>
+                                    <span class="dark">Control Type</span>
+                                    <span class="text-white">Manual</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- testimonial -->
+            <section class="testimonials-section" id="testimonial">
+                <div class="container">
+                    <h2 class="subtitle text-center">TESTIMONIALS</h2>
+
+                    <div class="testimonials-carousel owl-carousel owl-theme images-left" data-owl-options="{
+                        'margin': 30,
+                        'autoHeight': true,
+                        'dots': true,
+                        'responsive': {
+                            '0': {
+                                'items': 1
+                            },
+                            '768': {
+                                'items': 2
+                            }
+                        }
+                    }">
+                        <div class="testimonial">
+                            <figure>
+                                <img src="assets/images/demoes/demo28/member/client-1.jpg" alt="client" width="120" height="120">
+                            </figure>
+                            <div class="testimonial-owner">
+                                <div class="meta">
+                                    <blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget quam auctor, faucibus mi ac, ultrices eros. Sed maximus risus sem, nec imperdiet nulla posuere vitae. Aenean a rutrum dolor. Ut quis nunc ligula.
+                                            Fusce
+                                        </p>
+                                    </blockquote>
+                                    <h4 class="testimonial-title">John Doe</h4>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:60%"></span>
+                                            <!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .testimonial -->
+                        <div class="testimonial">
+                            <figure>
+                                <img src="assets/images/demoes/demo28/member/client-2.jpg" alt="client" width="120" height="120">
+                            </figure>
+                            <div class="testimonial-owner">
+                                <div class="meta">
+                                    <blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget quam auctor, faucibus mi ac, ultrices eros. Sed maximus risus sem, nec imperdiet nulla posuere vitae. Aenean a rutrum dolor. Ut quis nunc ligula.
+                                            Fusce
+                                        </p>
+                                    </blockquote>
+                                    <h4 class="testimonial-title">Jessica Doe</h4>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:80%"></span>
+                                            <!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .testimonial -->
+                        <div class="testimonial">
+                            <figure>
+                                <img src="assets/images/demoes/demo28/member/client-3.jpg" alt="client" width="120" height="120">
+                            </figure>
+                            <div class="testimonial-owner">
+                                <div class="meta">
+                                    <blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget quam auctor, faucibus mi ac, ultrices eros. Sed maximus risus sem, nec imperdiet nulla posuere vitae. Aenean a rutrum dolor. Ut quis nunc ligula.
+                                            Fusce
+                                        </p>
+                                    </blockquote>
+                                    <h4 class="testimonial-title">Chris Doe</h4>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:60%"></span>
+                                            <!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <!-- End .product-ratings -->
+                                    </div>
+                                    <!-- End .product-container -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .testimonial -->
+                    </div>
+                    <!-- End .testimonials-slider -->
+                </div>
+                <!-- End .container -->
+            </section>
+            <!-- product section -->
+            <section class="product-section">
+                <div class="container">
+                    <div class="product-default product-extend product-row">
+                        <figure>
+                            <img src="assets/images/demoes/demo28/banner/5.jpg" alt="banner" width="640" height="479">
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-title">
+                                <b>PORTO HEADPHONE</b>
+                            </h3>
+                            <div class="ratings-container mb-2">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:80%"></span>
+                                    <!-- End .ratings -->
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <!-- End .product-ratings -->
+                            </div>
+                            <!-- End .product-container -->
+                            <p class="product-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elimttis adipiscing. Fusce in hendrerit purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh…
+                            </p>
+                            <div class="price-box">
+                                <span class="product-price">$350.00</span>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-single-qty">
+                                    <input class="horizontal-quantity form-control" type="text">
+                                </div>
+                                <a href="#" class="btn btn-rounded with-bg btn-add-cart product-type-simple">add to cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- video section -->
+            <section class="video-section appear-animate" style="background-image: url(assets/images/demoes/demo28/bg.jpg); background-color: #bb3a1b;" data-animation-name="fadeIn" data-animation-delay="200">
+                <div class="section-body d-flex flex-column align-items-center justify-content-center">
+                    <h3 class="product-title text-white">EXPLORE THE BEST FOR YOU</h3>
+                    <a href="https://www.youtube.com/watch?v=YbJOTdZBX1g" class="btn play-btn btn-iframe">
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <a href="demo28.html" class="footer-logo">
+                        <img src="assets/images/logo-white.png" alt="footer=logo" width="202" height="80">
+                    </a>
+                </div>
+                <div class="footer-middle">
+                    <ul class="link-btns scrolling-box">
+                        <li>
+                            <a href="#intro">Intro</a>
+                        </li>
+                        <li>
+                            <a href="#feature">Features</a>
+                        </li>
+                        <li>
+                            <a href="#tour">Tour</a>
+                        </li>
+                        <li>
+                            <a href="#specific">Specifications</a>
+                        </li>
+                        <li>
+                            <a href="#testimonial">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="https://www.portotheme.com/buynow/portowp">Buy Now</a>
+                        </li>
+                    </ul>
+                    <figure class="brands-img">
+                        <img src="assets/images/demoes/demo28/payment.png" class="mx-auto" alt="payment" width="237" height="36">
+                    </figure>
+                    <form action=" #" method="get" class="mb-0">
+                        <div class="submit-wrapper">
+                            <label class="text-uppercase text-white mb-0">newsletter</label>
+                            <input type="search" class="form-control mb-0" name="q" id="q" placeholder="Email Address..." required="">
+                            <button class="btn btn-primary" type="submit">GO</button>
+                        </div>
+                        <!-- End .header-search-wrapper -->
+                    </form>
+                </div>
+                <div class="footer-bottom d-lg-flex justify-content-between align-items-center flex-wrap">
+                    <p class="footer-copyright py-3 pr-4 mb-0">&copy; copyright 2021. All Rights Reserved.</p>
+
+                    <div class="social-icons">
+                        <a href="#" class="social-icon social-facebook icon-facebook" target="_blank"></a>
+                        <a href="#" class="social-icon social-twitter icon-twitter" target="_blank"></a>
+                        <a href="#" class="social-icon social-linkedin fab fa-linkedin-in" target="_blank"></a>
+                    </div>
+                    <!-- End .social-icons -->
+                </div>
+                <!-- End .footer-bottom -->
+            </div>
+        </footer>
+    </div>
+    <!-- End .page-wrapper -->
+
+    <div class="loading-overlay">
+        <div class="bounce-loader">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <div class="sticky-navbar">
+        <div class="sticky-info">
+            <a href="demo28.html">
+                <i class="icon-home"></i>Home
+            </a>
+        </div>
+        <div class="sticky-info">
+            <a href="demo28-shop.html" class="">
+                <i class="icon-bars"></i>Categories
+            </a>
+        </div>
+        <div class="sticky-info">
+            <a href="wishlist.html" class="">
+                <i class="icon-wishlist-2"></i>Wishlist
+            </a>
+        </div>
+        <div class="sticky-info">
+            <a href="login.html" class="">
+                <i class="icon-user-2"></i>Account
+            </a>
+        </div>
+        <div class="sticky-info">
+            <a href="cart.html" class="">
+                <i class="icon-shopping-cart position-relative">
+                    <span class="cart-count badge-circle">3</span>
+                </i>Cart
+            </a>
+        </div>
+    </div>
+
+    <div class="newsletter-popup mfp-hide bg-img" id="newsletter-popup-form" style="background: #f1f1f1 no-repeat center/cover url(assets/images/newsletter_popup_bg.jpg)">
+        <div class="newsletter-popup-content">
+            <img src="assets/images/logo-black.png" alt="Logo" class="logo-newsletter" width="111" height="44">
+            <h2>Subscribe to newsletter</h2>
+
+            <p>
+                Subscribe to the Porto mailing list to receive updates on new arrivals, special offers and our promotions.
+            </p>
+
+            <form action="#">
+                <div class="input-group">
+                    <input type="email" class="form-control" id="newsletter-email" name="newsletter-email" placeholder="Your email address" required />
+                    <input type="submit" class="btn btn-primary" value="Submit" />
+                </div>
+            </form>
+            <div class="newsletter-subscribe">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" value="0" id="show-again" />
+                    <label for="show-again" class="custom-control-label">
+                        Don't show this popup again
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- End .newsletter-popup-content -->
+
+        <button title="Close (Esc)" type="button" class="mfp-close">
+            ×
+        </button>
+    </div>
+    <!-- End .newsletter-popup -->
+
+    <a id="scroll-top" href="#top" title="Top" role="button">
+        <i class="icon-angle-up"></i>
+    </a>
+
+    <!-- Plugins JS File -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.plugin.min.js"></script>
+    <script src="assets/js/plugins/rotate.min.js"></script>
+
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.min.js"></script>
+</body>
+
+</html>

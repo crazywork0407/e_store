@@ -1,0 +1,882 @@
+// Home Page
+
+// # Content
+// 1. Home Base
+//   1.1) Secton Title
+//   1.2) Coupon Sale Text
+//   1.3) Heading Border
+//   1.4) Button
+
+// 2. Home Sections -------
+//    2.1) Home Section
+//         2.1.1) Home Banner
+//         2.1.2) Home Category
+//    2.2) Banner Grid Section
+//         2.2.1) Banner Default
+//         2.2.2) Banner ( 1 ~ 8 )
+//    2.3) Feature Box
+//    2.4) Brand Section
+//    2.5) Top Collection -------
+//    2.6) Small Product Collection
+
+// 3. Resposive --------
+
+// 1. Home Base
+.section-title {
+    margin: 4.5rem 0 1.3rem;
+}
+
+.coupon-sale-text {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 2.1rem 1.2rem;
+    padding: .2em .4em;
+    font-size: 2em;
+    transform: rotate(-1.5deg);
+
+    b {
+        padding: 0 11px 1px 10px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.6em;
+        background-color: #e8e3e1;
+    }
+
+    em {
+        font-size: 100%;
+        font-style: normal;
+    }
+
+    sup {
+        font-size: 54%;
+    }
+
+    i {
+        position: absolute;
+        left: -2.1em;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        font-size: .65em;
+        font-style: normal;
+        opacity: .6;
+    }
+
+    sub {
+        bottom: -1px;
+        left: 3px;
+        font-size: 114%;
+        letter-spacing: -.01em;
+        font-family: $font-family;
+    }
+}
+
+.heading-border {
+    &::before, 
+    &::after {
+        content: '';
+        margin: 0 8px;
+        height: 0;
+        border-top: 1px solid #e7e7e7;
+        flex: 1;
+        -ms-flex: 1;
+    }
+}
+
+.btn-lg {
+    padding: .95em 2.15em 1.05em;
+    font-size: 1.125em;
+    line-height: 1.5;
+}
+
+// 2. Home Section -------
+// 2.1.1) Home Banner
+.home-banner.banner {
+    height: 100vh;
+    font-size: 1.6rem;
+
+    .banner-layer {
+        left: 20%;
+        padding-left: 12.5px;
+    }
+
+    h4 {
+        font-size: 1.4375em;
+        color: rgba(34,37,41,0.7);
+    }
+
+    h2 {
+        font-size: 4.0625em;
+        letter-spacing: .005em;
+    }
+    
+    h3 {
+        font-size: 7.125em;
+        text-transform: uppercase;
+    }
+    
+    h5 {
+        span {
+            transform: translateY( -3px );
+        }
+    }
+
+    .coupon-sale-text {
+        margin: 0 12px;
+    }
+
+    .btn-lg {
+        font-size: 1.125em;
+        padding: 1.05em 3.125em;        
+    }
+}
+
+// 2.1.2) Home Banner
+.cat-section {
+    left: 50%;
+    transform: translate( -50%, -100% );
+    bottom: 1.7rem;
+
+    .btn-lg {
+        width: 100%;
+        padding: 1.6rem 0 1.5rem;
+        font-size: 1.4rem;
+        letter-spacing: -.005em;
+    }
+}
+
+// 2.2) Banner Section -------
+// 2.2.1) Banner Default
+.banner-section {
+    padding: 6px;
+}
+
+.banners-grid {
+    position: relative;
+    margin: -0.1875em -0.1875em 0.1875em;
+    font-size: 0.83333vw;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.banner {
+    font-size: 0.83333vw;
+
+    &.banner-1,
+    &.banner-2 {
+        img {
+            min-height: 26.5em;
+        }
+    
+    }
+
+    figure img {
+        min-height: 19.375em;
+        max-height: 90vw;
+    }
+
+    h4 {
+        letter-spacing: .08em;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-family: 'Segoe Script','Savoye LET';
+    }
+
+    h5 {
+        font-size: 1em;
+        text-transform: uppercase;
+        vertical-align: super;
+
+        span {
+            display: inline-block;
+            letter-spacing: -.02em;
+            transform: translateY( -6px );
+        }
+    }
+
+    .btn-lg {
+        font-size: .8125em;
+    }
+
+    &.grid-item {
+        padding: .16em 0.17em;
+    }
+}
+
+.grid-item {
+    position: absolute;
+}
+
+.grid-col-sizer {
+    width: 2%;
+    flex: 0 0 2%;
+}
+
+// 2.2.2) Banner ( 1 ~ 8 )
+.banner.banner-1 {
+    width: 44%;
+
+    h4 {
+        margin-bottom: 5px;
+        font-size: 0.96em;
+        opacity: .7;
+    }
+
+    h2 {
+        font-size: 3.5em;
+        letter-spacing: .01em;
+    }
+
+    h3 {
+        margin-bottom: 6px;
+        font-size: 4.75em;
+    }
+
+    h5 {
+        font-size: 0.75em;
+        transform: translateY( 7px );
+
+        b {
+            font-size: 1.87em;
+        }
+    }
+
+    .btn {
+        padding: .72em 2.22em .87em;
+        margin-left: 1px;
+        font-size: .8125em;
+    }
+
+    .coupon-sale-text {
+        margin: 0px 2px 0 14px;
+    }
+
+    .banner-layer {
+        padding: 2px 0 0 1.4rem;
+        left: 4%;
+        transform: translateY(-52%);
+    }
+}
+
+.banner.banner-2 {
+    width: 32%;
+
+    .btn-block {
+        background-color: #000;
+        width: 95%;
+        transform: translateX( 11px );
+    }
+}
+
+.banner.banner-2, 
+.banner.banner-5 {
+    h3 {
+        margin-bottom: 1.6rem;
+        font-size: 2.25em;
+    }
+
+    h4 {
+        margin-bottom: 1.3rem;
+        padding: .45em .67em;
+        font-size: 1.125em;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.125em;
+        font-weight: 700;
+    }
+
+    .coupon-sale-text {
+        padding: .5em .69em .55em;
+
+        i {
+            font-weight: 600;
+            font-size: .65em;
+        }
+    }
+
+    .banner-layer {
+        right: 14.4%;
+    }
+}
+
+.banner.banner-3 {
+    width: 24%;
+
+    h4 {
+        margin-bottom: 8px;
+        font-weight: 600;
+        font-size: 1.1em;
+        letter-spacing: .2em;
+    }
+
+    h3 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.3rem;
+        font-size: 2.5em;
+    }
+
+    img {
+        height: 46.18em;
+    }
+
+    .sub-title {
+        padding-top: 11px;
+        opacity: .7;
+        font-weight: 500;
+    }
+
+    .btn {
+        margin-bottom: 1px;
+        padding: .8em 2.9rem .95em;
+        font-size: .8125em;
+    }
+
+    .banner-layer-top {
+        top: 9.3%;
+        left: 13%;
+        right: 13%;
+    }
+
+    .banner-layer-bottom {
+        bottom: 9.1%;
+    }
+}
+
+.banner.banner-4 {
+    width: 76%;
+
+    h2 {
+        margin-bottom: 8px;
+        font-size: 2.0625em;
+        font-weight: 400;
+        opacity: .7;
+    }
+
+    h4 {
+        font-size: 3.125em; 
+    }
+
+    h3 {
+        font-size: 8.75em;
+
+        small {
+            width: 1em;
+            word-break: break-all;
+            font-size: 27%;
+        }
+    }
+
+    .banner-layer {
+        padding-left: 3px;
+        padding-bottom: 2px;
+        left: 5%;
+        right: 42%;
+    }
+
+    .banner-layer-right {
+        margin: 2px -4px 0 0;
+    }
+
+    .banner-layer-left {
+        padding-top: 2.6rem;
+    }
+}
+
+.banner.banner-5 {
+    &.grid-item {
+        padding-bottom: .21em;
+    }
+
+    h3 {
+        font-size: 2.85em;
+        line-height: 1.2;
+    }
+
+    h4 {
+        font-size: 1.45em;
+    }
+
+    img {
+        min-height: 23.5em;
+    }
+
+    .coupon-sale-content {
+        padding-bottom: 4px;
+    }
+
+    .btn-lg {
+        max-width: 100%;
+        padding: 1.3em 4.5em;
+        font-size: 1em;
+        margin-bottom: 3rem;
+    }
+
+    .coupon-sale-text {
+        padding: .6em .4em .55em;
+        margin-bottom: 3px;
+
+        &.text-bottom {
+            padding: .55em 0;
+        }
+
+        b {
+            padding: 0 13px 2px 13px;
+            font-size: 2em;
+        }
+
+        sub {
+            font-size: 145%;
+        }
+
+        i {
+            font-size: .82em;
+            left: -2.2em;
+        }
+    }
+}
+
+.banner.banner-6 {
+    h2 {
+        font-size: 1.75em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #a2a2a2;
+    }
+
+    h4 {
+        font-size: 2.25em;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    sup {
+        font-size: 54%;
+        top: -.55em;
+    }
+
+    .btn-lg {
+        padding: .95em 2.29em 1em 2.24em;
+        font-size: 1.125em;
+        margin-right: -1px;
+    }
+
+    .banner-layer {
+        top: 31.7%;
+        right: 10.5%;
+    }
+}
+
+.banner-6 {
+    width: 26%;
+
+    figure img {
+        min-height: 46.25em;
+    }
+}
+
+.banner.banner-7 {
+    width: 34%;
+
+    .banner-layer-middle {
+        top: 50.5%;
+        left: 6.4%;
+    }
+
+    figure img {
+        height: 26.75em;
+    }
+
+    h5 span {
+        margin-top: 1.3rem;
+        margin-left: 5px;
+    }
+
+    h4 {
+        margin-bottom: 1.5rem;
+        font-size: 0.875em;
+        letter-spacing: .2em;
+    }
+
+    hr {
+        background-color: rgba(34,37,41,0.1);
+    }
+
+    h3 {
+        line-height: 1.064;
+        font-size: 1.9375em;
+        letter-spacing: .15em;
+
+        span {
+            margin: 3px 0 2.2rem;
+            letter-spacing: .15em;
+            font-size: 1.065em;
+        }
+    }
+
+    .btn {
+        padding: 1em 3em .9em;
+        background: #000;
+        font-size: .875em;
+    }
+
+    .row img {
+        filter: brightness( 0 ) invert( 1 );
+    }
+
+    .banner-layer-right {
+        left: 51.9%;
+        right: 5.5%;
+        top: 50.1%;
+    }
+
+    h5 {
+        left: 50%;
+        font-size: 1.31em;
+        transform: translateX(-42%) rotate(-1.5deg);
+        margin-top: .6rem;
+    }
+
+    .coupon-sale-text {
+        b {
+            display: inline-block;
+            padding: 4px 12px 3px 12px;
+            margin-left: 3px;
+            font-size: 1.4em;
+        }
+
+        i {
+            font-size: .56em;
+        }
+    }
+}
+
+.banner-8 {
+    width: 40%;
+
+    .banner-label {
+        position: absolute;
+        border-radius: 50%;
+        width: 2.25em;
+        height: 2.25em;
+        background-color: $primary-color-dark;
+        padding-top: calc(1.125em - .5em);
+        letter-spacing: -.08em;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+    }
+
+    .left-label {
+        left: 8.3%;
+        top: 15.8%;
+        font-size: 2.125em;
+    }
+
+    .right-label {
+        right: 8.2%;
+        top: 16.8%;   
+        font-size: 1.6em;
+    }
+
+    .bottom-label {
+        font-size: 1.3475em;
+        right: 44.2%;
+        bottom: 14.7%;
+    }
+
+    h3 {
+        font-size: 2.5625em;
+    }
+
+    h4 {
+        margin-bottom: 2.4rem;
+        font-size: 1.75em;
+        font-weight: 600;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 1em 3em .94em;
+    }
+
+    sup {
+        position: static;
+        font-size: 75%;
+    }
+
+    sub {
+        display: block;
+        font-size: 36%;
+        line-height: 1;
+        position: static;
+        font-weight: 400;
+        letter-spacing: 0;
+        padding-left: .1em;
+        letter-spacing: -.025em;
+        opacity: .5;
+    }
+
+    small {
+        letter-spacing: -0.025em;
+        font-size: 70%;
+        display: inline-block;
+        font-weight: inherit;
+    }
+
+    figure {
+        min-height: 26.75em;
+        border: .8rem solid $primary-color-dark;
+    }
+
+    .banner-layer {
+        top: 44.3%;
+    }
+}
+
+// 2.3) Feature Box
+.service-grid {
+    width: 24%;
+    padding: 4px 4px 0 2px;
+
+    &.service-grid-2 {
+        width: 26%;
+    }
+}
+
+.service-grid .feature-box {
+    height: 100%;
+    min-height: 19.125em;
+    font-size: 0.83333vw;
+    background-color: #f6f7f9;
+
+    i {
+        margin-bottom: 1.7rem;
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        margin-bottom: 2px;
+        font-size: 1.33em;
+    }
+
+    h5 {
+        margin-bottom: 14px;
+        font-family: $font-family;
+        font-size: 0.92em;
+        font-weight: 600;
+        color: #979797;
+    }
+
+    p {
+        font-family: $font-family;
+        font-size: 0.85em;
+        line-height: 1.82;
+        letter-spacing: .01em;
+    }
+
+    .feature-content {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 87%;
+    }
+}
+
+// 2.4) Brand Section
+.brand-section {
+    padding-top: 4.4rem;
+
+    .owl-carousel .owl-item img {
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
+.brands-slider {
+    padding-bottom: 4.8rem;
+    border-bottom: 1px solid #e7e7e7;    
+}
+
+// 2.5) Top Collection
+.top-collection .product-default {
+    margin-top: -1px;
+}
+
+.products-slider {
+    padding-bottom: 1.9rem;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+// 2.6) Small Product Collection
+.small-products-collection {
+    padding: 4.8rem 0 3rem;
+}
+
+.small-products-collection .product-widget {
+    margin-bottom: 1.6rem;
+
+    .product-title {
+        margin-bottom: 5px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.4rem;
+        letter-spacing: 0.005em;
+    }
+
+    .ratings-container {
+        margin-bottom: 1.2rem;
+        margin-left: 0;
+    }
+
+    figure {
+        margin-right: 1.2rem;
+        max-width: 84px;
+    }
+}
+
+// 3. Resposive --------
+@include mq( xs ) {
+    .owl-carousel {
+        overflow: hidden;
+    }
+}
+
+@media (max-width:1400px) and (min-width: 1200px) {
+   .service-grid {
+        .feature-box-content {
+            font-size: 1.3rem;
+        }
+   }
+}
+
+@media (max-width:1200px) {
+    .home-banner.banner {
+        font-size: 1.3rem;
+    }
+
+    .banner.banner-4 .banner-layer-left {
+        padding-top: 1.8rem;
+    }
+}
+
+@media (max-width:1300px) {
+    @media (min-width: 768px){
+        .service-grid .feature-box {
+            h5 {
+                margin-bottom: 2px;
+                font-size: 0.5em;
+            }
+    
+            h3 {
+                font-size: .5em;
+            }
+    
+            p {
+                font-size: 0.4em;
+            }
+
+            i {
+                margin-bottom: 0.7rem;
+                font-size: 2.1rem;
+            }
+        } 
+
+        .banner-6 figure img {
+            min-height: 46.4em;
+        }
+    }
+
+    @media (min-width: 992px){
+        .service-grid .feature-box {
+            h5 {
+                margin-bottom: 6px;
+                font-size: 0.6em;
+            }
+    
+            h3 {
+                font-size: .7em;
+            }
+    
+            p {
+                font-size: 0.59em;
+            }
+            
+            i {      
+                margin-bottom: 1rem;
+                font-size: 2.5rem;
+            }
+        } 
+    }
+}
+
+@include mq( md, max ) {
+    .home-banner .banner-layer {
+        font-size: 12px;
+        left: 5%;
+    }
+
+    .banner.banner-5 img,
+    .banner figure img {
+        min-height: 210px;
+    }
+
+    .banner.grid-item {
+        width: 100%;
+    }
+
+    .banner.banner-4 .banner-layer-left {
+        padding-top: 0;
+    }
+
+    .service-grid.grid-item {
+        width: 100%;
+    }
+
+    .service-grid .feature-box {
+        font-size: 1.6rem;
+    }
+    
+    .banner {
+        font-size: 1.2rem;
+
+        &.banner-7,
+        &.banner-4 {
+            font-size: .7rem;
+        }
+    }
+
+    .banner.banner-5 {
+        font-size: 1.4vw;
+
+        .btn-lg {
+            padding: 1.4em 3.5em 1.3em;
+        }
+    }
+
+    .banner-layer-middle {
+        top: 50% !important;
+    }
+}
+
+@include mq( sm, max) {
+    .home-banner.banner .banner-layer {
+        left: 0;
+    }
+
+    .banner.banner-3 img {
+        height: 52.18em;
+        max-height: 60rem;
+    }
+}
+
+@include mq( 425px, max ) {
+    .home-banner .banner-layer {
+        font-size: 1rem;
+    }
+}

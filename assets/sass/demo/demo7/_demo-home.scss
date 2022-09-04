@@ -1,0 +1,638 @@
+// Demo7
+
+// # Content
+// 1. Home Base ------
+// 2. Home Sections ------
+//    2.1) Home Slider
+//    2.2) Featured Section
+//    2.3) Category Section
+//    2.4) Arrival Section
+//    2.5) Brands Slider
+//    2.6) Blog Section
+//    2.7) Testimonials
+
+// 3. Responsive ------
+
+// 1. Home Base
+.coupon-sale-text {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 2.1rem 1.2rem;
+    padding: .2em .4em;
+    font-size: 2em;
+    transform: rotate(-2deg);
+
+    b {
+        padding: 0 11px 1px 10px;
+        font-family: $font-family;
+        font-size: 1.6em;
+    }
+
+    em {
+        font-size: 100%;
+        font-style: normal;
+    }
+
+    sup {
+        font-size: 54%;
+    }
+
+    i {
+        position: absolute;
+        left: -2.1em;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        font-size: .65em;
+        font-style: normal;
+        opacity: .6;
+    }
+
+    sub {
+        bottom: -1px;
+        left: 3px;
+        font-size: 114%;
+        letter-spacing: -.01em;
+        font-family: $font-family;
+    }
+}
+
+.section-title {
+    padding-bottom: 1rem;
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+    letter-spacing: -.01em;
+    border-bottom: 1px solid  rgba(0,0,0,0.08);;
+}
+
+.title-decorate::after {
+    margin-left: 1.5rem;
+}
+
+.title-decorate::before {
+    margin-right: 1.5rem;
+}
+
+.owl-carousel.dots-small .owl-dots span {
+    border-color: rgba(61,79,96,.4);
+}
+
+// 2. Home Sections
+// 2.1) Home Slider
+.home-top-container {
+    margin-bottom: 2.1rem;
+
+    .banner {
+        height: 100%;
+
+        figure {
+            height: 100%;
+        }
+    }
+}
+
+.banner1,
+.banner4 {
+    background-color: #3e4b5b;
+
+    img {
+        max-height: 500px;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.banner2,
+.banner3 {
+    background-color: #f4f4f4;
+
+    img {
+        max-height: 240px;
+    }
+}
+
+.home-banner {
+	.banner-layer {
+        padding-bottom: 2px;
+        left: 7%;
+        top: 40.4%;
+	}
+
+	h4 {
+        padding-bottom: 1.1rem;
+        font-size: .9em;
+        letter-spacing: 0.063em;
+		font-weight:500;
+		opacity: .7;
+	}
+
+	h5 {
+		font-size: .875em;
+		margin-top: -4px;
+
+		b {
+			font-size: 0.93em;
+		}
+	}
+
+	em {
+		font-size: 2em;
+		font-style: normal;
+		vertical-align: middle;
+	}
+
+	.btn {
+        padding: 1.2em 3em;
+        color: $primary-color-dark;
+	}
+
+	.owl-dots {
+		position: absolute;
+		bottom: 37px;
+		left: 5.5%;
+
+		.owl-dot {
+			span {
+				width: 14px;
+				height: 14px;
+				border-color: #222529;
+			}
+
+			&:hover span,
+			&.active span {
+				border-color: #222529;
+
+				&:before {
+					width: 4px;
+					height: 4px;
+					margin-left: -2px;
+					margin-top: -2px;
+					background: #222529;
+				}
+			}
+		}
+    }
+
+
+	h2 {
+        padding-bottom: 4px;
+        font-size: 2.5em;
+		letter-spacing: .002em;
+		font-family: 'Segoe Script','Savoye LET';
+	}
+
+	h3 {
+		font-size: 4.75em;
+	}
+
+	h5 {
+        margin: -6px -2px 2.1rem 0;
+		font-size: .6875em;
+	}
+
+	.coupon-sale-text {
+		padding: 4px 7px;
+        margin: 0 .5em 0 .9em;
+        font-size: 1.09em;
+	}
+}
+
+.banner2 {
+    h3 {
+        font-size: 1.5em;
+    }
+
+	h4 {
+        padding-bottom: 4px;
+        font-size: 1.8125em;
+        font-weight: 800;
+        letter-spacing: -.015em;
+	}
+
+	del {
+		margin-right: 2px;
+	}
+
+	sup {
+        top: -.34em;
+		font-size: 70%;
+		font-weight: 700;
+    }
+    
+    .banner-layer {
+        left: 9%;
+        top: 12%;
+
+        img {
+            max-width: 48px;
+            margin-top: 3.65em;
+        }
+    }
+
+    .btn {
+        padding: 1rem 1.8rem 1.1rem;
+        font-size: 1.2rem;
+    }
+}
+
+.banner3 {
+    .banner-label {
+        position: absolute;
+        border-radius: 50%;
+        padding-top: calc(1em - .4em);
+        width: 2.184em;
+        height: 2.184em;
+        background-color: $primary-color-dark;
+        letter-spacing: -.08em;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+    }
+
+    .left-label {
+        left: 10%;
+        top: 11.4%;
+        font-size: 1.0303em;
+    }
+
+    .right-label {
+        right: 10.2%;
+        top: 11.4%;
+        font-size: .75em;
+
+        sub {
+            font-size: 3px;
+        }
+    }
+
+    .bottom-label {
+        font-size: .63em;
+        right: 12.2%;
+        bottom: 14.7%;
+
+        sub {
+            font-size: 3px;
+        }
+    }
+
+    h3 {
+        padding-bottom: 1px;
+        font-size: 1.35em;
+    }
+
+    h4 {
+        margin-bottom: 1.6rem;  
+        font-size: .93em;
+        font-weight: 600;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 1em 3em .94em;
+    }
+
+    sup {
+        position: static;
+        font-size: 75%;
+    }
+
+    sub {
+        display: block;
+        font-size: 4px;
+        line-height: 1;
+        position: static;
+        font-weight: 400;
+        letter-spacing: 0;
+        padding-left: .1em;
+        letter-spacing: -.025em;
+        opacity: .5;
+    }
+
+    small {
+        letter-spacing: -0.025em;
+        font-size: 70%;
+        display: inline-block;
+        font-weight: inherit;
+    }
+
+    figure {
+        border: 1rem solid $primary-color;
+    }
+
+    img {
+        max-height: 220px;
+    }
+
+    .banner-layer {
+        top: 51%;
+    }
+
+    .btn {
+        font-size: .75em;
+        padding: .83em 1.5em .85em;
+    }
+}
+
+.banner4 {
+    .btn-block {
+        background-color: #000;
+        width: 95%;
+        transform: translateX( 11px );
+    }
+
+    h3 {
+        transform: rotate(-2deg);
+        margin-bottom: 1.3rem;
+        font-size: 1.5em;
+        text-transform: capitalize;
+        letter-spacing: 0.01em;
+    }
+
+    .coupon-sale-text {
+        padding: .5em .69em .55em;
+        margin-bottom: 1.4rem;
+        margin-left: -2px;
+
+        i {
+            font-weight: 700;
+            font-size: .32em;
+        }
+
+        sub {
+            bottom: 0px;
+            left: 4px;
+            font-size: 50%;
+        }
+
+        b {
+            display: inline-block;
+            margin-left: 2px;
+            padding: 4px 8px 4px 7px;
+            font-size: .8em;
+        }
+    }
+
+    .banner-layer {
+        top: 78%;
+        left: 15%;
+    }
+
+    .btn-lg {
+        padding: 1.193em 4.25em 1.193em;
+        font-size: 1.3rem;
+    }
+}
+
+// 2.2) Featured Section
+.featured-products-section {
+    padding-bottom: 1.6rem;
+
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-bottom: 3.5rem;
+        margin-right: -2px;
+    }
+}
+
+// 2.3) Category Section
+.categories-section {
+    padding-top: 4.8rem;
+    padding-bottom: 6rem;
+    margin-bottom: 4.7rem;
+
+    .section-title {
+        margin-bottom: 1.8rem;
+    }
+
+    .title-decorate::before, 
+    .title-decorate::after {
+        margin-top: 1px;
+        background-color: #7e98b1;
+    }
+
+    h3 {
+        margin-bottom: -4px;
+        font-size: 2rem;
+        letter-spacing: -.02em;
+    }
+
+    .owl-carousel .owl-nav {
+        .owl-prev,
+        .owl-next {
+            color: #fff;
+        }
+    }
+
+    .banner {
+        > a {
+            display: block;
+            height: 100%;
+            
+            &:before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                background-color: transparent;
+                transition: background-color .35s;
+            }
+        }
+
+        &:hover {
+           > a {
+                &:before {
+                    background-color: rgba(27, 27, 23, 0.15);
+                }
+            }
+        }
+    }
+
+    .banner-layer {
+        left: 9.2%;
+
+        span {
+            font-size: 1rem;
+            letter-spacing: 0.01em;
+        }
+    }
+}
+
+// 2.4) Arrival Section
+.arrival-products-section {
+    padding-bottom: .8rem;
+
+    .section-title {
+        margin-bottom: 1.6rem;
+        padding-bottom: .6rem;
+    }
+
+    .product-default {
+        margin-bottom: 2.2rem;
+    }
+
+    .row {
+        padding-bottom: .8rem;
+    }
+}
+
+// 2.5) Brands Slider
+.brands-slider {
+    padding: 4rem 0;
+}
+
+// 2.6) Blog Section
+.blog-section {
+    padding-top: 4.4rem;    
+    padding-bottom: 5.8rem;
+
+    .section-title {
+        margin-bottom: 2px;
+        letter-spacing: -.02em;
+    }
+
+    .post {
+        margin-bottom: 4.2rem;
+    }
+    
+    .post-title {
+        margin-bottom: 1.2rem;
+    }
+    
+    
+    .post-body {
+        padding-bottom: 2.4rem;
+    }
+    
+    .post-media {
+        min-width: 259px;
+    }
+    
+    .post-content {
+        margin-bottom: 1.3rem;
+    
+        p {
+            font-family: $font-family;
+        }
+    }
+    
+    .post-meta {
+        font-size: 13px;
+    
+        i {
+            margin-right: 1px;
+        }
+    
+        a {
+            font-size: 10px;
+        }
+    }
+}
+
+// 2.7) Testimonials
+.testimonials-slider {
+    padding: 2.3rem;
+    border: 3px solid #65829d;
+
+    .testimonial-owner {
+        h4 {
+            margin-bottom: 1px;
+            padding-top: 1.1rem;
+            font-size: 1.6rem;
+            text-transform: capitalize;
+        }
+    
+        span {
+            font-size: 1.3rem;
+            text-transform: capitalize;
+        }
+    
+        figure {
+            margin-bottom: 1rem;
+            margin-right: 1.2rem;
+            max-width: 60px;
+        }
+    }
+    
+    .testimonial blockquote {
+        padding: 1rem 1rem 1.6rem 1.3rem;
+        font-family: $font-family;
+        letter-spacing: .01em;
+    
+        &:before {
+            color: $primary-color-dark;
+        }
+    
+        p {
+            font-size: 13px;
+            color: #777;
+        }
+    }
+}
+
+// 3. Responsive
+@media (min-width: 576px){
+    .post-media {
+        margin-right: 1.8rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .product-widgets.row {
+        .section-title {
+            margin-bottom: 1.2rem;
+            letter-spacing: 0;
+        }
+    
+        .product-widget {
+            figure {
+                margin-right: 1.5rem;
+                max-width: 170px;
+            }
+    
+            .product-details {
+                margin-bottom: 2rem;
+            }
+            
+            .product-price {
+                font-size: 1.8rem;
+            }
+    
+            .product-title {
+                margin-bottom: .4rem;
+                font-size: 1.5rem;
+            }
+    
+            .ratings-container {
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px){
+    .home-top-container .banner {
+        font-size: 1.2rem;
+    }
+
+    .product-widgets.row .product-widget {
+        figure {
+            height: 84px;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .banner2 .banner-layer {
+        top: 19%;
+    }
+}
+
+@media (max-width: 576px){
+    .banner1,
+    .banner4 {
+        img {
+            min-height: 400px;
+        }
+    }
+}

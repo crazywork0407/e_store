@@ -1,0 +1,790 @@
+// Demo39
+
+// 1. Home Base -------
+// 2. Home Sections ------
+//    2.1) Home Slider
+//    2.2) Product Category Tabs
+//    2.3) Banner Section
+//    2.4) Custom Banner Section
+//    2.5) About Testimonials
+//    2.6) Popular Product Section
+//    2.7) Product Widgets Container
+//    2.8) Blog Section
+//    2.9) Info Boxes
+//    2.10) Instagram Section
+
+// 3. Responsive -------
+
+// 1 Home Base
+.heading {
+    margin-bottom: 2.2rem;
+    border-bottom: 1px solid #e7e7e7;
+
+    h2 {
+        margin-bottom: 13px;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: .2em;
+        font-family: $third-font-family;
+
+        span {
+            text-decoration: underline;
+            font-size: 14px;
+            letter-spacing: .2em;
+            font-weight: 700;
+        }
+    }
+
+    h4 {
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1;
+        letter-spacing: .2em;
+        font-family: $third-font-family;
+    }
+}
+
+.custom-nav-1 {
+    .owl-nav {
+        i {
+            display: none;
+        }
+    
+        .owl-prev {
+            left: 58px;
+            top: 48.9%;
+    
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 11px;
+                top: 4px;
+                width: 32px;
+                border-top: 2px solid #000;
+                transform: translate3d(-50%, 0, 0);
+            }
+        
+            &:before {
+                content: '';
+                position: absolute;
+                top: 5px;
+                width: 10px;
+                height: 10px;
+                border-top: 2px solid #000;
+                border-left: 2px solid #000;
+                transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+            }
+        }
+    
+        .owl-next {
+            right: 40px;
+            top: 48.9%;
+    
+            &:before {
+                content: '';
+                position: absolute;
+                top: 5px;
+                right: 9px;
+                width: 10px;
+                height: 10px;
+                border-top: 2px solid #000;
+                border-left: 2px solid #000;
+                transform: translate3d(-50%, -50%, 0) rotate(135deg);
+            }
+    
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                right: -1px;
+                top: 4px;
+                width: 33px;
+                border-top: 2px solid #000;
+                transform: translate3d(-50%, 0, 0);
+            }
+        }
+    }
+}
+
+// Custom Nav
+.nav-outer {
+    .owl-nav {
+        font-size: 2rem;
+    }
+
+    .owl-prev {
+        transform: rotateZ(180deg) translateY(50%) !important;
+    }
+}
+
+// 2.1) Home Slider
+.banner {
+    h5 {
+        margin-bottom: 2.7rem;
+        font-weight: 700;
+        font-size: 1.1em;
+        letter-spacing: -.02em;
+
+        em {
+            font-style: normal;
+        }
+
+        b {
+            margin-left: 8px;
+            font-size: 2.2em;
+            vertical-align: top;
+            line-height: .6;
+        }
+    }
+
+    .btn {
+        font-size: 0.9375em;
+        font-weight: 600;
+        padding: 1.3em 2.533em 1.266em;
+        border-bottom: 1px solid transparent;
+        background-color: #ffffff;
+        border-color: #ffffff #ffffff #e6e6e6;
+        color: $primary-color-dark;
+
+        &:hover {
+            border-bottom-color: #fff;
+        }
+
+        &:focus {
+            background-color: #dae0e5;
+            border-color: #d3d9df;
+        }
+    }
+}
+
+.home-slider.owl-carousel {
+    .owl-dots {
+        bottom: 6.1rem;
+
+        .owl-dot {
+            span {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .owl-nav {
+        .owl-next,
+        .owl-prev {
+            top: 50%;
+            width: 5rem;
+            height: 4rem;
+
+            &:before {
+                top: 19px;
+            }
+
+            &:after {
+                top: 18px;
+            }
+        }
+
+        .owl-prev:before {
+            left: -1px;
+        }
+    }
+}
+
+.home-slide {
+    .banner-layer {
+        max-width: 535px;
+        left: 5px;
+        right: auto;
+        top: 17.9%;
+    }
+
+    h2 {
+        margin-bottom: 4px;
+        font-weight: 700;
+        font-size: 5.3125em;
+        font-family: $third-font-family;
+    }
+
+    h3 {
+        margin-bottom: 2.4rem;
+        font-weight: 600;
+        font-size: 1.375em;
+        letter-spacing: .2em;
+    }
+
+    h4 {
+        margin-bottom: 2.4rem;
+        font-weight: 300;
+        font-size: 1.125em;
+        line-height: 1.78;
+        letter-spacing: -.02em;
+        color: #777777;
+    }
+
+    img {
+        min-height: 550px;
+    }
+}
+
+.home-slide2 {
+    .banner-layer {
+        left: auto;
+        right: 10px;
+        text-align: right;
+    }
+}
+
+// 2.2) Product Category Tabs
+.product-category-tabs {
+    padding-bottom: 3.5rem;
+
+    a {
+        color: inherit;
+    }
+
+    .nav-tabs .nav-item .nav-link {
+        padding: 1.8rem 0 1.5rem;
+    }
+
+    .nav-item {
+        .nav-link {
+            font-size: 2rem;
+            letter-spacing: .2em;
+            color: #777;
+            font-family: $third-font-family;
+            border-bottom: 1px solid #e7e7e7;
+
+            &:hover {
+                border-color: $primary-color;
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 3rem 3rem 3.3rem;
+        border: 1px solid $primary-color;
+        border-top-width: 0;
+    }
+}
+
+.category-info {
+    .view-more {
+        margin-right: 2px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #000;
+
+        &::after {
+            content: '\e81c';
+            margin-left: 6px;
+            font-family: 'porto';
+            font-weight: 900;
+            font-size: 1.5rem;
+            margin-left: 5px;
+            color: #000;
+        }
+    }
+}
+
+.category-info-title {
+    margin-bottom: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $primary-color-dark;
+}
+
+.category-info-content {
+    position: relative;
+    margin-bottom: 2.6rem;
+    font-size: 1.3rem;
+    color: #1d2127;
+    opacity: 0.7;
+
+    &:after {
+        content: '';
+        position: absolute;
+        margin-left: 6px;
+        font-size: 1.5rem;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -15px 60px 40px rgb(255,255,255);
+    }
+
+    li {
+        margin-bottom: 1.4rem;
+    }
+}
+
+// 2.3) Banner Section
+.banner-section:not(.custom-banner-section) {
+    padding-bottom: 5.2rem;
+}
+
+.banner1,
+.banner2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 250px;
+    padding: 10px 44px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h5 {
+        margin-bottom: 2.3rem;
+    }
+
+    .btn {
+        padding: .98em 1.266em;
+        font-size: 0.83em;
+    }
+}
+
+.banner {
+    .content-left {
+        padding-bottom: 4px;
+
+        h2 {
+            margin-bottom: 2px;
+            font-size: 2.45em;
+            letter-spacing: 0.023em;
+            font-weight: 700;
+            font-family: $third-font-family;
+        }
+    }
+
+    .content-right {
+        margin-right: .8rem;
+    }
+}
+
+.banner1 {
+    .content-left {
+        h5 {
+            font-weight: 600;
+            color: rgba(255,255,255,0.5);
+            font-size: .92em;
+            letter-spacing: .21em;
+        }
+    }
+}
+
+.banner2 {
+    padding-left: 3.7rem;
+
+    .btn {
+        padding: .98em 1.4em;
+    }
+
+    .content-left {
+        span {
+            margin-left: 5px;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        h2 {
+            margin-bottom: 1px;
+            letter-spacing: .015em;
+            font-weight: 800;
+        }
+
+        h4 {
+            margin-bottom: 4.5rem;
+            font-weight: 700;
+            font-size: 20px;
+            font-family: $third-font-family;
+
+            b {
+                margin-left: 6px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+// 2.4) Custom Banner Section
+.custom-banner-section {
+    margin-bottom: 1.1rem;
+
+    .banner1 {
+        padding: 2.4rem 0 2.6rem;
+        min-height: auto;
+
+        >div {
+            margin: 0 1rem;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+            font-size: 2.3rem;
+            letter-spacing: .215em;
+        }
+
+        span {
+            font-weight: 600;
+        }
+
+        h5 {
+            letter-spacing: -.02em;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+
+        .btn {
+            font-size: 0.82em;
+            font-weight: 700;
+            padding: 1em 2.533em;
+        }
+    }
+}
+
+// 2.5) About Testimonials
+.testimonials-section {
+    padding: 6.7rem 0 5.7rem;
+    margin-bottom: 4.8rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+	.testimonial {
+        .testimonial {
+            padding: 1rem 0;
+        
+            .ratings-container {
+                .ratings:before {
+                    color: $primary-color;
+                }
+        
+                .product-ratings, 
+                .ratings {
+                    letter-spacing: .07em;
+                }
+            }
+        }
+
+        blockquote {
+            position: relative;
+            padding: 6px 20px 3.1rem;
+            margin: 0;
+            font-family: "Georgia";
+            
+            &:before,
+            &:after {
+                content: "\201C";
+                display: block;
+                left: 10px;
+                top: 0;
+                font-size: 80px;
+                font-style: normal;
+                line-height: 1;
+                position: absolute;
+                color: $primary-color-dark;
+            }
+    
+            &:before {
+                left: -35px;
+                top: -5px;
+                font-size: 51px;
+            }
+    
+            &:after {
+                content: "\201D";
+                right: -17px;
+                bottom: -20px;
+                font-size: 64px;
+                left: auto;
+                top: auto;
+            }
+    
+            p {
+                font-size: 1.7rem;
+                line-height: 30px;
+                font-family: $second-font-family;
+                font-style: italic;
+                text-align: center;
+                color: #777;
+            }
+        } 
+    }
+
+    .testimonial-owner {
+        span {
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            letter-spacing: 0;
+            color: #fff;
+        }
+    
+        figure {
+            margin: auto;
+            margin-bottom: .7rem;
+            max-width: 74px;
+        
+            img {
+                border-radius: 50%;
+            }
+        }
+    } 
+    
+    .testimonial-title {
+        margin-bottom: 4px;
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: .05em;
+        font-family: $third-font-family;
+    }
+    
+    .team-name {
+        text-transform: uppercase;
+        font-size: 17px;
+        letter-spacing: .05em;
+        color: #111;
+        margin-top: 2.9rem;
+    }
+}
+
+// 2.6) Popular Product Section
+.popular-products-section {
+    padding-bottom: 1.4rem;
+}
+
+// 2.7) Product Widgets Container
+.widget-featured-products,
+.product-widgets-container {
+    .heading {
+        margin-bottom: 2.4rem;
+    }
+    
+    .product-widget {
+        figure {
+            max-width: 95px;
+            width: 100%;
+        }
+    
+        .product-title {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.product-widget {
+    margin-bottom: 1.9rem;
+
+    .product-title {
+        margin-bottom: .6rem;
+        letter-spacing: 0;
+        font-family: $second-font-family;
+        color: #474747;
+    }
+
+    figure {
+        margin-bottom: 0;
+        margin-right: 1.2rem;
+    }
+
+    .ratings-container {
+        margin-bottom: 1.1rem;
+    }
+
+    .product-details {
+        margin-bottom: 4px;
+    }
+}
+
+// 2.8) Blog Section
+.blog-section {
+    padding: 2.9rem 0 1.9rem;
+
+    .heading {
+        margin-bottom: 2.6rem;
+    }
+}
+
+.post {
+    a:hover,
+    a:focus {
+        text-decoration: none;
+    }
+
+    .read-more {
+        font-weight: 700;
+        float: none;
+        letter-spacing: -.025em;
+        color: $primary-color-dark;
+        text-transform: uppercase;
+    }
+}
+
+.post-media {
+    margin-bottom: 1.1rem;
+
+    img {
+        min-height: 180px;
+    }
+
+    .prod-full-screen {
+        right: 5px;
+        bottom: 5px;
+    }
+}
+
+.post-meta {
+    margin-bottom: 1.3rem;
+    font-size: .8em;
+    text-transform: uppercase;
+
+    > span {
+        margin-right: .5rem;
+    }
+
+    i {
+        margin-right: .7rem;
+    }
+}
+
+.post-title {
+    margin-bottom: .6rem;
+    font-size: 2rem;
+    font-family: $second-font-family;
+    letter-spacing: -.025em;
+    font-weight: 600;
+}
+
+.post-content {
+    p {
+        margin-bottom: 1.6rem;
+        line-height: 24px;
+        font-size: 1.4rem;
+    }
+}
+
+.post-box {
+    padding: 2.4rem 1.9rem .7rem;
+    background: #f4f4f4;
+}
+
+// 2.9) Info Boxes
+.info-boxes-container {
+    margin-bottom: 4.7rem;
+	border: 1px solid #e7e7e7;
+
+	.info-box {
+        margin: 2.2rem 0 2.4rem;
+        padding: 1.1rem 0;
+	}
+
+	.info-box:not(:last-child) {
+		border-right: 1px solid #e7e7e7;
+	}
+
+	i {
+		line-height: 0;
+	}
+}
+
+.info-box {
+    h4 {
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0;
+        margin-bottom: 0px;
+        font-family: $third-font-family;
+    }
+
+    p {
+        font-size: 13px;
+        letter-spacing: -.01em;
+        font-family: $font-family;
+    }
+
+    i {
+        margin-top: 3px;
+        margin-right: 1.4rem;
+        font-size: 4rem;
+    }
+}
+
+// 2.10) Instagram Section
+.instagram-section {
+    padding-bottom: 5.2rem;
+    
+    .heading {
+        margin-bottom: 2.6rem;
+    }
+}
+
+.instagram-feed-list a:after {
+    font-size: 5.1rem;
+}
+
+// 3. Responsive
+@media (min-width: 1160px) {
+    .container {
+        max-width: 1140px;
+    }    
+}
+
+@include mq(lg, max) {
+	.info-boxes-container .info-box {
+		justify-content: flex-start;
+		-ms-flex-pack: start;
+		margin: 0;
+		padding: 2.4rem 3rem;
+
+		&:not(:last-child) {
+			border-right: 0;
+			border-bottom: 1px solid #e7e7e7;
+		}
+	}
+}
+
+@include mq(sm, max) {
+    .home-slide {
+        .banner-layer {
+            font-size: 1.3rem;
+            max-width: 350px;
+        }
+
+        h2 {
+            font-size: 4em;
+        }
+    }
+}
+
+@include mq(xs, max) {
+    .product-category-tabs .tab-content {
+        padding: 2rem;
+    }
+
+    .testimonials-section .testimonial blockquote p {
+        font-size: 1.5rem;
+    }
+
+    .category-info-content {
+        font-size: 1.1rem;
+    }
+
+    .info-boxes-container .info-box {
+		padding: 2.4rem 1rem;
+    }
+    
+    .info-box {
+        h4 {
+            font-size: 14px;
+        }
+
+        i {
+            font-size: 3.6rem;
+        }
+        
+        p {      
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,359 @@
+// Demo 25 Index Page
+
+// Elements
+.section-title {
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    color: #313131;
+    font-size: 1.6rem;
+    letter-spacing: -0.01em;
+    line-height: 22px;
+}
+
+// Intro section
+.banner1 {
+    h3 {
+        font-size: 1.375em;
+        line-height: 1.4;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 2.1875em;
+    }
+
+    h4 {
+        color: #222529;
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+    
+    small {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 50%;
+        font-weight: inherit;
+        line-height: 1.6;
+    }
+
+    .brand img {
+        width: auto;
+    }
+
+    > .col-md-5 {
+        padding: 6rem 0 1.2rem 2.4rem;
+    }
+}
+
+.banner2 {
+    padding: 4rem;
+
+    h3 {
+        color: #a2a2a2;
+        font-weight: 500;
+        font-size: 1.25em;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.875em;
+    }
+    
+    small {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 50%;
+        font-weight: inherit;
+        line-height: 1.6;
+    }
+
+    .banner-layer {
+        position: static;
+        height: 100%;
+    }
+}
+
+// Newsletter
+.newsletter-section {
+    margin-bottom: 3.5rem;
+
+    .widget-newsletter {
+        padding: 1.6rem 2rem;
+        border: 1px solid $primary-color;
+    }
+
+    .info-box {
+        padding: 0 1.6rem;
+
+        i {
+            font-size: 4.5rem;
+
+            &:before {
+                margin: 0;
+            }
+        }
+
+        h4 {
+            font-size: 1.8rem;
+            letter-spacing: -.5px;
+        }
+
+        p {
+            line-height: 15px;
+        }
+    }
+}
+
+.newsletter-form {
+    display: flex;
+    margin: 0 auto;
+
+    .form-control {
+        flex: 1;
+        margin: 0;
+        padding: .8rem 1.2rem .8rem 2rem;
+        background-color: #fff;
+        border-color: rgba(0,0,0,0.09);
+        border-radius: 2.4rem 0 0 2.4rem;
+        color: #8d8d8d;
+        font-size: 1.2rem;
+        font-style: italic;
+		height: 48px;
+		outline: none;
+		box-shadow: none;
+    
+        &::placeholder {
+            color: #999;
+            text-transform: none;
+        }
+    }
+
+    .btn {
+        padding: 1rem 3.5rem 1rem 3rem;
+        border-radius: 0 2.4rem 2.4rem 0;
+        height: 48px;
+        background: $primary-color-dark;
+        line-height: 1.42857;
+
+        &:hover,
+        &:active,
+        &.active {
+            color: #fff;
+        }
+    }
+}
+
+// Popular Section
+.popular-section .tagcloud {
+    padding: 20px 0 0 20px;
+
+    a {
+        font-family: $second-font-family;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #222529;
+        border: 1px solid #e7e7e7;
+        background: #fff;
+        border-radius: 0;
+        margin: 0 20px 20px 0;
+        min-width: 110px;
+        padding: 13px;
+        text-align: center;
+    }
+
+    &:after {
+        display: none;
+    }
+}
+
+// Product Widgets
+.products-container {
+    padding: 4rem 0 3.9rem;
+
+    .product-default {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #fff;
+
+        .label-group,
+        .btn-icon-group,
+        .btn-quickview,
+        .btn-icon-wish {
+            display: none;
+        }
+
+        figure {
+            flex: 0 0 46%;
+            max-width: 46%;
+            margin-bottom: 0;
+        }
+
+        .product-details {
+            flex: 0 0 54%;
+            max-width: 54%;
+            padding-left: 2rem;
+        }
+    }
+}
+
+.custom-products {
+    margin-left: -1px;
+    margin-right: -1px;
+
+    > .col-sm-6 {
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-bottom: 2px;
+    }
+
+    .inner-icon:hover {
+        figure {
+            box-shadow: none;
+        }
+    }
+}
+
+// Top Sellers
+.top-sellers-section {
+    padding-top: 4rem;
+}
+
+.banner3 {
+    margin-bottom: 3.5rem;
+    padding: 1.6rem 2.4rem;
+
+    h2 {
+        margin-right: 1.6rem;
+        font-size: 2.05rem;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    h6 {
+        font-size: 1.3rem;
+        color: rgba(255,255,255,0.7);
+        line-height: 1.5;
+        font-weight: 500;
+    }
+}
+
+// Info Boxes container
+.info-boxes-container {
+    margin: 0 0 3.5rem;
+
+    .info-box {
+        height: 100%;
+        padding: 20px 10px;
+        background: #f4f4f4;
+    }
+
+    .row {
+        margin-left: -1px;
+        margin-right: -1px;
+    }
+
+    .owl-item {
+        padding: 1px;
+    }
+
+    .owl-stage-outer, .owl-stage, .owl-item {
+        height: 100%;
+    }
+}
+
+// Brands Slider
+.brands-slider {
+    a {
+        text-align: center;
+
+        &:hover img {
+            transform: translateY(-4px);
+        }
+    }
+
+    img {
+        max-width: 140px;
+        margin: 0 auto;
+        transition: transform .3s;
+    }
+}
+
+// Blog Section
+.blog-section {
+    padding: 5rem 0 2rem;
+
+    .post {
+        margin-bottom: 0;
+    }
+}
+
+.post-date-in-media .post-title {
+    font-weight: 600;
+}
+
+.post-media {
+    margin-bottom: 2rem;
+
+    .post-date {
+        width: 4.4rem;
+        padding-bottom: 1rem;
+        background: $primary-color-dark;
+    }
+
+    .month {
+        font-size: 1.26rem;
+        line-height: 1.2;
+        opacity: 1;
+    }
+
+    .prod-full-screen {
+        right: 4px;
+        bottom: 4px;
+    }
+}
+
+.post-content {
+    p {
+        margin-bottom: 1rem;
+        font-family: $second-font-family;
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+    
+    .read-more {
+        float: none;
+        display: inline-block;
+        color: $primary-color;
+        font-size: .9em;
+        font-weight: 400;
+    }
+}
+
+// Responsive
+@include mq(lg) {
+    .banner1 > .col-md-5 {
+        padding-left: 7rem;
+    }
+
+    .info-boxes-container .col-lg-4 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@include mq(1280px) {
+    .banner1 > .col-md-7 {
+        padding-right: 1.6rem;
+    }
+}
+
+@include mq(md, max) {
+    .newsletter-section .widget-newsletter .info-box {
+        margin-bottom: 1.6rem;
+    }
+}

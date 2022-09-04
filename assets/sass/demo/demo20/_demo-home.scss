@@ -1,0 +1,380 @@
+// Demo 20 Index Page
+
+// Banner Base
+.banner {
+    img {
+        object-fit: cover;
+    }
+
+    .btn:not(.btn-dark) {
+        padding: 0 0 .5rem 0;
+        border: none;
+        border-bottom: 2px solid rgba(119,119,119,.5);
+        color: #777;
+        font-size: 0.875em;
+        line-height: .8;
+        font-weight: 700;
+
+        &:hover {
+            color: $primary-color-dark;
+            border-color: $primary-color-dark;
+        }
+    }
+}
+
+.coupon-sale-text {
+    h4 {
+        padding: 6px 8px;
+        font-size: 0.75em;
+        line-height: 1.4;
+        transform: rotate(-1.5deg);
+    }
+    
+    h5 {
+        position: relative;
+        padding: 6px 8px;
+        font-size: 1.1em;
+        line-height: .8;
+        transform: rotate(-1.5deg);
+    }
+
+    i {
+        position: absolute;
+        left: -2.25em;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        font-style: normal;
+        font-size: .4em;
+        opacity: .6;
+        letter-spacing: 0;
+    }
+    
+    sub {
+        position: absolute;
+        left: 100%;
+        margin-left: .4rem;
+        bottom: .3em;
+        font-size: 70%;
+        line-height: 1;
+    }
+}
+
+// Heading Border
+.heading-border {
+	display: flex;
+	align-items: center;
+	margin: 0 -8px;
+
+	&:before,
+	&:after {
+		content: '';
+		margin: 0 8px;
+		flex: 1;
+		height: 0;
+		border-top: 1px solid #dbdbdb;
+	}
+}
+
+// Top Notice
+.top-notice {
+    letter-spacing: 0;
+}
+
+.info-boxes-slider {
+    background-color: #333;
+
+	.info-box {
+		color: #fff;
+        line-height: 34px;
+        padding: 1.2rem 1rem;
+
+        i {
+            position: relative;
+            top: 1px;
+        }
+    
+        h4 {
+            line-height: 1.2;
+        }
+    }
+}
+
+.section-title {
+    font-family: $font-family;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+// Intro Section
+.intro-section {
+    margin-bottom: 3.6rem;
+}
+
+.banner1 {
+    overflow: hidden;
+
+    img {
+        min-height: 464px;
+    }
+
+    h3 {
+        font-size: 2.625em;
+        font-weight: 500;
+        letter-spacing: -.035em;
+    }
+
+    h4 {
+        margin-left: -.06em;
+        margin-bottom: 1.4rem;
+        font-size: 6.375em;
+        letter-spacing: .03em;
+
+        small {
+            font-size: 39%;
+            font-weight: inherit;
+            transform: rotate(-90deg) translateY(-35%);
+        }
+    }
+
+    h5 {
+        font-size: 1em;
+        margin-bottom: 1.8rem;
+
+        span {
+            margin-right: .4rem;
+            margin-bottom: 1.4rem;
+            padding-top: .275em;
+            font-size: 1.125em;
+        }
+
+        b {
+            font-size: 2.375em;
+        }
+
+        sup {
+            font-size: 54%;
+        }
+    }
+
+    .banner-layer-left {
+        left: 10%;
+    }
+}
+
+.form-control {
+    font-size: .9em;
+}
+
+.find-form {
+    background: #222529;
+    padding: 0 25px;
+    min-height: 222px;
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    select.form-control:not([size]):not([multiple]) {
+        height: 4.5rem;
+    }
+}
+
+.banner2 {
+    img {
+        min-height: 222px;
+    }
+
+    h3 {
+        font-size: 1.5275em;
+        line-height: 1.1;
+    }
+
+    h4 {
+        margin-bottom: 5px;
+    }
+
+    .banner-layer-right {
+        right: 10%;
+    }
+}
+
+// Category Section
+
+.category-section {
+    padding-bottom: 1.7rem;
+
+    .grid-item img {
+        width: 100%;
+        height: 240px;
+    }
+}
+
+.product-category {
+    img {
+        object-fit: cover;
+    }
+
+    figure:after, img {
+        border-radius: 0;
+    }
+}
+
+.category-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: $primary-color-dark;
+    font-size: 17px;
+    padding: .9em 1.4em;
+
+    h3 {
+        margin-bottom: 0;
+        color: #fff;
+        font-size: 1.4rem;
+        letter-spacing: -.035em;
+    }
+}
+
+// Featured Section
+.featured-products-section {
+    background: #eee;
+    padding: 6rem 0 2.3rem;
+
+    .section-title {
+        line-height: 1.4;
+    }
+
+    .product-default {
+        margin-bottom: 2.4rem;
+
+        img {
+            filter: brightness(1.06);
+        }
+    }
+}
+
+// Newsletter Section
+.newsletter-section {
+    padding-top: 5.2rem;
+
+    .section-title {
+        line-height: 1.4;
+    }
+}
+
+.banner3 {
+    border: 1.5625em solid #eee;
+
+    h3 {
+        font-family: 'Segoe Script','Savoye LET';
+        font-size: 1.875em;
+    }
+
+    h4 {
+        font-size: 2.5em;
+    }
+
+    .banner-layer-left {
+        left: 5%;
+    }
+
+    .banner-layer-right {
+        right: 3%;
+        top: 4%;
+
+        img {
+            transform: rotate(-90deg) translateY(-50%);
+            transform-origin: 100% 0;
+            max-width: 105px;
+        }
+    }
+}
+
+.banner4 {
+    h6 {
+        font-size: 0.9em;
+        letter-spacing: .2em;
+    }
+
+    h3 {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #dbdbdb;
+        font-size: 2.0375em;
+        letter-spacing: -.01em;
+    }
+
+    h5 {
+        margin-bottom: 2.75em;
+        padding: 0 .8rem;
+        font-size: 0.9em;
+        color: rgba(34,37,41,0.7);
+        font-weight: 500;
+        letter-spacing: .2em;
+    }
+
+    hr {
+        border-color: #dbdbdb;
+    }
+}
+
+.banner5 {
+    img {
+        min-height: 250px;
+    }
+
+    h4 {
+        font-size: 1.375em;
+        letter-spacing: -.02em;
+    }
+
+    .banner-layer {
+        left: 5%;
+        right: 5%;
+    }
+
+    form {
+        max-width: 460px;
+    }
+
+    .form-control {
+        min-width: 1px;
+        height: 5.2rem;
+        padding: .8rem 2rem;
+        border: none;
+        font-size: .85em;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        height: 5.2rem;
+        padding: 10px 3.2rem;
+    }
+}
+
+// Brands Slider
+
+.brands-section {
+    padding: 4.8rem 0;
+}
+
+.brands-slider .owl-item {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 140px;
+    }
+}
+
+// Responsive
+@include mq(md, max) {
+    .category-section .grid-item img {
+        height: 153px;
+    }
+}
+
+@include mq(sm, max) {
+    .banner3, .banner4 {
+        font-size: 1.2rem;
+    }
+}

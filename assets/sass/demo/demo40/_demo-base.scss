@@ -1,0 +1,1099 @@
+
+// # Content
+// 1. Header
+// 	  1.1) Header Base
+//    1.2) Header Element
+//         1.2.1) Header Info Box 
+//         1.2.2) Header DropDown
+//         1.2.3) Header Cart Dropdown
+//         1.2.4) Header Icon User
+//         1.2.5) Header Icon Wishlist
+//         1.2.6) Header Search and Category Box
+//         1.2.7) Header Main Menu
+//                1.2.7.1) Menu Base
+//                		   1.2.7.1.1) Menu Item Button and Arrow Icon
+//                         1.2.7.1.2) Menu Item Hover
+//                         1.2.7.1.3) Menu With Icon	
+//                1.2.7.2) Megamenu Base
+//                         1.2.7.2.1) Megamenu One
+//                         1.2.7.2.2) Megamenu Two
+//                         1.2.7.2.3) Megamenu Three
+//                         1.2.7.2.4) Megamenu Customer Service
+//                         1.2.7.2.5) Megamenu Four
+//                         1.2.7.2.6) Megamenu Five
+//                         1.2.7.2.7) Menu Hover Effect
+
+// 2. Footer
+//    2.1) Footer Base
+//    2.2) Footer Element
+//         2.2.1) Footer Soical icon
+//         2.2.2) Footer Payment
+//         2.2.3) Footer Newsletter
+//         2.2.4) Footer Copyright
+
+// 3. Component
+//    3.1) Component Base
+//    3.2) Product Default
+//    3.3) Product CountDown
+//    3.4) Product Widget
+
+// 4. Responsive
+
+// 1. Header
+// 1.1) Header Base
+.logo {
+	margin-right: 1.9rem;
+    margin-top: 4px;
+}
+
+.top-notice {
+	.category {
+	    padding: 0.56em 1.5em .56em 1.6em;
+		margin-left: 1.9rem;
+		margin: 0 2.1rem 0 1.9rem;
+		font-size: 10px;
+		font-weight: 600;
+		border-radius: 0.4rem;
+	}
+
+	small {
+		font-size: 11px;
+		opacity: 1;
+		line-height: 1;
+	}
+
+	h5 {
+		font-weight: 700;
+		
+		b {
+			font-size: 16px;
+			font-weight: 800;
+		}
+	}
+}
+
+.header {
+	letter-spacing: .01em;
+
+	.separator {
+		margin: 0 1.3rem 0 2.2rem;
+		border-left-color: #e7e7e7;
+	}
+
+	.header-middle {
+		.separator {
+			margin: 0 1.9rem 0 8px;
+			height: 40px;
+		}
+	}
+}
+
+.header-middle {
+	.header-left {
+		padding: 1.9rem 0px 2.3rem;
+		max-width: 260px;
+		width: 100%;
+		border-right: 1px solid #e7e7e7;
+	}
+
+	.header-right {
+		padding: 2.2rem 4.7rem 2.4rem 2.8rem;
+		box-shadow: 0px 20px 10px 0 rgba(99,111,113,0.05);
+	}
+}
+
+.header-dropdown ul a {
+    padding: 0.5em 1em;
+    font-weight: 400;
+}
+
+.header-top {
+// 1.2) Header Element
+// 1.2.1) Header Info Box 
+	.info-box {
+		padding: 0;
+		white-space: nowrap;
+
+		.icon-shipping {
+			font-size: 25px;
+		}
+
+		i {
+			margin-right: 3px;
+			color: #fcd070;
+		}
+	}
+
+	.info-box-container {
+		display: flex;
+		padding-right: 1.3rem;
+
+		.info-box {
+			margin-left: 2rem;
+		}
+
+		.icon-pin {
+			font-size: 16px;
+		}
+
+		.icon-shipping-truck {
+			font-size: 19px;
+		}
+
+		.icon-help-circle {
+			margin-right: .8rem;
+			font-size: 18px;
+		}
+
+		h4 {
+			font-size: 11px;
+			line-height: 1;
+			font-weight: 800;
+			letter-spacing: .01em;
+		}
+	}
+}
+
+.header-right > .info-box {
+	h4 {
+		font-weight: 900;
+		font-size: 13px;
+		margin-right: 1px;
+		letter-spacing: -.025em;
+	}
+
+	i {
+		margin-right: 8px;
+	}
+}
+
+.header-contact {
+	.header-icon {
+		display: inline-block;
+		transition: transform .3s;
+	}
+
+	&:hover {
+		.header-icon {
+			transform: scale(1.15, 1.15);
+		}
+	} 
+}
+
+// 1.2.2) Header DropDown
+.header-dropdown {
+	padding-top: 6px;
+	margin-left: 2rem;
+	white-space: nowrap;
+    font-weight: 600;
+	color: $primary-color-dark;
+	
+	&+.header-dropdown {
+		margin-left: .9rem;
+	}
+}
+
+// 1.2.3) Cart Dropdown
+.cart-subtotal {
+    padding-bottom: 2px;
+    font-size: 11px;
+	font-weight: 500;
+    letter-spacing: -.05em;
+    color: #777;
+
+    .cart-price {
+		margin-top: 2px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0;
+        color: #ffc220;
+    }
+}
+
+.cart-dropdown {
+	i {
+		display: inline-block;
+		margin-top: -3px;
+		font-size: 3.3rem;
+	}
+}
+
+.dropdown-arrow {
+	.badge-circle {
+		top: 3px;
+    	left: 27px;
+		z-index: 1;
+		background: #ffc220;
+	}
+
+	&:after {
+		content: "\e819";
+		position: absolute;
+		right: -3.2rem;
+    	top: 0;
+    	font-size: 35px;
+		color: $primary-color-dark;
+	}
+}
+
+// 1.2.4) Header Icon User
+.header-contact {
+	margin: 1px 0 0 8px;
+	
+	i {
+		margin-right: 6px;
+	}
+
+	h6 {
+		font-weight: 600;
+
+		a {
+			font-size: 1.6rem;
+			font-weight: 800;
+			letter-spacing: .01em;
+		}
+
+		span {
+			display: inline-block;
+			margin-bottom: 1px;
+		}
+	}
+
+	a {
+		color: $primary-color-dark;
+	}
+}
+
+.header-user {
+	i {
+		font-size: 3.3rem;
+	}
+
+	h6 span {
+		font-weight: 500;
+    	letter-spacing: -.03em;
+	}
+}
+
+// 1.2.5) Header Icon Wishlist
+.header-wishlist {
+	i {
+		font-size: 3.6rem;
+	}
+
+	h6 span {
+		display: inline-block;
+		margin-bottom: 1px;
+		letter-spacing: -.03em;
+    	font-weight: 500;
+	}
+}
+
+// 1.2.6) Header Search and Category Box
+.header-search-category {
+	padding-top: 2px;
+	margin-left: .7rem;
+
+	.btn,
+	.form-control {
+		border-radius: 0;
+	}
+
+	.header-search-wrapper {
+		height: 46px;
+		border: 2px solid $primary-color;
+		border-radius: 5px;
+	}
+
+	.form-control,
+	.select-custom {
+		background: #fff;
+		font-family: $second-font-family;
+	}
+
+	select {
+		padding-left: 2.2rem;
+	    font-size: 11px;
+		letter-spacing: .01em;
+	}
+
+	.select-custom:after {
+		right: 16px;
+	}
+
+	.form-control {
+		padding-left: 1.8rem;
+		border-radius: 5px;
+	}
+
+	.btn {
+		min-width: 59px;
+		background-color: $primary-color;
+		color: #fff;
+	}
+
+	&.header-search .header-search-wrapper {
+		border-width: 2px;
+	}
+}
+
+.header-search-wrapper {
+	.btn:before {
+		margin-top: 2px;
+	}
+}
+
+// 1.2.7) Header Main Menu
+// 1.2.7.1) Menu Base
+.sidebar-home {
+	padding: 3.6rem 2.3rem 1rem;
+    z-index: 1049;
+}
+
+.side-menu-title {
+	padding: 0 0 1.2rem;
+	font-size: 1.6rem;
+	text-transform: none;
+	color: $primary-color;
+	background-color: transparent;
+}
+
+.sidebar-opened .sidebar-overlay {
+	z-index: 1049;
+}
+
+.menu {
+	ul {
+		li:hover>a, 
+		li.show>a,
+		li.active>a {
+			background: #fff;
+			text-decoration: underline;
+		}
+
+		a {
+			font-weight: 500;
+		}
+	}
+
+	&.sf-arrows {
+		padding-bottom: 2.2rem;
+
+// 1.2.7.1.1) Menu Item Button and Arrow Icon
+		.menu-btn {
+			position: absolute;
+			right: -11px;
+			top: 51%;
+			width: 32px;
+			display: flex;
+			height: 32px;
+			align-items: center;
+			justify-content: center;
+			transform: translateY(-50%);
+			font-weight: 400;
+	
+			&:after {
+				position: relative;	
+				top: 0;
+			}
+		}
+	
+		>li {
+			padding-left: 0;
+			padding-right: 0;
+			border: none;
+
+			.sf-with-ul {
+				&:before {
+					top: 54%;
+					left: 100%;
+				}
+	
+				&:after {
+					font-size: 2.8rem;
+					right: -2px;
+					top: 2px;
+					color: $primary-color-dark;
+				}
+			}
+		
+			> a {
+				display: flex;
+				position: relative;
+				align-items: center;
+				padding: 1.3rem 0 .9rem 1px;
+				border: none;
+				letter-spacing: -.035em;
+				color: $primary-color-dark;
+			}
+
+// 1.2.7.1.2) Menu Item Hover
+			&:hover {
+				.megamenu,
+				> ul {
+					left: 105%;
+				}
+	
+				.sf-with-ul {
+					&:before {
+						opacity: 1;
+					}
+				}
+			}
+		
+			&.show,
+			&.active,
+			&:hover {
+				background-color: #fff;
+				
+				> a {
+					color: $primary-color;
+		
+					&:after {
+						color: inherit;
+					}
+				}
+			}
+		}
+
+// 1.2.7.1.3) Menu With Icon	
+		&.with-icon {
+			> li {
+				margin-bottom: 2px;
+	
+				.sf-with-ul:after {
+					top: 0;
+				}
+	
+				> a {
+					letter-spacing: -.025em;
+				}
+					
+				i {
+					margin-bottom: -2px;
+					margin-right: 3px;
+					font-size: 2.8rem;
+				}
+			}
+		}
+	}
+
+// 1.2.7.2) Megamenu Base
+	.megamenu {
+		.submenu {
+			padding-bottom: 1.9rem;
+			font-weight: 500;
+
+			a {
+				padding-bottom: 1.3rem;
+			}
+		}
+
+		.nolink {
+			font-size: 1.4rem;
+			padding-bottom: .9rem;
+		}
+
+		&.megamenu-four,
+		&.megamenu-one,
+		&.megamenu-two,
+		&.megamenu-three,
+		&.megamenu-five  {
+			width: 831px;
+			padding: 2rem;
+
+			.row>div {
+				padding-top: 2px;
+			}
+		}
+
+		&.megamenu-five {
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			max-width: 408px;
+			border-right-color: $primary-color-dark;
+		}
+	}
+
+// 1.2.7.2.1) Megamenu One
+	.megamenu.megamenu-one {
+		.menu-banner-2 {
+			max-height: 397px;
+			margin-bottom: 2rem;
+
+			.banner-content {
+				top: 2.5rem;
+				right: 10.1rem;
+			}
+
+			i {
+				font-size: 11.9rem;
+				top: 7.8rem;
+				left: -2.8rem;
+			}
+		}
+
+		.partner {
+			margin-bottom: .4rem;
+			padding: 1rem;
+			border: 1px solid #e3e3e3;
+
+			img {
+				margin: auto;
+				max-width: 120px;
+				width: 100%;
+			}
+		}
+
+		figure {
+			margin-left: auto;
+			width: 324px;
+			padding-right: .9rem;
+		}
+
+		img {
+			width: auto;
+		}
+
+		.col-lg-4 {
+			padding-left: 6px;
+		}
+	}
+
+	.product-widgets-container {
+		padding: 20px 20px 0 20px;
+		background: #f4f4f4;
+		height: calc( 100% + 42px );
+	    margin: -22px -38px 0 0;
+
+		figure {
+			margin-right: 1.2rem;
+		}
+
+		.product-price {
+			font-size: 1.3rem;
+		}
+
+		.product-details {
+			margin-bottom: 4px;
+		}
+	}
+
+// 1.2.7.2.2) Megamenu Two
+	.megamenu.megamenu-two {
+		img {
+			width: 100%;
+		}
+
+		.submenu {
+			padding-bottom: 8px;
+		}
+	}
+
+// 1.2.7.2.3) Megamenu Three
+	.megamenu.megamenu-three {
+		i {
+			margin-top: .8rem;
+			margin-bottom: 1.2rem;
+			font-size: 5.6rem;
+			color: #ccc;
+		}
+
+		.col-lg-3:last-child {
+			margin-left: -5px;
+		}
+	}
+
+	.banner1 {
+		.banner-layer {
+			margin-top: 5.9rem;
+			left: auto;
+			right: 6px;
+		}
+
+		h6 {
+			margin-bottom: 9px;
+			font-size: 0.86em;
+			letter-spacing: -.015em;
+			font-weight: 700;
+		}
+
+		h3 {
+			margin-bottom: 7px;
+			font-size: 1.5em;
+			letter-spacing: 0.017em;
+		}
+
+		h2 {
+			margin-bottom: 1.7rem;
+			font-size: 2em;
+			letter-spacing: -.025em;
+		}
+	}
+
+// 1.2.7.2.4) Megamenu Customer Service 
+	&.main-vertical>li {
+		.megamenu {
+			bottom: -179%;
+			top: auto;
+		}
+
+		> ul {
+			bottom: -55%;
+			top: auto;
+		}
+	}
+}
+
+.menu-banner.menu-banner-2 {
+	max-height: 349px;
+
+	.btn {
+		bottom: 18px;
+		padding: 7px 32px;
+	}
+}
+
+// 2. Footer
+// 2.1) Footer Base
+.footer {
+	.widget-title {
+		letter-spacing: -.02em;
+	}
+
+    .widget-content {
+        li {
+            margin-bottom: 1.1rem;
+        }
+    }
+
+// 2.2) Footer Element
+// 2.2.1) Footer Soical icon
+    .social-icons {
+        margin: 2.5rem 0 3.3rem;
+    }
+    
+    .widget-payment {
+        .widget-title {
+            margin-bottom: 1.2rem;
+        }
+    }
+
+// 2.2.2) Footer Payment
+    .payment-icons {
+        margin-left: -5px;
+
+        .payment-icon {
+            margin: 1px;
+            filter: none;
+            border: 1px solid #e7e7e7;
+            background-color: #fff;
+        }
+    } 
+}
+
+// 2.2.3) Footer Newsletter
+.widget-newsletter-title {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.widget-newsletter-info {
+	padding-top: 2px;
+	margin-right: 2.4rem;
+
+	&:hover {
+		i {
+			transform: scale(1.15, 1.15);
+		}
+	}
+	
+	i {
+		display: inline-block;
+		margin: 0 2rem 0 5px;
+		font-size: 5rem;
+		color: $primary-color-dark;
+		transition: transform .3s;
+	}
+
+    p {
+        color: #90969a;
+        font-size: 13px;
+        letter-spacing: .005em;
+    }
+}
+
+.footer-submit-wrapper {
+	margin-top: 2px;
+
+    .form-control {
+        padding-left: 1.7rem;
+		height: 50px;
+		border: 2px solid #bebebe;
+		border-radius: 6px;
+		font-size: 13px;
+		font-family: $second-font-family;
+		min-width: 210px;
+
+        &::placeholder {
+            color: #999;
+        }
+    }
+
+    .btn {
+		padding: 13px 14px 15px;
+        margin-left: 1rem;
+        max-height: 51px;
+		min-width: 215px;
+		font-size: 14px;
+        font-weight: 600;
+		letter-spacing: -.025em;
+		border-radius: 6px;
+    }
+}
+
+// 2.2.4) Footer Copyright
+.footer-copyright {
+    letter-spacing: -.025em;
+}
+
+// 3. Component
+// 3.1) Component Base
+.container-fluid {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.mfp-bg, 
+.mfp-wrap {
+    z-index: 99999;
+}
+
+.info-box {
+	h4 {
+		text-transform: none;
+	}
+}
+
+// 3.1) Breadcrumn
+.breadcrumb {
+	margin: 3.5rem 0 2rem;
+    padding: 4px 0;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+// 3.2) Product Default
+.home {
+	.product-default:not(.product-widget) {
+		img {
+			max-width: 223px;
+		}
+	}
+}
+
+.product-default:not(.product-widget) {
+    .category-wrap {
+        margin-bottom: 2px;
+    }
+
+    .product-title {
+        margin-bottom: 6px;
+        font-weight: 500;
+    }
+
+    .product-details {
+        padding-bottom: 2px;
+    }
+
+    &:hover {
+        figure {
+            box-shadow: 0 25px 35px -5px rgba(0,0,0,0.1);
+        }
+	}
+	
+	.ratings-container {
+		.product-ratings, 
+		.ratings {
+			font-size: 12px;
+			letter-spacing: .05em;
+		}
+	}
+}
+
+// 3.3) Product CountDown
+.product-countdown-container {
+	padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+// 3.4) Product Widget
+.product-widget {
+	figure {
+		max-width: 84px;
+	}
+
+	.product-title {
+		margin-bottom: .8rem;
+		font-size: 1.2rem;
+		font-family: $second-font-family;
+	}
+
+	.price-box {
+		font-family: $second-font-family;
+	}
+}
+
+// 4. Responsive
+@media (max-width: 1400px) {
+	.header-top {
+		.info-box-container,
+		.separator,
+		.info-box {
+			display: none;
+		}
+	}
+
+	.header-middle {
+		.header-contact h6,
+		.cart-subtotal,
+		.separator {
+			display: none;
+		}
+	}
+
+	.header-wishlist {
+		margin-right: -5px;
+
+		i {
+			margin-right: 0;
+			font-size: 3.3rem;
+		}
+	}
+
+	.menu {
+		font-size: 11px;
+
+		.megamenu {
+			&.megamenu-four,
+			&.megamenu-one,
+			&.megamenu-two,
+			&.megamenu-three,
+			&.megamenu-five  {
+			    width: 693px;
+			}
+
+			&.megamenu-one figure {
+				padding-bottom: 1.5rem;
+				width: auto;
+			}
+	
+			&.megamenu-five {
+				max-width: 408px;
+			}
+		}
+	} 
+
+	.menu-banner.menu-banner-2 {
+		max-height: 333px;
+	
+		.btn {
+			bottom: 15px;
+		}
+	}
+}
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+	.footer-submit-wrapper .btn {
+		min-width: 160px;
+	}
+}
+
+@media (min-width: 992px) {
+	.sidebar-home {
+		.col-xl-5col {
+			-ms-flex: 0 0 20%;
+			flex: 0 0 20%;
+			max-width: 20%;
+		}
+	}
+
+	.menu {
+		.megamenu {
+			display: block;
+
+// 1.2.7.2.5) Megamenu Four
+			&.megamenu-four {
+				.col-lg-4 {
+					-ms-flex: 0 0 32.6%;
+					flex: 0 0 32.6%;
+					max-width: 32.6%
+				}
+			}
+
+// 1.2.7.2.6) Megamenu Five	
+			&.megamenu-five {
+				.nolink {
+					padding-bottom: .5rem;
+					font-weight: 400;
+					color: #fff;
+				}
+		
+				a:not(.nolink) {
+					padding-bottom: .9rem;
+					font-weight: 400;
+					color: #bcbdbd;
+				}
+		
+				.btn:not(.nolink) {
+					padding: 1.8rem 4.1rem;
+					background: #000;
+					color: #fff;
+					font-weight: 600;
+				}
+			}
+		}
+
+// 1.2.7.2.7) Menu Hover Effect
+		>li {
+			&:hover {
+				.megamenu,
+				> ul {
+					visibility: visible;
+					opacity: 1;
+					margin-left: 0;
+					left: 100%;
+				}
+			}
+	
+			.megamenu,
+			> ul {
+				display: block;
+				visibility: hidden;
+				opacity: 1;
+				margin-left: -2rem;
+				left: -999999px;
+				transition: visibility .3s, opacity .3s, margin-left .3s;
+	
+				&:before {
+					content: '';
+					position: absolute;
+					border-right: 12px solid #fff;
+					border-top: 10px solid transparent;
+					border-bottom: 10px solid transparent;
+					left: -12px;
+					top: 13px;
+					z-index: 112;
+				}
+			}
+		}
+	}
+
+	.main-vertical {
+		>li {
+			.megamenu:before, 
+			>ul:before {
+				top: 26.5rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.menu {
+		ul,
+		.megamenu {
+			position: static;
+			box-shadow: none;
+		}
+
+		.megamenu {
+			box-shadow: none;
+			border: none;
+	
+			.submenu {
+				padding-bottom: 0;
+			}
+	
+			&.megamenu-four,
+			&.megamenu-one,
+			&.megamenu-two,
+			&.megamenu-three,
+			&.megamenu-five  {
+				width: auto;
+			}
+	
+			&.megamenu-five {
+				max-width: none;
+				background-image: none !important;
+			}
+		}
+	}
+
+	.header-top {
+		.container-fluid {
+			padding: 0 5px 0 5px;
+		}
+	}
+
+	.header-middle {
+		box-shadow: 0px 20px 10px 0 rgba(99,111,113,0.05);
+
+		.container-fluid {
+			padding-left: 5px;
+		}
+		
+		.header-left {
+			border: 0;
+		}
+
+		.header-right {
+			padding-left: 0;
+			padding-right: 1rem;
+			box-shadow: none;
+		}
+	} 
+
+	.header-wishlist i,
+	.header-icon i,
+	.cart-dropdown i {
+		font-size: 3rem;
+	}
+
+	.header-search {
+		margin-bottom: -2px;
+
+		i {
+			font-size: 2.7rem;
+
+			&:before {
+				font-weight: 600;
+			}
+		}
+	}
+
+	.dropdown-arrow:after {
+		display: none;
+	}
+
+	.logo {
+		max-width: 110px;
+	}
+}
+
+@media (max-width: 576px) {
+	.widget-newsletter-info {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.footer-submit-wrapper {
+		flex-direction: column;
+
+		.btn {
+			margin: 1rem 0 0;
+		}
+	}
+}

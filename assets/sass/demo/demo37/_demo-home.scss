@@ -1,0 +1,706 @@
+// Demo37
+
+// 1. Home Base -------
+// 2. Home Sections ------
+//    2.1) Home Slider
+//    2.2) Info Section
+//    2.3) Products Scroll Section
+//    2.4) Product Info Container
+//    2.5) Big Sale Banner
+//    2.6) Sale Product Section
+//    2.7) Newsletter Section
+
+// 3. Responsive -------
+
+// 1. Home Base -------
+.btn-lg {
+  padding: 1em 2.96em .98em;
+}
+
+.section-title {
+  margin-bottom: 2.1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.coupon-sale-text {
+	position: relative;
+	display: inline-block;
+  padding: 4px 12px 5px 11px;
+	transform: rotate(-2deg);
+
+	i {
+		position: absolute;
+		left: -2.25em;
+		top: 50%;
+		transform: translateY(-50%) rotate(-90deg);
+		font-size: .65em;
+		font-style: normal;
+		opacity: .6;
+		letter-spacing: 0;
+	}
+
+	b {
+		display: inline-block;
+		padding: 5px 8px;
+		font-size: 1.6em;
+		background-color: #fff;
+	}
+
+	em {
+		font-size: 2em;
+		font-style: normal;
+	}
+}
+
+// 2. Home Sections ------
+// 2.1) Home Slider
+.home-slider {
+  background: #dadada;
+  
+  &.owl-carousel .owl-nav {
+    font-size: 24px;
+  }
+
+	img {
+    min-height: 499px;
+    max-height: 577px;
+	}
+
+  h2 {
+    font-size: 4.49em;
+    letter-spacing: .001em;
+  }
+
+	.btn {
+		font-size: 1em;
+  }
+
+  .banner-layer {
+    > img {
+      display: block;
+      margin-left: auto;
+      width: 100%;
+      min-height: auto;
+      max-width: 255px;
+      height: 25px;
+    }
+  }
+
+  .owl-stage-outer,
+  .owl-stage,
+  .owl-item,
+  .home-slide,
+  .home-slide img {
+    height: 100%;
+  }
+
+  .home-slide2 {
+    h2 {
+      letter-spacing: -.005em;
+    }
+
+    .banner-layer img {
+      margin-bottom: .7rem;
+      margin-top: 5px;
+      margin-left: auto;
+      height: 24px;
+      max-width: 247px;
+    }
+  }
+}
+
+.product-info-container .heading,
+.home-slide2,
+.home-slide1 {
+	h4 {
+    margin-bottom: 5px;
+    font-size: 1.33em;
+    font-weight: 500;
+    letter-spacing: .116em;
+    color: rgba(34, 37, 41, 0.7);
+	}
+
+	h3 {
+		font-size: 5.875em;
+	}
+
+	h5 {
+    margin-left: auto;
+		font-size: .75em;
+    vertical-align: top;
+    
+		span {
+      position: relative;
+      top: -2px;
+      font-size: 1.1em;
+      letter-spacing: -.035em;
+		}
+	}
+
+	.coupon-sale-text {
+    font-size: 1.15em;
+		margin: 0 0 0 8px;
+		letter-spacing: -.01em;
+
+		sup {
+			font-size: 100%;
+			top: 2px;
+		}
+	}
+
+	.btn {
+    letter-spacing: -.02em;
+	}
+
+	.banner-layer {
+    left: 0.8%;
+    right: auto;
+	}
+
+	img {
+		object-position: 55%;
+	}
+}
+
+.home-slide2 {
+  h2 {
+    font-size: 3.9em;
+  }
+
+  h4 {
+    margin-bottom: 3px;
+  }
+
+  h5 {
+    margin-left: auto;
+
+    span {
+      top: 0px;
+    }
+  }
+
+	.banner-layer {
+    padding-top: 1px;
+    left: 50.9%;
+    right: auto;
+	}
+}
+
+// 2.2) Info Section
+.info-box {
+  padding: 3.1rem 2.4rem;
+
+  i {
+    margin-right: 8px;
+    margin-bottom: 2px;
+    font-size: 3.2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: none;
+    line-height: 1.2;
+  }
+}
+
+// 2.3) Products Scroll Section
+.products-scroll-section {
+  margin-bottom: 6.8rem;
+
+  .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .product-default {
+    margin-bottom: 2.3rem;
+  }
+
+  .custom-srcollbar {
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      position: relative;
+      background: $primary-color;
+    } 
+    
+    &::-webkit-scrollbar-track {
+      background: #f4f4f4;
+    }
+  }
+}
+
+// 2.4) Product Info Container
+.product-info-container {
+  margin-bottom: 6.1rem;
+  background-color: #d8dce5;
+
+  .heading {
+    margin: 6.1rem 0 5.2rem;
+    font-size: 1.6rem;
+
+    h4 {
+      margin-bottom: 3px;
+    }
+
+    h2 {
+      margin-bottom: 7px;
+      font-size: 3em;
+      line-height: 1;
+    }
+
+    h5 {
+      margin-left: auto;
+      margin-right: 5.2rem;
+
+      span {
+        letter-spacing: -.025em;
+      }
+    }
+
+    .coupon-sale-text {
+      margin: 0 3px 0 12px;
+    }
+  }
+
+  .coupon-sale-text {
+    line-height: 1;
+    letter-spacing: -0.04em;
+
+    em {
+      margin: 0 -3px;
+    }
+  }
+
+  .btn-group {
+    width: 100%;
+
+    .btn {
+      padding: 1.6rem 0 1.5rem;
+      font-size: 1.6rem;
+      letter-spacing: -.02em;
+    }
+  }
+}
+
+.product-info-image {
+  position: relative;
+}
+
+.product-info-item {
+  display: flex;
+  margin-bottom: 1.5rem;
+  padding-left: 1px;
+  align-items: center;
+
+  &:first-child {
+    margin-bottom: 1.6rem;
+  }
+
+  &:before {
+    content: '';
+    margin-right: 1rem;
+    background-color: $primary-color;
+    height: 1px;
+    width: 6px;
+  }
+
+  .product-default {
+    &:hover {
+      box-shadow: none;
+
+      .btn-add-cart {
+        background-color: transparent;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .product-details {
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .product-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -.01em;
+    
+    a {
+      color: $primary-color-dark;
+    }
+  }
+
+  .product-default,
+  .product-title,
+  .price-box {
+    margin-bottom: 0;
+  }
+
+  .price-box {
+    margin: 0 2rem;
+    letter-spacing: 0;
+    font-family: $font-family;
+  }
+
+  .product-price {
+    color: #444;
+  }
+
+  .btn-add-cart {
+    margin-top: -3px;
+    padding: 0;
+    line-height: 1.3;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    border: 0;
+    border-bottom: 1px solid;
+    background-color: transparent;
+    color: $primary-color;
+
+    &:hover {
+      background-color: transparent;
+      color: $primary-color;
+    }
+  }
+}
+
+// Product Popup Dot
+.product-popup-dot {
+  position: absolute;
+
+  > a {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $secondary-color;
+    }
+
+    i {
+      position: absolute;
+      color: #fff
+    }
+  }
+
+  &.dot-top-one {
+    top: 22.2%;
+    left: 13.9%;
+  }
+
+  &.dot-middle-one {
+    top: 60.1%;
+    left: 18.7%;
+  }
+
+  &.dot-bottom-one {
+    bottom: 7.4%;
+    left: 11.9%;
+  }
+
+  &.dot-top-two {
+    left: 55.9%;
+    top: 20.1%;
+  }
+
+  &.dot-middle-two {
+    left: 55.4%;
+    top: 52%;
+  }
+
+  &.dot-bottom-two {
+    left: 53.8%;
+    bottom: 12.2%;
+  }
+
+  &:hover {
+    .product-popup-wrap {
+      visibility: visible;
+      opacity: 1;
+      left: 100%;
+    }
+  }
+}
+
+.product-popup-wrap {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  padding: 2rem;
+  right: auto;
+  top: -6.1rem;
+  left: -9999999px;
+  background-color: #fff;
+  transition: visibility .3s, opacity .3s;
+  z-index: 2;
+
+  figure {
+    img {
+      width: auto;
+      max-width: 210px;
+    }
+  }
+
+  .product-default {
+    margin-bottom: 3px;
+
+    &:hover {
+      .btn-icon {
+        background-color: $primary-color;
+        color: #fff;
+        opacity: .9;
+      }
+    }
+  }
+
+  .btn-add-cart {
+    padding: 4px 1.4rem;
+    background-color: $primary-color;
+    width: 100%;
+    color: #fff;
+    border: 0;
+    opacity: 1;
+  }
+
+  .price-box {
+    margin-bottom: 1.7rem;
+  }
+}
+
+// 2.5) Big Sale Banner
+.banner-big-sale {
+  margin-top: 1.9rem;
+	margin-bottom: 4.5rem;
+
+	.banner-content {
+    padding: 1.9rem 1rem 2rem 4px;
+	}
+
+	h2 {
+    font-size: 1.25em;
+		line-height: 1.2;
+
+		small {
+      margin-left: .9em;
+			font-size: 64%;
+			font-weight: 400;
+			opacity: .7;
+		}
+	}
+
+	b {
+    position: relative;
+    margin-right: 1.2rem;
+    padding: .32em .55em .33em .6em;
+    margin-left: 1px;
+    font-size: 1.05em;
+		z-index: 1;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #000;
+      transform: rotateZ(-2deg) skew(1deg);
+			z-index: -1;
+		}
+	}
+
+	.btn {
+    padding: 1.05em 2.57em 1.05em;
+    margin-top: 1px;
+	}
+}
+
+// 2.6) Sale Product Section
+.products-slider.owl-theme {
+  .owl-nav {
+    font-size: 18px;
+
+    button {
+      top: 34%;
+    }
+  } 
+}
+
+.sale-product-section {
+  .product-title {
+    margin-bottom: .5rem;
+  }
+}
+
+// 2.7) Newsletter Section
+.newsletter-section {
+  padding-bottom: 4.8rem;
+
+  .container {
+    max-width: 530px;
+  }
+
+  h3 {
+    margin-bottom: 4px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: 2.6rem;
+    letter-spacing: .005em;
+  }
+
+  .submit-wrapper {
+    display: flex;
+    position: relative;
+
+    &:before {
+      content: "\e88e";
+      position: absolute;
+      margin-top: -.5em;
+      top: 50%;
+      left: 0;
+      line-height: 1;
+      font-size: 1.6rem;
+      font-weight: 600;
+      font-family: 'porto';
+      color: #3d5167;
+      z-index: 1;
+    }
+
+    .form-control {
+      padding-left: 2.3rem;
+      font-size: 1.2rem;
+      height: 39px;
+    }
+  }
+
+  .btn {
+    padding: .59em .89em;
+    margin: 0 0 2px 0;
+    font-size: 1.2rem;
+  }
+}
+
+// 3. Responsive
+@media (min-width: 1400px) {
+  .home-slider {
+    height: 576px;
+  }
+
+  .product-info-container .heading h2 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 1399px) {
+  .product-info-container .heading {
+    max-width: 466px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .info-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .product-info-container {
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-slide1 .banner-layer {
+    left: 3%;
+  }
+
+  .home-slide2 .banner-layer {
+    left: auto;
+    right: 3%;
+  }
+
+  .product-info-image {
+    max-width: 400px;
+  }
+
+  .header-top {
+    .social-icons {
+      margin-left: 1rem;
+    }
+  }
+
+  .product-popup-dot {
+    &.dot-top-two,
+    &.dot-middle-two,
+    &.dot-bottom-two {
+      &:hover {
+        .product-popup-wrap {
+          right: 100%;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .product-info-image {
+    margin-bottom: -12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-info-container .heading {
+    max-width: 423px;
+  }
+
+  .product-popup-wrap {
+    padding: 1.3rem 1.3rem 1rem 1.3rem;
+
+    figure img {
+      max-width: 120px;
+    }
+  } 
+}
+
+@media (max-width:480px) {
+  .home-slide2,
+  .home-slide1 {
+    font-size: 3.2vw;
+  }
+
+  .home-slider {
+    .home-slide2 .banner-layer img,
+    .banner-layer>img {
+      max-width: 173px;
+    }
+  }
+
+  .product-info-container .heading {
+    max-width: 330px;
+
+    h2 {
+      font-size: 2.2em;
+    }
+  } 
+
+  .product-info-item .price-box {
+    margin: 0 1rem;
+  }
+}

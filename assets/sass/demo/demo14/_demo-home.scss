@@ -1,0 +1,564 @@
+// Home
+
+// 1. Header & Footer
+
+// 1.1) Header
+.header-bottom {
+	border-top: 2px solid #e7e7e7;
+
+	.container {
+		margin-top: -2px;
+	}
+}
+
+.header-search .form-control {
+	min-width: 17rem;
+	width: 17rem;
+}
+
+.main-nav .menu > li {
+	border-top: 2px solid transparent;
+
+	&:hover,
+	&.active {
+		border-top-color: $primary-color;
+	}
+}
+
+// 1.2) Footer
+.widget-newsletter {
+	padding-bottom: 3.5rem;
+	border-bottom: 1px solid #313438;
+
+	p {
+		max-width: 360px;
+		line-height: 1.6;
+	}
+
+	form {
+		border-radius: 5rem;
+		background: #292c30;
+		padding-left: 2.5rem;
+		overflow: hidden;
+	}
+
+	.form-control {
+		height: 4.8rem;
+		padding: .8rem 1rem .8rem 0;
+		border: 0;
+		color: #777;
+		background: #292c30;
+		box-shadow: none;
+		outline: none;
+
+		@include only_for_ie() {
+			flex: 1;
+		}
+
+		&::placeholder {
+			color: #999;
+		}
+	}
+
+	.btn {
+		font-family: $font-family;
+		padding: 1rem 2.3rem;
+		border-radius: 0 5rem 5rem 0;
+		font-size: 1.2rem;
+	}
+}
+
+footer .contact-info li {
+	margin-bottom: .5rem;
+}
+
+// 2. Components
+
+// 2.1) Coupon Sale Text
+.coupon-sale-text {
+	position: relative;
+	display: inline-block;
+	padding: 5px 8px;
+	transform: rotate(-2deg);
+
+	i {
+		position: absolute;
+		left: -2.25em;
+		top: 50%;
+		transform: translateY(-50%) rotate(-90deg);
+		font-size: .65em;
+		font-style: normal;
+		opacity: .6;
+		letter-spacing: 0;
+	}
+
+	b {
+		display: inline-block;
+		font-size: 1.6em;
+	}
+
+	em {
+		font-size: 2em;
+		font-style: normal;
+	}
+}
+
+// 2.2) Heading Border
+.heading-border {
+	display: flex;
+	display: -ms-flexbox;
+	align-items: center;
+	-ms-flex-align: center;
+	margin: 0 -1.5rem;
+
+	&:before,
+	&:after {
+		content: '';
+		margin: 0 1.5rem;
+		flex: 1;
+		-ms-flex: 1;
+		height: 0;
+		border-top: 5px solid #222529;
+	}
+}
+
+// 3. Home Page
+
+// 3.1) Home Slides & Category Banner
+.home-slider {
+	padding: 0 0 3.5rem;
+
+	.home-slide {
+		background-color: #f4f4f4;
+
+		.slide-bg {
+			width: auto;
+			min-height: 500px;
+			margin-left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	.btn {
+		font-size: .9375em;
+		padding: 1.034em 2.946em;
+	}
+}
+
+.home-slide1 {
+	.banner-layer {
+		right: 6.75%;
+	}
+
+	h4 {
+		font-size: 1.1875em;
+		font-weight: 500;
+		letter-spacing: .08em;
+		opacity: .7;
+	}
+
+	h2 {
+		font-size: 2.5em;
+		font-weight: 500;
+		font-family: Oswald;
+		letter-spacing: .09em;
+	}
+
+	h3 {
+		font-size: 5.875em;
+		line-height: 1.1;
+	}
+
+	h5 {
+		font-size: .875em;
+		margin-top: -4px;
+
+		b {
+			font-size: 0.93em;
+		}
+	}
+
+	.coupon-sale-text {
+		padding: 4px 8px;
+		margin: 0 .2em 0 .8em;
+		font-size: 1.03em;
+		vertical-align: sub;
+	}
+}
+
+.home-slide2 {
+	.banner-layer {
+		left: 8.7%;
+	}
+
+	.slide-bg {
+		background-position: 70%;
+	}
+
+	h4 {
+		color: #999;
+		font-size: 2.125em;
+		font-weight:500;
+	}
+
+	h3 {
+		font-size: 4.3125em;
+	}
+
+	h2 {
+		font-size: 2.125em;
+		font-weight:500;
+		font-family: Oswald;
+		line-height: 1.2;
+		letter-spacing: .12em;
+	}
+
+	.heading-border {
+		font-size: 2.125em;
+	}
+
+	.btn {
+		padding: 1.25em 3.125em;
+		font-size: 1em;
+		letter-spacing: .12em;
+	}
+}
+
+// 3.2) Info boxes Container
+.info-boxes-container {
+	border-top: 1px solid #e7e7e7;
+
+	.info-box {
+		padding: 1.6rem 0;
+	}
+
+	i {
+		line-height: 0;
+	}
+
+	p {
+		color: #777;
+		line-height: 1.2;
+		letter-spacing: 0;
+	}
+}
+
+// 3.3) Banners Section
+.banners-section {
+	.banner-content {
+		padding: 1.6rem 0;
+		margin: 0 1.25em;
+		transform: translateY(-50%);
+		margin-bottom: -10%;
+	}
+
+	a {
+		color: #B3DA7E;
+		font-weight: 400;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	h4 {
+		font-size: 2.875em;
+	}
+
+	h5 {
+		font-size: 1em;
+		font-weight: 500;
+    }
+    
+    img {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+// 3.4) Home Products Tabs
+.home-product-tabs {
+	border-bottom: 1px solid #e7e7e7;
+
+	.nav-tabs {
+        position: relative;
+        margin-bottom: 3.1rem;
+		border-color: transparent;
+
+		&:after {
+			content: '';
+			position: absolute;
+			left: -100rem;
+			right: -100rem;
+			bottom: -2px;
+			z-index: -1;
+			border-bottom: 2px solid #eee;
+		}
+	}
+
+	.product-title {
+		font-family: $second-font-family;
+		letter-spacing: -.01em;
+	}
+
+	.quantity-input {
+		.btn-add-cart {
+			background: #f4f4f4;
+
+			&:hover {
+				background: $primary-color;
+			}
+		}
+	}
+}
+
+// 3.5) Feature Boxes Container
+.feature-boxes-container {
+    .container {
+        margin-top: 5.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        margin-bottom: 3px;
+    }
+
+	h5 {
+        margin-bottom: 1.3rem;
+		color: #555;
+		font-size: 1.4rem;
+		font-weight: 600;
+		font-family: $font-family;
+	}
+
+	p {
+		font-size: 1.3rem;
+	}
+
+	i {
+        margin-bottom: 1.7rem;
+		width: 84px;
+		height: 84px;
+		border: 2px solid #ddd;
+		border-radius: 50%;
+		font-size: 36px;
+		line-height: 76px;
+	}
+}
+
+//custom promo-section
+.promo-banner {
+	margin-top: -1rem;
+
+	.left-text {
+		margin-right: 2.5rem;
+	}
+
+	.right-text {
+		margin-top: 1.3rem;
+		margin-left: 2.5rem;
+	}
+
+	h4 {
+		letter-spacing: -.02em;
+
+		b {
+			padding: 8px;
+			padding-bottom: 7px;
+		}
+	}
+
+	h5 b {
+		padding: 5px;
+	}
+
+	.banner-content {
+		margin-right: 0;
+	}
+}
+
+// 3.6) Promo Section
+.promo-section {
+	padding-top: 9.5rem;
+    padding-bottom: 8.4rem;
+
+	.parallax-background {
+		background-color: #f4f4f4;
+	}
+
+	h2 {
+		font-size: 2.25em;
+		line-height: 1.2;
+	}
+	
+	h4 {
+		font-size: .7em;
+		line-height: 1.4;
+	}
+
+	h5 {
+		font-size: 1em;
+		font-family: $font-family;
+	}
+
+	.btn {
+		padding: 1.05em 3em;
+		font-size: 1.5rem;
+	}
+}
+
+// 3.6) Product Widgets
+.product-widgets {
+    margin-bottom: 5.6rem;
+
+	figure {
+		min-width: 175px;
+	}
+
+	.product-title {
+		font-size: 1.5rem;
+	}
+
+	.old-price {
+		font-size: 1.4rem;
+	}
+
+	.product-price {
+		font-size: 1.8rem;
+		color: inherit;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.ratings-container {
+		margin-bottom: 1rem;
+	}
+
+	.price-box {
+		margin-bottom: 1.5rem;
+	}
+}
+
+// 4. Other Pages
+
+.widget-block h5 {
+	font-size: 1.2rem;
+	margin-bottom: 1.3rem;
+}
+
+//custom page
+.owl-carousel.nav-big .owl-nav i {
+    font-size: 2.4rem;
+}
+
+.home-slider .btn-dark {
+    margin-left: 2px;
+}
+
+.info-boxes-container .info-box {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    i {
+        padding-top: 2px;
+    }
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -4px;
+
+    &:not(:last-child) {
+        margin-right: 3.1rem;
+    }
+
+    .nav-link {
+        line-height: 1.429;
+    }
+}
+
+.inner-icon {
+    margin-bottom: 8px;
+
+    .category-list {
+        text-align: center;
+    }
+}
+
+.product-default {
+	.btn-add-cart {
+		padding-right: 1rem;
+		padding-left: 1.1rem;
+		color: #333;
+		border: 1px solid #ddd;
+	
+		.fa-arrow-right {
+			font-size: 1.2rem;
+		}
+	}
+
+	.product-details {
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+}
+
+.brands-slider {
+	padding-right: 7px;
+	padding-left: 7px;
+
+    img {
+        max-width: 140px;
+    }
+}
+
+hr {
+    margin-top: 3.9rem;
+}
+
+.section-sub-title {
+    margin-bottom: 2.2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+	top: 49%;
+}
+
+.product-single-qty {
+	.btn {
+		width: 2em;
+	}
+
+	.bootstrap-touchspin .form-control {
+		width: 2.4em;
+	}
+}
+
+// 5. Responsive
+@include mq(xl, max) {
+	.product-widgets figure {
+		min-width: 150px;
+	}
+}
+
+@include mq(lg, max) {
+	.product-widgets figure {
+		min-width: 120px;
+	}
+
+	.header-search {
+		margin-right: 2.2rem;
+	}
+}
+
+@include mq(sm, max) {
+	.product-widgets figure {
+		max-width: 40%;
+		flex: 0 0 40%;
+		-ms-flex: 0 0 40%;
+	}
+
+	.header-search {
+		margin-right: 1.2rem;
+	}
+}

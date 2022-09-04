@@ -1,0 +1,275 @@
+// Demo9
+// # Content
+// 1. Home Base -------
+// 2. Home Sections -----
+//    2.1) Home Slider
+//    2.2) Featured Products Section
+//    2.3) Home Products Section
+//    2.4) Widget Newsletter
+//    2.5) Brands Section
+// 3. Responsive -------
+// 1. Home Base
+.section-title {
+    margin-bottom: 2.4rem;
+    margin-top: -1px;
+    letter-spacing: -.02em;
+}
+
+// 2. Home Sections
+// 2.1) Home Slider
+.home-slider-container {
+    margin-top: -1px;
+}
+
+.home-slide {
+    img {
+        min-height: 410px;
+    }
+    margin-bottom: 3.5rem;
+}
+
+.slide-1 {
+    width: 48%;
+    left: 2%;
+    padding-right: 1.6rem;
+    .slide-title {
+        margin-bottom: .8rem;
+        padding-right: .4rem;
+        font-size: 1.0625em;
+        color: rgba(34, 37, 41, 0.7);
+        font-weight: 500;
+        letter-spacing: .065em;
+    }
+    .sub-title {
+        margin-bottom: 1.8rem;
+        font-size: 3.625em;
+        letter-spacing: .9px;
+    }
+    .sale-label {
+        padding: .65em .5em 2em;
+        margin-left: 4.4rem;
+        font-size: 3.5em;
+        letter-spacing: -0.08em;
+        white-space: nowrap;
+        color: #fff;
+        background: url(../images/demoes/demo9/slider/slide-1-badge.png) center no-repeat;
+        background-size: contain;
+        small {
+            display: inline-block;
+            font-size: 70%;
+            font-weight: inherit;
+            letter-spacing: -.025em;
+        }
+        sup {
+            position: static;
+            font-size: 75%;
+        }
+        sub {
+            display: block;
+            position: static;
+            font-size: 36%;
+            line-height: 1;
+            font-weight: 400;
+            letter-spacing: 0;
+            padding-left: .1em;
+        }
+    }
+    .content-right {
+        padding-top: 2.4rem;
+        h4 {
+            margin-right: .3rem;
+            font-size: 0.8125em;
+            letter-spacing: -.02em;
+        }
+        h5 {
+            font-size: 0.8125em;
+            line-height: .9;
+            color: #fff;
+        }
+        .btn {
+            padding: 1.05em 3.25em 1em;
+            font-size: .85em;
+        }
+    }
+    .coupon-sale-text {
+        display: inline-block;
+        position: relative;
+        padding: 6px 10px 4px;
+        margin-bottom: 1.4rem;
+        letter-spacing: .35px;
+        z-index: 1;
+        b {
+            font-size: 200%;
+            vertical-align: text-top;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            background: #ff7272;
+            transform: rotate(-2deg);
+        }
+    }
+}
+
+.slide-2 {
+    right: 12%;
+    h2 {
+        font-size: 1.875em;
+    }
+    h4 {
+        margin-right: -5px;
+        font-size: 1.375em;
+        color: #a2a2a2;
+        line-height: 1.2;
+        font-weight: 500;
+        letter-spacing: .2em;
+    }
+    h3 {
+        font-size: 2em;
+        line-height: 1.1;
+    }
+    .btn {
+        margin-top: 2px;
+        padding: 1.07em 2.57em 1.05em;
+    }
+}
+
+// 2.2) Featured Products Section
+.featured-products-section {
+    padding-bottom: 3.7rem;
+}
+
+// 2.3) Home Products Section
+.home-products {
+    padding: 4.9rem 1.4rem 2.8rem;
+    .owl-theme .owl-nav {
+        font-size: 18px;
+    }
+    img {
+        object-fit: cover;
+    }
+    .section-sub-title {
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: -.02em;
+    }
+    .product-default:hover figure {
+        box-shadow: none;
+    }
+    .product-default {
+        .product-details {
+            padding-top: 2px;
+        }
+        .product-title {
+            margin-bottom: .5rem;
+        }
+        img {
+            max-height: 377px;
+        }
+    }
+}
+
+// 2.4) Widget Newsletter
+.newsletter-banner {
+    padding-top: 9.6rem;
+    padding-bottom: 9.6rem;
+    background-color: #e7e7e7;
+    h2 {
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+    h5 {
+        padding: 0 2rem;
+        font-size: 1em;
+        letter-spacing: .35px;
+        line-height: 1.5;
+    }
+    .banner-content {
+        padding-left: 4.8rem;
+    }
+    button {
+        font-size: 1.28rem;
+    }
+    .form-control {
+        height: 52px;
+    }
+}
+
+.widget-newsletter {
+    input,
+    button {
+        max-height: 5.2rem;
+    }
+    button {
+        padding: 0 4rem;
+        border-radius: 0 3.2rem 3.2rem 0;
+    }
+    input {
+        max-width: 329.39px;
+        padding: .8rem 2.04rem;
+        border-width: 0;
+        border-radius: 3.2rem 0 0 3.2rem;
+        &::placeholder {
+            font-size: 1.4rem;
+            color: #999;
+        }
+    }
+}
+
+// 2.5) Brands Section
+.brands-section {
+    padding: 4.8rem 0;
+}
+
+// 3. Responsive
+@include mq(lg) {
+    .header .header-middle .header-left {
+        min-width: 16%;
+    }
+    .px-6 {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .slide-1 {
+        left: 10%;
+        width: 100%;
+        .sale-label {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .home-slide.banner {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-slide.banner {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .home-slide.banner {
+        font-size: 1.2rem;
+    }
+    .newsletter-banner .banner-content {
+        padding-left: 2.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .widget-newsletter button {
+        padding: 0 2rem;
+    }
+}

@@ -1,0 +1,110 @@
+
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$primary-color: #c3512f;
+$secondary-color: $primary-color;
+
+$border-radius: 0;
+
+$body-text: #777;
+$light-text: #8a8a8a;
+$headings-text: #252525;
+
+// 3. Theme Variables
+
+@include set(
+    (
+        header: (
+            link-color: $primary-color-dark,
+
+            middle: (
+                padding-top: 3.85rem,
+                padding-bottom: 3.85rem,
+            ),
+            bottom: (
+                color: $primary-color-dark,
+                background: #fff
+            ),
+
+            dropdown: (
+                space: 1.1rem,
+
+                font: (
+                    size: 11px,
+                    weight: 600
+                )
+            ),
+
+            top-notice: (
+                padding: 0,
+                letter-spacing: 0
+            ),
+            separator: (
+                color: rgba(255,255,255, .1)
+            ),
+            icon: (
+                size: 2rem
+            )
+        ),
+        info-box: (
+            icon: (
+                size: 2.4rem
+            ),
+            title: (
+                weight: 600,
+                transform: false,
+            )
+        ),
+
+        breadcrumb: (
+            color: #999,
+            font: (
+                size: 1.2rem,
+                weight: 400,
+                family: false,
+            ),
+            letter-spacing: -.025em,
+            border-bottom: 0,
+            divider: (
+                content: '/',
+                space: 1rem
+            )
+        ),
+
+        footer: (
+            letter-spacing: .005em,
+
+            social-icon: (
+                color: $primary-color-dark,
+                size: 1.4rem
+            ),
+
+            widget: (
+                title: (
+                    transform: capitalize
+                )
+            ),
+
+            middle: (
+	            padding-top: 6.3rem
+            ),
+
+            bottom: (
+                padding-top: 1.5rem,
+                padding-bottom: 1.5rem
+            )
+        )
+    )
+);
+
+// 4. Plugin Variables
+
+$nav-font-size: 3.4rem;

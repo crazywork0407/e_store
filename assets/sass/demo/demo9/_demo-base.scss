@@ -1,0 +1,609 @@
+// 1. Heade ----------
+//    1.1) Header Base
+//    1.2) Header Element
+//         1.2.1) Header Social Icon
+//         1.2.2) Header Info Box
+//         1.2.3) Header Side Menu ( Menu Vertical )
+//         1.2.4) Header Search
+//         1.2.5) Header Cart Dropdown
+//         1.2.6) Header Contact Icon
+
+// 2. Footer ---------
+//    2.1) Footer Base
+//    2.2) Footer Element
+//         2.2.1) Footer Widget
+//         2.2.2) Footer Social Icons
+//         2.2.3) Footer Tagcloud
+//         2.2.4) Footer Contact Info
+
+// 3. Component ---------
+//    3.1) Product Details
+//    3.2) Product Left Details
+
+// 4. Responsive
+
+// 1. Heade ----------
+// 1.1) Header Base
+body.boxed .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: none;
+    box-shadow: none;
+}
+
+.header-top {
+    > .container {
+        min-height: 4.8rem
+    }
+}
+
+.header-middle {
+    &:not(.fixed) {
+        padding-left: 2rem;
+        padding-right: 2rem;    
+
+        .container {
+            padding: 0;
+        }
+    }
+
+    &.fixed {
+        background: #d93c81;
+    }
+
+    .header-left {
+        padding: 2.7rem 0;
+    }
+
+    .header-center {
+        padding: 2rem 4.7rem 2rem 1.5rem;
+    }
+
+    .header-right {
+        padding: 2.2rem 0
+    }
+
+    .header-icon-user {
+        max-height: 2.7rem;
+        margin-right: 2.6rem;
+        margin-bottom: 1px;
+    }
+
+    .icon-shopping-cart {
+        font-size: 2.7rem;
+    }
+}
+
+.sticky-navbar .sticky-info i span {
+    top: -2px;
+}
+
+.pre-header {
+    overflow-x: hidden;
+
+    .feature-box-carousel {
+        width: calc( 100% + 1px );
+        margin-right: -1px;
+        border-bottom: 1px solid $border-color
+    }
+}
+
+.header {
+    z-index: 999;
+
+    .sticky-wrapper {
+        width: 100%;
+    }
+
+    .separator {
+        border-color: #e7e7e7;
+    }
+
+    .icon-category-gifts,
+    .icon-category-garden {
+        font-size: 2.1rem;
+    }
+
+// 1.2) Header Element
+// 1.2.1) Header Social Icon
+    .social-icons a {
+        width: 2.559rem;
+        height: 2.559rem;
+        overflow: hidden;
+        border-radius: 30px;
+        font-size: 1.3rem;
+
+        &:first-child {
+            margin-bottom: 1px;
+        }
+    }
+
+    // 1.2.2) Header Info Box
+    .info-box {
+        padding: 1.1rem 0 1.6rem;
+        border-right: 1px solid $border-color;
+
+        i {
+            max-height: 2.8rem;
+            margin-right: .8rem;
+            font-size: 2.8rem;
+
+            &::before {
+                margin-left: .28rem;
+                margin-right: .28rem
+            }
+        }
+        h4 {
+            margin: .6rem 0 3px;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+
+    // 1.2.3) Header Side Menu ( Menu Vertical )
+    .item-menu {
+        float: left;
+        a {
+            padding: .5rem 1.5rem;
+        }
+    }
+
+    .side-menu-title {
+        padding: 0;
+        letter-spacing: -.01em;
+        background-color: $secondary-color;
+        color: #fff;
+        line-height: 1;
+
+        a {
+            padding: 1.75rem;
+            padding-left: 1.8rem;
+        }
+
+        i {
+            margin-right: 0.8rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .side-menu-wrapper {
+        border-width: 0;
+    }
+}
+
+.menu-vertical {
+    font-family: $second-font-family;
+
+    &>li {
+        i {
+            min-width: 2.1rem;
+            margin-top: 1px;
+            margin-right: 5px;
+        }
+
+        &>a {
+            display: flex;
+            padding: 1.6rem 1.2rem;
+            align-items: center;
+            color: #444;
+            font-weight: 500;
+        }
+
+        &:hover+li>a, 
+        &.show+li>a, 
+        &.active+li>a {
+            border-top: 1px solid #e7e7e7;
+        }
+
+        &:hover > .sf-with-ul {
+            &:after {
+                color: $primary-color;
+            }
+        }
+    
+        &.item-menu-sale {
+            padding: 0 1.6rem;
+        
+            a{
+                display: inline-block;
+                margin: 6px 0px 20px;
+                padding: 1.6rem 0rem;
+                width: 100%;
+                background-color: #f4f4f4;
+                color: #222529;
+                font-size: 1.4rem;
+                font-weight: 700;
+            }
+        } 
+    }
+}
+
+.menu-custom-block a {
+    padding: 0 8px;
+}
+
+.side-menu-title.cursor-pointer {
+    &+.collapse,
+    &+.collapsing {
+        position: absolute;
+
+        > .side-nav {
+            position: static;
+        }
+    }
+}
+
+.toggle-menu-wrap .side-nav {
+    border-top: none;
+}
+
+.side-nav {
+    border: 1px solid $border-color;
+}
+
+// 1.2.4) Header Search
+.header-search-wrapper {
+    select {
+        padding-left: 1rem;
+    }
+
+    .btn {
+        padding-bottom: 6px;
+        min-width: 4.7rem;
+    }
+
+    select,
+    .btn {
+        border-color: #ccc;
+    }
+
+    .select-custom {
+        min-width: 12.9rem;
+        flex: 0 0 12.9rem;
+    
+        &:after {
+            margin-top: 0px;
+            font-size: 1.4rem;
+            right: 15px;
+            top: 52%;
+        }
+    }
+}
+
+// 1.2.5) Header Cart Dropdown
+.header-dropdown>a {
+    padding: 0
+}
+
+.dropdown-arrow {
+    &:after {
+        margin: 2px 0px 0 1.3rem;
+        font-size: 17px;
+        color: #fff;
+    }
+
+    .badge-circle {
+        top: -2px;
+    }
+}
+
+.minicart-icon {
+    margin-top: 10px;
+    width: 23px;
+    border-color: #fff;
+
+    &:before {
+        left: 47%;
+        border-color: #fff;
+    }
+}
+
+// 1.2.6) Header Contact Icon
+.header-contact {
+    margin-right: 3.8rem;
+
+    i {
+        display: inline-block;
+        margin-top: 2px;
+        margin-right: 1.1rem;
+        line-height: 1
+    }
+
+    h6 {
+        color: #fff;
+        font-weight: 600;
+        line-height: 1.2
+    }
+
+    a {
+        margin-top: .3rem;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: .9;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+// 2. Footer
+// 2.1) Footer Base
+.footer-middle {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    &+ .container {
+        padding: 0 4rem;
+    }
+}
+
+.footer {
+// 2.2) Footer Element
+// 2.2.1) Footer Widget
+    .widget {
+        margin-bottom: 2rem;
+    }
+
+    .widget-title {
+        line-height: 1.4;
+        font-weight: 600;
+    }
+
+// 2.2.2) Footer Social Icons
+    .social-icons .social-icon {
+        width: 3.6rem;
+        height: 3.6rem;
+        margin: .2rem;
+        line-height: 3.6rem
+    }
+
+// 2.2.3) Footer Tagcloud
+    .tagcloud {
+        margin-top: -1px;
+    
+        a {
+            padding: .64em .6em .56em;
+            margin: 0 .4rem .8rem 0;
+            font-weight: 500;
+            border-radius: 0;
+            text-transform: none;
+        
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+// 2.2.4) Footer Contact Info
+    .contact-info {
+        margin-bottom: 3rem;
+        li {
+            line-height: 1.5;
+        }
+    
+        .contact-info-label {
+            line-height: 2rem
+        }
+    }
+}
+
+.mobile-menu.menu-with-icon li {
+	a {
+		display: flex;
+		align-items: center;
+        padding: 1rem 0 1.1rem .7rem;
+		
+		> i {
+		    margin-right: .9rem;
+		}
+	}
+
+	&:first-child i {
+		margin-top: -2px;
+	}
+}
+
+// 3. Component
+// 3.1) Types
+body {
+    line-height: 2.4rem;
+
+    &.boxed {
+        padding-bottom: 2.5rem;
+    }
+}
+
+.col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+}
+
+// 3.1) Product Details
+.product-default {
+    figure {
+        transition: box-shadow .3s;
+    }
+
+    .btn-icon-wish, 
+	.btn-quickview {
+        position: relative;
+        margin: 0 3px;
+        top: auto;
+        background-color: #f4f4f4;
+    }
+    
+    .btn-add-cart {
+        display: flex;
+        align-items: center; 
+        margin-right: 3px;
+
+        i {
+            display: inline-block;
+            font-size: 1.6rem;
+        }
+    }
+    
+    .product-action {
+        display: flex;
+        align-items: center;
+    }
+
+    &:hover {
+        box-shadow: none;
+
+        figure {
+            box-shadow: 0 25px 35px -5px rgba(0,0,0,0.1);
+        }
+
+        .btn-add-cart {
+            background: $primary-color;
+            border-color: $primary-color;
+        }
+
+        .product-action {
+            a.btn-quickview {
+                right: 0;
+            }
+    
+            a.btn-icon-wish {
+                left: 0;
+            }
+        } 
+    }
+}
+
+.price-box {
+    margin-bottom: 1.6rem;
+}
+
+// 3.2) Product Left Details
+.left-details {
+    .product-title {
+        margin-bottom: .4rem;
+        font-family: $second-font-family;
+        letter-spacing: -.01em;
+    }
+
+    .ratings-container {
+        margin: 0 0 1.2rem 0;
+    }
+
+    .btn-add-cart.product-type-simple {
+        padding: 0 1.5rem 0 1.3rem;
+    }
+
+    .category-list {
+		text-align: left;
+	}
+
+    &:not(:hover).left-details .btn-add-cart:not(:hover) {
+        color: #6a6a6d;
+        background: #f4f4f4;
+    }
+}
+
+// 4. Responsive
+@include mq(sm) {
+    .sticky-header .cart-dropdown {
+        margin-bottom: 2px;
+    }
+}
+
+@include mq(lg) {
+    .footer .footer-middle {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@include mq(xl) {
+    .header-search-inline .form-control {
+        min-width: 24.1rem;
+    }
+}
+
+@include mq(xl, max) {
+    .header .header-middle .header-center {
+        padding-left: 0;
+        padding-right: 3rem;
+    }
+}
+
+@include mq(lg, max) {
+    .header-search i {
+        font-size: 2.4rem;
+    }
+
+    .footer .footer-middle+.container {
+        padding: 0 2rem;
+    }
+
+    .header-search-wrapper .select-custom:after {
+        top: 54%;
+    }
+
+    .header .header-middle .header-center {
+        padding-right: 1rem;
+    }
+}
+
+@include mq(md, max) {
+    .minicart-icon {
+        margin-top: 7px;
+        width: 22px;
+        height: 19px;
+    }
+}
+
+@include mq(sm, max) {
+    .header .header-middle:not(.fixed) {
+        padding-left: 1rem;
+        padding-right: 1.2rem;
+    }
+
+    body.boxed .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-icon:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    .header .header-middle .btn-login {
+        margin-right: 1rem;
+    }
+
+    .header-icon i {
+        font-size: 2.9rem;
+    }
+
+    .product-default {
+        .btn-add-cart {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            width: 36px;
+            height: 36px;
+
+            span {
+                display: none;
+            }
+
+            i {
+                margin-left: 4px;
+                margin-bottom: 0;
+            }
+        }
+
+        &:not(.inner-icon) .btn-add-cart:not(.product-type-simple) i {
+            display: block;
+        }  
+    }
+}

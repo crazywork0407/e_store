@@ -1,0 +1,341 @@
+// Demo 34 Base
+
+body {
+    font-family: $second-font-family;
+}
+
+// Layout
+
+// Elements
+.font-weight-extra-bold {
+    font-weight: 800 !important;
+}
+
+.btn-sm {
+    padding: 1em 2em;
+}
+
+.form-control, 
+.newsletter-subscribe label {
+    font-family: $second-font-family;
+}
+
+.tip {
+    padding: 2px;
+    font-family: $second-font-family;
+    font-size:  9px;
+    font-weight: 500;
+    margin-top: 0;
+
+    &:before {
+        border-width: 2px 3px 2px 0;
+    }
+}
+
+// Header
+
+// Header Elements
+.mobile-menu-toggler {
+    margin: .8rem;
+    margin-left: 0;
+    padding: .7rem 1.1rem;
+    color: #171f2f;
+    font-size: 2rem;
+}
+
+.top-message {
+    color: rgba(255, 255, 255, .7);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+// Dropdown
+.header-dropdown {
+    font-family: $second-font-family;
+
+    > a:after {
+        margin-left: .4rem;
+    }
+}
+
+.dropdown-expanded ul {
+    a {
+        padding: 0 2rem;
+        letter-spacing: -.025em;
+        text-transform: uppercase;
+    }
+}
+
+.cart-dropdown {
+    margin-right: 3px;
+
+    i {
+        font-size: 2.7rem;
+    }
+}
+
+.flag {
+    margin-top: -2px;
+}
+
+// Header Icon
+.header-icon {
+    transition: none;
+
+    a, &:hover {
+        color: inherit;
+    }
+
+    a {
+        transition: none;
+    }
+}
+
+.minicart-icon {
+    border-color: $primary-color-dark;
+}
+
+.cart-count {
+    top: 0;
+    right: -8px;
+    background: $primary-color;
+    font-family: $second-font-family;
+    font-size: 1rem;
+}
+
+// Header Search
+.header-search {
+    margin-right: 3.3rem;
+}
+
+.search-toggle i:before {
+    margin-top: 1px;
+}
+
+// Menu
+.main-nav {
+    margin-left: 1.8rem;
+}
+
+.menu.sf-arrows {
+    > li {
+        > a, > .sf-with-ul {
+            line-height: 20px;
+            
+            &:after {
+                content: '';
+                position: absolute;
+                left: 2.7rem;
+                right: 2.7rem;
+                bottom: 1.9rem;
+                height: 1px;
+                margin-left: 0;
+                background: $primary-color-dark;
+                transform: scaleX(0);
+                transform-origin: right center;
+                transition: cubic-bezier(0.55, 0, 0.1, 1) transform 0.3s;
+            }
+        }
+
+        &.active , &:hover {
+            > a:after, > .sf-with-ul:after {
+                transform: scaleX(1);
+                transform-origin: left center;
+            }
+        }
+    }
+}
+
+// Responsive
+@include mq(lg) {
+    .header {
+        .container-fluid {
+            padding-left: 3vw;
+            padding-right: 3vw;
+        }
+
+        .logo {
+            margin-right: 1.6rem;
+        }
+    }
+}
+
+@include mq(xl, max) {
+    .main-nav .menu > li > a {
+        padding: 1.5rem 1.4rem;
+
+        &:after, 
+        &.sf-with-ul:after {
+            left: 1.4rem;
+            right: 1.4rem;
+            bottom: 1.4rem;
+        }
+    }
+}
+
+// Breadcrumb
+.breadcrumb-item {
+    line-height: 25px;
+}
+
+// Mobile Menu
+.mobile-menu {
+    font-family: $second-font-family;
+}
+
+// Prouct Default
+.product-default {
+    font-family: $second-font-family;
+
+    .category-list {
+        font-family: inherit;
+    }
+}
+
+.inner-icon {
+    position: relative;
+    margin-bottom: 20px;
+	
+	.product-details {
+		padding: 0;
+	}
+
+	.category-list {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		width: calc( 100% - 20px );
+	}
+
+	.btn-icon-wish, 
+	.btn-quickview {
+		top: auto;
+	}
+
+	.btn-icon-wish {
+		left: auto;
+		font-size: 1.6rem;
+		padding-top: 1px;
+    }
+    
+    .ratings-container {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .price-box {
+        margin-bottom: 1.7rem;
+        font-family: $second-font-family;
+        font-size: 1.8rem;
+    }
+
+    .old-price {
+        color: #a7a7a7;
+        font-size: .8em;
+        letter-spacing: .09px;
+    }
+    
+    .product-price {
+        color: #444;
+        font-size: 1em;
+    }
+     
+	.btn-icon-wish {
+		background-color: transparent;;
+    }
+
+    .btn-quickview {
+        padding: .8rem 1.4rem;
+        background-color: $primary-color-dark;
+        font-family: $font-family;
+        font-size: 1.1rem;
+        font-weight: 700;
+        transition-property: padding-top, padding-bottom, opacity;
+        transition-duration: .25s;
+        line-height: 1.82;
+        z-index: 2;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+	&:not(.product-widget):hover {
+        box-shadow: none;
+
+		.img-effect a:first-child::after {
+			opacity: 1;
+		}
+
+		figure .btn-quickview {
+			padding-top: 1.2rem;
+			padding-bottom: 1.3rem;
+		}
+    }
+}
+
+.tooltiptext {
+    font-family: $second-font-family;
+}
+
+.product-countdown-container .product-countdown .countdown-amount {
+    font-weight: 500;
+}
+
+// Footer
+
+footer {
+    .widget-title {
+        line-height: 1.4;
+    }
+
+    .links {
+        line-height: 25px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .social-icon {
+        margin: 2px;
+    }
+}
+
+// Newsletter
+h4.newsletter-title {
+    font-size: 1.6rem;
+}
+
+p.newsletter-info {
+    margin-bottom: .9rem;
+    color: #90969a;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.footer-submit-wrapper {
+    .form-control {
+        min-width: 1px;
+        height: 48px;
+        margin-right: 1.2rem;
+        padding: 8px 12px 8px 20px;
+        background: #f4f4f4;
+        border: 0;
+
+        &::placeholder {
+            color: #999;
+        }
+    }
+
+    .btn {
+        height: 48px;
+        font-weight: normal;
+        letter-spacing: .15em;
+        line-height: 1.42857;
+    }
+}

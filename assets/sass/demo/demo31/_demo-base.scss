@@ -1,0 +1,671 @@
+// Demo 31
+
+// # Content
+// 1. Header -----
+//    1.1) Header Base 
+//    1.2) Header Element
+//         1.2.1) Header Main Nav
+//         1.2.2) Header DropDown and Cart DropDown
+//         1.2.3) Header Search
+//         1.2.4) Header Icon User
+//         1.2.5) Header Toggle Menu
+//         1.2.6) Header Search
+
+// 2. Footer ------
+//    2.1) Footer Base
+//    2.2) Footer Elements
+//         2.2.1) Footer Social Icons
+//         2.2.2) Footer Nav Link
+
+// 3. Component ------
+//    3.1) Breadcrumb
+//    3.2) Product Default
+
+// 4. Responsive --------
+
+
+body {
+    font-family: $second-font-family;
+}
+
+.header-dropdown ul {
+    background: $primary-color-dark;
+
+    a  {
+        color: #fff;
+        font-weight: 400;
+
+        &:hover {
+            color: #ffffff;
+            background: #17191c;
+        }
+    }
+}
+
+.header-menu:before {
+    border-color: transparent transparent $primary-color-dark;
+}
+
+// 1. Header
+// 1.1) Header Base
+header {
+    .separator {
+        margin: 0 14px;
+        height: 14px;
+        border-left: 1px solid rgba(255,255,255,.09);
+    }
+}
+
+.sticky-header.fixed {
+    background: #2c2f33;
+}
+
+.mobile-menu-toggler {
+	color: #fff;
+}
+
+.header-top {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 24px;
+
+    p {
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 0.005em;
+    }
+
+    .header-left a {
+        font-size: 1.4rem;
+        letter-spacing: 0.005em;
+        font-weight: 700;
+    }
+}
+
+.header-middle {
+    background-color: #2c2f33;
+
+    .container {
+        height: 90px;
+    }
+
+    &.fixed {
+        .container,
+        .menu>li>a {
+            height: 83px;
+        }
+    }
+
+    .header-center {
+        margin-left: 7.4rem;
+    }
+}
+
+// 1.2) Header Element
+// 1.2.1) Header Main Nav
+.main-nav .menu {
+  display: flex;
+  margin-right: 0;
+  align-items: center;
+
+  .megamenu,
+  > li > ul {
+      left: 0 !important;
+  }
+
+  >li {
+    padding: 0;
+    margin: 0;
+    margin-right: 1px;
+    position: relative;
+
+    &:first-child>a {
+      padding-left: 3.4rem;
+    }
+
+    >a {
+          padding: 2.5px 3rem 2.5px 3.3rem;
+          font-size: 1.6rem;
+          font-weight: 700;
+          background-color: transparent;
+          height: 90px;
+          transition: all .25s;
+          display: flex;
+          align-items: center;
+          color: #fff;
+
+      i {
+          margin-right: 1.1rem;
+          font-size: 24px;
+      }
+
+      i.font-size-lg {
+        font-size: 31px;
+      }
+
+      &.sf-with-ul {
+        &:after {
+            content: '\e81c';
+            margin: 0 0 1px 5px;
+            position: relative;
+            right: auto;
+            top: auto;
+            transform: none;
+        }
+      }
+    }
+
+    &:hover>a,
+    &.show>a,
+    &.active>a {
+      background-color: $primary-color;
+      color: #fff;    
+    }
+
+    &.menu-deal>a {
+      color: $secondary-color;
+    }
+  }
+
+  .megamenu,
+  li.sf-with-ul>ul {
+    top: 100%;
+    left: 0;
+    border-width: 0;
+    border-top-width: 5px;
+  }
+
+  .sf-with-ul:before {
+    display: none;
+  }
+
+  .megamenu {
+    border-top: 5px solid $primary-color;
+  }
+
+  .menu-item {
+    background-color: $primary-color;
+    cursor: pointer;
+
+    >a {
+      color: #fff;
+
+      i {
+        font-size: 1.6rem;
+        margin-right: 5px;
+      }
+    }
+
+    &:hover>a {
+      color: #fff;
+      background-color: $primary-color;
+    }
+  }
+}
+
+// 1.2.2) Header DropDown and Cart DropDown
+.header-dropdown {
+    padding: 5px 0;
+
+	>a:after {
+        font-size: 1.3rem;
+	}
+}
+
+.header-icon,
+.search-toggle {
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+}
+
+
+.cart-dropdown {
+	margin-right: 1px;
+
+    .mobile-cart {
+        background-color: #272b2f;
+        border: 1px solid #272b2f;
+    }
+
+    .product-title a {
+        color: #fff;
+    }
+    
+    .product {
+        border-bottom-color: $border-color;
+    }
+
+    .product-image-container {
+        border-color: #272b2f;
+    }    
+
+    .btn-remove {
+        color: #222259;
+    }
+}
+
+.dropdownmenu-wrapper {
+    background-color: #272b2f;
+    color: #fff;
+}
+
+.minicart-icon {
+	border-color: #fff;	
+
+	&::before {
+		left: 48%;
+	}
+}
+
+.dropdown-arrow {
+	&::after {
+		display: none;
+	}
+}
+
+.dropdown-arrow .badge-circle {
+	top: -5px;
+	left: 20px;
+}
+
+// 1.2.3) Header Search
+.header-search-wrapper {
+	height: 40px;
+
+	.form-control:focus {
+		background: #f4f4f4;
+	}
+}
+
+.header-icon {
+	&.header-search {
+		margin-right: 2.6rem;
+
+		i {
+			font-size: 2.1rem;
+		
+			&::before {
+				font-weight: 800;
+			}
+		}
+	}
+
+//  1.2.4) Header Icon User
+	&.header-icon-user {
+		margin-right: 2.9rem;
+	}
+}
+
+// 2. Footer
+// 2.1) Footer Base
+.logo-footer {
+    max-width: 180px;
+}
+
+.footer-top {
+    background-color: #1c1e21;
+    border-bottom: 1px solid #2a2e33;
+}
+  
+.footer-middle {
+    background-color: #1c1e21;
+  
+    .footer-left {
+      margin-right: 2rem;
+  
+      	img {
+			padding-right: 6.9rem;
+			margin-right: 4.2rem;
+			border-right: 1px solid #2a2e33;
+		}
+    }
+  
+    .container>img {
+        padding: 2rem 2rem 2rem 0;
+    }
+}
+  
+.footer-bottom {
+	background-color: $primary-color-dark;
+	font-family: $second-font-family;
+
+	.container {
+		justify-content: center;
+	}
+
+	p {
+		font-size: 1.3rem;
+		color: #777;
+		letter-spacing: -.01em;
+		margin-bottom: 0;
+	}
+
+	img {
+		max-width: 200px;
+		margin-bottom: 2rem;
+	}
+}
+
+.footer-left {
+	display: flex;
+	align-items: center;
+}
+
+.footer-right {
+	display: flex;
+	align-items: center;
+}
+
+.footer {
+    color: #fff;
+
+    .container {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+    }
+  
+    img {
+		width: auto;
+		height: auto;
+	}
+	
+// 2.2) Footer Elements
+// 2.2.1) Footer Social Icons
+    .social-icons {
+		display: flex;
+		align-items: center;
+    }
+  
+    .social-icon {
+		margin: 0;
+		width: 4rem;
+		height: 4rem;
+		display: flex;
+		border-radius: 50%;
+		border: 1px solid #2a2e33;
+		align-items: center;
+		justify-content: center;
+  
+      i {
+			transition: all .25s;
+			font-size: 1.6rem;
+		}
+  
+      &:hover {
+			i {
+			color: #fff;
+			}
+		}
+  
+		&+.social-icon {
+			margin-left: .8rem;
+		}
+    }
+
+// 2.2.3) Footer Nav Link
+    .nav-links {
+		font: 600 1.4rem $second-font-family;
+		letter-spacing: 0.005em;
+		color: #999;
+	
+		a {
+			margin-right: 3.2rem;
+		}
+    }
+}
+
+// 3. Component
+// 3.1) Base
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    color: #fff;
+}
+
+hr {
+    border-color: rgba(255,255,255,0.06)
+}
+
+.divider {
+	border-color: $border-color;
+}
+
+.load-more-overlay::before {
+	background: $primary-color-dark;
+}
+  
+.loading:not(.load-more-overlay), 
+.load-more-overlay.loading::after {
+	border-color: $primary-color;
+}
+
+.custom-srcollbar {
+	&::-webkit-scrollbar-thumb {
+		background: #2e3237;
+	} 
+	
+	&::-webkit-scrollbar-track {
+		background: #272b2f;
+	}
+}
+
+.form-control,
+.form-control:focus,
+textarea.form-control {
+    border-color: $bg-color;
+    background-color: $bg-color;
+}
+
+.minipopup-box {
+    background: #272b2f;
+
+    .product-detail .product-name {
+        color: #fff;
+    }
+}
+
+.mfp-ajax-product.mfp-bg, 
+.login-popup.mfp-bg {
+    opacity: 1;
+    background: rgba(68,70,69,0.65);
+}
+
+.wishlist-popup {
+	background-color: $primary-color-dark;
+}
+
+.add-wishlist {
+	color: #fff;
+}
+
+// 3.2) Breadcrumb
+.breadcrumb-nav {
+	margin-bottom: 3.5rem;
+	border-bottom-color:#303438 ;
+}
+  
+.breadcrumb {
+	padding: 2.1rem 0;
+	color: #fff;
+}
+  
+.breadcrumb-item {
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: .05em;
+
+	&+.breadcrumb-item {
+		padding-left: 1.3rem;
+
+		&:before {
+			padding-right: 1rem;
+			margin-top: -2px;
+			font-size: 12px;
+			font-weight: 400;
+		}
+	}
+}
+
+// 3.3) Product
+// 3.3.1) Product
+.product-default {
+    margin-bottom: 2rem;
+
+    .product-title {
+        font-family: $font-family;
+        color: #fff;
+    }
+
+    figure {
+        .btn-quickview {
+            letter-spacing: .07px;
+        }
+    }
+}
+
+.inner-icon figure .btn-icon i {
+    margin-bottom: 2px;
+    margin-left: 1px;
+}
+
+.inner-quickview {
+    .category-wrap .btn-icon-wish {
+        color: #aaa;
+        opacity: .7;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.inner-icon {
+	figure .btn-icon {
+		border-color: $primary-color-dark
+	}
+
+	&:hover .btn-icon {
+		background-color: $primary-color-dark;
+		border-color: $primary-color-dark;
+		color: #fff;
+	}
+}
+
+// 3.3.2) Product Details
+.center-details {
+    .category-list {
+        width: auto;
+    }
+}
+
+.product-price {
+    color: #444;
+}
+
+.old-price {
+    letter-spacing: .02em;
+    margin-right: 4px;
+}
+
+// 3.4) Sticky Navbar
+.sticky-navbar {
+	background-color: #2c2f33;
+	border-top: 1px solid #2c2f33;
+
+	.sticky-info {
+		&:not(:last-child) {
+			border-right: 1px solid #353a40;
+		}
+
+		a {
+			color: #fff;
+		}
+	}
+}
+
+// 4. Responsive
+@media (max-width: 1200px) {
+    .header-middle .container {
+        height: 80px;
+    }
+
+    .header-middle .header-center {
+        margin-left: 2.4rem;
+    }
+
+    .header-middle .menu>li>a {
+        padding: 0 2rem 5px 2.3rem;
+        font-size: 1.4rem;
+        height: 80px;
+    }
+
+    .main-nav .menu>li:first-child>a {
+        padding-left: 2.4rem;
+    }
+}
+  
+@media (max-width: 991px) {
+    .footer-top .container {
+		flex-direction: column;
+		align-items: flex-start;
+    }
+
+    .sticky-header.header-middle.fixed {
+        height: 60px;
+    }
+    
+    .header-middle.fixed {
+        .container, 
+        .menu>li>a {
+            height: 60px;
+        }
+    }
+  
+    .footer-top .header-dropdowns {
+		border-left: none;
+		padding-left: 0;
+  
+		.header-dropdown:first-child {
+			margin-left: 0;
+		}
+    }
+  
+    .footer .nav-links a {
+		margin-bottom: 2rem;
+    }
+  
+    .footer-bottom .container {
+      	align-items: flex-start;
+    }
+}
+  
+@media (max-width: 767px) {
+    .footer .nav-links {
+      	flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-middle {
+		.footer-left {
+			flex-direction: column;
+	
+			img {
+			margin-right: auto;
+			padding-right: 0;
+			border: 0;
+			margin-bottom: 1.5rem;
+			}
+		}
+    }
+
+    .logo-footer {
+      	max-width: 110px;
+    }
+  
+    .footer-bottom .container {
+      	padding: 0;
+    }
+}

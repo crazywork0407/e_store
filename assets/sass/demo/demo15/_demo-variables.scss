@@ -1,0 +1,211 @@
+
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$primary-color: #e9846b;
+$secondary-color: #222529;
+
+// 2. Theme Settings
+$dot-border: #222529;
+$dot-border-active: #222529;
+$dot-width: 18px;
+$dot-height: 18px;
+// 3. Theme Variables
+$border-color: #e7e7e7;
+
+@include set(
+	(
+		body: (
+			background: #fff
+		),
+		layout: (
+			container: (
+				max-width-desktop: 1200px
+			)
+		),
+		header: (
+			link-color: inherit,
+
+			top: (
+				color: #777,
+				font-size: 1.1rem,
+				font-weight: 600,
+				letter-spacing: .025em,
+				border-bottom: 1px solid $border-color,
+			),
+
+			middle: (
+				color: $secondary-color,
+			),
+
+			bottom: (
+				color: $secondary-color
+			),
+
+			dropdown: (
+				space: 2.1rem,
+				font: (
+					size: 1.1rem,
+					weight: 600,
+				),
+				item: (
+					space: 1rem
+				),
+
+				expanded: (
+					active-color: $primary-color
+				)
+			),
+
+			social-icon: (
+				color: inherit,
+				font-size: 1.4rem,
+				size: 2.548rem,
+			),
+
+			separator: (
+				space: 10px,
+				color: #e7e7e7,
+			),
+
+			search: (
+				height: 40px,
+				background: #f4f4f4,
+				divider: 1px solid #fff,
+				toggle: (
+					size: 2.5rem,
+				),
+				btn: (
+					color: #606669,
+					background: #fff,
+					min-width: 46.17px
+				),
+
+				select: (
+					padding-left: .9rem,
+					padding-right: 1rem,
+					min-width: 12.9rem,
+				),
+
+				border: (
+					width: 5px,
+					color: #ccc,
+					radius: 2.5rem,
+				)
+			),
+
+			icon: (
+				size: 2.7rem,
+				space: 2.2rem
+			),
+			logo: (
+				max-width: 100px,
+				max-width-mobile: 100px,
+				sticky: (
+					transform: scale(.8),
+					transform-origin: left center
+				)
+			)
+		),
+		menu: (
+			top: (
+				color: #fff,
+			),
+			main: (
+				top: (
+					font-family: $second-font-family,
+					padding: 20px,
+					space: 1px,
+				)
+			),
+			vertical: (
+				color: $secondary-color,
+				active-color: #7b858a,
+				active-background: #fff,
+			),
+		),
+
+		breadcrumb: (
+			color: #8e8e8e,
+			border-bottom: false,
+			letter-spacing: 0,
+
+			divider: (
+				space: 1.4rem
+			)
+		),
+
+		footer: (
+			color: #a8a8a8,
+			background: $secondary-color,
+			link-active-color: #fff,
+			font-size: 1.3rem,
+			line-height: 2.4rem,
+
+			top: (
+				padding-top: 6.3rem,
+			),
+			middle: (
+				padding-top: 4rem,
+				padding-bottom: 3rem,
+				border-top: 1px solid #36393d,
+			),
+
+			bottom: (
+				padding-top: 1.5rem,
+				padding-bottom: 1.5rem,
+				border-top: 1px solid #36393d,
+			),
+
+			widget: (
+				title: (
+					size: 1.5rem,
+					color: #fff,
+					weight: 700,
+					margin: 0 0 1.5rem
+				)
+			),
+
+			social-icon: (
+				color: #fff,
+				background: transparent,
+				font-size: 14px,
+				border: 1px solid #313438,
+				space: .4rem,
+			)
+		),
+
+		info-box: (
+			icon: (
+				space: .8rem,
+				size: 2.8rem,
+			),
+
+			title: (
+				margin-bottom: 2px,
+				size: 1.2rem,
+				weight: 600,
+			),
+		),
+
+		feature-box: (
+			title: (
+				color: $secondary-color,
+				font-size: 2rem,
+			)
+		),
+
+		owl-carousel: (
+			nav: (
+				image-center: 33.6%
+			)
+		)
+	)
+);

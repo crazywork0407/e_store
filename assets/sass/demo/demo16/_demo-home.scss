@@ -1,0 +1,363 @@
+/* Global Css*/
+body {
+    line-height: 2.4rem;
+}
+
+.main {
+    font-size: 1.6rem;
+}
+
+/* Custom css */
+
+// New Classes
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-left {
+    background-position: left;
+}
+
+.bg-right {
+    background-position: right;
+}
+
+// Main
+
+.large-banner {
+    height: 58.9rem;
+
+    &.slider-left .banner-layer{
+        right: auto;
+        left: 0;
+        padding-left: 1rem;
+    }
+
+    .banner-layer {
+        right: 0;
+        left: auto;
+        padding-right: 1.2rem;
+    }
+    
+    .divider-short-thick {
+        margin: 1.6rem auto 0 .4rem;
+        width: 10%;
+        border-top: 5px solid #222529;
+    }
+
+    h2 {
+        margin-right: -2px;
+        font-size: 2.75em;
+    }
+
+    h3 {
+        margin-right: -7px;
+        font-size: 6.36em;
+        line-height: 1;
+    }
+
+    h5 {
+        margin-right: 2.2rem;        
+    }
+}
+
+.banner-layer-middle {
+    transform: translateY(71%);
+}
+
+.rotated-upto-text {
+    padding-left: .265em;
+
+    small {
+        display: inline-block;
+        position: absolute;
+        left: -.98em;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        font-size: .265em;
+        font-weight: 500;
+    }
+}
+
+.btn-xl {
+    padding: 1.25em 3.125em;
+    font-size: 1.0625em;
+}
+
+.banner {
+    padding: 12.5em 6%;
+
+    .title {
+        margin-bottom: 1.6rem;
+        font-size: 2.5em;
+        line-height: 1.2;
+    }
+
+    .subtitle {
+        margin-bottom: 2.4rem;
+        color: #777;
+        font-size: 1.125em;
+        line-height: 1;
+    }
+
+    .btn {
+        padding: 1.6rem 3.6rem;
+        font-size: .9em;
+    }
+}
+
+.large-banner, .product-collection .title-group {
+    h2 {
+        font-family: 'Segoe Script','Savoye LET';
+        font-weight: 700;
+        line-height: 1;
+    }
+    
+    h5 {
+        font-size: 1.125em;
+        font-weight: 700;
+        line-height: 1;
+        vertical-align: middle;
+    }
+
+    strong {
+        display: inline;
+        font-size: 2em;
+        font-style: normal;
+        vertical-align: text-top;
+        display: inline-block;
+        letter-spacing: -.02em;
+    }
+}
+
+.product-collection {
+    padding-top: 8.4rem;
+    padding-bottom: 5.6rem;
+
+    .title-group {
+        h2 {
+            font-size: 3em;
+        }
+    }
+
+    .product-default {
+        a {
+            color: #fff;
+        }
+
+        .product-price {
+            color: #fff;
+        }
+
+        .btn-icon-wish {
+            color: #777;
+
+            &:hover {
+                color: #ccc;
+            }
+        }
+    }
+}
+
+.product-part {
+    padding: 4.375em 6%;
+    background-color: #e6e5e2;
+
+    .product-price {
+        color: #444;
+    }
+
+    .product-ratings::before {
+        color: rgba(0, 0, 0, .16);
+    }
+}
+
+.section-5, .section-6 {
+    .product-category {
+        color: #777;
+    }
+}
+
+.section-7 {
+    padding: 17.5rem 0 20rem;
+}
+
+.section-8.large-banner {
+    h2 {
+        margin-left: 7px;
+        font-size: 3.7rem;
+    }
+
+    .banner-layer-middle {
+        transform: translateY(72%);
+    }
+
+    strong {
+        margin-left: -4px;
+    }
+}
+
+.section-9.product-collection {
+    padding: 84px 0 62px;
+}
+
+.ratings-container .product-ratings:before {
+    color: #62615e;
+}
+
+.newsletter-section {
+    h2 {
+        margin-bottom: .8rem;
+        font-family: 'Segoe Script','Savoye LET';
+        font-size: 2.5em;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    p {
+        font-family: $second-font-family;
+        margin-bottom: 0;
+        font-size: 1em;
+        color: #777;
+        letter-spacing: 0;
+        line-height: 1.5;
+    }
+
+    input {
+        border-radius: 3rem 0 0 3rem;
+        color: #777;
+
+        &::placeholder {
+            color: #777;
+            padding-left: 1rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    button {
+        border-radius: 0 3rem 3rem 0;
+    }
+
+    .info-box {
+        padding-bottom: 2.4rem;
+    }
+
+    .form-control, .newsletter-form {
+        height: 5.4rem;
+    }
+}
+
+.inner-icon figure .btn-icon i {
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+
+// Category Page 
+.category-banner, .category-banner-boxed {
+    img {
+        min-height: 34rem;
+        object-fit: cover;
+    }
+
+    .container {
+        max-width: 64%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: .7rem 1.9rem 0 1.4rem;
+
+        h2 {
+            padding-left: 5px;
+            font-size: 2.375em;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        h3 {
+            font-size: 8.75em;
+            line-height: 1;
+            letter-spacing: .02em;
+        }
+    }
+
+    .banner-layer-right {
+        margin-top: .6rem;
+
+        h4 {
+            margin-left: .5rem;
+            font-size: 1.25em;
+            letter-spacing: .18em;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        h3 {
+            font-size: 9.4425em;
+        }
+
+        small {
+            width: 1em;
+            font-weight: 700;
+            word-break: break-all;
+            font-size: 27%;
+        }
+    }
+}
+
+.category-banner-boxed .container {
+    max-width: 85%;
+    font-size: 1.2rem;
+}
+
+.product-list .price-box {
+    margin-bottom: 1rem;
+}
+
+.product-single-details .rating-link:hover {
+    text-decoration: none;
+    border-bottom: .5px solid #777;
+}
+
+@include mq(1400px, max) {
+    .section-5 .banner, .section-6 .banner {
+        padding: 8.5em 6%;
+    }
+
+    .category-banner .container {
+        max-width: 85%;
+        font-size: 1.2rem;
+    }
+}
+
+@include mq('lg', max) {
+    .product-details .price-box {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+@include mq(md, max) {
+    .category-banner .container, .category-banner-boxed .container {
+        max-width: 90%;
+        font-size: 1rem;
+    }
+}
+
+@include mq(sm, max) {
+    .category-banner .container, .category-banner-boxed .container {
+        max-width: 95%;
+        padding: 0;
+        font-size: .8rem;
+    }
+}
+
+@include mq(425px, max) {
+    .large-banner {
+        font-size: 1.1rem;
+    }
+
+    .category-banner .container, .category-banner-boxed .container {
+        font-size: .6rem;  
+    }
+}

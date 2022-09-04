@@ -1,0 +1,101 @@
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$primary-color: #9d8d6c;
+$secondary-color: #d66a79;
+$headings-text: #282828;
+// 2. Theme Settings
+// 3. Theme Variables
+
+@include set-default(
+	(
+		header: (
+			link-color: #fff,
+			link-active-color: false,
+            
+			logo: (
+				max-width: 111px,
+				max-width-mobile: false,
+			),
+			icon: (
+				size: 2.8rem,
+				space: 2.6rem,
+				space-mobile: 1.2rem,
+			),
+			middle: (
+				padding-bottom: 3.6rem,
+				padding-top: 3.6rem
+			),
+			bottom: (
+				padding-top: 1.7rem
+			),
+			search: (
+				height: 34px,
+				background: #fff,
+
+				border: (
+					width: 5px
+				)
+			)
+		),
+		layout: (
+			container: (
+				max-width-desktop: 1140px
+			)
+		),
+        
+        footer: (
+			color: #999999,
+			background: #181b1f,
+			link-active-color: #fff,
+			line-height: 24px,
+			letter-spacing: false,
+
+			top:(
+				padding-top: 2.4rem,
+				padding-bottom: 2.4rem
+			),
+
+			middle: (
+                padding-bottom: 2.3rem,
+                padding-top: 6.5rem
+			),
+			bottom: (
+				padding-top: 2.5rem,
+				padding-bottom: 2.5rem
+			),
+
+			widget: (
+				title: (
+					color: #fff,
+					size: 1.4rem,
+					weight: 700,
+					family: false,
+					transform: uppercase,
+					margin: 0 0 1.7rem
+				),
+
+				link: (
+					space: false
+				)
+			),
+
+			social-icon: (
+				color: false,
+				background: transparent,
+				font-size: 1.8rem,
+				size: 4rem,
+				space: false,
+				border: false
+			),
+
+		)
+	)
+);

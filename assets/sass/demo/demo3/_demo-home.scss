@@ -1,0 +1,497 @@
+// Home Page
+
+// # Content
+// 1. Home Base ------
+// 2. Home Sections -------
+// 	  2.1) Home Slider
+// 	  2.2) Banner Section
+// 	  2.3) Feature Box Container
+// 	  2.4) Category Container
+
+// 3. Responsive --------
+
+// 1. Home Base
+section {
+	padding-top: 6rem;
+	padding-bottom: 3rem;
+}
+
+.section-title {
+	color: #302e2a;
+}
+
+.products-slider>.owl-stage-outer {
+    padding-bottom: 12px;
+}
+
+.rotated-upto-text {
+	position: relative;
+	padding-left: .3em;
+
+	small {
+		display: inline-block;
+		position: absolute;
+		left: -1em;
+		top: 50%;
+		transform: translateY(-50%) rotate(-90deg);
+		transform-origin: 50% 50%;
+		font-size: 25%;
+		font-weight: 500;
+	}
+}
+
+.coupon-sale-text {
+    position: relative;
+    display: inline-block;
+    margin-top: -.8rem;
+    margin-left: 1.6rem;
+	padding: .5rem .9rem .5rem;
+    font-size: 2em;
+    letter-spacing: 0;
+    vertical-align: text-top;
+    transform: translateY(1px);
+
+	&:before {
+		content: '';
+		z-index: -1;
+		position:absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: #fff;
+		transform: rotate(-2deg);
+	}
+
+	sup {
+		margin: 0 1px;
+	    font-size: 55%;
+		letter-spacing: -.05em;
+	}
+}
+
+.short-thick-divider {
+	margin: 2.2rem 0 0;
+    width: 4.8rem;
+	border-top: 5px solid $primary-color-dark;
+}
+
+.btn-xl {
+    padding: 1.1em 2.75em 1.125em;
+}
+
+// 2. Home Sections -------
+// 2.1) Home Slider
+.owl-carousel.home-slider .owl-nav {
+	color: #333;
+}
+
+.home-slider,
+.home-slide .slide-bg {
+	height: 100vh;
+}
+
+.home-slider {
+	h2 {
+		font-family: 'Segoe Script', 'Savoye LET';
+		line-height: 1.334;
+	}
+
+	.banner-layer {
+		left: 13.45%;
+		padding-bottom: 6px;
+	}
+
+	&.owl-carousel.nav-big .owl-nav {
+		font-size: 2.4rem;
+	}
+}
+
+.home-slide1 {
+	h2 {
+		color: #777;
+		font-size: 2.5em;
+		font-weight: 400;
+		letter-spacing: -.008em;
+		margin-bottom: .9rem;
+	}
+
+	h3 {
+		font-size: 2.5em;
+    	letter-spacing: .185em;
+	}
+
+	h4 {
+		font-size: 5.625em;
+	}
+
+	h5 {
+		font-size: 1.125em;
+		padding-top: .7rem;
+		margin-bottom: 3.3rem;
+	}
+}
+
+.home-slide2 {
+	h2 {
+		margin-bottom: -5px;
+		margin-left: -3px;
+		font-size: 3.4375em;
+		letter-spacing: -0.3px;
+	}
+
+	.banner-layer {
+		left: 13.6%;
+	}
+
+	h3 {
+		margin-left: -3px;
+		font-size: 7em;
+	}
+
+	h5 {
+		margin-right: 4.3rem;
+		margin-left: -3px;
+		font-size: 1.25em;
+		vertical-align: middle;
+
+		span {
+			font-size: 1.05em;
+		}
+	}
+
+	.short-thick-divider {
+		padding-bottom: .7rem;
+	}
+
+	em {
+		display: inline-block;
+		font-size: 1.87em;
+		font-style: normal;
+		vertical-align: text-top;
+		transform: translateY(-1px);
+		letter-spacing: 0;
+	}
+
+	.btn {
+		margin-top: -4px;
+		padding: 1.165em 2.8em;
+		font-size: 1.1em;
+		letter-spacing: .02em;
+
+		i {
+			padding-left: .6rem;
+		}
+	}
+}
+
+// 2.2) Banner Section
+.banners-section {
+	padding-bottom: 5rem;
+
+	h3 {
+		font-size: 1.625em;
+		line-height: 1;
+		letter-spacing: -.05em;
+	}
+
+	h4 {
+		font-family: $font-family;
+		color: #777;
+		font-weight: 400;
+		font-size: 0.9375em;
+		line-height: 1.4;
+	}
+
+	.btn {
+		padding: 1.4em 1.95em 1.2em 2em;
+		font-weight: 600;
+		font-size: 1.1rem;
+		letter-spacing: .15em;
+	}
+
+	img {
+		transition: box-shadow .3s;
+		width: 100%;
+	}
+	
+	.banner-layer.text-left {
+		left: 9.85%;
+		bottom: 8.1%;
+	}
+
+	.banner-layer-top h4 {
+		line-height: 1.5;
+		font-family: $font-family;
+	}
+
+	.banner-layer-middle {
+		padding-bottom: 1px;
+
+		h4 {
+			opacity: .6;
+			font-family: $font-family;
+		}
+
+		.btn {
+			color: #050203;
+		}
+	}
+
+	.banner:hover img {
+		box-shadow: 0px 0px 40px 0 rgba(0,0,0,0.08);	
+	}
+
+	.banner-layer-boxed {
+		left: 9%;
+		right: 9%;
+		bottom: 8%;
+		border: 5px solid $primary-color;
+		padding: 4.4rem 2rem 4.5rem;
+
+		h3 {
+			font-size: 1.375em;
+		}
+
+		h4 {
+			margin-bottom: .5rem;
+			line-height: 1;
+			font-family: $font-family;
+		}
+
+		.btn {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 70%);
+		}
+	}
+}
+
+// 2.3) Feature Box Container
+.feature-boxes-container {
+	padding-top: 6.5rem;
+	padding-bottom: 1.5rem;
+
+	.feature-box {
+		i {
+			font-size: 3.5rem;
+		}
+
+		h3 {
+			margin-bottom: 0;
+			font-size: 2rem;
+			line-height: 1.4;
+		}
+
+		h5 {
+			color: $body-text;
+			font-weight: 600;
+			font-family: $font-family;
+			margin-bottom: 1.3rem;
+		}
+
+		p {
+			font-size: 1.3rem;
+			line-height: 2.4rem;
+		}
+	}
+}
+
+// 2.4) Category Container
+.product-category img,
+.product-category figure:after {
+    border-radius: 0;
+}
+
+.category-content {
+	padding: 2.1rem;
+	margin-bottom: 1.9rem;
+}
+
+.category-banner {
+	position: relative;
+	margin-bottom: 2.5rem;
+    margin-top: 3px;
+
+	.slide-bg {
+		width: 100%;
+		min-height: 305px;
+	}
+
+	h2 {
+		color: $body-text;
+		font-size: 2.5em;
+		font-weight: 400;
+	}
+
+	h3 {
+		font-size: 2.5em;
+	}
+
+	h4 {
+		font-size: 5.625em;
+	}
+
+	h5 {
+		font-size: 1.125em;
+		padding-top: 1.1rem;
+		margin-bottom: 3.2rem;
+	}
+
+	.coupon-sale-text {
+		padding: 0.5rem 1.2rem .5rem;
+		margin-left: 1.6rem;
+		margin-right: 2.7rem;
+		font-size: 2em;
+	}
+
+	.btn {
+		margin-top: 2px;
+	    padding: 1.15em 3.8em 1.1em 3.75em;
+		font-size: 1.125em;
+		font-weight: 700;
+	}
+}
+
+.category-slide-content {
+	position: absolute;
+	top: 47.8%;
+	left: 6%;
+	transform: translateY(-50%);
+
+	h2 {
+		font-family: 'Segoe Script', 'Savoye LET';
+		line-height: 1.334;
+		letter-spacing: .086em;
+	}
+
+	h3 {
+		margin-bottom: 2.2rem;
+	}
+
+	.coupon-sale-text {
+		padding: 0.5rem .9rem .5rem;
+		margin-top: -1rem;
+	}
+
+	h2,
+	h3,
+	h5 {
+		line-height: 1;
+	}
+}
+
+// 3. Responsive
+@include mq(lg) {
+	.container {
+		max-width: none;
+		padding-left: 4.28vw;
+		padding-right: 4.28vw;
+	}
+
+	.padding-right-lg {
+		padding-right: 50px;
+	}
+
+	.feature-boxes-container .feature-box i {
+		margin-bottom: 3rem;
+	}
+}
+
+@include mq(1400px) {
+	.feature-boxes-container .feature-box {
+		padding: 0 4.8rem;
+	}
+	.banners-section .banner-layer-boxed .btn {
+		transform: translate(-50%, 40%);
+	    padding: 1.5em 3em;
+	}
+}
+
+
+@include mq(1500px) {
+	.container {
+		aside.col-lg-3 {
+			max-width: 20%;
+			-ms-flex: 0 0 20%;
+			flex: 0 0 20%;
+		}
+
+		.main-content.col-lg-9 {
+			max-width: 80%;
+			-ms-flex: 0 0 80%;
+			flex: 0 0 80%;
+		}
+	}
+	// For Horizontal-Filter 1
+	.main-content-wrap {
+		.sidebar-shop {
+			left: -20%;
+		}
+
+		.main-content {
+			margin-left: -20%;
+		}
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	.banners-section .banner {
+		font-size: 1.2rem;
+	}
+
+	.banners-section .banner-layer-boxed {
+		padding: 4.4rem 2rem 5.5rem;
+	}
+}
+
+@media (max-width: 1200px) {
+	.main-nav .menu>li>a {
+		padding-left: 1rem;
+	}
+
+	.banners-section .banner-layer-boxed .btn {
+		transform: translate(-50%, 76%);
+	}
+}
+
+@include mq(lg, max) {
+	.banners-section .banner-layer-boxed .btn {
+		transform: translate(-50%, 58%);
+	}
+}
+
+@include mq(md, max) {
+	.home-slide, .category-slide-content {
+		font-size: 1.4rem;
+	}
+}
+
+@include mq(sm, max) {
+	.home-slide, 
+	.category-slide-content {
+		font-size: 1rem;
+	}
+
+	.banner-sm-vw {
+		font-size: 1.7rem;
+	}
+}
+
+@include mq(xs, max) {
+	.home-slider .banner-layer {
+		left: 6%;
+	}
+
+	.home-slide, 
+	.category-slide-content {
+		font-size: .9rem;
+	}
+
+	.home-banner {
+		.banner-layer {
+			left: 2rem;
+			right: 2rem;
+		}
+	}
+}

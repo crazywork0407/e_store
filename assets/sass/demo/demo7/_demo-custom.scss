@@ -1,0 +1,470 @@
+
+// Pages
+
+// 1. Shop Page ------------
+//    1.1) Shop Base
+//    1.2) Shop Element
+//         1.2.1) Widget Size
+//         1.2.2) Widget Price
+//         1.2.3) Widget Featured
+//         1.2.4) Widget Color
+//    1.3) Toolbox
+//    1.4) Category Banner
+
+// 2. Product Page ------------
+//    2.1) Product Single Base
+//    2.2) Product Single Default
+
+// 3. About Page ------------
+//    3.1) About Base
+//    3.2) About Sections
+
+// 4. Contact Page ------------
+
+// 1. Shop Page ------------
+// 1.1) Shop Base
+.main-content {
+    margin-bottom: 1.5rem;
+}
+  
+.products-group {
+    margin-bottom: 1.4rem;
+
+    .product-default {
+        margin-bottom: 2.1rem;
+    }
+}
+
+.cat-list li {
+    font-size: 13px;
+
+    a {
+        color: $primary-color-dark;
+    }
+}
+
+span.toggle {
+    font-size: 14px;
+}
+  
+.sidebar-shop {
+    .main & .widget {
+		border: 0;
+    }
+
+    .widget {
+        padding: 0;
+        margin-bottom: 2rem;
+
+        .owl-nav {
+            top: -5.1rem;
+        }
+
+        &:last-child {
+            margin-bottom: 1.2rem;
+        }
+    
+        .owl-nav {
+            top: -4.1rem;
+        }
+    }
+  
+    .widget-title {
+        padding-bottom: 1rem;
+		border-bottom: 1px solid #e7e7e7;
+    
+        a:before, 
+        a:after {
+            top: 55%;
+        }
+    }
+  
+    .widget-body {
+        padding: 1.5rem 0 .7rem;
+    }
+  
+  // 1.2) Shop Element
+  // 1.2.1) Widget Size
+    .widget-size {
+        .cat-list {
+            li {
+                margin-bottom: 1.4rem;
+                font-size: 13px;
+            }
+    
+            a {
+                font-weight: 400;
+            }
+        }
+    
+        .widget-body {
+            padding-bottom: 3px;
+            padding-top: .8rem;
+        }
+    }
+  
+// 1.2.2) Widget Price
+    .widget-price {
+        .widget-body {
+            padding-top: 1.5rem;
+            padding-bottom: 5px;
+            margin-bottom: -5px;
+            color: $primary-color-dark
+        }
+    }
+  
+// 1.2.3) Widget Featured
+    .product-widget {
+        .product-title {
+            margin-bottom: .5rem;
+        }
+    
+        .product-details {
+            margin-bottom: 4px;
+        }
+    }
+
+    .widget-block h5 {
+		margin-top: .8rem;
+	}
+}
+  
+// 1.2.4) Widget Color
+.widget-color {
+    .config-swatch-list li {
+      margin-bottom: .4rem;
+  
+      a {
+        margin-right: .8rem;
+      }
+  
+      span {
+        margin-bottom: 2px;
+      }
+    }
+  
+    .widget-body {
+        margin-bottom: -4px;
+    }
+}
+
+// 1.3) Toolbox
+.toolbox {
+    .select-custom:after {
+        right: 1.3rem;
+    }
+
+    label {
+        margin-right: 1rem;
+    }
+} 
+
+// 1.4) Category Banner
+.category-banner {
+    padding: 8.3rem 1.8rem 8.3rem 0;
+    background-size: cover;
+	background-color: #24252A;
+	
+	.parallax-background {
+		top: 13%;
+	}
+}
+
+.promo-content {
+    position: relative;
+    margin-left: 6px;
+	text-align: center;
+
+	h2 {
+        margin-left: -1rem;
+        font-size: 4.2rem;
+		font-family: 'Segoe Script', 'Savoye LET';
+		line-height: 1;
+        letter-spacing: normal;
+		color: #fff;
+	}
+
+	h3 {
+        padding-left: 3px;
+		color: #fff;
+		font-size: 8.8rem;
+		line-height: 1;
+	}
+
+	hr { 
+		border-top-color: #fff;
+	}
+
+	.btn {
+        padding: 1.1em 2.56em;
+        margin-left: -2px;
+        font-size: 1.4rem;
+	}
+	
+	.divider-short-thick {
+		margin: 1.5rem auto 3.4rem;
+		width: 50px;
+		border-top-width: 4.44px;
+	}
+}
+
+// 2. Product Page
+// 2.1) Product Single Base
+.products-section {
+    padding-bottom: 1.2rem;
+
+    .owl-carousel.dots-top .owl-dots {
+        margin-bottom: 2.5rem;
+    }
+
+    h2 {
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+    }
+
+    .price-box {
+        margin-bottom: 1.8rem;
+    }
+}
+
+.product-widgets-container {
+    .section-sub-title {
+       font-size: 1.4rem;
+    }
+
+    figure {
+        margin-right: 1.5rem;
+    }
+
+    .ratings-container {
+        margin-bottom: 1.1rem;
+    }
+
+    .product-default {
+        margin-bottom: 1.6rem;
+    }
+}
+
+// 2.2) Product Single Default
+.product-single-details .product-desc {
+    margin-bottom: 1.7rem;
+}
+
+.product-single-share {
+    margin-bottom: 1.3rem;
+}
+
+.single-info-list {
+    margin-bottom: 1.8rem;
+}
+
+.product-single-filter label {
+    margin-right: 3.2rem;
+}
+
+.product-filters-container {
+    .form-control {
+        border-color: rgba(0,0,0,0.09);
+    }
+
+    .select-custom {
+        width: 290px;
+    }
+} 
+
+// 3. About Page ------------
+// 3.1) About Base
+.about {
+    margin-bottom: 9.7rem;
+
+    .title-decorate {
+        font-size: 1.6rem;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            margin-left: 3rem;
+            margin-top: 1px;
+            background-color: #dde0e2;
+        }
+    }
+}
+
+.page-header-bg {
+    padding: 9.8rem 0 6.8rem;
+
+    h1 {
+        letter-spacing: 0.01em;
+        font-size: 4.5rem;
+
+        span {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+// 3.2) About Sections
+.about-section {
+    padding: 4.2rem 0 4.5rem;
+    font-size: 1.4rem;
+    line-height: 2;
+    text-align: center;
+  
+    .title {
+        margin-bottom: 2.3rem;
+        font-size: 3rem;
+    }
+  
+    p {
+        font-size: 14px;
+        line-height: 2;
+        max-width: 769px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+  
+.brands-container-alt.brands-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 5.6rem;
+    background-color: #f2f4f6;
+
+    .owl-carousel {
+        .owl-nav button.owl-prev, 
+        .owl-nav button.owl-next {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            font-size: 1rem;
+            background-color: #65829d;
+            color: #fff;
+            border-radius: 0;
+        }
+
+        .owl-prev {
+            left: 0vw;
+
+            i {
+                margin-right: 3px;
+            }
+        }
+
+        .owl-next {
+            right: 0vw;
+
+            i {
+                margin-left: 3px;
+            }
+        }
+    }
+}
+
+.team-section {
+    figure {
+        .team-name {
+            position: absolute;
+            bottom: 3.1rem;
+            left: 3rem;
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 500;
+        } 
+
+        &:hover {
+            .prod-full-screen {
+                opacity: 1;
+            }
+        }
+    }
+
+    .prod-full-screen {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff7272;
+        border-radius: 50%;
+        bottom: 5px;
+        right: 5px;
+
+        i {
+            color: #fff;
+        }
+    }
+}
+
+// 4. Contact Page ------------
+.contact-two {
+    margin-bottom: 3.4rem;
+
+    .contact-title {
+        color: $primary-color;
+    }
+
+    p {
+        line-height: 24px;
+    }
+
+    .contact-info i {
+        background-color: $primary-color;
+    }
+
+    .btn {
+        font-weight: 700;
+    }
+}
+
+// 4. Responsive
+@media(min-width: 1200px) {
+    .brands-container-alt.brands-container .owl-carousel {
+        .owl-stage-outer {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .owl-item,
+        img {
+            max-width: 170px;
+        }
+    }
+}
+
+@include mq(md, max) {
+	.promo-content {
+		h2 {
+			font-size: 5vw;
+		}
+
+		h3 {
+			font-size: 10vw;
+		}
+    }
+
+    .banner-container {
+        padding-right: 0;
+    }
+}
+
+@include mq(sm, max) {
+	.promo-content {
+		h2 {
+			font-size: 6vw;
+		}
+
+		h3 {
+			font-size: 15vw;
+		}
+	}
+}
+
+@include mq(sm) {
+	.category-banner .divider-short-thick {
+        margin: 0 2.4rem 0 2.4rem;
+        width: 5px;
+        border-top: 52px solid #fff;
+	}
+}

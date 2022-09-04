@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/*
+Name: 			theme-elements.css
+Written by: 	Okler Themes - (http://www.okler.net)
+Theme Version:	8.0.0
+*/
+
+/* Animations */
+.appear-animation {
+	opacity: 0;
+}
+
+.appear-animation-visible {
+	opacity: 1;
+}
+
+/* Transitions */
+.transition-2ms {
+	transition: all 0.2s ease-in-out;
+}
+
+.border-width-10 {
+	border-width: 10px !important;
+}
+
+/* Dropdown Button */
+
+/* Loading Overlay */
+.loading-overlay-showing {
+	overflow: hidden;
+}
+
+.loading-overlay-showing > .loading-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+.loading-overlay {
+	transition: visibility 0s ease-in-out 0.5s, opacity 0.5s ease-in-out;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	background: #FFF;
+}
+
+body > .loading-overlay {
+	position: fixed;
+	z-index: 999999;
+}
+
+/* Bounce Loading */
+.bounce-loader {
+	transition: all 0.2s;
+	margin: -9px 0 0 -35px;
+	text-align: center;
+	width: 70px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	z-index: 10000;
+}
+
+.bounce-loader .bounce1,
+.bounce-loader .bounce2,
+.bounce-loader .bounce3 {
+	-webkit-animation: 1.4s ease-in-out 0s normal both infinite bouncedelay;
+	animation: 1.4s ease-in-out 0s normal both infinite bouncedelay;
+	background-color: #CCC;
+	border-radius: 100%;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+}
+
+.bounce-loader .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.bounce-loader .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+	0%, 80%, 100% {
+		transform: scale(0);
+	}
+
+	40% {
+		transform: scale(1);
+	}
+}
+
+@keyframes bouncedelay {
+	0%, 80%, 100% {
+		transform: scale(0);
+	}
+
+	40% {
+		transform: scale(1);
+	}
+}
+
+html.safari.iphone .bounce-loader .bounce1,
+html.safari.iphone .bounce-loader .bounce2,
+html.safari.iphone .bounce-loader .bounce3 {
+	-webkit-animation: 1.4s ease-in-out infinite bouncedelay;
+	animation: 1.4s ease-in-out infinite bouncedelay;
+}
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+/* Gutter SM */
+.row-gutter-sm {
+	margin-right: -10px;
+	margin-left: -10px;
+}
+
+.row-gutter-sm .col, .row-gutter-sm .col-1, .row-gutter-sm .col-10, .row-gutter-sm .col-11, .row-gutter-sm .col-12, .row-gutter-sm .col-2, .row-gutter-sm .col-3, .row-gutter-sm .col-4, .row-gutter-sm .col-5, .row-gutter-sm .col-6, .row-gutter-sm .col-7, .row-gutter-sm .col-8, .row-gutter-sm .col-9, .row-gutter-sm .col-auto, .row-gutter-sm .col-lg, .row-gutter-sm .col-lg-1, .row-gutter-sm .col-lg-10, .row-gutter-sm .col-lg-11, .row-gutter-sm .col-lg-12, .row-gutter-sm .col-lg-2, .row-gutter-sm .col-lg-3, .row-gutter-sm .col-lg-4, .row-gutter-sm .col-lg-5, .row-gutter-sm .col-lg-6, .row-gutter-sm .col-lg-7, .row-gutter-sm .col-lg-8, .row-gutter-sm .col-lg-9, .row-gutter-sm .col-lg-auto, .row-gutter-sm .col-md, .row-gutter-sm .col-md-1, .row-gutter-sm .col-md-10, .row-gutter-sm .col-md-11, .row-gutter-sm .col-md-12, .row-gutter-sm .col-md-2, .row-gutter-sm .col-md-3, .row-gutter-sm .col-md-4, .row-gutter-sm .col-md-5, .row-gutter-sm .col-md-6, .row-gutter-sm .col-md-7, .row-gutter-sm .col-md-8, .row-gutter-sm .col-md-9, .row-gutter-sm .col-md-auto, .row-gutter-sm .col-sm, .row-gutter-sm .col-sm-1, .row-gutter-sm .col-sm-10, .row-gutter-sm .col-sm-11, .row-gutter-sm .col-sm-12, .row-gutter-sm .col-sm-2, .row-gutter-sm .col-sm-3, .row-gutter-sm .col-sm-4, .row-gutter-sm .col-sm-5, .row-gutter-sm .col-sm-6, .row-gutter-sm .col-sm-7, .row-gutter-sm .col-sm-8, .row-gutter-sm .col-sm-9, .row-gutter-sm .col-sm-auto, .row-gutter-sm .col-xl, .row-gutter-sm .col-xl-1, .row-gutter-sm .col-xl-10, .row-gutter-sm .col-xl-11, .row-gutter-sm .col-xl-12, .row-gutter-sm .col-xl-2, .row-gutter-sm .col-xl-3, .row-gutter-sm .col-xl-4, .row-gutter-sm .col-xl-5, .row-gutter-sm .col-xl-6, .row-gutter-sm .col-xl-7, .row-gutter-sm .col-xl-8, .row-gutter-sm .col-xl-9, .row-gutter-sm .col-xl-auto {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Page Transition */
+body[data-plugin-page-transition] {
+	transition: ease opacity 300ms;
+}
+
+body.page-transition-active {
+	opacity: 0 !important;
+}
+
+/* Elements List */
+.section-elements {
+	text-align: center;
+	padding: 4rem 0 0;
+}
+.section-elements h2 {
+	font-weight: 700;
+	font-size: 2.25rem;
+	letter-spacing: -0.05em;
+	margin-bottom: 0.2rem;
+}
+.section-elements p {
+	font-size: 1rem;
+	letter-spacing: -0.05em;
+	line-height: 26px;
+}
+.section-elements .icon-box {
+	display: block;
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+	padding: 1.75rem 0;
+	background: linear-gradient(135deg, #0169fe 0, #383f48 100%);
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 1.875rem;;
+}
+.section-elements .icon-box i {
+	font-size: 2rem;
+	color: #0169fe;
+	position: relative;
+}
+.section-elements .icon-box i:last-child {
+	font-size: 4rem;
+	position: absolute;
+	top: -1.8rem;
+	opacity: 0.08;
+	right: -1.8rem;
+	color: #777;
+}
+.section-elements .icon-box h5 {
+	position: relative;
+	font-size: .75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: .75rem 0 0;
+}
+.section-elements .icon-box:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: auto;
+	background: #fff;
+}
+.section-elements .icon-box:hover:before {
+	top: 0.5rem;
+	left: 0.5rem;
+	right: 0.5rem;
+	bottom: 0.5rem;
+	transition: cubic-bezier(0.39, 0.66, 0.42, 0.99) all 0.2s;
+}

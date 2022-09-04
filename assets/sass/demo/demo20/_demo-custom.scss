@@ -1,0 +1,350 @@
+// Shop Page
+
+// Banner
+.category-banner-container {
+    .banner1 {
+        padding: 0;
+
+        img {
+            min-height: 300px;
+        }
+
+        h3 {
+            font-size: 2.375em;
+        }
+
+        h4 {
+            font-size: 5.75em;
+        }
+
+        h5 {
+            span {
+                font-size: 1em
+            }
+
+            b {
+                font-size: 2.1em;
+            }
+        }
+
+        .btn {
+            position: relative;
+            top: 1px;
+            border-color: #777;
+            border-width: 1px;
+            font-size: .8em;
+        }
+
+        .banner-layer-left {
+            left: 25%;
+        }
+    }
+}
+
+// Sidebar
+.sidebar-shop {
+    .widget-body {
+        padding-top: 1.4rem;
+    }
+    
+    .config-swatch-list {
+        display: block;
+        margin-left: 1rem;
+
+        li {
+            a {
+                margin-bottom: 11px;
+                width: 18px;
+                height: 18px;
+                text-indent: 35px;
+                color: $body-text;
+                line-height: 19px;
+
+                &:before {
+                    text-indent: 0;
+                }
+    
+                &:hover, &.active {
+                    color: $primary-color;
+                }
+            }
+
+            &:last-child a {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+span.toggle {
+    top: -2px;
+    font-size: 1.5rem;
+}
+
+.cat-list {
+    padding-left: 1rem;
+
+    li {
+        margin-bottom: 1.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+.cat-sublist {
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+}
+
+// ToolBox
+.toolbox-pagination {
+    border-top-width: 2px;
+}
+
+// Responsive
+@include mq(lg, max) {
+    .sidebar-shop .widget {
+        padding-bottom: 0;
+
+        &:not(:last-child) {
+            border-bottom: 0;
+        }
+    }
+}
+
+// Product Page
+
+// Product Gallery
+.product-single-gallery .product-item {
+    border: 1px solid #f4f4f4;
+}
+
+// Product Single Details
+.product-single-details .product-desc {
+    line-height: 1.6872;
+}
+
+.product-single-filter {
+    label {
+        margin-right: 7.6rem;
+    }
+
+    .config-size-list li a {
+        min-width: auto;
+        width: 32px;
+        height: 32px;
+        background-size: contain;
+        background-position: center center;
+
+        &.filter-color {
+            width: 2.8rem;
+        }
+    }
+}
+
+// Related Products
+.products-section {
+    h2 {
+        margin-bottom: 2.4rem;
+        font-family: $font-family;
+        font-size: 1.6rem;
+    }
+
+    .owl-carousel.dots-top .owl-dots span {
+        border-color: rgba(102,77,0,.4);
+    }
+}
+
+// Product Widgets
+.product-widgets-container {
+    .section-sub-title {
+        margin-bottom: 1.5rem;
+        font-family: $font-family;
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+
+    .product-details {
+        margin-bottom: 0;
+    }
+
+    .product-title {
+        letter-spacing: 0;
+    }
+
+    .ratings-container {
+        text-indent: 0;
+    }
+}
+
+// Responsive
+@include mq(md) {
+    .products-section {
+        padding-bottom: 1.3rem;
+    }
+}
+
+// About Us Page
+
+.about {
+    .section-title {
+        margin-bottom: 1.7rem;
+        color: #252525;
+        font-size: 19px;
+        line-height: normal;
+    }
+}
+
+.about-section {
+    padding-top: 3rem !important;
+    padding-bottom: 4.5rem !important;
+
+    p {
+        line-height: 2;
+    }
+}
+
+.feature-boxes-container {
+    border: 1px solid #dedede;
+
+    .feature-box {
+        padding: 1.3rem 2rem;
+
+        i {
+            margin-bottom: 0;
+            color: #252525;
+            font-size: 4rem;
+        }
+
+        h3 {
+            margin: 3px 0;
+            color: #252525;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 1.4em;
+        }
+
+        p {
+            font-size: 1.3rem;
+            line-height: normal;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #dedede;
+        }
+    }
+}
+
+.team-section {
+    padding: 50px 0 60px;
+    background: #efefef;
+
+    .view-more-container .btn {
+        padding: .8em 2em;
+        border-radius: 3px;
+        font-weight: 400;
+        text-transform: none;
+    }
+}
+
+.team-info .prod-full-screen {
+    background-color: $primary-color;
+}
+
+.team-name {
+    font-family: $third-font-family;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+
+    a {
+        color: inherit;
+    }
+}
+
+.history-section {
+    padding-top: 6rem;
+}
+
+.history {
+    display: flex;
+    margin-bottom: 3rem;
+
+    figure {
+        position: relative;
+        margin-bottom: 0;
+
+        h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: $third-font-family;
+            font-weight: 300;
+            font-size: 5rem;
+            line-height: 1;
+            color: #fff;
+        }
+    }
+
+    img {
+        width: 100%;
+        max-height: 248px;
+        object-fit: cover;
+    }
+}
+
+.history-content {
+    height: 100%;
+    border: 1px solid #dedede;
+    padding: 20px 30px;
+
+    p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
+        overflow: hidden;
+        margin-bottom: 0;
+        color: #676a6d;
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+}
+
+// Contact Us Page
+.contact-two {
+    #map {
+        margin-bottom: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 1.4;
+    }
+
+    label {
+        margin-bottom: .8rem;
+        line-height: 24px;
+    }
+
+    .form-group {
+        margin-bottom: 1.6rem;
+    }
+
+    .contact-title {
+        margin-top: 1.5rem;
+        margin-bottom: 1.4rem;
+        font-size: 1.6rem;
+        line-height: 1.5em;
+    }
+
+    p {
+        line-height: 24px;
+    }
+
+    .contact-info {
+        padding-top: .7rem;
+
+        i {
+            background: #08c;
+        }
+    }
+}

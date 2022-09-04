@@ -1,0 +1,412 @@
+// Demo 18
+
+// Layout
+.container-fluid {
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+// Header Base
+.header {
+    background: #111;
+
+    &.header-transparent {
+        background: transparent;
+    }
+}
+
+.header-middle {
+    .header-center {
+        margin-left: 0;
+    }
+
+    &.sticky-header.fixed {
+        background: #111;
+    }
+}
+
+// Header Elements
+
+// Main Nav
+.main-nav {
+    padding: 0 1.5rem;
+
+    .menu > li > a {
+        line-height: 20px;
+    }
+}
+
+// Header Icon
+.header-icon i {
+    color: #fff;
+
+    &.icon-wishlist-2{
+        position: relative;
+
+        .badge-circle {
+            font-style: normal;
+            top: 0;
+            right: -8px;
+        }
+    }
+}
+
+.minicart-icon {
+    border-color: #fff;
+    width: 22px;
+    height: 19px;
+
+    &:before {
+        border-color: #fff;
+        top: -7px;
+        margin-left: -6.5px;
+        width: 13px;
+        height: 10px;
+    }
+}
+
+// Header Dropdown
+.header-dropdowns {
+    margin-right: 1.4rem;
+}
+
+.header-dropdown {
+    font-family: $second-font-family;
+
+    a {
+        color: #fff;
+    }
+
+    ul a {
+        color: #777;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+}
+
+.dropdown-arrow {
+    &:after {
+        position: relative;
+        top: 5px;
+        color: #fff;
+        font-size: 17px;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .badge-circle {
+        top: -4px;
+    }
+}
+
+// Header Search
+.header-search-popup .form-control {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.search-toggle i:before {
+    position: relative;
+    top: -3px;
+    margin-left: 7px;
+    margin-right: 1px;
+}
+
+.header-search-wrapper {
+    right: -3.2rem;
+    background-color: #ccc;
+
+    .select-custom:after {
+        margin-top: 3px;
+    }
+
+    .btn:before {
+        position: relative;
+        top: -1px;
+    }
+}
+
+// Sticky Header
+.header-middle.sticky-header.fixed {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+
+    .logo {
+        max-width: 100px;
+    }
+}
+
+// Header Responsive
+
+@include mq(1600px) {
+    .header-middle {
+        .header-left, .header-right {
+            flex: 1;
+        }
+
+        .header-center {
+            margin-left: auto;
+        }
+    }
+}
+
+@include mq(xl, max) {
+    .main-nav .menu>li>a {
+        padding: 10px 7px;
+    }
+}
+
+@include mq(lg, max) {
+    .header .logo {
+        max-width: 100px;
+    }
+
+    .header-middle {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .header-dropdowns {
+        display: none;
+    }
+
+    .dropdown-arrow:after {
+        margin-left: 5px;
+    }
+}
+
+@include mq(sm, max) {
+    .header-search .form-control {
+        min-width: auto;
+    }
+}
+
+// Product Default
+.product-default.inner-icon {
+    position: relative;
+    margin-bottom: 2.4rem;
+    
+    figure .btn-icon-group {
+        z-index: 2;
+    }
+
+    .product-title {
+        color: $primary-color;
+        letter-spacing: -.01em;
+    }
+	
+	.product-details {
+		padding: 0;
+	}
+
+	.category-list {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		width: calc( 100% - 20px );
+    }
+    
+    .price-box {
+        font-family: $second-font-family;
+    }
+
+	.btn-icon-wish, 
+	.btn-quickview {
+		top: auto;
+	}
+
+	.btn-icon-wish {
+		background-color: transparent;
+		left: auto;
+		right: 0;
+	}
+
+	&:not(.product-widget):hover {
+		box-shadow: none;
+
+		figure {
+			box-shadow: 0 25px 35px -5px rgba(0, 0, 0, 0.1);
+		}
+
+		.img-effect a:first-child::after {
+			opacity: 1;
+		}
+
+		figure .btn-quickview {
+			padding-top: 1.2rem;
+			padding-bottom: 1.3rem;
+			transition: padding-top .2s, padding-bottom .2s;
+		}		
+    }
+}
+
+.ratings-container {
+    margin-left: 0;
+}
+
+.product-price {
+    color: #444;
+    letter-spacing: -.02em;
+}
+
+.price-box {
+	font-family: $second-font-family;
+}
+
+// inner-quickview
+.inner-quickview {
+	figure {
+		.btn-quickview {
+			padding: .8rem 1.4rem;
+			transition: padding-top .2s, padding-bottom .2s;
+			line-height: 1.82;
+			z-index: 2;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	.category-wrap .btn-icon-wish {
+		font-size: 1.6rem;
+		padding-top: 1px;
+	}
+}
+
+// Btn
+.btn-light {
+    padding: 1.3em 3.25em;
+    color: $headings-text;
+    background-color: #fff;
+    border-color: #fff #fff #fff;
+    font-size: 1.2rem;
+    letter-spacing: .2em;
+    line-height: 1.43;
+}
+
+// Form
+.form-control {
+    color: #777;
+    font-family: $second-font-family;
+}
+
+// Footer Base
+.footer {
+    background: #111;
+}
+
+// Footer Top
+.footer-top {
+    &.top-border {
+        border-top: 1px solid #222;
+    }
+
+	form {
+		margin: 0;
+	}
+
+	button {
+        padding: .7em 2.5em;
+        letter-spacing: .2em;
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+	.form-control {
+        width: 100%;
+        min-width: 23vw;
+		height: auto;
+		margin: 0;
+		border: none;
+		padding: 1.25em 1em 1.25em 2em;
+		color: $body-text;
+		font-family: $second-font-family;
+		font-size: 1.2rem;
+
+		&::placeholder {
+			color: #999;
+		}
+	}
+}
+
+footer .social-icon {
+    margin: 2px;
+}
+
+.widget-newsletter-info {
+	margin-right: 4.8rem;
+}
+
+.widget-newsletter-title {
+	letter-spacing: .075em;
+	font-size: 1.6rem;
+}
+
+p.widget-newsletter-content {
+    color: #777;
+}
+
+// Footer Middle
+.footer-desc {
+    margin-bottom: 2.4rem;
+}
+
+.footer-question {
+    max-width: 50rem;
+
+    h6 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+        line-height: 27px;
+    }
+}
+
+.footer .logo {
+    margin-bottom: 2.1rem;
+}
+
+// Widget
+footer {
+    .widget .links {
+        margin-bottom: 0;
+    }
+
+    .widget-title {
+        line-height: 1.4;
+    }
+}
+
+// Responsive
+
+@include mq(lg, max) {
+	footer .widget-newsletter {
+		margin-bottom: 2rem;
+	}
+
+	footer .widget {
+		margin-bottom: 3rem;
+	}
+}
+
+@include mq(md, max) {
+	.widget-newsletter-info {
+		margin-bottom: 1.5rem;
+	}
+
+	.widget-newsletter .form-control {
+		max-width: 70%;
+	}
+
+	.footer-top {
+		.form-control,
+		button {
+			height: 40px;
+		}
+	}
+}

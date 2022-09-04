@@ -1,0 +1,305 @@
+// About
+.about-page {
+	font-family: "Open Sans", sans-serif;
+
+	.title {
+		font-size: 2.5rem;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 1.5rem;
+		line-height: 1.8;
+	}
+}
+
+.describe-section {
+	padding-top: 5.6rem;
+
+	.title {
+		margin-bottom: 7px;
+	}
+
+	.text-center {
+		margin-bottom: 4.7rem;
+	}
+}
+
+.tab-box {
+	padding-top: 5rem;
+	padding-right: 2rem;
+	padding-left: 2.5rem;
+
+	h2,
+	.nav-link {
+		font-family: $third-font-family;
+	}
+}
+
+.count-container {
+	.count-wrapper {
+		font-family: $third-font-family;
+		font-size: 3.6rem;
+		font-weight: 400;
+		color: #21293c;
+	}
+
+	.count-title {
+		font-family: $font-family;
+		font-size: 1.6rem;
+	}
+}
+
+.history-section {
+	padding: 5rem 0;
+	background-color: #efefef;
+
+	img {
+		width: 100%;
+		max-height: 300px;
+		object-fit: cover;
+	}
+  
+	.tab-content {
+	  h3 {
+		margin-bottom: 2rem;
+		font: 400 2.5rem / 1.2 $second-font-family;
+		text-transform: uppercase;
+	  }
+  
+	  img {
+			margin-bottom: 2rem;
+	  }
+	}
+  
+	.col-lg-2 {
+	  display: -ms-flexbox;
+	  display: flex;
+	  -ms-flex-align: center;
+	  align-items: center;
+	  -ms-flex-pack: end;
+	  justify-content: flex-end;
+	}
+  }
+  
+  .nav.nav-history {
+	width: 100%;
+	margin-bottom: 1rem;
+  
+	.nav-item {
+	  display: inline-block;
+	  margin-right: 1.7rem;
+	  font: 400 1.8rem / 1 $second-font-family;
+  
+	  &:last-child {
+		margin-right: 0;
+	  }
+	}
+  
+	.nav-link {
+	  display: -ms-inline-flexbox;
+	  display: inline-flex;
+	  position: relative;
+	  -ms-flex-align: center;
+	  align-items: center;
+	  padding: 1.5rem 0;
+	  color: #979797;
+  
+	  &:before {
+		display: inline-block;
+		width: 9px;
+		height: 2px;
+		margin-right: 1rem;
+		background-color: #979797;
+		content: '';
+	  }
+  
+	  &.active,
+	  &:hover,
+	  &:focus {
+		color: $headings-text;
+  
+		&:before {
+		  background-color: $headings-text;
+		}
+	  }
+	}
+	}
+	
+	.shop-page {
+		select,
+		label {
+			font-family: $shop-font-family;
+		}
+	}
+  
+  @include mq(lg) {
+	.history-section {
+	  padding-top: 6.5rem;
+		padding-bottom: 8.5rem;
+		margin-bottom: 1rem;
+  
+	  .tab-content {
+		img {
+		  margin-bottom: 0;
+		}
+  
+		h3 {
+		  font-size: 3rem;
+		}
+  
+		.col-sm-8 {
+		  padding-right: 45px;
+		}
+  
+		.col-sm-4 + .col-sm-8 {
+		  padding-right: 15px;
+		  padding-left: 45px;
+		}
+	  }
+	}
+  
+	.nav.nav-history {
+	  -ms-flex-direction: column;
+	  flex-direction: column;
+  
+	  .nav-item {
+		display: block;
+		margin-right: 0;
+	  }
+  
+	  .nav-link {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+  
+		&:before {
+		  margin-right: 2rem;
+		}
+	  }
+	}
+  }
+	
+	
+.sub-page {
+	.product-default figure,
+	.product-single-gallery .product-item,
+	.prod-thumbnail img {
+		border: 1px solid #f4f4f4;
+	}
+
+	.products-slider .product-default figure:hover {
+		border-color: #fff;
+		box-shadow: 0 0 7px 1px rgba(121, 121, 121, 0.2);
+	}
+
+	.prod-thumbnail img:hover {
+		border-width: 2px; 
+		border-color: #21293c;
+	}
+
+	.section-title {
+		margin-bottom: 2.4rem;
+		font-size: 16px;
+	}
+
+	.products-section .owl-carousel.dots-top .owl-dots {
+		margin-bottom: 2.4rem;
+
+		span {
+			border-color: rgba(0, 0, 0, .4);
+		}
+
+		.owl-dot.active {
+			span {
+				border-color: #1d1016;
+			}
+		}
+	}
+
+	.inner-icon:not(.product-widget) .product-details {
+		padding-top: 2rem;
+		padding-left: 2rem;
+	}
+}
+
+.product-single-tabs {
+	font-family: $shop-font-family;
+	font-size: 1.4rem;
+}
+
+.product-single-qty .bootstrap-touchspin .form-control {
+	height: 48px;
+}
+	
+//custom breadcrumb
+.breadcrumb-item {
+	font-family: $shop-font-family;
+	color: #000;
+
+	a,
+	&::before,
+	&.active {
+		color: #000;
+	}
+}
+
+.breadcrumb-nav {
+	border-bottom: none;
+
+	.breadcrumb {
+		padding-top: 1.2rem;
+		padding-bottom: 1.2rem;
+	}
+}
+
+.sub-page {
+	//custom product page 
+	.product-desc,
+	.product-price {
+		font-family: $shop-font-family;
+	}
+	
+	.old-price {
+		font-family: $shop-font-family !important
+	}
+}
+
+//custom category
+.caty-banner {
+	.banner-layer {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	h2 {
+		font-size: 4.1rem;
+	}
+
+	h3 {
+		font-size: 9.2rem;
+	}
+
+	.btn-xl {
+		padding: 0;
+		margin-top: 3px;
+		color: #222529;
+	}
+
+	img {
+		min-height: 260px;
+	}
+}
+
+@include mq('lg', max) {
+	.caty-banner {
+		h2 {
+			font-size: 2.6rem;
+		}
+
+		h3 {
+			font-size: 6rem;
+		}
+	}
+}

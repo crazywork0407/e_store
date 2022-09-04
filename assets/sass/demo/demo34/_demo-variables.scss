@@ -1,0 +1,177 @@
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$primary-color: #222529;
+$secondary-color: #b93027;
+// 2. Theme Settings
+$font-family: "Playfair Display", sans-serif;
+// 3. Theme Variables
+
+@include set(
+    (
+		layout: (
+			container: (
+				max-width-desktop: 1200px
+			)
+		),
+        header: (
+			link-color: inherit,
+			link-active-color: inherit,
+
+			top: (
+				padding-top: 1.1rem,
+				padding-bottom: 1.1rem,
+				background: $primary-color-dark
+			),
+
+			middle: (
+				color: $primary-color-dark,
+				padding-top: 3rem,
+				padding-bottom: 3rem,
+				background: #fff
+			),
+
+			dropdown: (
+				color: #fff,
+				space: 1.8rem,
+
+				font: (
+					size: 1.2rem
+				),
+
+				item: (
+					space: 0,
+					padding: .3em .8em
+				)
+			),
+
+			icon: (
+				size: 2.7rem,
+				space: 2.8rem,
+				space-mobile: 1.6rem
+			),
+
+			logo: (
+				max-width: 11.1rem,
+
+				sticky: (
+					max-width: 11.1rem,
+					transform: false
+				)
+			),
+
+			search: (
+				height: 34px,
+				background: #fff,
+				divider: false,
+
+				toggle: (
+					size: 2rem,
+					weight: 600
+				),
+
+				border: (
+					width: 5px,
+					color: #e7e7e7,
+				),
+
+				btn: (
+					size: 1.6rem,
+					min-width: 48px
+				)
+			),
+
+			separator: (
+				color: rgba(0,0,0,.06),
+				space: 14px
+			)
+		),
+
+		menu: (
+			main: (
+				top: (
+					cut-start-end: false,
+
+					color: #333,
+
+					font-size: 13px,
+					font-weight: 400,
+					letter-spacing: -.3px,
+					padding: 2rem 2.7rem,
+					space: 1px
+				),
+
+				nolink: (
+					font-weight: 600
+				)
+			)
+		),
+
+		info-box: (	
+			title: (
+				size: 1.6rem,
+				margin-bottom: 3px
+			)
+		),
+
+		breadcrumb: (
+			color: $primary-color-dark,
+			letter-spacing: false,
+			padding: 1.2rem,
+
+			font: (
+				family: $second-font-family
+			)
+		),
+
+		footer: (
+			color: #777,
+
+            social-icon: (
+				color: $primary-color-dark,
+				background: #fff,
+				border: 1px solid #e7e7e7,
+				size: 4rem,
+				space: 2px,
+				font-size: 1.4rem
+            ),
+
+            widget: (
+                title: (
+					color: $primary-color-dark,
+					size: 1.5rem,
+					weight: 700,
+					margin: 0 0 1.5rem
+                )
+			),
+			
+			top: (
+				padding-top: 6.4rem,
+				padding-bottom: 3rem
+			),
+
+            middle: (
+				border-top: 1px solid #e7e7e7,
+				padding-top: 4rem,
+				padding-bottom: 1rem
+            ),
+
+            bottom: (
+				border-top: 1px solid #e7e7e7,
+                padding-top: 2.6rem,
+                padding-bottom: 2.5rem
+            )
+		)
+    )
+);
+
+// 4. Plugin Variables
+$nav-font-size: 2.4rem;
+$dot-border: $primary-color-dark;

@@ -1,0 +1,184 @@
+// Pages
+
+// 1. Shop Page ------------
+//    1.1) Shop Base
+//    1.2) Shop Element
+//         1.2.1) Widget Default
+//         1.2.2) Widget Block
+
+// 2. Product Page ------------
+//    2.1) Product Base
+//    2.2) Product Element
+//         2.2.1) Product Single Filter
+//         2.2.2) Product Single Tab
+
+// 3. About Page ------------
+// 4. Contact Page ------------
+
+// 1. Shop Page ------------
+// 1.1) Shop Base
+.cat-list li {
+    margin-bottom: .8rem;
+}
+
+span.toggle {
+    top: -1px;
+}
+
+// 1.2) Shop Element
+.sidebar-shop {
+    // 1.2.1) Widget Default
+
+    .widget-body {
+        padding: 1.3rem 0 .4rem;
+    }
+
+    .widget-price {
+        .widget-body {
+            padding-top: 1.5rem;
+        }
+    }
+} 
+
+// 1.2.2) Widget Block
+.widget-block {
+    h5 {
+        font-size: 12px;
+        color: #7a7d82;
+        line-height: 1;
+        margin-bottom: 13px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 15px;
+        color: #21293c;
+        line-height: 1.42;
+    }
+}
+
+// 2. Product Page ------------
+// 2.1) Product Base
+.products-section {
+    padding-bottom: 1.4rem;
+
+    h2 {
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+    }
+
+    .owl-carousel.dots-top .owl-dots {
+        margin-bottom: 2.5rem;
+
+        span {
+            border-color: rgba(255,13,13,.4);
+        }
+    }
+}
+
+
+.product-widgets-container {
+    .product-default {
+        margin-bottom: 1.6rem;
+
+        .product-details {
+            margin-bottom: 1px;
+            padding: 0 .8rem;
+        }
+    } 
+
+    .section-sub-title {
+        font-size: 1.4rem;
+        letter-spacing: .07em;
+    }
+}
+
+// 2.2) Product Element
+// 2.2.1) Product Single Filter
+.product-single-filter label {
+    margin-right: 3.4rem;
+}
+
+.product-filters-container {
+    .select-custom {
+        width: 100%;
+        max-width: 298px;
+    }
+
+    .select-custom::after {
+        right: 1.6rem;
+        color: #222529;
+    }
+
+    select.form-control:not([size]):not([multiple]) {
+        padding-top: .6rem;
+        border-color: rgba(0,0,0,0.09);
+    }
+} 
+
+// 2.2.2) Product Single Tab
+.product-single-tabs {
+    padding-top: 4px;
+}
+
+// 3. About Page ------------
+.about-slider {
+	max-width: 580px,;
+	margin-bottom: 2.5rem;
+}
+
+.about {
+	p {
+        font-size: 14px;
+        line-height: 24px;
+	}
+}
+
+.page-intro {
+    margin-bottom: 2.6rem;
+    letter-spacing: 0.1em;
+}
+
+.page-header {
+    padding: 3.6rem 0 3.2rem;
+
+	h1 {
+        letter-spacing: 0.025em;
+        font-size: 4rem;
+	}
+} 
+
+.history-section {
+	margin-top: 2.4rem;
+
+	.owl-theme .owl-nav.disabled+.owl-dots {
+		margin-top: 1rem;
+	}
+
+	.page-title {
+        margin-bottom: 4.6rem;
+        padding-top: 2px;
+        font-size: 4rem;
+        letter-spacing: .025em;
+	}
+
+	.row {
+		margin-bottom: 1.4rem;
+	}
+
+	h2 {
+		margin-bottom: 2.6rem;
+		font-weight: 400;
+	}
+}
+
+// 4. Contact Page ------------
+.contact-two {
+    .contact-title {
+        color: #e13b3f;
+    }
+
+    .contact-info i {
+        background-color: #e13b3f;
+    }
+}

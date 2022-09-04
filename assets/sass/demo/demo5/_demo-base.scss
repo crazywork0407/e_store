@@ -1,0 +1,354 @@
+// Demo 5
+
+// # Content
+
+// 1. Header ---------
+//	  1.1) Header Base
+//	  1.2) Header Element
+//		   1.2.1) Header Icons
+//		   1.2.2) Header Dropdown
+//  	   1.2.3) Header Search
+
+// 2. Footer --------
+//	  2.1) Footer Base
+//	  2.2) Footer Element
+//		   2.2.1) Footer Social Icons
+//		   2.2.2) Footer Contact Info
+//	 	   2.2.3) Footer Payments
+//		   2.2.4) Footer Newsletter
+
+// 3. Component --------
+//	  3.1) Breadcrumb
+//	  3.2) Product Default
+//		   3.2.1) Product Details
+//		   3.2.2) Product Inner Quickview
+
+// 4. Responsive
+
+// 1. Header
+// 1.1) Header Base
+header .sticky-header {
+	background: transparent;
+
+	&.fixed {
+		background: $primary-color;
+	}
+}
+
+.header-top {
+	border-top: 3px solid $primary-color;
+
+    .social-icons {
+        margin-right: 1px;
+	}
+	
+	.header-left {
+		margin-bottom: 1px;
+	}
+}
+
+.header-middle {
+	.header-right {
+		padding-right: 2.6rem;
+	}
+
+	&:not(.fixed) .logo {
+		img:last-child {
+			display: none;
+		}
+	}
+
+	&.fixed .logo {
+		img:first-child {
+			display: none;
+		}
+	}
+
+	&.fixed {
+		.header-search-inline.header-search {
+			margin-right: 1.7rem;
+			margin-bottom: 3px;
+
+			i {
+				font-size: 2.4rem;
+			}
+		}
+		
+		.mobile-menu-toggler {
+			color: #fff;
+		}
+	}
+}
+
+.header-middle.fixed,
+.header-bottom.fixed {
+    .header-right {
+        color: #fff;
+    }
+
+    .minicart-icon::before,
+    .minicart-icon {
+       border-color: #fff;
+    }
+
+    .dropdown-arrow:after {
+        color: #fff;
+    }
+}
+
+.header-bottom.fixed {
+	.header-center {
+		margin-left: 2rem;
+	}
+
+	.header-search-inline.header-search {
+        margin-right: -1.7rem;
+    }
+
+	.header-search-inline.header-search i {
+		font-size: 2.4rem;
+	}
+}
+
+.dropdown-expanded .header-menu ul {
+    letter-spacing: .025em;
+}
+
+// 1.2) Header Element
+// 1.2.1) Header Icons
+.header-icon-user {
+	margin-top: -2px;
+	padding: 0 3px 1px 6px;
+}
+
+.header-contact {
+	margin-right: 2.8rem;
+}
+
+.mobile-menu-toggler {
+	color: $primary-color;
+}
+
+// 1.2.2) Header Dropdown
+.header-dropdown {
+	padding: 4px 0;
+
+    >a {
+        letter-spacing: 0.015em;
+    }
+}
+
+.dropdown-arrow {
+	.badge-circle {
+		top: -5px;
+		left: 23px;
+		z-index: 1;
+	}
+
+	&:after {
+		position: absolute;
+		right: -2.8rem;
+		font-size: 17px;
+        top: .6rem;
+        color: #777777;
+	}
+}
+
+// 1.2.3) Header Search
+.header-search-wrapper {
+	.btn {
+		padding: 0 2px 3px 1px;
+		min-width: 41px;
+	}
+
+	.select-custom {
+		min-width: 12.8rem;
+		flex: 0 0 12.8rem;
+	}
+}
+
+// 2. Footer
+// 2.1) Footer Base
+.footer-bottom .container:before {
+    padding-top: 1.6rem;
+}
+
+// 2.2) Footer Element
+footer {
+// 2.2.1) Footer Social Icons
+	.social-icon {
+		margin: 2px;
+
+		+ .social-icon {
+			margin-left: 2px;
+		}
+	}
+
+// 2.2.2) Footer Contact Info
+    .contact-info {
+        margin-bottom: 1.8rem;
+    }
+
+    .widget-title {
+        margin: 0 0 1.2rem;
+	}
+	
+// 2.2.3) Footer Contact
+    .widget-contact-info {
+        .widget-title {
+            margin-bottom: 1.3rem;
+        }
+    }
+
+// 2.2.4) Footer Newsletter
+    .widget-newsletter {
+        padding-bottom: 3.5rem;
+        margin-bottom: 2.7rem;
+        margin-top: -1px;
+    }
+}
+
+.widget-newsletter {
+	border-bottom: 1px solid #e7e7e7;
+
+	p {
+		max-width: 360px;
+		line-height: 1.6;
+	}
+
+	form {
+		background: #fff;
+		border-radius: 5rem;
+		padding-left: 2rem;
+	}
+
+	.form-control {
+		height: 44px;
+		padding: 8px 1rem 8px 0;
+		border: 0;
+		background: #fff;
+		color: #777;
+		box-shadow: none;
+		outline: none;
+
+		@include only_for_ie() {
+			flex: 1;
+		}
+
+		&::placeholder {
+			color: #999;
+		}
+	}
+
+	.btn {
+		padding: 1rem 1.9rem 1.2rem 1.7rem;
+		border-radius: 0 5rem 5rem 0;
+		font-size: 1.2rem;
+	}
+}
+
+// 3. Component
+// 3.1) Breadcrumb
+.breadcrumb {
+	padding: 1.2rem 0;
+
+	.icon-home {
+		position: relative;
+		top: -1px;
+	}
+} 
+
+.breadcrumb-item+.breadcrumb-item:before {
+	margin-top: -3px;
+}
+
+// 3.2) Product Default
+// 3.2.1) Product Details
+.product-default {
+	position: relative;
+	margin-bottom: 1.9rem;
+	
+	&:not(.product-widget) {
+		.product-details {
+			padding: 0;
+		}
+	}
+
+	&:hover {
+		figure {
+			box-shadow: 0 25px 35px -5px rgba(0,0,0,0.1);
+		}
+	}
+
+	.btn-add-cart, 
+	.btn-icon-wish, 
+	.btn-quickview {
+		background-color: transparent;;
+	}
+}
+
+.ratings-container {
+    margin-left: 0;
+}
+
+.price-box {
+    margin-bottom: 1.5rem;
+	font-family: $font-family;
+}
+
+// 4. Responsive
+@media (min-width: 1200px) {
+	.header-search {
+		padding-right: 3.9rem;
+	}
+}
+
+@include mq(xl, max) {
+	.main-nav .menu>li>a {
+		padding: 16px 11px;
+	}
+}
+
+@include mq(lg, max) {
+	.header-search {
+		margin-right: 2.2rem;
+
+		i {
+			font-size: 2.4rem;
+		}
+	}
+
+	.header-middle:not(.fixed) {
+		border-bottom: 1px solid #e7e7e7;
+	}
+}
+
+@include mq(md, max) {
+	.home-slide2.banner-md-vw {
+		font-size: 1.2rem;
+	}
+
+	.home-slide1 {
+		font-size: 1.4rem;
+	}
+}
+
+@include mq(sm, max) {
+	.header-search {
+		display: none;
+	}
+
+	.home-slide1 {
+		font-size: 1.2rem;
+	}
+
+	.home-slide2.banner-md-vw {
+		font-size: 1rem;
+	}
+}
+
+@include mq(xs, max) {
+	.home-slide2.banner-md-vw {
+		font-size: .9rem;
+	}
+}

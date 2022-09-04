@@ -1,0 +1,129 @@
+//Pages
+
+// # Contents
+// 1. Product Page ------
+//    1.1) Product Single Details
+//    1.2) Product Single Tab
+//    1.3) Others
+
+// 2. About ------
+//    2.1) Page Header Icon
+//    2.2) Features Section
+//    2.3) Testimonials
+//    2.4) Count Container
+
+// 3. Contact
+
+// 1. Product Page
+// 1.1) Product Single Details
+.product-single-details .product-desc {
+    margin-bottom: 1.5rem;
+}
+
+.product-single-filter label {
+    margin-right: 7.2rem;
+}
+
+// 1.2) Product Single Tab
+.product-single-tabs .tab-pane {
+    padding-bottom: .5rem;
+}
+
+// 1.3) Others
+// Product Section
+.products-section {
+    padding-bottom: 2.6rem;
+
+    h2 {
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+    }
+
+    .owl-carousel.dots-top .owl-dots {
+		margin-bottom: 2.5rem;
+	}
+}
+
+// Product Widget Conainer
+.product-widgets-container .section-sub-title {
+    font-size: 1.4rem;
+}
+
+// 2. About
+// 2.1) Page Header Icon
+.page-header-bg {
+    margin-top: 1.5rem;
+
+    h1,
+    .btn {
+        margin-left: 2rem;
+    }
+
+    h1 {
+        font-weight: 700;
+    }
+}
+
+.about-section {
+    padding-top: 1.1rem;
+    padding-bottom: 3.1rem;
+}
+
+// 2.2) Features Section
+.about .feature-box h3 {
+    margin-bottom: 1.6rem;
+}
+
+.features-section {
+    padding: 3rem 0 .6rem;
+
+    .feature-box {
+        padding: 0;
+    }
+}
+
+// 2.3) Testimonials
+.testimonials-section {
+    padding: 3rem 0 5.5rem;
+}
+
+.testimonial-owner figure {
+    margin-bottom: 3.8rem;
+}
+
+// 2.4) Count Container
+.count-container {
+    margin-bottom: 2.3rem;
+
+    .count-wrapper {
+        font-weight: 700;
+    }
+} 
+
+// 3. Contact
+.contact-two {
+    .heading {
+        margin-top: 1px;
+        padding-bottom: .6rem;
+        font-size: 1.4rem;
+    }
+
+    .contact-title {
+        font-size: 1.6rem;
+        color: $primary-color;
+    }
+
+    p {
+        line-height: 24px;
+    }
+
+    .btn {
+        padding: 0.7rem 1.35rem .7rem 1.4rem;
+        font-weight: 700;
+        letter-spacing: .01em;
+    }
+
+    .contact-info i {
+        background-color: $primary-color;
+    }
+}

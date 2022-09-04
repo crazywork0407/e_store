@@ -1,0 +1,118 @@
+
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$primary-color: #3467ef;
+$secondary-color: #ff5b5b;
+// 2. Theme Settings
+// 3. Theme Variables
+
+
+@include set(
+	(
+		header: (
+			color: $primary-color-dark,
+
+			top: (
+				padding-top: 7px,
+				padding-bottom: 7px,
+				font-size: 1.2rem,
+				font-weight: 500,
+				color: #777,
+				border-bottom: 1px solid #e7e7e7
+			),
+
+			dropdown: (
+				space: 1rem
+			),
+
+			middle: (
+				padding-top: 2.7rem,
+				padding-bottom: 2.8rem,
+
+				sticky: (
+					height: 74px
+				)
+			),
+			
+			logo: (
+				max-width: 128px
+			),
+
+			top-notice: (
+				link-background: #0075af
+			),
+
+			icon: (
+				size: 2.8rem,
+				space: 2.3rem
+			),
+
+			separator: (
+				space: 14px
+			),
+
+			social-icon: (
+				font-size: 17px,
+				space: .8rem,
+				size: 3rem,
+				color: #282d3b
+			)
+		),
+
+		menu: (
+			color: $primary-color-dark,
+			
+			main: (
+				top: (
+					space: 35px
+				)
+			)
+		),
+
+		footer: (
+			color: #888,
+
+			middle: (
+				padding-top: 6.3rem,
+				padding-bottom: 1.7rem
+			),
+
+			bottom: (
+				padding-top: 2rem,
+				padding-bottom: 5.4rem,
+				font-size: 12px,
+				border-top: 1px solid rgba(225,225,225,0.1),
+				color: #999
+			),
+
+			widget: (
+				title: (
+					size: 1.8rem,
+					weight: 700,
+					color: #fff
+				)
+			),
+
+			social-icon: (
+				color: $primary-color-dark,
+				background: #fff,
+				size: 3.8rem,
+				space: 1rem
+			),
+		),
+
+		breadcrumb: (
+			border-bottom: 0
+		)
+	)
+);
+
+// 4. Plugin Variables

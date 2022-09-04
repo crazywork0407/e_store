@@ -1,0 +1,792 @@
+// Demo 19 Home Page
+
+// Home Slider
+.home-slider {
+	background: #dadada;
+
+	.banner img {
+		min-height: calc(100vh - 50px);
+	}
+
+	h2 {
+		letter-spacing: .005em;
+		font-family: 'Segoe Script','Savoye LET';
+	}
+
+	.btn {
+		font-size: .875em;
+    }
+    
+    &.nav-big .owl-nav {
+        font-size: 2.4rem;
+    }
+}
+
+.home-slide {
+    .container {
+        max-width: none;
+    }
+
+    h4 {
+        font-size: 1.625em;
+        color: rgba(34, 37, 41, 0.7);
+        line-height: 1.1;
+        font-weight: 500;
+    }
+
+    h2 {
+        letter-spacing: .1px;
+    }
+
+    h3 {
+        font-size: 7.1875em;
+        letter-spacing: .15em;
+    }
+
+    h5 {
+        font-size: 1.125em;
+
+        span {
+            margin-right: 1.2rem;
+            padding-top: .55em;
+        }
+    }
+
+    .coupon-sale-text {
+        padding: .175em .3em;
+        margin-right: 2.4rem;
+        font-size: 2em;
+        line-height: .9;
+
+        sup {
+            font-size: 54%;
+        }
+
+        em {
+            font-style: normal;
+        }
+    }
+
+    .btn-xl {
+        font-size: 1.125em;
+        padding: 1em 3em;
+    }
+}
+
+.home-slide1 {
+    h4 {
+        letter-spacing: 0.125em;
+    }
+
+    h2 {
+        font-size: 5em;
+    }
+
+    .banner-layer {
+        right: auto;
+    }
+}
+
+.home-slide2 {
+    h4 {
+        margin-bottom: 1.4rem;
+        letter-spacing: .22em;
+    }
+
+    h2 {
+        font-size: 4.5em;
+    }
+
+    .coupon-sale-text {
+        transform: rotate(-1.5deg);
+    }
+
+    .banner-layer {
+        left: auto;
+    }
+}
+
+// Category Section
+.category-details {
+    padding-top: 3rem;
+
+    .product-default.inner-icon,
+    .banner {
+        margin-bottom: 35px;
+    }
+
+    .category-description {
+        margin-bottom: 1.5vw;
+    }
+}
+
+.category-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2.5rem;
+
+    .btn {
+        font-size: 1.3rem;
+        padding: 1em 3em;
+        letter-spacing: .01em;
+    }
+
+    .dropdown {
+        float: left;
+        position: static; 
+
+        .dropdown-menu {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            z-index: 3;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: .5rem;
+            padding: 0;
+            margin: 20px 0;
+            box-shadow: none;
+
+            &:before, 
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+            }
+
+            &:before {
+                border: 8px solid transparent;
+                width: 16px;
+                height: 16px;
+                border-bottom-color: #bebebe;
+                top: -16px;
+                left: 90px;
+            }
+
+            &:after {
+                border: 7px solid transparent;
+                width: 14px;
+                height: 14px;
+                border-bottom-color: #fff;
+                top: -14px;
+                left: 91px;
+            }
+        }
+    }
+
+    .cat-title {
+        display: block;
+        margin-bottom: 0;
+        font:600 2.2rem $second-font-family;
+        color: $primary-color-dark;
+        text-decoration: none;
+        letter-spacing: .025em;
+        text-transform: uppercase;
+    }
+}
+
+.category-title .dropdown .dropdown-menu > ul {
+    padding: 50px 0;
+    border-radius: 5px;
+    list-style: none;
+
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    > li {
+        float: left;
+        padding: 20px 4% 10px;
+        line-height: 20px;
+
+        &:first-child {
+            border-left: none;
+        }
+
+        > a {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        a {
+            display: inline-block;
+            color: $primary-color;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            padding: 9px 0;
+
+            &:hover,
+            &:active {
+                text-decoration: underline;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.6rem;
+        }
+    }
+}
+
+.banner img {
+    min-height:  170px;
+    object-fit: cover;
+}
+
+.banner1 {
+    h5 {
+        font-size: 0.8125em;
+        color: rgba(255,255,255,0.7);
+        font-weight: 500;
+        letter-spacing: .08em;
+    }
+
+    h3 {
+        font-family: 'Segoe Script','Savoye LET';
+        font-size: 2.275em;
+        line-height: 1;
+        letter-spacing: .005em;
+    }
+
+    h4 {
+        font-size: 4em;
+    }
+
+    .banner-layer {
+        left: 8%;
+    }
+}
+
+.banner2 {
+    h3 {
+        font-size: 2.3125em;
+    }
+
+    h5 {
+        font-size: 1.5625em;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+
+    h6 {
+        border-radius: 50%;
+        width: 2.25em;
+        height: 2.25em;
+        padding-top: calc(1.125em - .5em);
+        letter-spacing: -.08em;
+
+        small {
+            letter-spacing: -0.025em;
+            font-size: 70%;
+            display: inline-block;
+            font-weight: inherit;
+        }
+
+        sup {
+            position: static;
+            font-size: 75%;
+        }
+
+        sub {
+            display: block;
+            position: static;
+            font-size: 36%;
+            font-weight: 400;
+            line-height: 1;
+            padding-left: .1em;
+            letter-spacing: -.025em;
+            opacity: .5;
+            text-transform: uppercase;
+        }
+    }
+
+    .banner-layer-center {
+        width: 70%;
+    }
+
+    .banner-layer-left h6 {
+        font-size: 2.1875em;
+    }
+
+    .banner-layer-top {
+        right: 5%;
+        top: 15%;
+
+        h6 {
+            font-size: 1.3475em;
+        }
+    }
+
+    .banner-layer-bottom {
+        right: 9%;
+        bottom: 12%;
+
+        h6 {
+            font-size: 1.6em;
+        }
+    }
+}
+
+.coupon-sale-text {
+    h4 {
+        font-size: 1.125em;
+        line-height: 1.2;
+        padding: .5em .75em;
+        transform: rotate(-1.5deg);
+    }
+    
+    h5 {
+        position: relative;
+        padding: .175em .3em;
+        font-size: 1.6em;
+        transform: rotate(-1.5deg);
+    }
+
+    i {
+        position: absolute;
+        left: -2.25em;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        font-style: normal;
+        font-size: .4em;
+        opacity: .6;
+        letter-spacing: 0;
+    }
+    
+    sub {
+        position: absolute;
+        left: 100%;
+        margin-left: .4rem;
+        bottom: .3em;
+        font-size: 70%;
+        line-height: 1;
+    }
+}
+
+.banner3 {
+    .coupon-sale-text {
+        margin-top: 3px;
+    }
+
+    h3 {
+        font-size: 2.25em;
+        line-height: 1.2;
+    }
+
+    .banner-layer {
+        left: 0;
+        right: 0;
+    }
+}
+
+.banner4 {
+    h3 {
+        margin-top: 2px;
+        line-height: 1.1;
+        font-size: 2.25em;
+    }
+
+    h5 {
+        background: #e8e3e1;
+    }
+
+    .banner-layer {
+        left: 0;
+        right: 0;
+    }
+
+}
+
+.banner5 {
+    h5 {
+        font-size: 0.8125em;
+        color: rgba(255,255,255,0.4);
+        letter-spacing: .025em;
+    }
+
+    h3 {
+        font-size: 2.25em;
+    }
+
+    h4 {
+        font-size: 2.625em;
+        font-weight: 600;
+        letter-spacing: .005em;
+    }
+
+    del {
+        opacity: .6;
+        font-size: 64%;
+        position: relative;
+        top: -.18em;
+    }
+
+    .banner-layer {
+        left: 5%;
+        right: 10%;
+    }
+}
+
+.banner6 {
+    h3 {
+        font-size: 1.875em;
+        font-family: 'Segoe Script','Savoye LET';
+    }
+
+    h4 {
+        font-size: 2.5em;
+    }
+
+    .banner-layer-left {
+        left: 5%;
+    }
+}
+
+.heading-border {
+	display: flex;
+	align-items: center;
+	margin: 0 -8px;
+
+	&:before,
+	&:after {
+		content: '';
+		margin: 0 8px;
+		flex: 1;
+		height: 0;
+		border-top: 1px solid #e7e7e7;
+	}
+}
+
+.banner7 img, .banner8 {
+    min-height: 180px;
+}
+
+.banner7 {
+    flex: 1;
+
+    figure, img {
+        height: 100%;
+    }
+
+    h3 {
+        font-size: 1.6875em;
+        padding: 0 1.6rem .4rem;
+    }
+
+    h4 {
+        font-size: 1.375em;
+    }
+
+    h5 {
+        font-size: 0.75em;
+        color: rgba(34,37,41,0.7);
+        font-weight: 500;
+        letter-spacing: .2em;
+
+        &.heading-border {
+            font-size: 0.75em;
+            line-height: 1.2;
+            font-weight: 600;
+            letter-spacing: .2em;
+        }
+    }
+
+    h6 {
+        font-size: 0.625em;
+        font-weight: 500;
+        letter-spacing: .18em;
+    }
+
+    hr {
+        padding-bottom: .4rem;
+    }
+    
+    sup {
+        font-size: 54%;
+    }
+
+    .banner-layer {
+        left: 4%;
+        right: 5%;
+    }
+}
+
+.banner8 {
+    background-color: #d92a2e;
+
+    h4 {
+        font-size: 1.1875em;
+        letter-spacing: .16em;
+        color: rgba(255,255,255,0.5);
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 2.8125em;
+        letter-spacing: .025em;
+    }
+
+    h2 {
+        font-size: 11.5em;
+        line-height: .7;
+        letter-spacing: -.025em;
+    }
+
+    small {
+        position: absolute;
+        top: 50%;
+        right: 1.62em;
+        font-size: .1413em;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: 1;
+        text-align: center;
+        transform: translateY(-54%);
+    }
+
+    ins {
+        display: block;
+        text-decoration: none;
+        font-size: 50%;
+        text-transform: uppercase;
+    }
+
+    .btn {
+        font-size: .84375em;
+        padding: 1em 2.75em;
+        color: $primary-color-dark;
+        background-color: #fff;
+        border-color: #fff;
+        line-height: 1.3333;
+    }
+
+    .col-auto {
+        margin-right: .8rem;
+        padding-right: 2.4rem;
+
+        &:first-child {
+            margin-right: 1.6rem;
+            padding-right: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+            padding-right: 0;
+        }
+    }
+
+    .banner-layer {
+        flex: 1;
+        margin-top: 1.6rem;
+    }
+}
+
+.banner9 {
+    .banner-layer {
+        left: 7%;
+    }
+
+    h3 {
+        font-size: 2.375em;
+        letter-spacing: .01em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+        color: rgba(255,255,255,0.4);
+        letter-spacing: .025em;
+    }
+
+    h5 {
+        background: #ee8379;
+        font-size: 1.4375em;
+        line-height: 1.05;
+    }
+}
+
+.banner10 {
+    h3 {
+        font-size: 2.625em;
+        font-style: italic;
+    }
+
+    h4 {
+        padding: .175em .3em;
+        line-height: 1.6;
+    }
+
+    h5 {
+        font-size: 1.4375em;
+    }
+
+    h6 {
+        font-size: 0.8125em;
+        font-weight: 700;
+        letter-spacing: .025em;
+    }
+
+    .banner-layer {
+        left: 0;
+        right: 0;
+    }
+
+    .col-4 {
+        flex-basis: 34%;
+        max-width: 34%;
+    }
+
+    .offset-4 {
+        margin-left: 32%;
+    }
+}
+
+.banner11 {
+    h3 {
+        font-size: 2.25em;
+        line-height: 1.2;
+    }
+
+    .banner-layer-right {
+        right: 7%;
+    }
+}
+
+.banner12 {
+    h2 {
+        font: 400 1.375em 'Segoe Script','Savoye LET';
+        color: rgba(255,255,255,0.7);
+    }
+
+    h3 {
+        font-size: 7.125em;
+    }
+
+    h4 {
+        font-size: 2.09375em;
+        line-height: 1.1;
+    }
+
+    small {
+        width: 1em;
+        word-break: break-all;
+        font-size: 27%;
+    }
+
+    .banner-layer {
+        left: 5%;
+        right: 5%;
+    }
+}
+
+// Feature Boxes
+.feature-box {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+
+    i {
+        margin-bottom: 3.2rem;
+        color: $primary-color-dark;
+        font-size: 3.5rem;
+        height: 3.5rem;
+
+        &.icon-shipping {
+            position: relative;
+            top: 3px;
+        }
+    }
+
+    h3 {
+        margin-bottom: 3px;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    h5 {
+        margin-bottom: 1.6rem;
+        color: #555;
+        font-family: $font-family;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+}
+
+.feature-boxes-container {
+    margin-bottom: 4.9rem;
+}
+
+// Responsive
+@include mq(md) {
+    .home-slide1 {
+        .banner-layer {
+            left: calc(12.5% - 1vw);
+            margin-left: 2px;
+        }
+    }
+
+    .home-slide2 {
+        .banner-layer {
+            right: calc(12.5% - 1vw);
+            margin-right: 2px;
+        }
+    }
+
+    .category-details {
+        padding-top: 70px;
+    }
+
+    .category-title .dropdown .dropdown-menu {
+        left: -20px;
+        right: -20px;
+    }
+
+    .banner3 .col-auto.offset-4 {
+        margin-left: 40%;
+    }
+}
+
+@include mq(lg) {
+    .banner3, .banner4, .banner10, .banner12 {
+        font-size: 0.83333vw;
+    }
+
+    .category-title .dropdown .dropdown-menu > ul > li {
+        border-left: 1px solid #bebebe;
+    }
+}
+
+@include mq(sm, max) {
+    .home-slide1 {
+        .banner-layer {
+            left: 0;
+            padding-left: 1rem;
+        }
+    }
+
+    .home-slide2 {
+        font-size: 2.5vw;
+
+        .banner-layer {
+            right: 0;
+            padding-right: 1rem;
+        }
+    }
+
+    .banner:not(.home-slide) {
+        font-size: 1.2rem;
+    }
+}
+
+@include mq(xs, max) {
+    .banner:not(.home-slide) {
+        font-size: 1rem;
+    }
+}

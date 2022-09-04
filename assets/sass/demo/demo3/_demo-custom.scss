@@ -1,0 +1,438 @@
+//Pages
+
+// # Contents
+// 1. Product Page ----------
+// 	  1.1) Product Single Default
+//    1.2) Product Sidebar
+//         1.2.1) Widget Featured Product
+//         1.2.2) Widget Category Banner
+// 	  1.3) Product Widget Conainer
+
+// 2. Shop Page ---------
+// 	  2.1) Shop Base
+//	  2.2) Shop Sidebar
+//	       2.2.1) Widget Base
+//	  	   2.2.2) Widget Price
+//	  	   2.2.3) Widget Color
+//	  	   2.2.4) Widget Size
+//	  	   2.2.5) Widget Brand
+//	  2.3) Sticky Toolbox
+//	  2.4) Pagination
+
+// 3. About Page ----------
+// 4. Responsive --------------
+
+// 1. Product Page
+// 1.1) Product detail
+.product-single-default:not(.product-quick-view) {
+	.product-single-details {
+		.product-title {
+			margin-bottom: .9rem;
+			font-family: $font-family;
+		}
+	
+		.ratings-container {
+			margin-bottom: 2.3rem;
+			margin-left: 1px;
+		} 
+	
+		.ratings-container .product-ratings,
+		.ratings-container .ratings {
+			font-size: 1.5rem;
+		}
+	
+		.rating-link {
+			font-size: 1.4rem;
+		}
+	
+		.price-box {
+			margin-bottom: 2.7rem;
+			padding-top: .5rem;
+		}
+	
+		.product-filtered-price {
+			margin-bottom: 1.4rem;
+		}
+	
+		.product-action {
+			margin-top: 1.2rem;
+		}
+	}
+
+	.product-single-filter {
+		&:first-child {
+			margin-bottom: 2.1rem;
+		}
+	}
+}
+
+.single-info-list {
+    margin-bottom: 1.6rem;
+}
+
+.product-single-filter {
+	label {
+		margin-bottom: 1px;
+		color: $primary-color-dark;
+		text-transform: capitalize;
+		font-size: 1.4rem;
+	}
+}
+
+// 1.2) Product Sidebar
+// 1.2.1) Widget Featured Product
+.sidebar-product {
+	.widget-title {
+		margin-bottom: 1.3rem;
+		font-size: 1.5rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	.widget-featured {
+		.owl-carousel .owl-nav {
+			top: -3.9rem;
+		}
+	}
+
+	.product-widget {
+		margin-bottom: 1.6rem;
+
+		figure {
+			margin-right: 1.5rem;
+			max-width: 75px;
+		}
+
+		.ratings-container {
+			margin-bottom: 1rem;
+		}
+	}
+
+// 1.2.2) Category Banner
+	.widget:not(:last-child):not(.widget-info) {
+		margin-bottom: 1.4rem;
+	}
+}
+
+.widget.category-banner {
+	margin-bottom: 1.7rem;
+
+	img {
+		max-height: 652px;
+	}
+
+	.category-slide-content {
+		top: 48.3%;
+		right: 6%;
+
+		h2 {
+			padding-bottom: 3px;
+			line-height: 1.1;
+		}
+
+		h4 {
+			font-size: 1.43em;
+		}
+
+		h3 {
+			font-size: 2.28em;
+			margin-bottom: -1px;
+		}
+
+		h5 {
+			padding-top: 1rem;
+			margin-bottom: 1.5rem;
+			font-size: 1.27em;
+			letter-spacing: -.03em;
+		}
+
+		.coupon-sale-text {
+			padding: 0.5rem 1.2rem;
+			font-size: 2.27em;
+		}	
+	}
+
+	.btn {
+		margin-top: 4rem;
+		padding: 1.15em 2.76em 1.05em;
+		letter-spacing: 0;
+	}
+}
+
+// 2. Shop Page
+// 2.1) Shop Base
+.products-section {
+	h2 {
+		margin-bottom: 2.4rem;
+		font-size: 1.6rem;
+	}
+
+	.owl-carousel.dots-top .owl-dots {
+		margin-bottom: 2.5rem;
+
+		span {
+			border-color: rgba(0,0,0,.4);
+		}
+	}
+}
+
+// 2.2) Shop Sidebar
+span.toggle {
+    top: -2px;
+    font-size: 1.4rem;
+}
+
+.sidebar-toggle {
+	border-width: 2px;
+    border-color: #000;
+    font-weight: 700;
+}
+
+.sidebar-shop {
+	// 2.2.1) Widget Base
+	.main & .widget {
+		border: 0;
+		padding: 0;
+		padding-bottom: 2.5rem;
+	}
+
+	.widget:first-child {
+		margin-top: -1px;
+	}
+
+	.widget-title {
+		padding-bottom: .7rem;
+		margin-bottom: 1rem;
+		border-bottom: 2px solid #dfdfdf;
+		font-family: "Oswald";
+		letter-spacing: 0.02em;
+
+		a {
+			&:before, 
+			&:after {
+				margin-right: 2px;
+			}
+		}
+	}
+
+	.widget-body {
+		padding: 1.4rem 0 .6rem;
+	}
+
+	.cat-list li {
+		margin-bottom: 1.1rem;
+		font-size: inherit;
+	}
+
+	.sort-list li {
+		padding: .85rem 0;
+	}
+
+	// 2.2.2) Widget Price
+	.widget-price {
+		.widget-body {
+			padding-bottom: 0.5rem;
+			padding-top: 1.5rem;
+		}
+	}
+
+	// 2.2.3) Widget Color
+	.widget-color {
+		.widget-body {
+			padding-top: .6rem;
+			padding-bottom: .4rem;
+		}
+	
+		.config-swatch-list {
+			li {
+				margin-bottom: 4px;
+	
+				a {
+					margin: 3px 9px 3px 0;
+				}
+			}
+		}
+	}
+
+	// 2.2.4) Widget Size
+	.widget-size {
+		.widget-body {
+			padding-bottom: 1rem;
+		}
+	}	
+
+	// 2.2.5) Widget Brand
+	.widget-brand {
+		padding-bottom: 9px;
+
+		.widget-title {
+			margin-bottom: 1.1rem;
+		}
+	}
+}
+
+// 2.3) Sticky Toolbox
+.toolbox {
+	label {
+		margin-right: 1rem;
+		margin-top: 0;
+		color: #000;
+    	font-family: Oswald;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+	}
+
+	.select-custom .form-control {
+		font-weight: 700;
+		border-width: 2px;
+		border-color: #000;
+		text-transform: uppercase;
+	}
+}
+
+.toolbox-item.layout-modes {
+    margin-top: -2px;
+}
+
+// 2.4) Pagination
+.toolbox-pagination {
+	margin-top: 1.3rem;
+	padding: 2.4rem 0 2.1rem;
+	border-color: #e7e7e7;
+}
+
+.page-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	border: 0;
+	color: $primary-color;
+	font-size: 1.5rem;
+	font-weight: 500;
+	min-width: auto;
+}
+
+.page-link-btn {
+	padding: 0;
+	border: 2px solid $primary-color;
+	width: 36px;
+
+	&:hover,
+	&:focus {
+		color: #fff;
+		border-color: $primary-color;
+		background-color: $primary-color;
+	}
+}
+
+// 3. About Page ----------
+.about-slider {
+	max-width: 580px,;
+	margin-bottom: 2.5rem;
+}
+
+.about {
+	p {
+		font-size: 14px;
+    	line-height: 22px;
+	}
+
+	.row.row-bg {
+		margin-left: -2vw;
+		margin-right: -2vw;
+	
+		> [class*="col-"] {
+			padding-left: 2vw;
+			padding-right: 2vw;
+		}
+	}
+}
+
+.page-intro {
+	margin-bottom: 2.6rem;
+}
+
+.page-header {
+	padding: 1rem 0 5.2rem;
+
+	h1 {
+		letter-spacing: -.006em;
+	    font-size: 5rem;
+	}
+} 
+
+.history-section {
+	margin-top: 2.4rem;
+
+	.owl-theme .owl-nav.disabled+.owl-dots {
+		margin-top: 1rem;
+	}
+
+	.page-title {
+		margin-bottom: 5.6rem;
+		padding-top: .3rem;
+		font-size: 5rem;
+		letter-spacing: -.006em;
+	}
+
+	.row {
+		margin-bottom: 1.4rem;
+	}
+
+	h2 {
+		margin-bottom: 2.6rem;
+		font-weight: 400;
+	}
+}
+
+// 4. Responsive
+@media (min-width: 991px) {
+	.sidebar-toggle {
+		display: none;
+	}
+	.table.table-size tbody tr td, .table.table-size thead tr th {
+		padding-right: 0.2rem;
+		padding-left: 3rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.about {
+		.container .container {
+			padding-left: 10vw;
+			padding-right: 10vw;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.product-single-default:not(.product-quick-view) {
+		.product-single-details {		
+			.new-price,
+			.product-price {
+				font-size: 4.8rem;
+			}
+		
+			.old-price {
+				font-size: 4rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.about {
+		.container .container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.widget.category-banner .category-slide-content {
+		top: 48.3%;
+		font-size: 1.1rem;
+		right: 6%;
+	}
+}

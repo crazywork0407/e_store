@@ -1,0 +1,184 @@
+
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$primary-color: #d93c81;
+$secondary-color: #222529;
+// 2. Theme Settings
+
+// 3. Theme Variables
+$border-color: #e7e7e7;
+
+@include set(
+	(
+		body: (
+			background: #fff,
+			line-height: 2.4rem
+		),
+		layout: (
+			container: (
+				max-width-desktop: 1160px
+			)
+		),
+		header: (
+			link-active-color: $primary-color,
+			top: (
+				color: #777777,
+				font-size: 1.1rem,
+				font-weight: 600,
+				letter-spacing: .025em,
+			),
+
+			middle: (
+				color: #fff,
+				background: #d93c81,
+			),
+
+			bottom: (
+				color: $secondary-color
+			),
+
+			dropdown: (
+				space: 2.6rem,
+				item: (
+					space: 1rem
+				),
+
+				expanded: (
+					active-color: $primary-color
+				)
+			),
+
+			social-icon: (
+				color: inherit,
+				space: 3px
+			),
+
+			separator: (
+				space: 10px
+			),
+
+			search: (
+				height: 40px,
+				background: #fff,
+				divider: 1px solid #f6f7f9,
+
+				btn: (
+					color: #606669,
+					min-width: 40px
+				),
+
+				select: (
+					padding-left: 1.5rem,
+					padding-right: 1.5rem
+				),
+
+				border: (
+					width: 5px,
+					color: #ccc,
+				)
+			),
+
+			icon: (
+				space: 2.2rem,
+				size: 2.7rem,
+				space-mobile: 2.3rem,
+			),
+			
+			logo: (
+				max-width: 100px,
+
+				sticky: (
+					transform: scale(.8),
+					transform-origin: left center
+				)
+			)
+		),
+
+		menu: (
+			vertical: (
+				color: false,
+				background: false,
+				active-color: $primary-color,
+				active-background: transparent,
+			)
+		),
+
+		breadcrumb: (
+			color: #8e8e8e,
+			border-bottom: false,
+			letter-spacing: 0,
+
+			divider: (
+				space: 1.4rem
+			)
+		),
+
+		footer: (
+			color: #a8a8a8,
+			link-active-color: #fff,
+			font-size: 1.3rem,
+			line-height: 2.4rem,
+
+			middle: (
+				padding-top: 6.4rem,
+				padding-bottom: 2.4rem,
+			),
+
+			bottom: (
+				padding-bottom: 2.4rem,
+    			padding-top: 2.4rem,
+				color: #777,
+				border-top: 1px solid #313438,
+			),
+
+			widget: (
+				title: (
+					size: 1.5rem,
+					color: #fff,
+					weight: 700,
+					margin: 0 0 1.5rem
+				)
+			),
+
+			social-icon: (
+				color: #fff,
+				background: transparent,
+				font-size: 14px,
+				border: 1px solid #313438,
+			)
+		),
+
+		info-box: (
+			icon: (
+				space: 1.5rem,
+				size: 3.7rem,
+			),
+
+			title: (
+				margin-bottom: 2px
+			),
+		),
+
+		feature-box: (
+			title: (
+				color: #000
+			)
+		),
+
+		owl-carousel: (
+			nav: (
+				image-center: 33.6%
+			)
+		)
+	)
+);
+
+// 4. Plugin Variables

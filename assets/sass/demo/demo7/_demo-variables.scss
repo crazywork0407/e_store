@@ -1,0 +1,78 @@
+// 1. Theme Skin
+
+$primary-color: #65829d;
+// $primary-color-dark: #56738e;
+// $primary-color-light: #7e98b1;
+$secondary-color: #ff7272;
+// $secondary-color-dark: #2f3946;
+$link-color: $primary-color;
+
+@include set-default(
+	(
+		header: (
+			color: $primary-color-dark,
+			
+			top: (
+				padding-top: .7rem,
+				padding-bottom: .7rem,
+				background: $primary-color
+			),
+			middle: (
+                padding-top: 2rem,
+				padding-bottom: 2rem
+			),
+			separator: (
+				color: rgba(0,0,0,.04),
+				space: 10px
+			),
+			social-icon: (
+				font-size: 13px,
+				size: 2.6rem,
+				color: #d1dae2,
+				space: 6px
+			),
+			logo: (
+				max-width: 111px
+			),
+            dropdown: (
+				space: .7rem,
+			)
+        ),
+        
+        footer: (
+			line-height: 23px,
+			link-active-color: #fff,
+
+			middle: (
+                padding-bottom: 2.6rem,
+                padding-top: 6.5rem
+			),
+			bottom: (
+                padding-bottom: 2.4rem,
+                padding-top: 2.4rem
+            ),
+            widget: (
+				title: (
+                    margin: 0 0 1.5rem,
+                    weight: 700
+                )
+            ),
+            social-icon: (
+				font-size: 1.6rem
+			),
+        ),
+        
+        layout: (
+			container: (
+				max-width-desktop: 1170px
+			)
+		)
+	)
+);
+
+// Dropdown Layout
+@include set-default(
+	(
+		
+	)
+);

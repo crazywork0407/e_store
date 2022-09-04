@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Porto - Bootstrap eCommerce Template</title>
+
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Porto - Bootstrap eCommerce Template">
+    <meta name="author" content="SW-THEMES">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.png">
+
+    <script>
+        WebFontConfig = {
+            google: { families: [ 'Open+Sans:300,400,600,700,800', 'Poppins:300,400,500,600,700,800' ] }
+        };
+        ( function ( d ) {
+            var wf = d.createElement( 'script' ), s = d.scripts[ 0 ];
+            wf.src = 'assets/js/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore( wf, s );
+        } )( document );
+    </script>
+
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/demo5.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="top-notice text-white bg-dark">
+            <div class="container text-center">
+                <h5 class="d-inline-block mb-0 mr-1">Get Up to <b>40% OFF</b> New-Season Styles</h5>
+                <a href="category.html" class="category">MEN</a>
+                <a href="category.html" class="category ml-2 mr-2">WOMEN</a>
+                <small class="ml-1">* Limited time only.</small>
+                <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+            </div><!-- End .container -->
+        </div>
+
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-left d-none d-sm-block">
+                        <p class="top-message text-uppercase">FREE Returns. Standard Shipping Orders $99+</p>
+                    </div><!-- End .header-left -->
+
+                    <div class="header-right header-dropdowns ml-0 ml-sm-auto w-sm-100">
+                        <div class="header-dropdown dropdown-expanded mr-md-3 mr-lg-0 pr-0 d-none d-lg-block">
+                            <div class="header-menu">
+                                <ul>
+                                    <li><a href="dashboard.html">My Account</a></li>
+                                    <li><a href="demo5-about.html">About Us</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="wishlist.html">My Wishlist</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="login.html" class="login-link">Log In</a></li>
+                                </ul>
+                            </div><!-- End .header-menu -->
+                        </div><!-- End .header-dropown -->
+
+                        <span class="separator d-none d-lg-inline-block"></span>
+
+                        <div class="header-dropdown pr-0">
+                            <a href="#">USD</a>
+                            <div class="header-menu">
+                                <ul>
+                                    <li><a href="#">EUR</a></li>
+                                    <li><a href="#">USD</a></li>
+                                </ul>
+                            </div><!-- End .header-menu -->
+                        </div><!-- End .header-dropown -->
+
+                        <div class="header-dropdown ml-0 ml-md-4 mr-auto mr-sm-3 mr-md-0">
+                            <a href="#"><i class="flag-us flag"></i>ENG</a>
+                            <div class="header-menu">
+                                <ul>
+                                    <li><a href="#"><i class="flag-us flag mr-2"></i>ENG</a>
+                                    </li>
+                                    <li><a href="#"><i class="flag-fr flag mr-2"></i>FRA</a></li>
+                                </ul>
+                            </div><!-- End .header-menu -->
+                        </div><!-- End .header-dropown -->
+
+                        <span class="separator"></span>
+
+                        <div class="social-icons">
+                            <a href="#" class="social-icon social-facebook icon-facebook" target="_blank"></a>
+                            <a href="#" class="social-icon social-twitter icon-twitter" target="_blank"></a>
+                            <a href="#" class="social-icon social-instagram icon-instagram" target="_blank"></a>
+                        </div><!-- End .social-icons -->
+                    </div><!-- End .header-right -->
+                </div><!-- End .container -->
+            </div>
+
+            <div class="header-middle sticky-header" data-sticky-options="{'mobile': true}">
+                <div class="container">
+                    <div class="header-left col-lg-2 w-auto pl-0">
+                        <button class="mobile-menu-toggler mr-2" type="button">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <a href="demo5.html" class="logo">
+                            <img src="assets/images/demoes/demo5/logo.png" alt="Porto Logo">
+                            <img src="assets/images/logo-white.png" alt="Porto Logo">
+                        </a>
+                    </div><!-- End .header-left -->
+
+                    <div class="header-right w-lg-max">
+                        <div
+                            class="header-icon header-icon header-search header-search-inline header-search-category w-lg-max ml-3 mr-xl-4">
+                            <a href="#" class="search-toggle" role="button"><i class="icon-search-3"></i></a>
+                            <form action="#" method="get">
+                                <div class="header-search-wrapper">
+                                    <input type="search" class="form-control" name="q" id="q" placeholder="Search..."
+                                        required="">
+                                    <div class="select-custom">
+                                        <select id="cat" name="cat">
+                                            <option value="">All Categories</option>
+                                            <option value="4">Fashion</option>
+                                            <option value="12">- Women</option>
+                                            <option value="13">- Men</option>
+                                            <option value="66">- Jewellery</option>
+                                            <option value="67">- Kids Fashion</option>
+                                            <option value="5">Electronics</option>
+                                            <option value="21">- Smart TVs</option>
+                                            <option value="22">- Cameras</option>
+                                            <option value="63">- Games</option>
+                                            <option value="7">Home &amp; Garden</option>
+                                            <option value="11">Motors</option>
+                                            <option value="31">- Cars and Trucks</option>
+                                            <option value="32">- Motorcycles &amp; Powersports</option>
+                                            <option value="33">- Parts &amp; Accessories</option>
+                                            <option value="34">- Boats</option>
+                                            <option value="57">- Auto Tools &amp; Supplies</option>
+                                        </select>
+                                    </div><!-- End .select-custom -->
+                                    <button class="btn icon-magnifier" type="submit"></button>
+                                </div><!-- End .header-search-wrapper -->
+                            </form>
+                        </div><!-- End .header-search -->
+
+                        <div class="header-contact d-none d-lg-flex align-items-center ml-auto pl-1  pr-xl-2">
+                            <i class="icon-phone-2"></i>
+                            <h6 class="pt-1">Call us now<a href="tel:#" class="text-dark font1">+123 5678 890</a></h6>
+                        </div>
+
+                        <a href="login.html" class="header-icon header-icon-user login-link"><i
+                                class="icon-user-2"></i></a>
+
+                        <a href="wishlist.html" class="header-icon pb-md-1"><i class="icon-wishlist-2"></i></a>
+
+                        <div class="dropdown cart-dropdown">
+                            <a href="#" title="Cart" class="dropdown-toggle dropdown-arrow cart-toggle" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                                <i class="minicart-icon"></i>
+                                <span class="cart-count badge-circle">3</span>
+                            </a>
+
+                            <div class="cart-overlay"></div>
+
+                            <div class="dropdown-menu mobile-cart">
+                                <a href="#" title="Close (Esc)" class="btn-close">×</a>
+
+                                <div class="dropdownmenu-wrapper custom-scrollbar">
+                                    <div class="dropdown-cart-header">Shopping Cart</div>
+                                    <!-- End .dropdown-cart-header -->
+
+                                    <div class="dropdown-cart-products">
+                                        <div class="product">
+                                            <div class="product-details">
+                                                <h4 class="product-title">
+                                                    <a href="demo5-product.html">Ultimate 3D Bluetooth Speaker</a>
+                                                </h4>
+
+                                                <span class="cart-product-info">
+                                                    <span class="cart-product-qty">1</span>
+                                                    × $99.00
+                                                </span>
+                                            </div><!-- End .product-details -->
+
+                                            <figure class="product-image-container">
+                                                <a href="demo5-product.html" class="product-image">
+                                                    <img src="assets/images/demoes/demo5/products/product-1.jpg"
+                                                        alt="product" width="80" height="80">
+                                                </a>
+
+                                                <a href="#" class="btn-remove" title="Remove Product"><span>×</span></a>
+                                            </figure>
+                                        </div><!-- End .product -->
+
+                                        <div class="product">
+                                            <div class="product-details">
+                                                <h4 class="product-title">
+                                                    <a href="demo5-product.html">Brown Women Casual HandBag</a>
+                                                </h4>
+
+                                                <span class="cart-product-info">
+                                                    <span class="cart-product-qty">1</span>
+                                                    × $35.00
+                                                </span>
+                                            </div><!-- End .product-details -->
+
+                                            <figure class="product-image-container">
+                                                <a href="demo5-product.html" class="product-image">
+                                                    <img src="assets/images/demoes/demo5/products/product-2.jpg"
+                                                        alt="product" width="80" height="80">
+                                                </a>
+
+                                                <a href="#" class="btn-remove" title="Remove Product"><span>×</span></a>
+                                            </figure>
+                                        </div><!-- End .product -->
+
+                                        <div class="product">
+                                            <div class="product-details">
+                                                <h4 class="product-title">
+                                                    <a href="demo5-product.html">Circled Ultimate 3D Speaker</a>
+                                                </h4>
+
+                                                <span class="cart-product-info">
+                                                    <span class="cart-product-qty">1</span>
+                                                    × $35.00
+                                                </span>
+                                            </div><!-- End .product-details -->
+
+                                            <figure class="product-image-container">
+                                                <a href="demo5-product.html" class="product-image">
+                                                    <img src="assets/images/demoes/demo5/products/product-3.jpg"
+                                                        alt="product" width="80" height="80">
+                                                </a>
+                                                <a href="#" class="btn-remove" title="Remove Product"><span>×</span></a>
+                                            </figure>
+                                        </div><!-- End .product -->
+                                    </div><!-- End .cart-product -->
+
+                                    <div class="dropdown-cart-total">
+                                        <span>SUBTOTAL:</span>
+
+                                        <span class="cart-total-price float-right">$134.00</span>
+                                    </div><!-- End .dropdown-cart-total -->
+
+                                    <div class="dropdown-cart-action">
+                                        <a href="cart.html" class="btn btn-gray btn-block view-cart">View
+                                            Cart</a>
+                                        <a href="checkout.html" class="btn btn-dark btn-block">Checkout</a>
+                                    </div><!-- End .dropdown-cart-total -->
+                                </div><!-- End .dropdownmenu-wrapper -->
+                            </div><!-- End .dropdown-menu -->
+                        </div><!-- End .dropdown -->
+                    </div><!-- End .header-right -->
+                </div><!-- End .container -->
+            </div>
+
+            <div class="header-bottom sticky-header d-lg-block d-none" data-sticky-options="{'mobile': false}">
+                <div class="container">
+                    <div class="header-left">
+                        <a href="demo5.html" class="logo">
+                            <img src="assets/images/logo-white.png" alt="Porto Logo">
+                        </a>
+                    </div>
+                    <div class="header-center">
+                        <nav class="main-nav w-100 w-lg-max bg-primary">
+                            <ul class="menu">
+                                <li class="active">
+                                    <a href="demo5.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="demo5-shop.html">Categories</a>
+                                    <div class="megamenu megamenu-fixed-width megamenu-3cols">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <a href="#" class="nolink">VARIATION 1</a>
+                                                <ul class="submenu">
+                                                    <li><a href="category.html">Fullwidth Banner</a></li>
+                                                    <li><a href="category-banner-boxed-slider.html">Boxed Slider
+                                                            Banner</a>
+                                                    </li>
+                                                    <li><a href="category-banner-boxed-image.html">Boxed Image
+                                                            Banner</a>
+                                                    </li>
+                                                    <li><a href="category.html">Left Sidebar</a></li>
+                                                    <li><a href="category-sidebar-right.html">Right Sidebar</a></li>
+                                                    <li><a href="category-off-canvas.html">Off Canvas Filter</a></li>
+                                                    <li><a href="category-horizontal-filter1.html">Horizontal
+                                                            Filter1</a>
+                                                    </li>
+                                                    <li><a href="category-horizontal-filter2.html">Horizontal
+                                                            Filter2</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <a href="#" class="nolink">VARIATION 2</a>
+                                                <ul class="submenu">
+                                                    <li><a href="category-list.html">List Types</a></li>
+                                                    <li><a href="category-infinite-scroll.html">Ajax Infinite Scroll</a>
+                                                    </li>
+                                                    <li><a href="category.html">3 Columns Products</a></li>
+                                                    <li><a href="category-4col.html">4 Columns Products</a></li>
+                                                    <li><a href="category-5col.html">5 Columns Products</a></li>
+                                                    <li><a href="category-6col.html">6 Columns Products</a></li>
+                                                    <li><a href="category-7col.html">7 Columns Products</a></li>
+                                                    <li><a href="category-8col.html">8 Columns Products</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 p-0">
+                                                <div class="menu-banner">
+                                                    <figure>
+                                                        <img src="assets/images/menu-banner.jpg" alt="Menu banner"
+                                                            width="300" height="300">
+                                                    </figure>
+                                                    <div class="banner-content">
+                                                        <h4>
+                                                            <span class="">UP TO</span><br />
+                                                            <b class="">50%</b>
+                                                            <i>OFF</i>
+                                                        </h4>
+                                                        <a href="demo5-shop.html" class="btn btn-sm btn-dark">SHOP
+                                                            NOW</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End .megamenu -->
+                                </li>
+                                <li>
+                                    <a href="demo5-product.html">Products</a>
+                                    <div class="megamenu megamenu-fixed-width megamenu-3cols">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <a href="#" class="nolink">PRODUCT PAGES</a>
+                                                <ul class="submenu">
+                                                    <li><a href="product.html">SIMPLE PRODUCT</a></li>
+                                                    <li><a href="product-variable.html">VARIABLE PRODUCT</a></li>
+                                                    <li><a href="product.html">SALE PRODUCT</a></li>
+                                                    <li><a href="product.html">FEATURED & ON SALE</a></li>
+                                                    <li><a href="product-custom-tab.html">WITH CUSTOM TAB</a></li>
+                                                    <li><a href="product-sidebar-left.html">WITH LEFT SIDEBAR</a></li>
+                                                    <li><a href="product-sidebar-right.html">WITH RIGHT SIDEBAR</a></li>
+                                                    <li><a href="product-addcart-sticky.html">ADD CART STICKY</a></li>
+                                                </ul>
+                                            </div><!-- End .col-lg-4 -->
+
+                                            <div class="col-lg-4">
+                                                <a href="#" class="nolink">PRODUCT LAYOUTS</a>
+                                                <ul class="submenu">
+                                                    <li><a href="product-extended-layout.html">EXTENDED LAYOUT</a></li>
+                                                    <li><a href="product-grid-layout.html">GRID IMAGE</a></li>
+                                                    <li><a href="product-full-width.html">FULL WIDTH LAYOUT</a></li>
+                                                    <li><a href="product-sticky-info.html">STICKY INFO</a></li>
+                                                    <li><a href="product-sticky-both.html">LEFT & RIGHT STICKY</a></li>
+                                                    <li><a href="product-transparent-image.html">TRANSPARENT IMAGE</a>
+                                                    </li>
+                                                    <li><a href="product-center-vertical.html">CENTER VERTICAL</a></li>
+                                                    <li><a href="#">BUILD YOUR OWN</a></li>
+                                                </ul>
+                                            </div><!-- End .col-lg-4 -->
+
+                                            <div class="col-lg-4 p-0">
+                                                <div class="menu-banner menu-banner-2">
+                                                    <figure>
+                                                        <img src="assets/images/menu-banner-1.jpg" alt="Menu banner"
+                                                            class="product-promo" width="380" height="790">
+                                                    </figure>
+                                                    <i>OFF</i>
+                                                    <div class="banner-content">
+                                                        <h4>
+                                                            <span class="">UP TO</span><br />
+                                                            <b class="">50%</b>
+                                                        </h4>
+                                                    </div>
+                                                    <a href="demo5-shop.html" class="btn btn-sm btn-dark">SHOP NOW</a>
+                                                </div>
+                                            </div><!-- End .col-lg-4 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .megamenu -->
+                                </li>
+                                <li>
+                                    <a href="#">Pages</a>
+                                    <ul>
+                                        <li><a href="wishlist.html">Wishlist</a></li>
+                                        <li><a href="cart.html">Shopping Cart</a></li>
+                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="dashboard.html">Dashboard</a></li>
+                                        <li><a href="demo5-about.html">About Us</a></li>
+                                        <li><a href="#">Blog</a>
+                                            <ul>
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="single.html">Blog Post</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="demo5-contact.html">Contact Us</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                        <li><a href="forgot-password.html">Forgot Password</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="#">Elements</a>
+                                    <ul class="custom-scrollbar">
+                                        <li><a href="element-accordions.html">Accordion</a></li>
+                                        <li><a href="element-alerts.html">Alerts</a></li>
+                                        <li><a href="element-animations.html">Animations</a></li>
+                                        <li><a href="element-banners.html">Banners</a></li>
+                                        <li><a href="element-buttons.html">Buttons</a></li>
+                                        <li><a href="element-call-to-action.html">Call to Action</a></li>
+                                        <li><a href="element-countdown.html">Count Down</a></li>
+                                        <li><a href="element-counters.html">Counters</a></li>
+                                        <li><a href="element-headings.html">Headings</a></li>
+                                        <li><a href="element-icons.html">Icons</a></li>
+                                        <li><a href="element-info-box.html">Info box</a></li>
+                                        <li><a href="element-posts.html">Posts</a></li>
+                                        <li><a href="element-products.html">Products</a></li>
+                                        <li><a href="element-product-categories.html">Product Categories</a></li>
+                                        <li><a href="element-tabs.html">Tabs</a></li>
+                                        <li><a href="element-testimonial.html">Testimonials</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="demo5-contact.html">Contact Us</a></li>
+                                <li class="float-right"><a href="https://1.envato.market/DdLk5" class="pl-3"
+                                        target="_blank">Buy Porto!</a></li>
+                                <li class="float-right mr-3"><a href="#" class="pl-5">Special Offer!</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-search header-icon header-search-inline header-search-category w-lg-max">
+                            <a href="#" class="search-toggle" role="button"><i class="icon-search-3"></i></a>
+                            <form action="#" method="get">
+                                <div class="header-search-wrapper">
+                                    <input type="search" class="form-control" name="q" id="qqq" placeholder="Search..."
+                                        required>
+                                    <div class="select-custom">
+                                        <select id="category" name="cat">
+                                            <option value="">All Categories</option>
+                                            <option value="4">Fashion</option>
+                                            <option value="12">- Women</option>
+                                            <option value="13">- Men</option>
+                                            <option value="66">- Jewellery</option>
+                                            <option value="67">- Kids Fashion</option>
+                                            <option value="5">Electronics</option>
+                                            <option value="21">- Smart TVs</option>
+                                            <option value="22">- Cameras</option>
+                                            <option value="63">- Games</option>
+                                            <option value="7">Home &amp; Garden</option>
+                                            <option value="11">Motors</option>
+                                            <option value="31">- Cars and Trucks</option>
+                                            <option value="32">- Motorcycles &amp; Powersports</option>
+                                            <option value="33">- Parts &amp; Accessories</option>
+                                            <option value="34">- Boats</option>
+                                            <option value="57">- Auto Tools &amp; Supplies</option>
+                                        </select>
+                                    </div><!-- End .select-custom -->
+                                    <button class="btn p-0 icon-search-3" type="submit"></button>
+                                </div><!-- End .header-search-wrapper -->
+                            </form>
+                        </div><!-- End .header-search -->
+
+                        <a href="login.html" class="header-icon "><i class="icon-user-2"></i></a>
+
+                        <a href="wishlist.html" class="header-icon"><i class="icon-wishlist-2"></i></a>
+
+                        <div class="dropdown cart-dropdown">
+                            <a href="#" title="Cart" class="dropdown-toggle dropdown-arrow cart-toggle" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                                <i class="minicart-icon"></i>
+                                <span class="cart-count badge-circle">3</span>
+                            </a>
+
+                            <div class="cart-overlay"></div>
+
+                            <div class="dropdown-menu mobile-cart">
+                                <a href="#" title="Close (Esc)" class="btn-close">×</a>
+
+                                <div class="dropdownmenu-wrapper custom-scrollbar">
+                                    <div class="dropdown-cart-header">Shopping Cart</div>
+                                    <!-- End .dropdown-cart-header -->
+
+                                    <div class="dropdown-cart-products">
+                                        <div class="product">
+                                            <div class="product-details">
+                                                <h4 class="product-title">
+                                                    <a href="demo5-product.html">Ultimate 3D Bluetooth Speaker</a>
+                                                </h4>
+
+                                                <span class="cart-product-info">
+                                                    <span class="cart-product-qty">1</span>
+                                                    × $99.00
+                                                </span>
+                                            </div><!-- End .product-details -->
+
+                                            <figure class="product-image-container">
+                                                <a href="demo5-product.html" class="product-image">
+                                                    <img src="assets/images/products/product-1.jpg" alt="product"
+                                                        width="80" height="80">
+                                                </a>
+
+                                                <a href="#" class="btn-remove" title="Remove Product"><span>×</span></a>
+                                            </figure>
+                                        </div><!-- End .product -->
+
+                                        <div class="product">
+                                            <div class="product-details">
+                                                <h4 class="product-title">
+                                                    <a href="demo5-product.html">Brown Women Casual HandBag</a>
+                                                </h4>
+
+                                                <span class="cart-product-info">
+                                                    <span class="cart-product-qty">1</span>
+                                                    × $35.00
+                                                </span>
+                                            </div><!-- End .product-details -->
+
+                                            <figure class="product-image-container">
+                                                <a href="demo5-product.html" class="product-image">
+                                                    <img src="assets/images/products/product-2.jpg" alt="product"
+                                                        width="80" height="80">
+                                                </a>
+
+                                                <a href="#" class="btn-remove" title="Remove Product"><span>×</span></a>
+                                            </figure>
+                                        </div><!-- End .product -->
+
+                                        <div class="product">
+                                            <div class="product-details">
+                                                <h4 class="product-title">
+                                                    <a href="demo5-product.html">Circled Ultimate 3D Speaker</a>
+                                                </h4>
+
+                                                <span class="cart-product-info">
+                                                    <span class="cart-product-qty">1</span>
+                                                    × $35.00
+                                                </span>
+                                            </div><!-- End .product-details -->
+
+                                            <figure class="product-image-container">
+                                                <a href="demo5-product.html" class="product-image">
+                                                    <img src="assets/images/products/product-3.jpg" alt="product"
+                                                        width="80" height="80">
+                                                </a>
+                                                <a href="#" class="btn-remove" title="Remove Product"><span>×</span></a>
+                                            </figure>
+                                        </div><!-- End .product -->
+                                    </div><!-- End .cart-product -->
+
+                                    <div class="dropdown-cart-total">
+                                        <span>SUBTOTAL:</span>
+
+                                        <span class="cart-total-price float-right">$134.00</span>
+                                    </div><!-- End .dropdown-cart-total -->
+
+                                    <div class="dropdown-cart-action">
+                                        <a href="cart.html" class="btn btn-gray btn-block view-cart">View
+                                            Cart</a>
+                                        <a href="checkout.html" class="btn btn-dark btn-block">Checkout</a>
+                                    </div><!-- End .dropdown-cart-total -->
+                                </div><!-- End .dropdownmenu-wrapper -->
+                            </div><!-- End .dropdown-menu -->
+                        </div><!-- End .dropdown -->
+                    </div>
+                </div><!-- End .container -->
+            </div><!-- End .header-bottom -->
+        </header><!-- End .header -->
+
+        <main class="main">
+            <div class="container container-not-boxed">
+                <div class="info-boxes-slider owl-carousel owl-theme" data-owl-options="{
+						'dots': false,
+                        'loop': false,
+						'responsive': {
+							'0': {
+								'items': 1
+                            },
+                            '480': {
+								'items': 2
+                            },
+							'992': {
+								'items': 3
+							}
+						}
+					}">
+                    <div class="info-box info-box-icon-left">
+                        <i class="icon-shipping font-35 pt-1"></i>
+
+                        <div class="info-box-content pt-1">
+                            <h4>FREE SHIPPING &amp; RETURN</h4>
+                            <p class="text-body">Free shipping on all orders over $99</p>
+                        </div><!-- End .info-box-content -->
+                    </div><!-- End .info-box -->
+
+                    <div class="info-box info-box-icon-left">
+                        <i class="icon-money pt-1"></i>
+
+                        <div class="info-box-content">
+                            <h4>MONEY BACK GUARANTEE</h4>
+                            <p class="text-body">100% money back guarantee</p>
+                        </div><!-- End .info-box-content -->
+                    </div><!-- End .info-box -->
+
+                    <div class="info-box info-box-icon-left">
+                        <i class="icon-support pt-1"></i>
+
+                        <div class="info-box-content">
+                            <h4>ONLINE SUPPORT 24/7</h4>
+                            <p class="text-body">Lorem ipsum dolor sit amet.</p>
+                        </div><!-- End .info-box-content -->
+                    </div><!-- End .info-box -->
+                </div><!-- End .info-boxes-slider -->
+
+                <div
+                    class="home-slider outer-container w-auto owl-carousel owl-theme owl-carousel-lazy show-nav-hover nav-large nav-outer mb-2">
+                    <div class="home-slide home-slide1 banner banner-md-vw bg-white">
+                        <img class="slide-bg" src="assets/images/demoes/demo5/slider/slide-1.jpg"
+                            style="background-color: #fff;" alt="slider image">
+                        <div class="banner-layer banner-layer-middle">
+                            <h4 class="m-b-3">Find the Boundaries. Push Through!</h4>
+                            <h2 class="font-script mb-0">Jeans Sale</h2>
+                            <h3 class="upto-text"><em>up<br>to</em>80% OFF</h3>
+                            <h5 class="d-inline-block mb-0 text-uppercase ls-n-20">
+                                Starting At
+                                <b class="coupon-sale-text text-white bg-secondary">$<em>199</em>99</b>
+                            </h5>
+                            <a href="demo5-shop.html" class="btn btn-dark btn-lg ls-10">Shop Now!</a>
+                        </div><!-- End .banner-layer -->
+                    </div><!-- End .home-slide -->
+
+                    <div class="home-slide home-slide2 banner banner-md-vw">
+                        <img class="slide-bg" src="assets/images/demoes/demo5/slider/slide-2.jpg"
+                            style="background-color: #ccc;" alt="slider image">
+                        <div class="banner-layer banner-layer-middle">
+                            <h2 class="ls-n-25 mb-0">Women's Business Fashion</h2>
+                            <h3 class="upto-text"><em>up<br>to</em>60% OFF</h3>
+                            <h5 class="text-uppercase d-inline-block mb-0 align-top ls-n-20">Starting at
+                                <span class="text-secondary ml-2 mr-5 pr-sm-5">$<em class="ls-n-20">29</em>99</span>
+                            </h5>
+                            <a href="demo5-shop.html" class="btn btn-dark btn-outline ls-10 btn-xl mt-0">Shop
+                                Now!</a>
+                        </div>
+                    </div><!-- End .home-slide -->
+                </div><!-- End .home-slider -->
+
+                <div class="home-products-container text-center">
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <div class="home-products bg-white px-4 pb-2 pt-4">
+                                <h3 class="section-sub-title mt-1 m-b-1">Featured Products</h3>
+
+                                <div class="owl-carousel owl-theme nav-image-center nav-thin px-3 " data-owl-options="{
+										'dots': false,
+										'nav': true,
+										'responsive': {
+											'480': {
+												'items': 2
+											},
+											'768': {
+												'items': 1
+											}
+										}
+									}">
+
+                                    <div class="product-default">
+                                        <figure>
+                                            <a href="demo5-product.html">
+                                                <img src="assets/images/demoes/demo5/products/product-3.jpg"
+                                                    alt="product" width="300" height="300">
+                                                <img src="assets/images/demoes/demo5/products/product-4.jpg"
+                                                    alt="product" width="300" height="300">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-list">
+                                                <a href="demo5-shop.html" class="product-category">category</a>
+                                            </div>
+                                            <h3 class="product-title">
+                                                <a href="demo5-product.html">Red Men Shoes</a>
+                                            </h3>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width:100%"></span>
+                                                    <!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div><!-- End .product-ratings -->
+                                            </div><!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="old-price">$59.00</span>
+                                                <span class="product-price">$49.00</span>
+                                            </div><!-- End .price-box -->
+                                        </div><!-- End .product-details -->
+                                    </div>
+
+                                    <div class="product-default">
+                                        <figure>
+                                            <a href="demo5-product.html">
+                                                <img src="assets/images/demoes/demo5/products/product-7.jpg"
+                                                    alt="product" width="300" height="300">
+                                                <img src="assets/images/demoes/demo5/products/product-10.jpg"
+                                                    alt="product" width="300" height="300">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-list">
+                                                <a href="demo5-shop.html" class="product-category">category</a>
+                                            </div>
+                                            <h3 class="product-title">
+                                                <a href="demo5-product.html">Men Spring Casual Shoes</a>
+                                            </h3>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width:100%"></span>
+                                                    <!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div><!-- End .product-ratings -->
+                                            </div><!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="old-price">$59.00</span>
+                                                <span class="product-price">$49.00</span>
+                                            </div><!-- End .price-box -->
+                                        </div><!-- End .product-details -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End .col-md-4 -->
+
+                        <div class="col-md-4 mb-2">
+                            <div class="home-products bg-white px-4 pb-2 pt-4">
+                                <h3 class="section-sub-title mt-1 m-b-1">Best Sellers</h3>
+
+                                <div class="owl-carousel owl-theme nav-image-center nav-thin px-3" data-owl-options="{
+										'dots': false,
+										'nav': true,
+										'responsive': {
+											'480': {
+												'items': 2
+											},
+											'768': {
+												'items': 1
+											}
+										}
+                                    }">
+
+                                    <div class="product-default">
+                                        <figure>
+                                            <a href="demo5-product.html">
+                                                <img src="assets/images/demoes/demo5/products/product-8.jpg"
+                                                    alt="product" width="300" height="300">
+                                                <img src="assets/images/demoes/demo5/products/product-15.jpg"
+                                                    alt="product" width="300" height="300">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-list">
+                                                <a href="demo5-shop.html" class="product-category">category</a>
+                                            </div>
+                                            <h3 class="product-title">
+                                                <a href="demo5-product.html">Grey Men Sports Cap</a>
+                                            </h3>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width:100%"></span>
+                                                    <!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div><!-- End .product-ratings -->
+                                            </div><!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="old-price">$59.00</span>
+                                                <span class="product-price">$49.00</span>
+                                            </div><!-- End .price-box -->
+                                        </div><!-- End .product-details -->
+                                    </div>
+                                    <div class="product-default">
+                                        <figure>
+                                            <a href="demo5-product.html">
+                                                <img src="assets/images/demoes/demo5/products/product-5.jpg"
+                                                    alt="product" width="300" height="300">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-list">
+                                                <a href="demo5-shop.html" class="product-category">category</a>
+                                            </div>
+                                            <h3 class="product-title">
+                                                <a href="demo5-product.html">Black Women Shoes</a>
+                                            </h3>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width:100%"></span>
+                                                    <!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div><!-- End .product-ratings -->
+                                            </div><!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="old-price">$59.00</span>
+                                                <span class="product-price">$49.00</span>
+                                            </div><!-- End .price-box -->
+                                        </div><!-- End .product-details -->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div><!-- End .col-md-4 -->
+
+                        <div class="col-md-4 mb-2">
+                            <div class="home-products bg-white px-4 pb-2 pt-4">
+                                <h3 class="section-sub-title mt-1 m-b-1">New Arrivals</h3>
+
+                                <div class="owl-carousel owl-theme nav-image-center nav-thin px-3" data-owl-options="{
+										'dots': false,
+										'nav': true,
+										'responsive': {
+											'480': {
+												'items': 2
+											},
+											'768': {
+												'items': 1
+											}
+										}
+                                    }">
+
+                                    <div class="product-default">
+                                        <figure>
+                                            <a href="demo5-product.html">
+                                                <img src="assets/images/demoes/demo5/products/product-2.jpg"
+                                                    alt="product" width="300" height="300">
+                                                <img src="assets/images/demoes/demo5/products/product-16.jpg"
+                                                    alt="product" width="300" height="300">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-list">
+                                                <a href="demo5-shop.html" class="product-category">category</a>
+                                            </div>
+                                            <h3 class="product-title">
+                                                <a href="demo5-product.html">Black Men Casual Belt</a>
+                                            </h3>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width:100%"></span>
+                                                    <!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div><!-- End .product-ratings -->
+                                            </div><!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="old-price">$59.00</span>
+                                                <span class="product-price">$49.00</span>
+                                            </div><!-- End .price-box -->
+                                        </div><!-- End .product-details -->
+                                    </div>
+                                    <div class="product-default">
+                                        <figure>
+                                            <a href="demo5-product.html">
+                                                <img src="assets/images/demoes/demo5/products/product-17.jpg"
+                                                    alt="product" width="300" height="300">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-list">
+                                                <a href="demo5-shop.html" class="product-category">category</a>
+                                            </div>
+                                            <h3 class="product-title">
+                                                <a href="demo5-product.html">Grey Travel Bag</a>
+                                            </h3>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width:100%"></span>
+                                                    <!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div><!-- End .product-ratings -->
+                                            </div><!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="old-price">$59.00</span>
+                                                <span class="product-price">$49.00</span>
+                                            </div><!-- End .price-box -->
+                                        </div><!-- End .product-details -->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div><!-- End .col-md-4 -->
+                    </div><!-- End .row -->
+                </div><!-- End .row.home-products -->
+
+                <div class="banners-slider owl-carousel owl-theme mb-4 mb-md-2">
+                    <div class="banner banner1 banner-sm-vw">
+                        <figure>
+                            <img src="assets/images/demoes/demo5/banners/banner-1.jpg" style="background-color: #fff;"
+                                alt="banner">
+                        </figure>
+                        <div class="banner-layer banner-layer-middle">
+                            <h3 class="m-b-2">Porto Watches</h3>
+                            <h4 class="m-b-3 text-primary"><sup
+                                    class="text-dark mr-1"><del>20%</del></sup>30%<sup>OFF</sup></h4>
+                            <a href="demo5-shop.html" class="btn btn-sm btn-dark ls-10">Shop Now</a>
+                        </div>
+                    </div><!-- End .banner -->
+
+                    <div class="banner banner2 banner-sm-vw text-uppercase">
+                        <figure>
+                            <img src="assets/images/demoes/demo5/banners/banner-2.jpg" style="background-color: #fff;"
+                                alt="banner">
+                        </figure>
+
+                        <h4 class="banner-layer-circle banner-layer-circle1">
+                            <span>50</span><sup>%<small>OFF</small></sup></h4>
+
+                        <h4 class="banner-layer-circle banner-layer-circle2">
+                            <span>70</span><sup>%<small>OFF</small></sup></h4>
+
+                        <h4 class="banner-layer-circle banner-layer-circle3 mb-0">
+                            <span>30</span><sup>%<small>OFF</small></sup>
+                        </h4>
+
+                        <div class="banner-layer banner-layer-middle text-center pr-lg-3">
+                            <div class="row align-items-lg-center">
+                                <div class="col-lg-7 text-lg-right">
+                                    <h3 class="m-b-1 ls-10">Deal Promos</h3>
+                                    <h4 class="pb-4 pb-lg-0 mb-0 text-body ls-10">Starting at $99</h4>
+                                </div>
+                                <div class="col-lg-5 text-lg-left px-0 px-xl-3">
+                                    <a href="demo5-shop.html" class="btn btn-sm btn-dark ls-10">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End .banner -->
+
+                    <div class="banner banner3 banner-sm-vw">
+                        <figure>
+                            <img src="assets/images/demoes/demo5/banners/banner-3.jpg" style="background-color: #fff;"
+                                alt="banner">
+                        </figure>
+
+                        <h4 class="banner-layer-circle bg-secondary pt-2">40<sup>%<small>OFF</small></sup></h4>
+
+                        <div class="banner-layer banner-layer-bottom banner-layer-left banner-layer-brand">
+                            <img src="assets/images/demoes/demo5/banners/banner-brand.png" alt="banner brand">
+                        </div>
+                        <div class="banner-layer banner-layer-middle text-right">
+                            <h3 class="mb-1">Handbags</h3>
+                            <h4 class="m-b-1 ls-10 pb-3 text-secondary text-uppercase">Starting at $99</h4>
+                            <a href="demo5-shop.html" class="btn btn-sm btn-dark ls-10">Shop Now</a>
+                        </div>
+                    </div><!-- End .banner -->
+                </div>
+            </div><!-- End .container-not-boxed -->
+
+            <div class="container">
+                <div class="products-container bg-white text-center mb-2">
+                    <div class="row product-ajax-grid mb-2">
+                        <div class="col-6 col-sm-4 col-md-3 col-xl-5col">
+                            <div class="product-default inner-quickview inner-icon">
+                                <figure>
+                                    <a href="demo5-product.html">
+                                        <img src="assets/images/demoes/demo5/products/product-1.jpg" width="212"
+                                            height="212" alt="product" />
+                                        <img src="assets/images/demoes/demo5/products/product-16.jpg" width="212"
+                                            height="212" alt="product" />
+                                    </a>
+                                    <div class="btn-icon-group">
+                                        <a href="#" title="Add To Cart"
+                                            class="btn-icon btn-add-cart product-type-simple"><i
+                                                class="icon-shopping-cart"></i></a>
+                                    </div>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview"
+                                        title="Quick View">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="category-wrap">
+                                        <div class="category-list">
+                                            <a href="demo5-shop.html" class="product-category">category</a>
+                                        </div>
+                                        <a href="wishlist.html" title="Add to Wishlist" class="btn-icon-wish"><i
+                                                class="icon-heart"></i></a>
+                                    </div>
+                                    <h3 class="product-title">
+                                        <a href="demo5-product.html">Brown Men Casual Belt</a>
+                                    </h3>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:100%"></span><!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="price-box">
+                                        <span class="old-price">$59.00</span>
+                                        <span class="product-price">$49.00</span>
+                                    </div><!-- End .price-box -->
+                                    <div class="product-nav-filter product-nav-thumbs">
+                                        <a href="#" class="active">
+                                            <img src="assets/images/demoes/demo5/products/product-1.jpg" width="30"
+                                                height="30" alt="prod-thumnail" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/demoes/demo5/products/product-16.jpg" width="30"
+                                                height="30" alt="prod-thumnail" />
+                                        </a>
+                                    </div>
+                                </div><!-- End .product-details -->
+                            </div>
+                        </div><!-- End .col-xl-5col -->
+
+                        <div class="col-6 col-sm-4 col-md-3 col-xl-5col">
+                            <div class="product-default inner-quickview inner-icon">
+                                <figure>
+                                    <a href="demo5-product.html">
+                                        <img src="assets/images/demoes/demo5/products/product-2.jpg" width="212"
+                                            height="212" alt="product" />
+                                        <img src="assets/images/demoes/demo5/products/product-16.jpg" width="212"
+                                            height="212" alt="product" />
+                                    </a>
+                                    <div class="btn-icon-group">
+                                        <a href="demo5-product.html" class="btn-icon btn-add-cart"><i
+                                                class="fa fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview"
+                                        title="Quick View">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="category-wrap">
+                                        <div class="category-list">
+                                            <a href="demo5-shop.html" class="product-category">category</a>
+                                        </div>
+                                        <a href="wishlist.html" title="Add to Wishlist" class="btn-icon-wish"><i
+                                                class="icon-heart"></i></a>
+                                    </div>
+                                    <h3 class="product-title">
+                                        <a href="demo5-product.html">Black Men Carousel Melt</a>
+                                    </h3>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:100%"></span><!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="price-box">
+                                        <span class="old-price">$59.00</span>
+                                        <span class="product-price">$49.00</span>
+                                    </div><!-- End .price-box -->
+                                </div><!-- End .product-details -->
+                            </div>
+                        </div><!-- End .col-xl-5col -->
+
+                        <div class="col-6 col-sm-4 col-md-3 col-xl-5col">
+                            <div class="product-default inner-quickview inner-icon">
+                                <figure>
+                                    <a href="demo5-product.html">
+                                        <img src="assets/images/demoes/demo5/products/product-3.jpg" width="212"
+                                            height="212" alt="product" />
+                                        <img src="assets/images/demoes/demo5/products/product-4.jpg" width="212"
+                                            height="212" alt="product" />
+                                    </a>
+                                    <div class="btn-icon-group">
+                                        <a href="#" title="Add To Cart"
+                                            class="btn-icon btn-add-cart product-type-simple"><i
+                                                class="icon-shopping-cart"></i></a>
+                                    </div>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview"
+                                        title="Quick View">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="category-wrap">
+                                        <div class="category-list">
+                                            <a href="demo5-shop.html" class="product-category">category</a>
+                                        </div>
+                                        <a href="wishlist.html" title="Add to Wishlist" class="btn-icon-wish"><i
+                                                class="icon-heart"></i></a>
+                                    </div>
+                                    <h3 class="product-title">
+                                        <a href="demo5-product.html">Red Men Shoes</a>
+                                    </h3>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:100%"></span><!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="price-box">
+                                        <span class="old-price">$59.00</span>
+                                        <span class="product-price">$49.00</span>
+                                    </div><!-- End .price-box -->
+                                    <div class="product-nav-filter product-nav-dots">
+                                        <a href="#" class="active" style="background: #cc9966;"><span
+                                                class="sr-only">Color
+                                                name</span></a>
+                                        <a href="#" style="background: #7fc5ed;"><span class="sr-only">Color
+                                                name</span></a>
+                                        <a href="#" style="background: #e8c97a;"><span class="sr-only">Color
+                                                name</span></a>
+                                    </div>
+                                </div><!-- End .product-details -->
+                            </div>
+                        </div><!-- End .col-xl-5col -->
+
+                        <div class="col-6 col-sm-4 col-md-3 col-xl-5col">
+                            <div class="product-default inner-quickview inner-icon">
+                                <figure>
+                                    <a href="demo5-product.html">
+                                        <img src="assets/images/demoes/demo5/products/product-11.jpg" width="212"
+                                            height="212" alt="product" />
+                                        <img src="assets/images/demoes/demo5/products/product-12.jpg" width="212"
+                                            height="212" alt="product" />
+                                    </a>
+                                    <div class="btn-icon-group">
+                                        <a href="demo5-product.html" class="btn-icon btn-add-cart"><i
+                                                class="fa fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview"
+                                        title="Quick View">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="category-wrap">
+                                        <div class="category-list">
+                                            <a href="demo5-shop.html" class="product-category">category</a>
+                                        </div>
+                                        <a href="wishlist.html" title="Add to Wishlist" class="btn-icon-wish"><i
+                                                class="icon-heart"></i></a>
+                                    </div>
+                                    <h3 class="product-title">
+                                        <a href="demo5-product.html">Brown Bag</a>
+                                    </h3>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:100%"></span><!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="price-box">
+                                        <span class="old-price">$59.00</span>
+                                        <span class="product-price">$49.00</span>
+                                    </div><!-- End .price-box -->
+                                </div><!-- End .product-details -->
+                            </div>
+                        </div><!-- End .col-xl-5col -->
+
+                        <div class="col-6 col-sm-4 col-md-3 col-xl-5col">
+                            <div class="product-default inner-quickview inner-icon">
+                                <figure>
+                                    <a href="demo5-product.html">
+                                        <img src="assets/images/demoes/demo5/products/product-5.jpg" width="212"
+                                            height="212" alt="product" />
+                                    </a>
+                                    <div class="label-group">
+                                        <span class="product-label label-hot">HOT</span>
+                                        <span class="product-label label-sale">-30%</span>
+                                    </div>
+                                    <div class="btn-icon-group">
+                                        <a href="#" title="Add To Cart"
+                                            class="btn-icon btn-add-cart product-type-simple"><i
+                                                class="icon-shopping-cart"></i></a>
+                                    </div>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview"
+                                        title="Quick View">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="category-wrap">
+                                        <div class="category-list">
+                                            <a href="demo5-shop.html" class="product-category">category</a>
+                                        </div>
+                                        <a href="wishlist.html" title="Add to Wishlist" class="btn-icon-wish"><i
+                                                class="icon-heart"></i></a>
+                                    </div>
+                                    <h3 class="product-title">
+                                        <a href="demo5-product.html">Black Women Shoes</a>
+                                    </h3>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:100%"></span><!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="price-box">
+                                        <span class="old-price">$59.00</span>
+                                        <span class="product-price">$49.00</span>
+                                    </div><!-- End .price-box -->
+                                </div><!-- End .product-details -->
+                            </div>
+                        </div><!-- End .col-xl-5col -->
+
+                        <div class="col-6 col-sm-4 col-md-3 col-xl-5col">
+                            <div class="product-default inner-quickview inner-icon">
+                                <figure>
+                                    <a href="demo5-product.html">
+                                        <img src="assets/images/demoes/demo5/products/product-6.jpg" width="212"
+                                            height="212" alt="product" />
+                                    </a>
+                                    <div class="btn-icon-group">
+                                        <a href="demo5-product.html" class="btn-icon btn-add-cart"><i
+                                                class="fa fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview"
+                                        title="Quick View">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="category-wrap">
+                                        <div class="category-list">
+                                            <a href="demo5-shop.html" class="product-category">category</a>
+                                        </div>
+                                        <a href="wishlist.html" title="Add to Wishlist" class="btn-icon-wish"><i
+                                                class="icon-heart"></i></a>
+                                    </div>
+                                    <h3 class="product-title">
+                                        <a href="demo5-product.html">Blue Sports Clothes</a>
+                                    </h3>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:100%"></span><!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="price-box">
+                                        <span class="old-price">$59.00</span>
+                                        <span class="product-price">$49.00</span>
+                                    </div><!-- End .price-box -->
+                                </div><!-- End .product-details -->
+                            </div>
+                        </div><!-- End .col-xl-5col -->
+
+                        <div class="col-6 col-sm-4 col-md-3 col-xl-5col">
+                            <div class="product-default inner-quickview inner-icon">
+                                <figure>
+                                    <a href="demo5-product.html">
+                                        <img src="assets/images/demoes/demo5/products/product-7.jpg" width="212"
+                                            height="212" alt="product" />
+                                        <img src="assets/images/demoes/demo5/products/product-10.jpg" width="212"
+                                            height="212" alt="product" />
+                                    </a>
+                                    <div class="btn-icon-group">
+                                        <a href="#" title="Add To Cart"
+                                            class="btn-icon btn-add-cart product-type-simple"><i
+                                                class="icon-shopping-cart"></i></a>
+                                    </div>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview"
+                                        title="Quick View">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="category-wrap">
+                                        <div class="category-list">
+                                            <a href="demo5-shop.html" class="product-category">category</a>
+                                        </div>
+                                        <a href="wishlist.html" title="Add to Wishlist" class="btn-icon-wish"><i
+                                                class="icon-heart"></i></a>
+                                    </div>
+                                    <h3 class="product-title">
+                                        <a href="demo5-product.html">Blue Spring Casual Shoes</a>
+                                    </h3>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:100%"></span><!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="price-box">
+                                        <span class="old-price">$59.00</span>
+                                        <span class="product-price">$49.00</span>
+                                    </div><!-- End .price-box -->
+
+                                    <div class="product-nav-filter product-nav-thumbs">
+                                        <a href="#" class="active">
+                                            <img src="assets/images/demoes/demo5/products/product-1.jpg" width="30"
+                                                height="30" alt="prod-thumnail" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/demoes/demo5/products/product-16.jpg" width="30"
+                                                height="30" alt="prod-thumnail" />
+                                        </a>
+                                    </div>
+                                </div><!-- End .product-details -->
+                            </div>
+                        </div><!-- End .col-xl-5col -->
+
+                        <div class="col-6 col-sm-4 col-md-3 col-xl-5col">
+                            <div class="product-default inner-quickview inner-icon">
+                                <figure>
+                                    <a href="demo5-product.html">
+                                        <img src="assets/images/demoes/demo5/products/product-8.jpg" width="212"
+                                            height="212" alt="product" />
+                                        <img src="assets/images/demoes/demo5/products/product-15.jpg" width="212"
+                                            height="212" alt="product" />
+                                    </a>
+                                    <div class="btn-icon-group">
+                                        <a href="#" title="Add To Cart"
+                                            class="btn-icon btn-add-cart product-type-simple"><i
+                                                class="icon-shopping-cart"></i></a>
+                                    </div>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview"
+                                        title="Quick View">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="category-wrap">
+                                        <div class="category-list">
+                                            <a href="demo5-shop.html" class="product-category">category</a>
+                                        </div>
+                                        <a href="wishlist.html" title="Add to Wishlist" class="btn-icon-wish"><i
+                                                class="icon-heart"></i></a>
+                                    </div>
+                                    <h3 class="product-title">
+                                        <a href="demo5-product.html">Grey Men Sports Cap</a>
+                                    </h3>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:100%"></span><!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="price-box">
+                                        <span class="old-price">$59.00</span>
+                                        <span class="product-price">$49.00</span>
+                                    </div><!-- End .price-box -->
+                                </div><!-- End .product-details -->
+                            </div>
+                        </div><!-- End .col-xl-5col -->
+
+                        <div class="col-6 col-sm-4 col-md-3 col-xl-5col">
+                            <div class="product-default inner-quickview inner-icon">
+                                <figure>
+                                    <a href="demo5-product.html">
+                                        <img src="assets/images/demoes/demo5/products/product-9.jpg" width="212"
+                                            height="212" alt="product" />
+                                    </a>
+                                    <div class="label-group">
+                                        <span class="product-label label-hot">HOT</span>
+                                        <span class="product-label label-sale">-10%</span>
+                                    </div>
+                                    <div class="btn-icon-group">
+                                        <a href="#" title="Add To Cart"
+                                            class="btn-icon btn-add-cart product-type-simple"><i
+                                                class="icon-shopping-cart"></i></a>
+                                    </div>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview"
+                                        title="Quick View">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="category-wrap">
+                                        <div class="category-list">
+                                            <a href="demo5-shop.html" class="product-category">category</a>
+                                        </div>
+                                        <a href="wishlist.html" title="Add to Wishlist" class="btn-icon-wish"><i
+                                                class="icon-heart"></i></a>
+                                    </div>
+                                    <h3 class="product-title">
+                                        <a href="demo5-product.html">Men Black Jacket</a>
+                                    </h3>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:100%"></span><!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="price-box">
+                                        <span class="old-price">$59.00</span>
+                                        <span class="product-price">$49.00</span>
+                                    </div><!-- End .price-box -->
+                                </div><!-- End .product-details -->
+                            </div>
+                        </div><!-- End .col-xl-5col -->
+
+                        <div class="col-6 col-sm-4 col-md-3 col-xl-5col">
+                            <div class="product-default inner-quickview inner-icon">
+                                <figure>
+                                    <a href="demo5-product.html">
+                                        <img src="assets/images/demoes/demo5/products/product-13.jpg" width="212"
+                                            height="212" alt="product" />
+                                        <img src="assets/images/demoes/demo5/products/product-14.jpg" width="212"
+                                            height="212" alt="product" />
+                                    </a>
+                                    <div class="btn-icon-group">
+                                        <a href="demo5-product.html" class="btn-icon btn-add-cart"><i
+                                                class="fa fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview"
+                                        title="Quick View">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="category-wrap">
+                                        <div class="category-list">
+                                            <a href="demo5-shop.html" class="product-category">category</a>
+                                        </div>
+                                        <a href="wishlist.html" title="Add to Wishlist" class="btn-icon-wish"><i
+                                                class="icon-heart"></i></a>
+                                    </div>
+                                    <h3 class="product-title">
+                                        <a href="demo5-product.html">Porto Brown Bag</a>
+                                    </h3>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:100%"></span><!-- End .ratings -->
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="price-box">
+                                        <span class="old-price">$59.00</span>
+                                        <span class="product-price">$49.00</span>
+                                    </div><!-- End .price-box -->
+                                </div><!-- End .product-details -->
+                            </div>
+                        </div><!-- End .col-xl-5col -->
+                    </div><!-- End .row -->
+
+                    <a href="ajax/demo5-ajax-products.html" class="btn btn-dark btn-md font1 loadmore mb-1">Load
+                        more...</a>
+                </div><!-- End .container-box -->
+            </div><!-- End .container -->
+
+            <div class="container container-not-boxed mt-2">
+                <div class="banner banner-big-sale mb-5" data-parallax="{'speed': 3.2, 'enableOnMobile': true}"
+                    data-image-src="assets/images/demoes/demo5/banners/banner-4.jpg">
+                    <div class="banner-content row align-items-center py-3 mx-0">
+                        <div class="col-xl-9 col-sm-8 pt-3">
+                            <h2 class="text-white text-uppercase mb-md-0 px-3 text-center text-sm-left">
+                                <b class="d-inline-block mr-3 mb-1">Big Sale</b>
+                                All new fashion brands items up to 70% off
+                                <small class="text-transform-none align-middle">Online Purchases Only</small>
+                            </h2>
+                        </div>
+                        <div class="col-xl-3 col-sm-4 py-3 text-center text-sm-right">
+                            <a class="btn btn-light btn-lg mr-3 ls-10" href="#">View Sale</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="feature-boxes-container row mt-6 mb-1">
+                        <div class="col-md-4">
+                            <div class="feature-box px-sm-5 px-md-4 feature-box-simple text-center">
+                                <i class="sicon-earphones-alt"></i>
+
+                                <div class="feature-box-content">
+                                    <h3 class="mb-0 pb-1">Customer Support</h3>
+                                    <h5 class="m-b-3">Need Assistance?</h5>
+
+                                    <p>We really care about you and your website as much as you do. Purchasing Porto
+                                        or
+                                        any other theme from us you get 100% free support.</p>
+                                </div><!-- End .feature-box-content -->
+                            </div><!-- End .feature-box -->
+                        </div><!-- End .col-md-4 -->
+
+                        <div class="col-md-4">
+                            <div class="feature-box px-sm-5 px-md-4 feature-box-simple text-center">
+                                <i class="sicon-credit-card"></i>
+
+                                <div class="feature-box-content">
+                                    <h3 class="mb-0 pb-1">Secured Payment</h3>
+                                    <h5 class="m-b-3">Safe &amp; Fast</h5>
+
+                                    <p>With Porto you can customize the layout, colors and styles within only a few
+                                        minutes. Start creating an amazing website right now!</p>
+                                </div><!-- End .feature-box-content -->
+                            </div><!-- End .feature-box -->
+                        </div><!-- End .col-md-4 -->
+
+                        <div class="col-md-4">
+                            <div class="feature-box px-sm-5 px-md-4 feature-box-simple text-center">
+                                <i class="sicon-action-undo"></i>
+
+                                <div class="feature-box-content">
+                                    <h3 class="mb-0 pb-1">Returns</h3>
+                                    <h5 class="m-b-3">Easy &amp; Free</h5>
+
+                                    <p>Porto has very powerful admin features to help customer to build their own
+                                        shop
+                                        in minutes without any special skills in web development.</p>
+                                </div><!-- End .feature-box-content -->
+                            </div><!-- End .feature-box -->
+                        </div><!-- End .col-md-4 -->
+                    </div><!-- End .feature-boxes-container.row -->
+
+                    <hr class="mt-0 m-b-5">
+
+                    <div class="brands-slider owl-carousel owl-theme images-center" data-owl-options="{
+                            'margin': 10,
+                            'responsive': {
+                                '991': {
+                                    'margin': 0
+                                },
+                                '1200': {
+                                    'margin': 0
+                                }
+                            }
+                        }">
+                        <img src="assets/images/brands/small//brand1.png" width="140" height="60" alt="brand">
+                        <img src="assets/images/brands/small/brand2.png" width="140" height="60" alt="brand">
+                        <img src="assets/images/brands/small/brand3.png" width="140" height="60" alt="brand">
+                        <img src="assets/images/brands/small/brand4.png" width="140" height="60" alt="brand">
+                        <img src="assets/images/brands/small/brand5.png" width="140" height="60" alt="brand">
+                        <img src="assets/images/brands/small/brand6.png" width="140" height="60" alt="brand">
+                    </div><!-- End .brands-slider -->
+
+                </div>
+                <hr class="mt-4 mb-0">
+            </div><!-- End .container-not-boxed -->
+        </main><!-- End .main -->
+
+        <footer class="footer">
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 mb-2 mb-md-0">
+                            <div class="widget widget-contact-info">
+                                <h4 class="widget-title">Contact Info</h4>
+                                <ul class="contact-info">
+                                    <li>
+                                        <span class="contact-info-label">Address:</span>1234 Street Name, City, England
+                                    </li>
+                                    <li>
+                                        <span class="contact-info-label">Phone:</span><a href="tel:">(123) 456-7890</a>
+                                    </li>
+                                    <li>
+                                        <span class="contact-info-label">Email:</span> <a
+                                            href="mailto:mail@example.com">mail@example.com</a>
+                                    </li>
+                                    <li>
+                                        <span class="contact-info-label">Working Days/Hours:</span>
+                                        Mon - Sun / 9:00AM - 8:00PM
+                                    </li>
+                                </ul>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon social-facebook icon-facebook" target="_blank"
+                                        title="Facebook"></a>
+                                    <a href="#" class="social-icon social-twitter icon-twitter" target="_blank"
+                                        title="Twitter"></a>
+                                    <a href="#" class="social-icon social-instagram icon-instagram" target="_blank"
+                                        title="Instagram"></a>
+                                </div><!-- End .social-icons -->
+                            </div><!-- End .widget -->
+                        </div><!-- End .col-lg-3 -->
+
+                        <div class="col-lg-9 col-md-8">
+                            <div class="widget widget-newsletter">
+                                <h4 class="widget-title m-b-1 pb-2">Subscribe newsletter</h4>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p class="pt-2 mb-lg-0">Get all the latest information on Events, Sales and
+                                            Offers. Sign up for newsletter today.</p>
+                                    </div><!-- End .col-lg-6 -->
+
+                                    <div class="col-lg-6">
+                                        <form action="#" class="d-flex mb-0 w-100">
+                                            <input type="email" class="form-control mb-0" placeholder="Email Address"
+                                                required="">
+
+                                            <input type="submit" class="btn btn-primary shadow-none ls-10"
+                                                value="Subscribe">
+                                        </form>
+                                    </div><!-- End .col-lg-6 -->
+                                </div><!-- End .row -->
+                            </div><!-- End .widget -->
+
+                            <div class="row pt-3">
+                                <div class="col-sm-6 col-lg-5">
+                                    <div class="widget">
+                                        <h4 class="widget-title">Customer Service</h4>
+
+                                        <div class="links link-parts row mb-0">
+                                            <ul class="link-part col-sm-6 mb-0">
+                                                <li><a href="demo5-about.html">About Us</a></li>
+                                                <li><a href="demo5-contact.html">Contact Us</a></li>
+                                                <li><a href="dashboard.html">My Account</a></li>
+                                            </ul>
+                                            <ul class="link-part col-sm-6">
+                                                <li><a href="#">Orders History</a></li>
+                                                <li><a href="#">Advanced Search</a></li>
+                                                <li><a href="login.html">Login</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- End .widget -->
+                                </div><!-- End .col-sm-6 -->
+
+                                <div class="col-sm-6 col-lg-7">
+                                    <div class="widget">
+                                        <h4 class="widget-title">About Us</h4>
+
+                                        <div class="links link-parts row mb-0">
+                                            <ul class="link-part col-xl-6 mb-0">
+                                                <li><a href="#">Super Fast Html Template</a></li>
+                                                <li><a href="#">1st Fully working Ajax Theme</a></li>
+                                                <li><a href="#">33 Unique Shop Layouts</a></li>
+                                            </ul>
+                                            <ul class="link-part col-xl-6">
+                                                <li><a href="#">Powerful Admin Panel</a></li>
+                                                <li><a href="#">Mobile &amp; Retina Optimized</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- End .widget -->
+                                </div><!-- End .col-sm-6 -->
+                            </div><!-- End .row -->
+                        </div><!-- End .col-lg-9 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div><!-- End .footer-middle -->
+
+            <div class="footer-bottom">
+                <div class="container d-flex justify-content-between align-items-center flex-wrap">
+                    <p class="footer-copyright py-3 pr-4 mb-0 ls-n-10">© Porto eCommerce. 2021. All Rights Reserved</p>
+
+                    <img src="assets/images/demoes/demo5/payments.png" alt="payment methods"
+                        class="footer-payments py-3">
+                </div><!-- End .container -->
+            </div><!-- End .footer-bottom -->
+        </footer>
+    </div><!-- End .page-wrapper -->
+
+    <div class="loading-overlay">
+        <div class="bounce-loader">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <div class="mobile-menu-overlay"></div><!-- End .mobil-menu-overlay -->
+
+    <div class="mobile-menu-container">
+        <div class="mobile-menu-wrapper">
+            <span class="mobile-menu-close"><i class="fa fa-times"></i></span>
+            <nav class="mobile-nav">
+                <ul class="mobile-menu">
+                    <li><a href="demo5.html">Home</a></li>
+                    <li>
+                        <a href="demo5-shop.html">Categories</a>
+                        <ul>
+                            <li><a href="category.html">Full Width Banner</a></li>
+                            <li><a href="category-banner-boxed-slider.html">Boxed Slider Banner</a></li>
+                            <li><a href="category-banner-boxed-image.html">Boxed Image Banner</a></li>
+                            <li><a href="category-sidebar-left.html">Left Sidebar</a></li>
+                            <li><a href="category-sidebar-right.html">Right Sidebar</a></li>
+                            <li><a href="category-off-canvas.html">Off Canvas Filter</a></li>
+                            <li><a href="category-horizontal-filter1.html">Horizontal Filter 1</a></li>
+                            <li><a href="category-horizontal-filter2.html">Horizontal Filter 2</a></li>
+                            <li><a href="#">List Types</a></li>
+                            <li><a href="category-infinite-scroll.html">Ajax Infinite Scroll<span
+                                        class="tip tip-new">New</span></a></li>
+                            <li><a href="category.html">3 Columns Products</a></li>
+                            <li><a href="category-4col.html">4 Columns Products</a></li>
+                            <li><a href="category-5col.html">5 Columns Products</a></li>
+                            <li><a href="category-6col.html">6 Columns Products</a></li>
+                            <li><a href="category-7col.html">7 Columns Products</a></li>
+                            <li><a href="category-8col.html">8 Columns Products</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="demo5-product.html">Products</a>
+                        <ul>
+                            <li>
+                                <a href="#" class="nolink">PRODUCT PAGES</a>
+                                <ul>
+                                    <li><a href="product.html">SIMPLE PRODUCT</a></li>
+                                    <li><a href="product-variable.html">VARIABLE PRODUCT</a></li>
+                                    <li><a href="product.html">SALE PRODUCT</a></li>
+                                    <li><a href="product.html">FEATURED & ON SALE</a></li>
+                                    <li><a href="product-sticky-info.html">WIDTH CUSTOM TAB</a></li>
+                                    <li><a href="product-sidebar-left.html">WITH LEFT SIDEBAR</a></li>
+                                    <li><a href="product-sidebar-right.html">WITH RIGHT SIDEBAR</a></li>
+                                    <li><a href="product-addcart-sticky.html">ADD CART STICKY</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="nolink">PRODUCT LAYOUTS</a>
+                                <ul>
+                                    <li><a href="product-extended-layout.html">EXTENDED LAYOUT</a></li>
+                                    <li><a href="product-grid-layout.html">GRID IMAGE</a></li>
+                                    <li><a href="product-full-width.html">FULL WIDTH LAYOUT</a></li>
+                                    <li><a href="product-sticky-info.html">STICKY INFO</a></li>
+                                    <li><a href="product-sticky-both.html">LEFT & RIGHT STICKY</a></li>
+                                    <li><a href="product-transparent-image.html">TRANSPARENT IMAGE</a></li>
+                                    <li><a href="product-center-vertical.html">CENTER VERTICAL</a></li>
+                                    <li><a href="#">BUILD YOUR OWN</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Pages<span class="tip tip-hot">Hot!</span></a>
+                        <ul>
+                            <li>
+                                <a href="wishlist.html">Wishlist</a>
+                            </li>
+                            <li>
+                                <a href="cart.html">Shopping Cart</a>
+                            </li>
+                            <li>
+                                <a href="checkout.html">Checkout</a>
+                            </li>
+                            <li>
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Login</a>
+                            </li>
+                            <li>
+                                <a href="forgot-password.html">Forgot Password</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li>
+                        <a href="#">Elements</a>
+                        <ul class="custom-scrollbar">
+                            <li><a href="element-accordions.html">Accordion</a></li>
+                            <li><a href="element-alerts.html">Alerts</a></li>
+                            <li><a href="element-animations.html">Animations</a></li>
+                            <li><a href="element-banners.html">Banners</a></li>
+                            <li><a href="element-buttons.html">Buttons</a></li>
+                            <li><a href="element-call-to-action.html">Call to Action</a></li>
+                            <li><a href="element-countdown.html">Count Down</a></li>
+                            <li><a href="element-counters.html">Counters</a></li>
+                            <li><a href="element-headings.html">Headings</a></li>
+                            <li><a href="element-icons.html">Icons</a></li>
+                            <li><a href="element-info-box.html">Info box</a></li>
+                            <li><a href="element-posts.html">Posts</a></li>
+                            <li><a href="element-products.html">Products</a></li>
+                            <li><a href="element-product-categories.html">Product Categories</a></li>
+                            <li><a href="element-tabs.html">Tabs</a></li>
+                            <li><a href="element-testimonial.html">Testimonials</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="mobile-menu mt-2 mb-2">
+                    <li class="border-0">
+                        <a href="#">
+                            Special Offer!
+                        </a>
+                    </li>
+                    <li class="border-0">
+                        <a href="https://1.envato.market/DdLk5" target="_blank">
+                            Buy Porto!
+                            <span class="tip tip-hot">Hot</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="mobile-menu">
+                    <li><a href="login.html">My Account</a></li>
+                    <li><a href="demo5-contact.html">Contact Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="wishlist.html">My Wishlist</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="login.html" class="login-link">Log In</a></li>
+                </ul>
+            </nav><!-- End .mobile-nav -->
+
+            <form class="search-wrapper mb-2" action="#">
+                <input type="text" class="form-control mb-0" placeholder="Search..." required />
+                <button class="btn icon-search text-white bg-transparent p-0" type="submit"></button>
+            </form>
+
+            <div class="social-icons">
+                <a href="#" class="social-icon social-facebook icon-facebook" target="_blank">
+                </a>
+                <a href="#" class="social-icon social-twitter icon-twitter" target="_blank">
+                </a>
+                <a href="#" class="social-icon social-instagram icon-instagram" target="_blank">
+                </a>
+            </div>
+        </div><!-- End .mobile-menu-wrapper -->
+    </div><!-- End .mobile-menu-container -->
+
+    <div class="sticky-navbar">
+        <div class="sticky-info">
+            <a href="demo5.html">
+                <i class="icon-home"></i>Home
+            </a>
+        </div>
+        <div class="sticky-info">
+            <a href="demo5-shop.html" class="">
+                <i class="icon-bars"></i>Categories
+            </a>
+        </div>
+        <div class="sticky-info">
+            <a href="wishlist.html" class="">
+                <i class="icon-wishlist-2"></i>Wishlist
+            </a>
+        </div>
+        <div class="sticky-info">
+            <a href="login.html" class="">
+                <i class="icon-user-2"></i>Account
+            </a>
+        </div>
+        <div class="sticky-info">
+            <a href="cart.html" class="">
+                <i class="icon-shopping-cart position-relative">
+                    <span class="cart-count badge-circle">3</span>
+                </i>Cart
+            </a>
+        </div>
+    </div>
+
+    <div class="newsletter-popup mfp-hide bg-img" id="newsletter-popup-form"
+        style="background: #f1f1f1 no-repeat center/cover url(assets/images/newsletter_popup_bg.jpg)">
+        <div class="newsletter-popup-content">
+            <img src="assets/images/logo.png" width="111" height="44" alt="Logo" class="logo-newsletter">
+            <h2>Subscribe to newsletter</h2>
+
+            <p>
+                Subscribe to the Porto mailing list to receive updates on new
+                arrivals, special offers and our promotions.
+            </p>
+
+            <form action="#">
+                <div class="input-group">
+                    <input type="email" class="form-control" id="newsletter-email" name="newsletter-email"
+                        placeholder="Your email address" required />
+                    <input type="submit" class="btn btn-primary" value="Submit" />
+                </div>
+            </form>
+            <div class="newsletter-subscribe">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" value="0" id="show-again" />
+                    <label for="show-again" class="custom-control-label">
+                        Don't show this popup again
+                    </label>
+                </div>
+            </div>
+        </div><!-- End .newsletter-popup-content -->
+
+        <button title="Close (Esc)" type="button" class="mfp-close">
+            ×
+        </button>
+    </div><!-- End .newsletter-popup -->
+
+    <a id="scroll-top" href="#top" title="Top" role="button"><i class="icon-angle-up"></i></a>
+
+    <!-- Plugins JS File -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/map.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.min.js"></script>
+</body>
+
+</html>

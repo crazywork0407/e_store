@@ -1,0 +1,65 @@
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$primary-color: #0078f2;
+$secondary-color: #ee8379;
+$bg-color: #2e3237;
+$border-color: #353a40;
+$headings-text: #282828;
+// 2. Theme Settings
+// 3. Theme Variables
+
+@include set-default(
+	(
+		header: (
+			color: #fff,
+			link-active-color: #fff,
+
+			top: (
+				padding-top: 10px,
+				padding-bottom: 11px
+			),
+
+			middle: (
+				sticky: (
+					height: 83px
+				)
+			),
+
+			logo: (
+				max-width: 111px,
+				max-width-mobile: false,
+			),
+
+			icon: (
+				size: 2.8rem,
+				space: 2.5rem,
+				space-mobile: 1.2rem,
+			)
+        ),
+        
+        footer: (
+			top: (
+                padding-bottom: 3.8rem,
+                padding-top: 3.8rem
+			),
+
+			middle: (
+                padding-bottom: 3.4rem,
+                padding-top: 3.4rem
+			),
+			
+			bottom: (
+				padding-top: 3.5rem,
+				padding-bottom: 3.5rem
+			)
+		)
+	)
+);

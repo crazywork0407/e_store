@@ -1,0 +1,128 @@
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+
+@include set(
+    (
+        header: (
+			color: #000,
+			link-color: #000,
+			link-active-color: #000,
+
+            top-notice: (
+                padding: false,
+                font-size: 1.4rem
+            ),
+			middle: (
+				padding-top: 3rem,
+				padding-bottom: 3rem,
+			),
+			logo: (
+				max-width: 11.1rem,
+				max-width-mobile: 8rem
+			),
+			dropdown: (
+				font: (
+					size: 12px,
+					weight: 700
+				),
+
+				item: (
+					padding: 0 7px
+				)
+			),
+			search: (
+				height: 34px,
+				background: #fff,
+				divider: 1px solid #ccc,
+
+				border: (
+					radius: 3.4rem,
+					width: 5px,
+					inline-width: 5px
+				),
+
+				btn: (
+					min-width: 40px
+				),
+
+				toggle: (
+					size: 1.9rem,
+					weight: 900
+				)
+            ),
+            icon: (
+				size: 2.4rem,
+                space: 2.3rem
+            )
+        ),
+
+        menu: (
+            main: (
+                color: #777,
+                font-family: $second-font-family,
+
+				top: (
+                    cut-start-end: false,
+					color: #000,
+					active-color: #000,
+                    letter-spacing: -.01em,
+					padding: 13px 15px,
+					space: 1px
+				)
+            ),
+			mega: (
+				family: $font-family,
+				color: #777
+			)
+		),
+		
+		breadcrumb: (
+			color: #000,
+			padding: 1.2rem,
+
+			divider: (
+				space: 1.3rem
+			)
+		),
+
+		footer: (
+			color: #90969a,
+			link-active-color: $primary-color,
+
+			widget: (
+				title: (
+					color: $primary-color-dark,
+					weight: 700,
+					margin: 0 0 1.5rem
+				)
+			),
+
+			middle: (
+				padding-top: 6.4rem,
+				padding-bottom: 2.4rem
+			),
+
+			bottom: (
+			    padding-bottom: 2.4rem
+			),
+
+			social-icon: (
+				color: #525252,
+				font-size: 1.9rem,
+				space: .4rem
+			)
+		),
+    )
+);
+
+// 4. Plugin Variables

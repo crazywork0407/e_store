@@ -1,0 +1,115 @@
+// Demo25 Shop page
+
+.main-content, .sidebar-shop {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+}
+
+.sidebar-shop {
+    .widget-featured {
+        padding-bottom: 2rem;
+    }
+
+    .product-widget {
+        .product-title {
+            color: #474747;
+            font-family: $second-font-family;
+            letter-spacing: 0;
+        }
+
+        .price-box {
+            font-family: $second-font-family;
+        }
+
+        .product-details {
+            padding-right: 0;
+        }
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.cat-list li {
+    line-height: 1.45;
+}
+
+.widget-brand .cat-list li {
+    font-size: 1.3rem;
+
+    a {
+        font-weight: 400;
+    }
+}
+
+.toolbox label, .sidebar-toggle {
+    font-family: $second-font-family;
+}
+
+// Product page
+
+.product-single-container {
+    padding-top: 3.5rem;
+}
+
+.product-single-details {
+    .product-title {
+        font-family: $font-family;
+        font-style: italic;
+    }
+
+    .ratings-container {
+        margin-bottom: 2.2rem;
+    }
+
+    .old-price {
+        margin-right: 2px;
+    }
+
+    .product-desc {
+        margin-bottom: 1.9rem;
+        font-family: $second-font-family;
+        line-height: 1.6872;
+    }
+
+    .single-info-list {
+        font-family: $second-font-family;
+    }
+}
+
+.add-wishlist i {
+    font-size: 1.8rem;
+}
+
+.product-single-gallery {
+    margin-bottom: 3.2rem;
+}
+
+.product-single-tabs .nav.nav-tabs .nav-item .nav-link {
+    padding: 7px 0;
+    font-family: $second-font-family;
+    line-height: 25px;
+}
+
+.product-desc-content {
+    p {
+        margin-bottom: 2.2rem;
+    }
+
+    ul {
+        margin-bottom: 2.5rem;
+    }
+
+    li:before {
+        margin-top: -1px;
+    }
+    
+    ul, li {
+        letter-spacing: inherit;
+    }
+}
+
+.add-product-review label, .add-product-review .btn {
+    font-family: $second-font-family;
+}

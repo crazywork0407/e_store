@@ -1,0 +1,182 @@
+// Demo35 Shop page
+
+.main-content, .sidebar-shop {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+}
+
+.sidebar-shop {
+    .widget:not(:last-child) {
+        border-bottom: 1px solid #e7e7e7;
+    }
+
+    .widget-featured {
+        padding-bottom: 2rem;
+    }
+
+    .product-widget {
+        .product-title {
+            color: #474747;
+            font-family: $second-font-family;
+            letter-spacing: 0;
+        }
+
+        .price-box {
+            font-family: $second-font-family;
+        }
+
+        .product-details {
+            padding-right: 0;
+        }
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.cat-list li {
+    margin-bottom: 1rem;
+    line-height: 1.45;
+
+    .product-count {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+}
+
+.widget-brand .cat-list li {
+    font-size: 1.3rem;
+    line-height: 20px;
+
+    a {
+        font-weight: 400;
+    }
+}
+
+.filter-price-action .btn {
+    padding: .4em 1.5rem;
+    line-height: 1.5;
+}
+
+.toolbox label {
+    font-family: $second-font-family;
+}
+
+.toolbox-pagination {
+    margin-top: 1.4rem;
+}
+
+.page-link-btn {
+    padding: 0;
+    border: 1px solid #ccc;
+    width: 31px;
+    height: 31px;
+}
+
+// Product page
+
+.product-single-container {
+    padding-top: 3.5rem;
+}
+
+.product-single-details {
+    .product-title {
+        margin-bottom: .9rem;
+    }
+
+    .old-price {
+        margin-right: 2px;
+    }
+
+    .product-desc {
+        margin-bottom: 1.6rem;
+        font-family: $second-font-family;
+        line-height: 1.6872;
+    }
+
+    .single-info-list {
+        font-family: $second-font-family;
+    }
+
+    .ratings-container .product-ratings {
+        flex: 0;
+    }
+}
+
+.product-category:hover {
+    color: #1d2127;
+    text-decoration: underline;
+}
+
+.add-wishlist {
+    font-family: $font-family;
+
+    i {
+        margin-top: -2px;
+        font-size: 1.8rem;
+        line-height: 1;
+    }
+}
+
+
+// Producrt Single Gallery
+.product-single-gallery {
+    margin-bottom: 3.2rem;
+}
+
+.product-single-carousel {
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+}
+
+.prod-thumbnail img {
+    border: 2px solid #f4f4f4;
+    border-radius: 4px;
+}
+
+// Product Description
+.product-single-tabs .nav.nav-tabs .nav-item .nav-link {
+    padding: 7px 0;
+    font-family: $second-font-family;
+    line-height: 22px;
+}
+
+.product-desc-content p {
+    margin-bottom: 2.2rem;
+}
+
+// Products Section
+.products-section {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .product-title {
+        margin-bottom: 7px;
+    }
+
+    .owl-carousel.dots-top .owl-dots span {
+        border-color: rgba(46,104,60,.4);
+    }
+}
+
+// Responsive
+@include mq(lg) {
+    .sidebar-shop {
+        .sidebar-wrapper {
+            border: 1px solid #e7e7e7;
+        }
+
+        .widget:not(:last-child) {
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+        }
+    }
+}
+
+@include mq(md) {
+    .products-section {
+        padding-bottom: 3.3rem;
+    }
+}

@@ -1,0 +1,159 @@
+
+// Variables
+
+// # Contents
+// 1. Theme Skin
+// 2. Theme Settings
+// 3. Theme Variables
+// 4. Plugin Variables
+
+
+// 1. Theme Skin
+$sidebar-font-size: 1.4rem;
+
+$primary-color: #282d3b;
+$secondary-color: #ee3d43;
+
+// 2. Theme Settings
+
+// 3. Theme Variables
+
+@include set(
+	(
+		header: (
+			link-color: inherit,
+
+			top: (
+				padding-top: 7px,
+				padding-bottom: 7px,
+				border-bottom: 1px solid #e7e7e7,
+				font-size: 1.1rem,
+				font-weight: 600,
+				letter-spacing: .025em
+			),
+
+			middle: (
+				padding-top: 2.7rem,
+				padding-bottom: 2.7rem,
+				color: $primary-color-dark,
+			),
+			
+			bottom: (
+				color: #fff,
+				background: $primary-color,
+			),
+
+			top-notice: (
+				font-size: 1.4rem,
+				link-background: #d01f25
+			),
+
+			dropdown: (
+				font: (
+					size: false,
+					weight: false,
+				),
+				item: (
+					space: 2.4rem,
+					active-color: #999
+				)
+			),
+			
+			social-icon: (
+				color: inherit
+			),
+
+			separator: (
+				color: #e7e7e7
+			),
+
+			search: (
+				height: 40px,
+				background: #F5F6F8,
+				divider: 1px solid #fff,
+
+				border: (
+					width: 5px
+				)
+			),
+			
+			logo: (
+				sticky: (
+					transform: scale(.8),
+					transform-origin: left center
+				)
+			)
+		),
+
+		menu: (
+			main: (
+				font-size: 13px,
+				color: #767f84,
+
+				top: (
+					padding: 2.1rem 2rem,
+					color: #fff,
+					active-color: $secondary-color,
+					space: 0,
+					letter-spacing: -.01em,
+				),
+
+				nolink: (
+					color: #767f84,
+					font-weight: 700
+				)
+			)
+		),
+
+		breadcrumb: (
+			color: #000,
+			letter-spacing: 0,
+			margin-bottom: 3.5rem
+		),
+
+		side-menu: (
+			color: $body-text,
+			active-color: $primary-color
+		),
+
+		footer: (
+			color: #a8a8a8,
+			background: $primary-color-dark,
+			link-active-color: #fff,
+			line-height: 24px,
+
+			middle: (
+				padding-top: 6.4rem,
+				padding-bottom: 1.4rem
+			),
+
+			bottom: (
+				font-size: 12px,
+				color: #777,
+				border-top-inner: 1px solid #313438,
+				padding-top: 1.5rem,
+				padding-bottom: 1.5rem
+			),
+
+			widget: (
+				title: (
+					size: 1.5rem,
+					color: #fff
+				)
+			),
+
+			social-icon: (
+				border: 1px solid #313438
+			)
+		),
+
+		info-box: (
+			icon: (
+				space: 1.5rem
+			),
+			title: (
+				weight: 600
+			)
+		)
+	)
+);
